@@ -1,4 +1,4 @@
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import Header from "./ui/header";
 
 export default function Home() {
@@ -7,8 +7,16 @@ export default function Home() {
       <Header />
       <Box p={[10, 10]}>
         <SimpleGrid columns={[1, null, 2]} spacingX='3rem'>
-          <Box bg='tomato'>select classes youve taken</Box>
-          <Box bg='aquamarine'>here are classes you're eligible for</Box>
+          <Box bg='tomato'>
+            <Text>
+              select classes youve taken
+            </Text>
+          </Box>
+          <Box bg="aquamarine">
+            <Text>
+              here are classes youre eligible for
+            </Text>
+          </Box>
         </SimpleGrid>
       </Box>
     </Box>
