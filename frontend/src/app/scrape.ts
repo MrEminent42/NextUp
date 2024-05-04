@@ -13,16 +13,19 @@ axios.get(url)
       const title = $(elem).find('p.courseblocktitle').text().trim();
       const courseCode = title.split('.')[0].trim();
       const courseName = title.split('.')[1].split(/(\d+ units)/)[0].trim();
-      const creditMatch = title.match(/\d+ units/);
-      const credits = creditMatch ? creditMatch[0] : "N/A"; // Check if credits were found
+      const creditsMatch = title.match(/(\d+-\d+ units|\d+ units)/);
+      const credits = creditsMatch ? creditsMatch[0] : "N/A"; // Extract full credit info
 
       let description = "";
       let prerequisites = "None";
+      let termTypicallyOffered = "TBD";
 
       $(elem).find('div.courseblockdesc p, div.noindent p').each((index, descElem) => {
         const text = $(descElem).text().trim();
         if (text.startsWith('Prerequisite:')) {
           prerequisites = text;
+        } else if (text.startsWith('Term Typically Offered:')) {
+          termTypicallyOffered = text.split(': ')[1];
         } else {
           description += text + " "; // Append descriptions if multiple paragraphs
         }
@@ -33,7 +36,8 @@ axios.get(url)
         courseName,
         credits,
         description: description.trim(),
-        prerequisites
+        prerequisites,
+        termTypicallyOffered
       });
     });
 
