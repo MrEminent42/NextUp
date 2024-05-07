@@ -4,12 +4,12 @@ const cheerio = require('cheerio');
 const url = 'https://catalog.calpoly.edu/coursesaz/csc/';
 
 axios.get(url)
-  .then((response: { data: any; }) => {
+  .then(response => {
     const html = response.data;
     const $ = cheerio.load(html);
-    const courses: { courseCode: any; courseName: any; credits: any; description: string; prerequisites: string; termTypicallyOffered: string; }[] = [];
+    const courses = [];
 
-    $('div.courseblock').each((i: any, elem: any) => {
+    $('div.courseblock').each((i, elem) => {
       const title = $(elem).find('p.courseblocktitle').text().trim();
       const courseCode = title.split('.')[0].trim();
       const courseName = title.split('.')[1].split(/(\d+ units)/)[0].trim();
@@ -20,7 +20,7 @@ axios.get(url)
       let prerequisites = "None";
       let termTypicallyOffered = "TBD";
 
-      $(elem).find('div.courseblockdesc p, div.noindent p').each((index: any, descElem: any) => {
+      $(elem).find('div.courseblockdesc p, div.noindent p').each((index, descElem) => {
         const text = $(descElem).text().trim();
         if (text.startsWith('Prerequisite:')) {
           prerequisites = text;
