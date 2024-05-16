@@ -5,7 +5,6 @@ import Board from "./components/Board";
 export default function Home() {
   return (
     <Box>
-      <Board />
       <Header />
       <Box p={[10, 10]}>
         <SimpleGrid columns={[1, null, 2]} spacingX='3rem'>
@@ -13,6 +12,7 @@ export default function Home() {
             <Text>
               select classes youve taken
             </Text>
+            <Board />
           </Box>
           <Box bg="aquamarine">
             <Text>
