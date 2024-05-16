@@ -20,7 +20,6 @@ export default function Card({ course, index }: CardProps) {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={provided.innerRef}
-          isDragging={snapshot.isDragging}
           className="rounded-lg shadow-md p-2 text-black mb-2 min-h-[120px] mx-2 cursor-pointer flex justify-between flex-col"
         >
           <div className="flex justify-start p-2">

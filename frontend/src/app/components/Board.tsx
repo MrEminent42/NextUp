@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { DragDropContext } from "react-beautiful-dnd";
+import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
 
 const testData = [
@@ -32,6 +32,7 @@ type Course = {
   completed: boolean;
 };
 
+interface Result extends DropResult {}
 export default function Board() {
   const [data, setData] = useState<Course[]>(testData);
   const [completed, setCompleted] = useState<Course[]>([]);
@@ -42,21 +43,23 @@ export default function Board() {
 
     setCompleted(completedCourses);
     setIncomplete(incompleteCourses);
+    console.log(completedCourses, incompleteCourses)
   }, [data]);
 
-  const handleDragEnd = (result) => {
+  const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
-
     if (!destination || source.droppableId === destination.droppableId) return;
 
-    deletePreviousState(source.droppableId, draggableId);
+    deletePreviousState(source.droppableId, parseInt(draggableId));
 
-    const task = findItemById(draggableId, [...incomplete, ...completed]);
+    const course = findItemById(parseInt(draggableId), [...incomplete, ...completed]);
 
-    setNewState(destination.droppableId, task);
+    if (course) {
+      setNewState(destination.droppableId, course);
+    }
   };
 
-  function deletePreviousState(sourceDroppableId, courseId: number) {
+  function deletePreviousState(sourceDroppableId: string, courseId: number) {
     switch (sourceDroppableId) {
       case "1":
         setIncomplete(removeItemById(courseId, incomplete));
@@ -66,7 +69,7 @@ export default function Board() {
         break;
     }
   }
-  function setNewState(destinationDroppableId, course) {
+  function setNewState(destinationDroppableId: string, course: Course) {
     let updateCourse;
     switch (destinationDroppableId) {
       case "1": // TO DO
