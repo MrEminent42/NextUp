@@ -1,5 +1,6 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import Header from "./ui/header";
+import Board from "./components/Board";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
             <Text>
               select classes youve taken
             </Text>
+            <Board />
           </Box>
           <Box bg="aquamarine">
             <Text>
