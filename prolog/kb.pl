@@ -91,13 +91,24 @@ prerequisite("CSC377", ["CSC202"]).
 prerequisite("CSC378", ["CSC202"]).
 prerequisite("CSC321", ["CSC357"]).
 prerequisite("CSC323", ["CSC357"]).
-prerequisite("CSC325", [["CSC300"],["CSC203"],["PHIL323"]]).
-prerequisite("CSC402", [["CSC307"],["CSC309"]]).
-prerequisite("CSC409", [["CSC307"],["CSC309"]]).
+%prerequisite("CSC325", ["CSC300",]).
+%prerequisite("CSC325", ["CSC203"]).
+%prerequisite("CSC325", ["PHIL323"]).
+prerequisite("CSC325", ["CSC300"]).
+prerequisite("CSC325", ["CSC203"]).
+prerequisite("CSC325", ["PHIL323"]).
+prerequisite("CSC402", ["CSC307"]).
+prerequisite("CSC402", ["CSC309"]).
+prerequisite("CSC409", ["CSC307"]).
+prerequisite("CSC409", ["CSC309"]).
 prerequisite("CSC410", ["CSC349", "STAT312"]).
-prerequisite("CSC421", ["CSC321", ["CSC300", "PHIL323"]]).
+prerequisite("CSC421", ["CSC321", "CSC300"]).
+prerequisite("CSC421", ["CSC321", "PHIL323"]).
 prerequisite("CSC422", ["CSC364"]).
-prerequisite("CSC424", ["CSC321", ["CSC307","CSC309"]]).
+% prerequisite("CSC424", ["CSC321", "CSC307"]).
+% prerequisite("CSC424", ["CSC321", "CSC309"]).
+prerequisite("CSC424", ["CSC321", "CSC307"]).
+prerequisite("CSC424", ["CSC321", "CSC309"]).
 prerequisite("CSC430", ["CSC349"]).
 prerequisite("CSC431", ["CSC430"]).
 prerequisite("CSC436", ["CSC357"]).
@@ -116,19 +127,25 @@ prerequisite("CSC476", ["CSC476"]).
 prerequisite("CSC480", ["CSC202"]).
 prerequisite("CSC481", ["CSC480"]).
 prerequisite("CSC482", ["CSC480"]).
-prerequisite("CSC484", [["CSC307"], ["CSC308"]]).
-prerequisite("CSC487", ["CSC349", ["MATH206", "244"]]).
+prerequisite("CSC484", ["CSC307"]).
+prerequisite("CSC484", ["CSC308"]).
+prerequisite("CSC487", ["CSC349", "MATH206"]).
+prerequisite("CSC487", ["CSC349", "MATH244"]).
 prerequisite("CSC364", ["CSC203"]).
 prerequisite("CSC300", ["CSC357"]).
-prerequisite("CSC491", [["CSC307"], ["CSC309"]]).
+prerequisite("CSC491", ["CSC307"]).
+prerequisite("CSC491", ["CSC309"]).
 prerequisite("CSC492", ["CSC491"]).
-prerequisite("CSC497", [["CSC307"], ["CSC309"]]).
+prerequisite("CSC497", ["CSC307"]).
+prerequisite("CSC497", ["CSC309"]).
 prerequisite("CSC498", ["CSC497"]).
 
 
 disqualified("CSC307", ["CSC308", "CSC309"]).
 
 taken("CSC202").
+taken("CSC321").
+taken("CSC307").
 
 %Predicates
 %Base case: If there are no prerequisites for a course, then it is satisfied.
@@ -143,5 +160,10 @@ prereqsSatisfied(X) :-
 %Predicate to check if all prerequisites are taken.
 allPrereqsTaken([]). % Base case: No prerequisites left to check.
 allPrereqsTaken([P|Prereqs]) :-
+    is_list(P),
+    allPrereqsTaken(P);
     taken(P),            % Check if the prerequisite is taken.
     allPrereqsTaken(Prereqs). % Recur for the rest of the prerequisites.
+
+% Could put down every combination of prereqs for a class as multiple different objects, 
+% but seems inefficient if a prolog could do that with a predicate.
