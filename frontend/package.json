@@ -22,6 +22,7 @@
     "react": "^18",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18",
+    "readline-sync": "^1.4.10",
     "tau-prolog": "^0.3.4"
   },
   "devDependencies": {
