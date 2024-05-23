@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
+import { findClasses } from "../lib/prolog/findClasses";
 
 const testData = [
   {
@@ -26,13 +27,13 @@ const testData = [
   },
 ];
 
-type Course = {
+export type Course = {
   id: number;
   title: string;
   completed: boolean;
 };
 
-interface Result extends DropResult {}
+interface Result extends DropResult { }
 export default function Board() {
   const [data, setData] = useState<Course[]>(testData);
   const [completed, setCompleted] = useState<Course[]>([]);
@@ -45,6 +46,11 @@ export default function Board() {
     setIncomplete(incompleteCourses);
     console.log(completedCourses, incompleteCourses)
   }, [data]);
+
+  useEffect(() => {
+    console.log("finding classes...")
+    findClasses(completed);
+  }, [completed, incomplete])
 
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
@@ -98,6 +104,7 @@ export default function Board() {
         <Column title={"TO DO"} courses={incomplete} id={"1"} />
         <Column title={"DONE"} courses={completed} id={"2"} />
       </div>
+      {JSON.stringify(completed)}
     </DragDropContext>
   );
 }
