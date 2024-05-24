@@ -38,6 +38,8 @@ export default function Board() {
   const [data, setData] = useState<Course[]>(testData);
   const [completed, setCompleted] = useState<Course[]>([]);
   const [incomplete, setIncomplete] = useState<Course[]>([]);
+  const [eligibleCourses, setEligibleCourses] = useState<any>();
+
   useEffect(() => {
     const completedCourses = data.filter((course) => course.completed);
     const incompleteCourses = data.filter((course) => !course.completed);
@@ -48,9 +50,14 @@ export default function Board() {
   }, [data]);
 
   useEffect(() => {
-    console.log("finding classes...")
-    findClasses(completed);
+    console.log("triggering finding classes...")
+    findClasses();
   }, [completed, incomplete])
+
+  useEffect(() => {
+    console.log("eligible courses updated to: ");
+    console.log(eligibleCourses);
+  }, [eligibleCourses])
 
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
