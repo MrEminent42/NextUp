@@ -1,16 +1,43 @@
 'use server';
 
-import { Course } from "@/app/components/Board";
 // @ts-ignore
 import TauProlog from "tau-prolog";
 import { promises as fs } from 'fs';
+const pl = require("tau-prolog");
+require("tau-prolog/modules/promises.js")(pl);
+
+
+export const findAllClasses = async () => {
+    // load prolog kb from file kb.pl
+    // const kb = (await fs.readFile(process.cwd() + '/kb_simple.pl')).toString();
+    const kb = (await fs.readFile(process.cwd() + '/kb.pl')).toString();
+
+    const session = TauProlog.create(1000);
+
+    const goal = `
+        class("Computer Science", X).
+    `;
+
+    let classes: string[] = [];
+
+    await session.promiseConsult(kb);
+    await session.promiseQuery(goal);
+    for await (let answer of session.promiseAnswers()) {
+        const ans_formatted = await session.format_answer(answer);
+        if (ans_formatted.includes("false")) {
+            continue;
+        }
+        classes.push(ans_formatted.split("[")[1].split("]")[0].replaceAll(",", ""));
+    }
+
+    return classes;
+}
 
 // export const findClasses = async (taken: Course[]) => {
 export const findClasses = async () => {
     // load prolog kb from file kb.pl
     // const kb = (await fs.readFile(process.cwd() + '/kb_simple.pl')).toString();
     const kb = (await fs.readFile(process.cwd() + '/kb.pl')).toString();
-    console.log("Loaded KB: ", kb);
 
     const session = TauProlog.create(1000);
 

@@ -1,31 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
-import { findClasses } from "../lib/prolog/findClasses";
-
-const testData = [
-  {
-    id: 1,
-    title: "CSC 203",
-    completed: false,
-  },
-  {
-    id: 2,
-    title: "CSC 441",
-    completed: false,
-  },
-  {
-    id: 3,
-    title: "CSC 121",
-    completed: false,
-  },
-  {
-    id: 4,
-    title: "CSC 123",
-    completed: false,
-  },
-];
+import { findAllClasses, findClasses } from "../lib/prolog/findClasses";
 
 export type Course = {
   id: number;
@@ -35,10 +12,18 @@ export type Course = {
 
 interface Result extends DropResult { }
 export default function Board() {
-  const [data, setData] = useState<Course[]>(testData);
+  const [data, setData] = useState<Course[]>([]);
   const [completed, setCompleted] = useState<Course[]>([]);
   const [incomplete, setIncomplete] = useState<Course[]>([]);
   const [eligibleCourses, setEligibleCourses] = useState<any>();
+
+
+  useEffect(() => {
+
+    findAllClasses().then(classes => {
+      setData(classes.map((className, i) => ({ id: i, title: className, completed: false } as Course)));
+    });
+  }, []);
 
   useEffect(() => {
     const completedCourses = data.filter((course) => course.completed);
@@ -46,18 +31,7 @@ export default function Board() {
 
     setCompleted(completedCourses);
     setIncomplete(incompleteCourses);
-    console.log(completedCourses, incompleteCourses)
   }, [data]);
-
-  useEffect(() => {
-    console.log("triggering finding classes...")
-    findClasses();
-  }, [completed, incomplete])
-
-  useEffect(() => {
-    console.log("eligible courses updated to: ");
-    console.log(eligibleCourses);
-  }, [eligibleCourses])
 
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
@@ -111,7 +85,6 @@ export default function Board() {
         <Column title={"TO DO"} courses={incomplete} id={"1"} />
         <Column title={"DONE"} courses={completed} id={"2"} />
       </div>
-      {JSON.stringify(completed)}
     </DragDropContext>
   );
 }
