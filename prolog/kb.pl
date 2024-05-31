@@ -122,8 +122,8 @@ prerequisite("CSC468", ["CSC365"]).
 prerequisite("CSC469", ["CSC357"]).
 prerequisite("CSC471", ["CSC357"]).
 prerequisite("CSC473", ["CSC471"]).
-prerequisite("CSC474", ["CSC474"]). /* typo? Should be CSC 471 */
-prerequisite("CSC476", ["CSC476"]). /* typo? Should be CSC 471 */
+prerequisite("CSC474", ["CSC471"]). /* typo? Should be CSC 471 */
+prerequisite("CSC476", ["CSC471"]). /* typo? Should be CSC 471 */
 prerequisite("CSC480", ["CSC202"]).
 prerequisite("CSC481", ["CSC480"]).
 prerequisite("CSC482", ["CSC480"]).
