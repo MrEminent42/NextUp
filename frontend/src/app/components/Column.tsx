@@ -22,7 +22,7 @@ const SearchBar = ({ onChange, value }: { onChange: (e: React.ChangeEvent<HTMLIn
     <input
       type="search"
       className="w-full mb-[25px] bg-[#FFFCF4] border border-black rounded-md p-2 text-black outline-none"
-      placeholder="Search Recipe"
+      placeholder="Search Courses"
       onChange={onChange}
       value={value}
     />
