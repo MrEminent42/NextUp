@@ -1,6 +1,8 @@
-import React from "react";
+"use client"
+import {useState} from "react";
 import Card from "./Card";
 import { Droppable } from "react-beautiful-dnd";
+
 
 interface ColumnProps {
   title: string;
@@ -14,7 +16,31 @@ type Course = {
   completed: boolean;
 };
 
+
+const SearchBar = ({ onChange, value }: { onChange: (e: React.ChangeEvent<HTMLInputElement>) => void, value: string }) => {
+  return (
+    <input
+      type="search"
+      className="w-full mb-[25px] bg-[#FFFCF4] border border-black rounded-md p-2 text-black outline-none"
+      placeholder="Search Recipe"
+      onChange={onChange}
+      value={value}
+    />
+  );
+};
+
 export default function Column({ title, courses, id }: ColumnProps) {
+  const [searchInput, setSearchInput] = useState<string>("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchInput(e.target.value);
+  };
+
+  const filteredCourses = courses.filter((course) => {
+    return course.title.toLowerCase().includes(searchInput.toLowerCase());
+  });
+
+
   console.log(title, " tasks:", courses);
   return (
     <div
@@ -24,6 +50,7 @@ export default function Column({ title, courses, id }: ColumnProps) {
       <h1 className="sticky top-0 bg-[lightblue] py-2 m-auto text-center">
         {title}
       </h1>
+      <SearchBar onChange={handleChange} value={searchInput} />
       <Droppable droppableId={id}>
         {(provided, snapshot) => (
           <div
@@ -31,7 +58,7 @@ export default function Column({ title, courses, id }: ColumnProps) {
             ref={provided.innerRef}
             {...provided.droppableProps}
           >
-            {courses.map((course: Course, index: number) => (
+            {filteredCourses.map((course: Course, index: number) => (
               <Card key={index} index={index} course={course} />
             ))}
             {provided.placeholder}
