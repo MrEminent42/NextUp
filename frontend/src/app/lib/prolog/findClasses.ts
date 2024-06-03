@@ -31,39 +31,27 @@ export const findAllClasses = async (major) => {
     return classes;
 };
 
-// export const findClasses = async (taken: Course[]) => {
-export const findClasses = async () => {
+export const findAllMajors = async () => {
     // load prolog kb from file kb.pl
     const kb = (await fs.readFile(process.cwd() + '/kb.pl')).toString();
 
     const session = pl.create(1000);
 
     const goal = `
-        taken(X).
+        major(X).
     `;
 
-    session.consult(kb, {
-        // loaded successfully
-        success: () => {
-            session.query(goal, {
-                // successful query
-                success: function () {
-                    // log answers to console (for now)
-                    session.answers((x) => console.log("[ANSWERS]", session.format_answer(x)));
-                },
-                // error while querying
-                error: (err) => {
-                    console.log("[QUERY]: Error querying KB: ", err);
-                    console.log("[QUERY]: Error JSON: ", JSON.stringify(err));
-                }
-            })
-        },
-        // error loading
-        error: (err) => {
-            console.log("[CONSULT]: Error loading KB: ", err);
-            console.log("[CONSULT]: Error JSON: ", JSON.stringify(err));
-        }
-    });
+    let majors = [];
 
-    return "";
+    await session.promiseConsult(kb);
+    await session.promiseQuery(goal);
+    for await (let answer of session.promiseAnswers()) {
+        const ansFormatted = await session.format_answer(answer);
+        if (ansFormatted.includes("false")) {
+            continue;
+        }
+        majors.push(ansFormatted.split("[")[1].split("]")[0].replaceAll(",", ""));
+    }
+
+    return majors;
 };

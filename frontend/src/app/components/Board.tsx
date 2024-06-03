@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
 import { findAllClasses } from "../lib/prolog/findClasses";
-import { Box, Select } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export type Course = {
   id: number;
@@ -13,8 +13,11 @@ export type Course = {
 
 interface Result extends DropResult {}
 
-export default function Board() {
-  const [selectedMajor, setSelectedMajor] = useState("Computer Science");
+interface BoardProps {
+  selectedMajor: string;
+}
+
+export default function Board({ selectedMajor }: BoardProps) {
   const [data, setData] = useState<Course[]>([]);
   const [completed, setCompleted] = useState<Course[]>([]);
   const [incomplete, setIncomplete] = useState<Course[]>([]);
@@ -36,10 +39,6 @@ export default function Board() {
     setCompleted(completedCourses);
     setIncomplete(incompleteCourses);
   }, [data]);
-
-  const handleMajorChange = (event) => {
-    setSelectedMajor(event.target.value);
-  };
 
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
@@ -89,17 +88,11 @@ export default function Board() {
 
   return (
     <Box>
-      <Select value={selectedMajor} onChange={handleMajorChange}>
-        <option value="Computer Science">Computer Science</option>
-        <option value="Aerospace Engineering">Aerospace Engineering</option>
-        <option value="Agribusiness">Agribusiness</option>
-        {/* Add more options for other majors */}
-      </Select>
       <DragDropContext onDragEnd={handleDragEnd}>
         <h2 style={{ textAlign: "center" }}>PROGRESS BOARD</h2>
         <div className="flex justify-between items-center flex-row mx-2">
-          <Column title={"TO DO"} courses={incomplete} id={"1"} />
-          <Column title={"DONE"} courses={completed} id={"2"} />
+          <Column title={"To Do"} courses={incomplete} id={"1"} />
+          <Column title={"Completed"} courses={completed} id={"2"} />
         </div>
       </DragDropContext>
     </Box>
