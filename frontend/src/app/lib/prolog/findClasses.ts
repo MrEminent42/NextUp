@@ -6,45 +6,41 @@ import { promises as fs } from 'fs';
 const pl = require("tau-prolog");
 require("tau-prolog/modules/promises.js")(pl);
 
-
-export const findAllClasses = async () => {
+export const findAllClasses = async (major) => {
     // load prolog kb from file kb.pl
-    // const kb = (await fs.readFile(process.cwd() + '/kb_simple.pl')).toString();
     const kb = (await fs.readFile(process.cwd() + '/kb.pl')).toString();
 
-    const session = TauProlog.create(1000);
+    const session = pl.create(1000);
 
     const goal = `
-        class("Computer Science", X).
+        class("${major}", X).
     `;
 
-    let classes: string[] = [];
+    let classes = [];
 
     await session.promiseConsult(kb);
     await session.promiseQuery(goal);
     for await (let answer of session.promiseAnswers()) {
-        const ans_formatted = await session.format_answer(answer);
-        if (ans_formatted.includes("false")) {
+        const ansFormatted = await session.format_answer(answer);
+        if (ansFormatted.includes("false")) {
             continue;
         }
-        classes.push(ans_formatted.split("[")[1].split("]")[0].replaceAll(",", ""));
+        classes.push(ansFormatted.split("[")[1].split("]")[0].replaceAll(",", ""));
     }
 
     return classes;
-}
+};
 
 // export const findClasses = async (taken: Course[]) => {
 export const findClasses = async () => {
     // load prolog kb from file kb.pl
-    // const kb = (await fs.readFile(process.cwd() + '/kb_simple.pl')).toString();
     const kb = (await fs.readFile(process.cwd() + '/kb.pl')).toString();
 
-    const session = TauProlog.create(1000);
+    const session = pl.create(1000);
 
     const goal = `
         taken(X).
     `;
-
 
     session.consult(kb, {
         // loaded successfully
@@ -53,21 +49,21 @@ export const findClasses = async () => {
                 // successful query
                 success: function () {
                     // log answers to console (for now)
-                    session.answers((x: any) => console.log("[ANSWERS]", session.format_answer(x)));
+                    session.answers((x) => console.log("[ANSWERS]", session.format_answer(x)));
                 },
                 // error while querying
-                error: (err: any) => {
+                error: (err) => {
                     console.log("[QUERY]: Error querying KB: ", err);
-                    console.log("[QUERY]: Error JSON: ", JSON.stringify(err))
+                    console.log("[QUERY]: Error JSON: ", JSON.stringify(err));
                 }
             })
         },
         // error loading
-        error: (err: any) => {
+        error: (err) => {
             console.log("[CONSULT]: Error loading KB: ", err);
-            console.log("[CONSULT]: Error JSON: ", JSON.stringify(err))
+            console.log("[CONSULT]: Error JSON: ", JSON.stringify(err));
         }
     });
 
     return "";
-}
+};
