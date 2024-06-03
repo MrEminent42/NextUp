@@ -92,6 +92,7 @@ export default function Board() {
       <Select value={selectedMajor} onChange={handleMajorChange}>
         <option value="Computer Science">Computer Science</option>
         <option value="Aerospace Engineering">Aerospace Engineering</option>
+        <option value="Agribusiness">Agribusiness</option>
         {/* Add more options for other majors */}
       </Select>
       <DragDropContext onDragEnd={handleDragEnd}>

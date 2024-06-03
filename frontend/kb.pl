@@ -394,6 +394,93 @@ prerequisite("AERO594", [["Graduate standing"]]).
 prerequisite("AERO595", [["Graduate standing"]]).
 prerequisite("AERO599", [["Graduate standing"]]).
 
+% Agribusiness Courses
+major("Agribusiness").
+
+class("Agribusiness", "AGB101").
+class("Agribusiness", "AGB200").
+class("Agribusiness", "AGB202").
+class("Agribusiness", "AGB212").
+class("Agribusiness", "AGB214").
+class("Agribusiness", "AGB260").
+class("Agribusiness", "AGB270").
+class("Agribusiness", "AGB301").
+class("Agribusiness", "AGB304").
+class("Agribusiness", "AGB308").
+class("Agribusiness", "AGB309").
+class("Agribusiness", "AGB310").
+class("Agribusiness", "AGB311").
+class("Agribusiness", "AGB312").
+class("Agribusiness", "AGB313").
+class("Agribusiness", "AGB318").
+class("Agribusiness", "AGB322").
+class("Agribusiness", "AGB323").
+class("Agribusiness", "AGB326").
+class("Agribusiness", "AGB327").
+class("Agribusiness", "AGB328").
+class("Agribusiness", "AGB335").
+class("Agribusiness", "AGB339").
+class("Agribusiness", "AGB369").
+class("Agribusiness", "AGB370").
+class("Agribusiness", "AGB400").
+class("Agribusiness", "AGB404").
+class("Agribusiness", "AGB405").
+class("Agribusiness", "AGB406").
+class("Agribusiness", "AGB411").
+class("Agribusiness", "AGB412").
+class("Agribusiness", "AGB422").
+class("Agribusiness", "AGB425").
+class("Agribusiness", "AGB427").
+class("Agribusiness", "AGB440").
+class("Agribusiness", "AGB445").
+class("Agribusiness", "AGB450").
+class("Agribusiness", "AGB452").
+class("Agribusiness", "AGB462").
+class("Agribusiness", "AGB463").
+class("Agribusiness", "AGB470").
+
+prerequisite("AGB101", [["Freshman standing"]]).
+prerequisite("AGB200", []).
+prerequisite("AGB202", []).
+prerequisite("AGB212", []).
+prerequisite("AGB214", []).
+prerequisite("AGB260", []).
+prerequisite("AGB270", []).
+prerequisite("AGB301", [["AGB212"], ["ECON221"]]).
+prerequisite("AGB304", [["AGB212"], ["ECON201"], ["ECON221"]]).
+prerequisite("AGB308", [["AGB214"], ["AGB260"]]).
+prerequisite("AGB309", [["AGB202"]]).
+prerequisite("AGB310", [["AGB214"], ["BUS212"], ["BUS214"]]).
+prerequisite("AGB311", [["AGB260"], ["AGB310", "AGB308"]]).
+prerequisite("AGB312", [["AGB212"], ["ECON222"]]).
+prerequisite("AGB313", [["AGB212"], ["MATH221"]]).
+prerequisite("AGB318", [["AGB301"]]).
+prerequisite("AGB322", [["AGB212"], ["AGB214"]]).
+prerequisite("AGB323", [["AGB214"]]).
+prerequisite("AGB326", [["AGB308", "AGB310"]]).
+prerequisite("AGB327", [["STAT251"], ["AGB260"]]).
+prerequisite("AGB328", [["STAT251"], ["AGB260"]]).
+prerequisite("AGB335", [["AGB308", "AGB310"], ["AGB323"]]).
+prerequisite("AGB339", []).
+prerequisite("AGB369", [["AGB212", "ECON201", "ECON221"], ["Junior standing"]]).
+prerequisite("AGB370", [["AGB312"], ["AGB313"]]).
+prerequisite("AGB400", []).
+prerequisite("AGB404", [["AGB301"]]).
+prerequisite("AGB405", [["AGB301"], ["AGB327"]]).
+prerequisite("AGB406", [["AGB301"], ["AGB327", "AGB328"]]).
+prerequisite("AGB411", [["AGB301"], ["AGB308"], ["AGB327", "AGB328"]]).
+prerequisite("AGB412", [["AGB312"]]).
+prerequisite("AGB422", [["AGB328"]]).
+prerequisite("AGB425", [["AGB323"], ["AGB327", "AGB328"]]).
+prerequisite("AGB427", [["AGB327", "AGB328"]]).
+prerequisite("AGB440", [["Senior standing"]]).
+prerequisite("AGB445", [["Senior standing"], ["AGB301"]]).
+prerequisite("AGB450", [["AGB323"], ["AGB327", "AGB328"]]).
+prerequisite("AGB452", [["AGB313"]]).
+prerequisite("AGB462", [["Senior standing"], ["AGB301"], ["AGB308", "AGB310"], ["AGB312"], ["AGB313"], ["AGB323"], ["AGB327", "AGB328"]]).
+prerequisite("AGB463", [["Senior standing"], ["AGB301"], ["AGB308", "AGB310"], ["AGB312"], ["AGB313"], ["AGB323"], ["AGB327", "AGB328"]]).
+prerequisite("AGB470", []).
+
 disqualified("CSC307", ["CSC308", "CSC309"]).
 
 taken("CSC202").
