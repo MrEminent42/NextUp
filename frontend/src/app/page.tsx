@@ -1,8 +1,16 @@
-import { Box, SimpleGrid, Text } from "@chakra-ui/react";
+"use client"
+import { Box, SimpleGrid, Text, Select } from "@chakra-ui/react";
 import Header from "./ui/header";
 import Board from "./components/Board";
+import { useState } from "react";
 
 export default function Home() {
+  const [selectedMajor, setSelectedMajor] = useState("Computer Science");
+
+  const handleMajorChange = (event) => {
+    setSelectedMajor(event.target.value);
+  };
+
   return (
     <Box>
       <Header />
@@ -10,13 +18,13 @@ export default function Home() {
         <SimpleGrid columns={[1, null, 2]} spacingX='3rem'>
           <Box bg='tomato'>
             <Text>
-              select classes youve taken
+              Select classes you've taken
             </Text>
-            <Board />
+            <Board selectedMajor={selectedMajor} />
           </Box>
           <Box bg="aquamarine">
             <Text>
-              here are classes youre eligible for
+              Here are classes you're eligible for
             </Text>
           </Box>
         </SimpleGrid>

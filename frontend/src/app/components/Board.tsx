@@ -1,8 +1,9 @@
 "use client";
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
-import { findAllClasses, findClasses } from "../lib/prolog/findClasses";
+import { findAllClasses } from "../lib/prolog/findClasses";
+import { Box, Select } from "@chakra-ui/react";
 
 export type Course = {
   id: number;
@@ -10,20 +11,23 @@ export type Course = {
   completed: boolean;
 };
 
-interface Result extends DropResult { }
+interface Result extends DropResult {}
+
 export default function Board() {
+  const [selectedMajor, setSelectedMajor] = useState("Computer Science");
   const [data, setData] = useState<Course[]>([]);
   const [completed, setCompleted] = useState<Course[]>([]);
   const [incomplete, setIncomplete] = useState<Course[]>([]);
-  const [eligibleCourses, setEligibleCourses] = useState<any>();
-
 
   useEffect(() => {
-
-    findAllClasses().then(classes => {
-      setData(classes.map((className, i) => ({ id: i, title: className, completed: false } as Course)));
+    findAllClasses(selectedMajor).then((classes) => {
+      setData(
+        classes.map(
+          (className, i) => ({ id: i, title: className, completed: false } as Course)
+        )
+      );
     });
-  }, []);
+  }, [selectedMajor]);
 
   useEffect(() => {
     const completedCourses = data.filter((course) => course.completed);
@@ -32,6 +36,10 @@ export default function Board() {
     setCompleted(completedCourses);
     setIncomplete(incompleteCourses);
   }, [data]);
+
+  const handleMajorChange = (event) => {
+    setSelectedMajor(event.target.value);
+  };
 
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
@@ -56,6 +64,7 @@ export default function Board() {
         break;
     }
   }
+
   function setNewState(destinationDroppableId: string, course: Course) {
     let updateCourse;
     switch (destinationDroppableId) {
@@ -69,6 +78,7 @@ export default function Board() {
         break;
     }
   }
+
   function findItemById(id: number, array: Course[]) {
     return array.find((item) => item.id == id);
   }
@@ -78,13 +88,19 @@ export default function Board() {
   }
 
   return (
-    <DragDropContext onDragEnd={handleDragEnd}>
-      <h2 style={{ textAlign: "center" }}>PROGRESS BOARD</h2>
-
-      <div className="flex justify-between items-center flex-row mx-2">
-        <Column title={"TO DO"} courses={incomplete} id={"1"} />
-        <Column title={"DONE"} courses={completed} id={"2"} />
-      </div>
-    </DragDropContext>
+    <Box>
+      <Select value={selectedMajor} onChange={handleMajorChange}>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Aerospace Engineering">Aerospace Engineering</option>
+        {/* Add more options for other majors */}
+      </Select>
+      <DragDropContext onDragEnd={handleDragEnd}>
+        <h2 style={{ textAlign: "center" }}>PROGRESS BOARD</h2>
+        <div className="flex justify-between items-center flex-row mx-2">
+          <Column title={"TO DO"} courses={incomplete} id={"1"} />
+          <Column title={"DONE"} courses={completed} id={"2"} />
+        </div>
+      </DragDropContext>
+    </Box>
   );
 }
