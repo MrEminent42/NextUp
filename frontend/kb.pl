@@ -146,24 +146,18 @@ disqualified("CSC307", ["CSC308", "CSC309"]).
 taken("CSC202").
 taken("CSC321").
 taken("CSC307").
+taken("CSC300").
 
 %Predicates
-%Base case: If there are no prerequisites for a course, then it is satisfied.
-prereqsSatisfied(X) :-
-    \+ prerequisite(X, _).
 
-%Recursive case: Check if all prerequisites of a course are taken.
-prereqsSatisfied(X) :-
-    prerequisite(X, Prereqs),
-    allPrereqsTaken(Prereqs).
+testPrereqs(Class) :-
+    prerequisite(Class, Prereqs),
+    preReqsTaken(Prereqs).
 
-%Predicate to check if all prerequisites are taken.
-allPrereqsTaken([]). % Base case: No prerequisites left to check.
-allPrereqsTaken([P|Prereqs]) :-
-    is_list(P),
-    allPrereqsTaken(P);
-    taken(P),            % Check if the prerequisite is taken.
-    allPrereqsTaken(Prereqs). % Recur for the rest of the prerequisites.
+preReqsTaken([]).
+preReqsTaken([P|Prereqs]) :-
+    taken(P),
+    preReqsTaken(Prereqs).
 
 % Could put down every combination of prereqs for a class as multiple different objects, 
 % but seems inefficient if a prolog could do that with a predicate.
