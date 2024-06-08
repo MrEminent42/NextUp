@@ -143,16 +143,17 @@ prerequisite("CSC498", ["CSC497"]).
 
 disqualified("CSC307", ["CSC308", "CSC309"]).
 
-taken("CSC202").
-taken("CSC321").
-taken("CSC307").
-taken("CSC300").
+% taken("CSC202").
+% taken("CSC321").
+% taken("CSC307").
+% taken("CSC300").
 
 %Predicates
 
 testPrereqs(Class) :-
     prerequisite(Class, Prereqs),
-    preReqsTaken(Prereqs).
+    preReqsTaken(Prereqs),
+    \+ taken(Class). % avoid returning classes that are already taken
 
 preReqsTaken([]).
 preReqsTaken([P|Prereqs]) :-
