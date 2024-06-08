@@ -22,18 +22,20 @@ export default function DisplayColumn() {
   const [data, setData] = useState<Course[]>([]);
 
   useEffect(() => {
-    try {
-      findAllClasses().then((classes) => {
-        setData(
-          classes.map(
-            (className, i) =>
-              ({ id: i, title: className, completed: false } as Course)
-          )
+    const fetchClasses = async () => {
+      try {
+        const classes = await findAllClasses();
+        const courses = classes.map(
+          (className: string, i: number) =>
+            ({ id: i, title: className, completed: false } as Course)
         );
-      });
-    } catch (error) {
-      console.error("Error loading classes", error);
-    }
+        setData(courses);
+      } catch (error) {
+        console.error("Error loading classes", error);
+      }
+    };
+
+    fetchClasses();
   }, []);
 
   useEffect(() => {
