@@ -2,8 +2,8 @@
 
 // @ts-ignore
 import TauProlog from "tau-prolog";
-import { promises as fs } from "fs";
 const pl = require("tau-prolog");
+import { knowledgeBase } from "./kb";
 require("tau-prolog/modules/promises.js")(pl);
 
 type Course = {
@@ -13,8 +13,7 @@ type Course = {
 };
 
 export const generatePrologKB = async (completedCourses: Course[]) => {
-  const kb = (await fs.readFile(process.cwd() + "/kb.pl")).toString();
-
+  const kb = knowledgeBase;
   // generate facts for KB about every course taken
   const takenFacts = completedCourses
     .filter((course) => course.completed)
@@ -51,8 +50,7 @@ export const findAvailableClasses = async (completedCourses: Course[]) => {
 
 export const findAllClasses = async () => {
   // load prolog kb from file kb.pl
-  // const kb = (await fs.readFile(process.cwd() + '/kb_simple.pl')).toString();
-  const kb = (await fs.readFile(process.cwd() + "/kb.pl")).toString();
+  const kb = knowledgeBase;
 
   const session = TauProlog.create(1000);
 
@@ -79,7 +77,7 @@ export const findAllClasses = async () => {
 export const findClasses = async () => {
   // load prolog kb from file kb.pl
   // const kb = (await fs.readFile(process.cwd() + '/kb_simple.pl')).toString();
-  const kb = (await fs.readFile(process.cwd() + "/kb.pl")).toString();
+  const kb = knowledgeBase;
 
   const session = TauProlog.create(1000);
 
