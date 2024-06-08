@@ -2,44 +2,62 @@
 import React, { useState, useEffect, use } from "react";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
-import { findAllClasses, findClasses } from "../lib/prolog/findClasses";
 
-export type Course = {
+import {
+  findAvailableClasses,
+} from "../lib/prolog/findClasses";
+import { Button, Center } from "@chakra-ui/react";
+
+type Course = {
   id: number;
   title: string;
   completed: boolean;
 };
+interface BoardProps {
+  completed: Course[];
+  setCompleted: React.Dispatch<React.SetStateAction<Course[]>>;
+  setEligibleCourses: React.Dispatch<React.SetStateAction<Course[]>>;
+  incomplete: Course[];
+  setIncomplete:React.Dispatch<React.SetStateAction<Course[]>>;
+}
 
-interface Result extends DropResult { }
-export default function Board() {
-  const [data, setData] = useState<Course[]>([]);
-  const [completed, setCompleted] = useState<Course[]>([]);
-  const [incomplete, setIncomplete] = useState<Course[]>([]);
-  const [eligibleCourses, setEligibleCourses] = useState<any>();
+interface Result extends DropResult {}
+export default function Board({
+  completed,
+  setCompleted,
+  setEligibleCourses,
+  incomplete,
+  setIncomplete,
+}: BoardProps) {
 
-
-  useEffect(() => {
-
-    findAllClasses().then(classes => {
-      setData(classes.map((className, i) => ({ id: i, title: className, completed: false } as Course)));
-    });
-  }, []);
-
-  useEffect(() => {
-    const completedCourses = data.filter((course) => course.completed);
-    const incompleteCourses = data.filter((course) => !course.completed);
-
-    setCompleted(completedCourses);
-    setIncomplete(incompleteCourses);
-  }, [data]);
-
+  const handleSend = async () => {
+    if(completed.length <= 0) {
+      alert("Please add courses before submitting form");
+      return;
+    }
+    try {
+      findAvailableClasses(completed).then((classes) => {
+        setEligibleCourses(
+          classes.map(
+            (className, i) =>
+              ({ id: i+1, title: className, completed: false } as Course)
+          )
+        );
+      });
+    } catch (error) {
+      console.error("Error finding available classes:", error);
+    }
+  };
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
     if (!destination || source.droppableId === destination.droppableId) return;
 
     deletePreviousState(source.droppableId, parseInt(draggableId));
 
-    const course = findItemById(parseInt(draggableId), [...incomplete, ...completed]);
+    const course = findItemById(parseInt(draggableId), [
+      ...incomplete,
+      ...completed,
+    ]);
 
     if (course) {
       setNewState(destination.droppableId, course);
@@ -78,13 +96,22 @@ export default function Board() {
   }
 
   return (
-    <DragDropContext onDragEnd={handleDragEnd}>
-      <h2 style={{ textAlign: "center" }}>PROGRESS BOARD</h2>
-
-      <div className="flex justify-between items-center flex-row mx-2">
-        <Column title={"TO DO"} courses={incomplete} id={"1"} />
-        <Column title={"DONE"} courses={completed} id={"2"} />
-      </div>
-    </DragDropContext>
+    <div>
+      <DragDropContext onDragEnd={handleDragEnd}>
+        <h1 className="text-2xl text-center font-bold">Progress Board</h1>
+        <div className="flex justify-between items-center flex-row mx-2 mt-5">
+          <Column title={"TO DO"} courses={incomplete} id={"1"} />
+          <Column title={"DONE"} courses={completed} id={"2"} />
+        </div>
+      </DragDropContext>
+      <Center className="my-4">
+        <Button
+          className="block mx-auto text-center border-black bg-white rou"
+          onClick={handleSend}
+        >
+          Submit
+        </Button>
+      </Center>
+    </div>
   );
 }
