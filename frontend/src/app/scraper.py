@@ -38,12 +38,12 @@ def extract_course_details(url):
                     break
 
         courses.append({
+            'id': f"{prefix}{number}",
             'title': course_title,
-            'prefix': prefix,
-            'number': int(number),
-            'units': units,
             'description': description.strip(),
-            'prerequisites': prerequisites
+            'units': units,
+            'prerequisites': prerequisites,
+            'completed': False
         })
 
     return courses
@@ -68,22 +68,22 @@ for table in tables:
 df_department = pd.DataFrame(departments, columns=['Department', 'Link'])
 
 # Dictionary to store course data for each department
-department_courses = {}
+all_courses = []
 
 # Loop through the departments and extract course data
 for index, row in df_department.iterrows():
     full_url = "https://catalog.calpoly.edu" + row['Link']
     print(f"Fetching courses for {row['Department']} from {full_url}")
     courses = extract_course_details(full_url)
+    all_courses.extend(courses)
 
-    # Create a dataframe for each department and store it in a dictionary
-    df_courses = pd.DataFrame(courses)
-    department_courses[row['Department']] = df_courses
+# Convert list of dictionaries to DataFrame
+all_courses_df = pd.DataFrame(all_courses)
 
-# Example: Access courses for a specific department
-specific_department = "Computer Science"
-if specific_department in department_courses:
-    print(f"Courses for {specific_department}:")
-    print(department_courses[specific_department])
-else:
-    print(f"No courses found for {specific_department}.")
+# Convert DataFrame to JSON list and save to file
+courses_json = all_courses_df.to_json(orient='records')
+
+with open('coursesData.json', 'w') as f:
+    f.write(courses_json)
+
+print("Courses data saved to coursesData.json")
