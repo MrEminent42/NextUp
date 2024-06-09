@@ -57,6 +57,7 @@ class("Computer Science", "CSC498").
 class("Computer Science", "PHIL230").
 class("Computer Science", "PHIL231").
 class("Computer Science", "PHIL323").
+class("Computer Science", "MATH118").
 class("Computer Science", "MATH141").
 class("Computer Science", "MATH142").
 class("Computer Science", "MATH143").
@@ -201,10 +202,9 @@ prerequisite("CE207", ["ME211"]).
 prerequisite("CE208", ["ME211"]).
 prerequisite("EE201", ["PHYS142"]).
 prerequisite("EE251", ["EE201"]).
-prerequisite("CHEM124", []).
+prerequisite("CHEM124", ["MATH118"]).
 prerequisite("IME144", []).
 prerequisite("MATE210", ["CHEM124"]).
-prerequisite("MATH141", []).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
@@ -251,47 +251,47 @@ prerequisite("PHYS 142", ["PHYS 141"]).
 prerequisite("PHYS 143", ["PHYS 142"]).
 prerequisite("STAT 312", ["MATH 142"]).
 
-major("Agribusiness").
+major("Agricultural Business").
 
-class("Agribusiness", "AGB101").
-class("Agribusiness", "AGB202").
-class("Agribusiness", "AGB212").
-class("Agribusiness", "AGB214").
-class("Agribusiness", "AGB260").
-class("Agribusiness", "AGB301").
-class("Agribusiness", "AGB308").
-class("Agribusiness", "AGB312").
-class("Agribusiness", "AGB313").
-class("Agribusiness", "AGB323").
-class("Agribusiness", "AGB327").
-class("Agribusiness", "AGB328").
-class("Agribusiness", "AGB369").
-class("Agribusiness", "AGB462").
-class("Agribusiness", "AGB463").
-class("Agribusiness", "AGC314").
-class("Agribusiness", "AGC452").
-class("Agribusiness", "AGC475").
-class("Agribusiness", "NR326").
-class("Agribusiness", "NR408").
-class("Agribusiness", "NR413").
-class("Agribusiness", "WVIT343").
-class("Agribusiness", "WVIT423").
-class("Agribusiness", "WVIT450").
-class("Agribusiness", "BUS207").
-class("Agribusiness", "ECON222").
-class("Agribusiness", "MATH221").
-class("Agribusiness", "STAT251").
-class("Agribusiness", "ASCI112").
-class("Agribusiness", "ASCI211").
-class("Agribusiness", "ASCI215").
-class("Agribusiness", "ASCI239").
-class("Agribusiness", "DSCI229").
-class("Agribusiness", "FSN275").
-class("Agribusiness", "PLSC120").
-class("Agribusiness", "PLSC150").
-class("Agribusiness", "PLSC230").
-class("Agribusiness", "SS120").
-class("Agribusiness", "SS130").
+class("Agricultural Business", "AGB101").
+class("Agricultural Business", "AGB202").
+class("Agricultural Business", "AGB212").
+class("Agricultural Business", "AGB214").
+class("Agricultural Business", "AGB260").
+class("Agricultural Business", "AGB301").
+class("Agricultural Business", "AGB308").
+class("Agricultural Business", "AGB312").
+class("Agricultural Business", "AGB313").
+class("Agricultural Business", "AGB323").
+class("Agricultural Business", "AGB327").
+class("Agricultural Business", "AGB328").
+class("Agricultural Business", "AGB369").
+class("Agricultural Business", "AGB462").
+class("Agricultural Business", "AGB463").
+class("Agricultural Business", "AGC314").
+class("Agricultural Business", "AGC452").
+class("Agricultural Business", "AGC475").
+class("Agricultural Business", "NR326").
+class("Agricultural Business", "NR408").
+class("Agricultural Business", "NR413").
+class("Agricultural Business", "WVIT343").
+class("Agricultural Business", "WVIT423").
+class("Agricultural Business", "WVIT450").
+class("Agricultural Business", "BUS207").
+class("Agricultural Business", "ECON222").
+class("Agricultural Business", "MATH221").
+class("Agricultural Business", "STAT251").
+class("Agricultural Business", "ASCI112").
+class("Agricultural Business", "ASCI211").
+class("Agricultural Business", "ASCI215").
+class("Agricultural Business", "ASCI239").
+class("Agricultural Business", "DSCI229").
+class("Agricultural Business", "FSN275").
+class("Agricultural Business", "PLSC120").
+class("Agricultural Business", "PLSC150").
+class("Agricultural Business", "PLSC230").
+class("Agricultural Business", "SS120").
+class("Agricultural Business", "SS130").
 
 prerequisite("AGB101", []).
 prerequisite("AGB202", []).
@@ -1785,7 +1785,6 @@ prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
 prerequisite("CSC232", ["MATH141"]).
 prerequisite("CSC234", ["MATH141"]).
-prerequisite("MATH206", ["MATH141"]).
 prerequisite("MATH244", ["MATH143"]).
 prerequisite("STAT218", ["MATH142"]).
 prerequisite("STAT312", ["MATH142"]).
@@ -2240,7 +2239,6 @@ prerequisite("CHEM125", ["CHEM124"]).
 prerequisite("GEOL201", []).
 prerequisite("MATE210", ["CHEM125"]).
 prerequisite("MATE215", ["MATE210"]).
-prerequisite("MATH141", []).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
@@ -2491,7 +2489,6 @@ prerequisite("PHIL339", []).
 prerequisite("PHIL340", []).
 prerequisite("ES350", []).
 prerequisite("ES351", []).
-prerequisite("MATH141", []).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
@@ -2617,7 +2614,6 @@ prerequisite("PHYS142", ["PHYS141"]).
 prerequisite("CHEM124", ["MATH118"]).
 prerequisite("CHEM127", ["MATH118"]).
 prerequisite("STAT251", ["MATH118"]).
-prerequisite("STAT312", ["MATH118"]).
 
 major("Dairy Science").
 
@@ -2946,14 +2942,13 @@ prerequisite("EE375", ["EE335"]).
 prerequisite("EE402", ["EE335"]).
 prerequisite("EE409", ["EE308", "EE348"]).
 prerequisite("EE449", ["EE409"]).
-prerequisite("EE460", [""]).
+prerequisite("EE460", []).
 prerequisite("EE461", ["EE460"]).
 prerequisite("EE462", ["EE461"]).
 prerequisite("EE463", ["EE460"]).
 prerequisite("EE464", ["EE463"]).
 prerequisite("BIO213", []).
 prerequisite("BMED213", ["BIO213"]).
-prerequisite("CHEM124", [""]).
 prerequisite("CSC/CPE101", []).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
@@ -3247,7 +3242,6 @@ prerequisite("ENVE439", ["ENVE325"]).
 prerequisite("ENVE443", ["ENVE325"]).
 prerequisite("ENVE455", ["ENVE325"]).
 prerequisite("ENVE480", ["ENVE325"]).
-prerequisite("CHEM124", ["High School Chemistry"]).
 prerequisite("CHEM125", ["CHEM124"]).
 prerequisite("CHEM126", ["CHEM125"]).
 prerequisite("CHEM312", ["CHEM126"]).
@@ -3261,7 +3255,6 @@ prerequisite("ME211", ["PHYS141", "MATH141"]).
 prerequisite("PHYS141", ["MATH141"]).
 prerequisite("PHYS142", ["PHYS141"]).
 prerequisite("PHYS143", ["PHYS142"]).
-prerequisite("STAT312", ["MATH141"]).
 
 major("Environmental Management and Protection").
 
@@ -3357,9 +3350,9 @@ prerequisite("BRAE345", []).
 prerequisite("BRAE348", []).
 prerequisite("ENVE324", []).
 prerequisite("NR310", []).
-prerequisite("CHEM127", [""]).
-prerequisite("MATH161", [""]).
-prerequisite("MATH221", [""]).
+prerequisite("CHEM127", []).
+prerequisite("MATH161", []).
+prerequisite("MATH221", []).
 prerequisite("PHYS121", ["MATH141"]).
 prerequisite("SS120", []).
 prerequisite("STAT217", ["MATH118"]).
@@ -3417,16 +3410,15 @@ prerequisite("FSN407", ["FSN364"]).
 prerequisite("FSN408", ["FSN335", "FSN364"]).
 prerequisite("FSN469", ["FSN408"]).
 prerequisite("BIO111", []).
-prerequisite("CHEM127", [""]).
+prerequisite("CHEM127", []).
 prerequisite("CHEM128", ["CHEM127"]).
 prerequisite("CHEM312", ["CHEM128"]).
 prerequisite("CHEM314", ["CHEM312"]).
-prerequisite("MATH161", [""]).
-prerequisite("MATH141", [""]).
+prerequisite("MATH161", []).
 prerequisite("MCRO221", ["CHEM127"]).
 prerequisite("MCRO421", ["MCRO221"]).
 prerequisite("PHYS121", ["MATH141"]).
-prerequisite("STAT218", [""]).
+prerequisite("STAT218", []).
 prerequisite("STAT314", ["STAT218"]).
 
 major("Forest and Fire Sciences").
@@ -3577,13 +3569,11 @@ prerequisite("ME343", ["ME341"]).
 prerequisite("ENGR459", ["Senior Standing"]).
 prerequisite("ENGR460", ["ENGR459"]).
 prerequisite("ENGR461", ["ENGR460"]).
-prerequisite("CHEM124", []).
 prerequisite("CHEM125", ["CHEM124"]).
 prerequisite("CHEM127", []).
 prerequisite("CHEM128", ["CHEM127"]).
 prerequisite("ES350", []).
 prerequisite("ES351", []).
-prerequisite("MATH141", []).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
@@ -3654,9 +3644,9 @@ prerequisite("GRC402", ["GRC204"]).
 prerequisite("GRC404", ["GRC204"]).
 prerequisite("GRC411", ["GRC204"]).
 prerequisite("GRC422", ["GRC204"]).
-prerequisite("GRC461", [""]).
-prerequisite("GRC462", [""]).
-prerequisite("GRC463", [""]).
+prerequisite("GRC461", []).
+prerequisite("GRC462", []).
+prerequisite("GRC463", []).
 prerequisite("CHEM110", []).
 prerequisite("MATH118", []).
 prerequisite("PHYS104", []).
@@ -3987,7 +3977,6 @@ prerequisite("ME212", ["ME211"]).
 prerequisite("PSY350", ["PSY201"]).
 prerequisite("BIO213", ["Junior Standing"]).
 prerequisite("BMED213", ["BIO213"]).
-prerequisite("CHEM124", ["Junior Standing"]).
 prerequisite("CSC232", ["CSC101"]).
 prerequisite("CPE101", ["Junior Standing"]).
 prerequisite("CSC101", ["Junior Standing"]).
@@ -3996,7 +3985,6 @@ prerequisite("EE251", ["EE201"]).
 prerequisite("ENGL147", ["Junior Standing"]).
 prerequisite("MATE210", ["Junior Standing"]).
 prerequisite("MATE215", ["MATE210"]).
-prerequisite("MATH141", ["Junior Standing"]).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
@@ -4058,10 +4046,8 @@ prerequisite("ITP461", ["Senior Standing"]).
 prerequisite("ITP462", ["ITP461"]).
 prerequisite("BUS346", ["ECON201"]).
 prerequisite("BUS391", ["ITP125"]).
-prerequisite("CHEM124", []).
 prerequisite("CHEM127", ["CHEM124"]).
 prerequisite("ECON201", []).
-prerequisite("MATH141", []).
 prerequisite("MATH221", ["MATH141"]).
 prerequisite("PHYS121", ["MATH141"]).
 prerequisite("PHYS123", ["PHYS121"]).
@@ -4200,6 +4186,2074 @@ prerequisite("STAT130", []).
 prerequisite("STAT217", []).
 prerequisite("STAT218", []).
 prerequisite("STAT251", []).
+
+major("Kinesiology").
+
+class("Kinesiology", "KINE180").
+class("Kinesiology", "HLTH250").
+class("Kinesiology", "HLTH255").
+class("Kinesiology", "HLTH260").
+class("Kinesiology", "KINE266").
+class("Kinesiology", "KINE301").
+class("Kinesiology", "KINE303").
+class("Kinesiology", "KINE304").
+class("Kinesiology", "KINE307").
+class("Kinesiology", "KINE312").
+class("Kinesiology", "KINE319").
+class("Kinesiology", "KINE349").
+class("Kinesiology", "KINE401").
+class("Kinesiology", "KINE403").
+class("Kinesiology", "KINE412").
+class("Kinesiology", "KINE451").
+class("Kinesiology", "KINE459").
+class("Kinesiology", "KINE460").
+class("Kinesiology", "KINE461").
+class("Kinesiology", "KINE462").
+class("Kinesiology", "KINE463").
+class("Kinesiology", "BIO162").
+class("Kinesiology", "BIO253").
+class("Kinesiology", "BIO305").
+class("Kinesiology", "CHEM129").
+class("Kinesiology", "CHEM217").
+class("Kinesiology", "CHEM220").
+class("Kinesiology", "CHEM314").
+class("Kinesiology", "COMS211").
+class("Kinesiology", "COMS213").
+class("Kinesiology", "COMS301").
+class("Kinesiology", "COMS313").
+class("Kinesiology", "COMS316").
+class("Kinesiology", "FSN310").
+class("Kinesiology", "FSN315").
+class("Kinesiology", "FSN415").
+class("Kinesiology", "FSN416").
+class("Kinesiology", "HLTH297").
+class("Kinesiology", "HLTH305").
+class("Kinesiology", "HLTH320").
+class("Kinesiology", "IME320").
+class("Kinesiology", "KINE181").
+class("Kinesiology", "KINE201").
+class("Kinesiology", "KINE308").
+class("Kinesiology", "KINE323").
+class("Kinesiology", "KINE382").
+class("Kinesiology", "KINE400").
+class("Kinesiology", "KINE406").
+class("Kinesiology", "KINE409").
+class("Kinesiology", "KINE446").
+class("Kinesiology", "PHYS122").
+class("Kinesiology", "PHYS123").
+class("Kinesiology", "PSY201").
+class("Kinesiology", "PSY202").
+class("Kinesiology", "PSY252").
+class("Kinesiology", "PSY256").
+class("Kinesiology", "PSY302").
+class("Kinesiology", "PSY310").
+class("Kinesiology", "PSY318").
+class("Kinesiology", "PSY320").
+class("Kinesiology", "PSY340").
+class("Kinesiology", "PSY350").
+class("Kinesiology", "RPTA160").
+class("Kinesiology", "RPTA255").
+class("Kinesiology", "RPTA275").
+class("Kinesiology", "RPTA450").
+class("Kinesiology", "BIO161").
+class("Kinesiology", "BIO231").
+class("Kinesiology", "BIO232").
+class("Kinesiology", "CHEM127").
+class("Kinesiology", "CHEM128").
+class("Kinesiology", "CHEM312").
+class("Kinesiology", "CHEM216").
+class("Kinesiology", "MATH119").
+class("Kinesiology", "MATH141").
+class("Kinesiology", "PHYS121").
+class("Kinesiology", "STAT218").
+
+prerequisite("KINE180", []).
+prerequisite("HLTH250", []).
+prerequisite("HLTH255", []).
+prerequisite("HLTH260", []).
+prerequisite("KINE266", ["KINE180"]).
+prerequisite("KINE301", ["BIO231"]).
+prerequisite("KINE303", ["BIO232"]).
+prerequisite("KINE304", ["KINE303"]).
+prerequisite("KINE307", ["KINE180"]).
+prerequisite("KINE312", ["KINE301"]).
+prerequisite("KINE319", ["KINE301"]).
+prerequisite("KINE349", ["KINE303"]).
+prerequisite("KINE401", ["KINE319"]).
+prerequisite("KINE403", ["KINE301"]).
+prerequisite("KINE412", ["KINE303"]).
+prerequisite("KINE451", ["KINE303"]).
+prerequisite("KINE459", ["KINE349"]).
+prerequisite("KINE460", ["Senior Standing"]).
+prerequisite("KINE461", ["Senior Standing"]).
+prerequisite("KINE462", ["Senior Standing"]).
+prerequisite("KINE463", ["Senior Standing"]).
+prerequisite("BIO162", ["BIO161"]).
+prerequisite("BIO253", ["BIO231"]).
+prerequisite("BIO305", ["BIO231"]).
+prerequisite("CHEM129", ["CHEM127", "CHEM128"]).
+prerequisite("CHEM217", ["CHEM216"]).
+prerequisite("CHEM220", ["CHEM217"]).
+prerequisite("CHEM314", ["CHEM312"]).
+prerequisite("COMS211", ["COMS101"]).
+prerequisite("COMS213", ["COMS101"]).
+prerequisite("COMS301", ["COMS101"]).
+prerequisite("COMS313", ["COMS101"]).
+prerequisite("COMS316", ["COMS101"]).
+prerequisite("FSN310", ["FSN210"]).
+prerequisite("FSN315", ["FSN210"]).
+prerequisite("FSN415", ["FSN210"]).
+prerequisite("FSN416", ["FSN210"]).
+prerequisite("HLTH297", ["HLTH101"]).
+prerequisite("HLTH305", ["HLTH101"]).
+prerequisite("HLTH320", ["HLTH101"]).
+prerequisite("IME320", ["IME319"]).
+prerequisite("KINE181", ["KINE101"]).
+prerequisite("KINE201", ["KINE101"]).
+prerequisite("KINE308", ["KINE301"]).
+prerequisite("KINE323", ["KINE101"]).
+prerequisite("KINE382", ["KINE301"]).
+prerequisite("KINE400", ["KINE301"]).
+prerequisite("KINE406", ["KINE301"]).
+prerequisite("KINE409", ["KINE301"]).
+prerequisite("KINE446", ["KINE301"]).
+prerequisite("PHYS122", ["PHYS121"]).
+prerequisite("PHYS123", ["PHYS122"]).
+prerequisite("PSY201", ["PSY101"]).
+prerequisite("PSY202", ["PSY101"]).
+prerequisite("PSY252", ["PSY101"]).
+prerequisite("PSY256", ["PSY101"]).
+prerequisite("PSY302", ["PSY101"]).
+prerequisite("PSY310", ["PSY101"]).
+prerequisite("PSY318", ["PSY101"]).
+prerequisite("PSY320", ["PSY101"]).
+prerequisite("PSY340", ["PSY101"]).
+prerequisite("PSY350", ["PSY101"]).
+prerequisite("RPTA160", ["RPTA101"]).
+prerequisite("RPTA255", ["RPTA101"]).
+prerequisite("RPTA275", ["RPTA101"]).
+prerequisite("RPTA450", ["RPTA101"]).
+prerequisite("BIO161", []).
+prerequisite("BIO231", ["BIO161"]).
+prerequisite("BIO232", ["BIO231"]).
+prerequisite("CHEM127", []).
+prerequisite("CHEM128", ["CHEM127"]).
+prerequisite("CHEM312", ["CHEM128"]).
+prerequisite("CHEM216", ["CHEM128"]).
+prerequisite("MATH119", ["MATH118"]).
+prerequisite("MATH141", ["MATH119"]).
+prerequisite("PHYS121", ["MATH119"]).
+prerequisite("STAT218", ["MATH118"]).
+
+major("Landscape Architecture").
+
+class("Landscape Architecture", "LA101").
+class("Landscape Architecture", "LA170").
+class("Landscape Architecture", "LA171").
+class("Landscape Architecture", "LA202").
+class("Landscape Architecture", "LA203").
+class("Landscape Architecture", "LA204").
+class("Landscape Architecture", "LA211").
+class("Landscape Architecture", "LA212").
+class("Landscape Architecture", "LA220").
+class("Landscape Architecture", "LA221").
+class("Landscape Architecture", "PLSC381").
+class("Landscape Architecture", "LA241").
+class("Landscape Architecture", "LA242").
+class("Landscape Architecture", "LA243").
+class("Landscape Architecture", "LA320").
+class("Landscape Architecture", "LA330").
+class("Landscape Architecture", "LA349").
+class("Landscape Architecture", "LA370").
+class("Landscape Architecture", "LA371").
+class("Landscape Architecture", "LA401").
+class("Landscape Architecture", "LA402").
+class("Landscape Architecture", "LA403").
+class("Landscape Architecture", "LA404").
+class("Landscape Architecture", "LA405").
+class("Landscape Architecture", "LA406").
+class("Landscape Architecture", "LA431").
+class("Landscape Architecture", "LA432").
+class("Landscape Architecture", "LA433").
+class("Landscape Architecture", "LA434").
+class("Landscape Architecture", "LA435").
+class("Landscape Architecture", "LA436").
+class("Landscape Architecture", "LA437").
+class("Landscape Architecture", "LA438").
+class("Landscape Architecture", "LA439").
+class("Landscape Architecture", "LA461").
+class("Landscape Architecture", "BOT121").
+class("Landscape Architecture", "BIO114").
+class("Landscape Architecture", "CRP212").
+class("Landscape Architecture", "EDES123").
+class("Landscape Architecture", "MATH118").
+class("Landscape Architecture", "MATH119").
+class("Landscape Architecture", "PLSC233").
+class("Landscape Architecture", "PLSC234").
+class("Landscape Architecture", "BIO227").
+class("Landscape Architecture", "BRAE337").
+class("Landscape Architecture", "SS120").
+class("Landscape Architecture", "STAT217").
+class("Landscape Architecture", "STAT218").
+
+prerequisite("LA101", []).
+prerequisite("LA170", []).
+prerequisite("LA171", []).
+prerequisite("LA202", ["LA101", "LA170", "LA171"]).
+prerequisite("LA203", ["LA202"]).
+prerequisite("LA204", ["LA203"]).
+prerequisite("LA211", ["LA101"]).
+prerequisite("LA212", ["LA101"]).
+prerequisite("LA220", ["LA101"]).
+prerequisite("LA221", ["LA101"]).
+prerequisite("PLSC381", ["LA101"]).
+prerequisite("LA241", ["LA202"]).
+prerequisite("LA242", ["LA202"]).
+prerequisite("LA243", ["LA202"]).
+prerequisite("LA320", ["LA202"]).
+prerequisite("LA330", ["LA202"]).
+prerequisite("LA349", ["LA202"]).
+prerequisite("LA370", ["LA202"]).
+prerequisite("LA371", ["LA202"]).
+prerequisite("LA401", ["LA202"]).
+prerequisite("LA402", ["LA204"]).
+prerequisite("LA403", ["LA204"]).
+prerequisite("LA404", ["LA204"]).
+prerequisite("LA405", ["LA204"]).
+prerequisite("LA406", ["LA204"]).
+prerequisite("LA431", ["LA202"]).
+prerequisite("LA432", ["LA202"]).
+prerequisite("LA433", ["LA202"]).
+prerequisite("LA434", ["LA202"]).
+prerequisite("LA435", ["LA202"]).
+prerequisite("LA436", ["LA202"]).
+prerequisite("LA437", ["LA202"]).
+prerequisite("LA438", ["LA202"]).
+prerequisite("LA439", ["LA202"]).
+prerequisite("LA461", ["LA202"]).
+prerequisite("BOT121", []).
+prerequisite("BIO114", []).
+prerequisite("CRP212", []).
+prerequisite("EDES123", []).
+prerequisite("MATH118", ["High School Algebra"]).
+prerequisite("MATH119", ["MATH118"]).
+prerequisite("PLSC233", ["BOT121"]).
+prerequisite("PLSC234", ["PLSC233"]).
+prerequisite("BIO227", ["BIO114"]).
+prerequisite("BRAE337", ["BOT121"]).
+prerequisite("SS120", ["BOT121"]).
+prerequisite("STAT217", ["MATH118"]).
+prerequisite("STAT218", ["MATH118"]).
+
+major("Liberal Arts and Engineering Studies").
+
+class("Liberal Arts and Engineering Studies", "CHEM124").
+class("Liberal Arts and Engineering Studies", "LAES301").
+class("Liberal Arts and Engineering Studies", "LAES302").
+class("Liberal Arts and Engineering Studies", "LAES461").
+class("Liberal Arts and Engineering Studies", "LAES462").
+class("Liberal Arts and Engineering Studies", "MATH141").
+class("Liberal Arts and Engineering Studies", "MATH142").
+class("Liberal Arts and Engineering Studies", "MATH143").
+class("Liberal Arts and Engineering Studies", "MATH241").
+class("Liberal Arts and Engineering Studies", "MATH244").
+class("Liberal Arts and Engineering Studies", "PHYS141").
+class("Liberal Arts and Engineering Studies", "PHYS142").
+class("Liberal Arts and Engineering Studies", "PHYS143").
+class("Liberal Arts and Engineering Studies", "STAT312").
+class("Liberal Arts and Engineering Studies", "STAT321").
+class("Liberal Arts and Engineering Studies", "STAT350").
+
+prerequisite("LAES301", []).
+prerequisite("LAES302", ["LAES301"]).
+prerequisite("LAES461", ["LAES302"]).
+prerequisite("LAES462", ["LAES461"]).
+prerequisite("MATH142", ["MATH141"]).
+prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH241", ["MATH143"]).
+prerequisite("MATH244", ["MATH143"]).
+prerequisite("PHYS141", ["MATH141"]).
+prerequisite("PHYS142", ["PHYS141"]).
+prerequisite("PHYS143", ["PHYS142"]).
+prerequisite("STAT312", ["MATH241"]).
+prerequisite("STAT321", ["MATH241"]).
+prerequisite("STAT350", ["MATH241"]).
+
+major("Liberal Studies").
+
+class("Liberal Studies", "LS201").
+class("Liberal Studies", "LS211").
+class("Liberal Studies", "LS214").
+class("Liberal Studies", "LS230").
+class("Liberal Studies", "LS250").
+class("Liberal Studies", "LS255").
+class("Liberal Studies", "LS301").
+class("Liberal Studies", "LS310").
+class("Liberal Studies", "LS370").
+class("Liberal Studies", "LS411").
+class("Liberal Studies", "LS412").
+class("Liberal Studies", "LS413").
+class("Liberal Studies", "LS461").
+class("Liberal Studies", "LS462").
+class("Liberal Studies", "ASTR101").
+class("Liberal Studies", "BIO111").
+class("Liberal Studies", "BIO211").
+class("Liberal Studies", "ENGL391").
+class("Liberal Studies", "GEOG308").
+class("Liberal Studies", "HIST201").
+class("Liberal Studies", "HIST208").
+class("Liberal Studies", "HIST210").
+class("Liberal Studies", "KINE310").
+class("Liberal Studies", "HLTH443").
+class("Liberal Studies", "MATH227").
+class("Liberal Studies", "MATH328").
+class("Liberal Studies", "MATH329").
+class("Liberal Studies", "MATH330").
+class("Liberal Studies", "PHIL230").
+class("Liberal Studies", "PHIL231").
+class("Liberal Studies", "PSC101").
+class("Liberal Studies", "PSC102").
+class("Liberal Studies", "PSC103").
+class("Liberal Studies", "PSY201").
+class("Liberal Studies", "PSY202").
+class("Liberal Studies", "STAT130").
+class("Liberal Studies", "STAT217").
+class("Liberal Studies", "CD207").
+class("Liberal Studies", "EDUC207").
+class("Liberal Studies", "EDUC427").
+class("Liberal Studies", "EDUC428").
+
+prerequisite("LS201", []).
+prerequisite("LS211", []).
+prerequisite("LS214", []).
+prerequisite("LS230", ["LS201"]).
+prerequisite("LS250", ["LS230"]).
+prerequisite("LS255", ["ENGL100"]).
+prerequisite("LS301", ["LS201"]).
+prerequisite("LS310", ["LS214"]).
+prerequisite("LS370", ["LS214"]).
+prerequisite("LS411", ["LS370"]).
+prerequisite("LS412", ["LS370"]).
+prerequisite("LS413", ["LS370"]).
+prerequisite("LS461", ["LS310"]).
+prerequisite("LS462", ["LS310"]).
+prerequisite("ASTR101", ["MATH118"]).
+prerequisite("BIO111", ["CHEM127"]).
+prerequisite("BIO211", ["BIO111"]).
+prerequisite("ENGL391", ["ENGL134"]).
+prerequisite("GEOG308", ["GEOG150"]).
+prerequisite("HIST201", ["ENGL100"]).
+prerequisite("HIST208", ["HIST201"]).
+prerequisite("HIST210", ["ENGL100"]).
+prerequisite("KINE310", ["BIO111"]).
+prerequisite("HLTH443", ["BIO111"]).
+prerequisite("MATH227", ["MATH118"]).
+prerequisite("MATH328", ["MATH227"]).
+prerequisite("MATH329", ["MATH328"]).
+prerequisite("MATH330", ["MATH329"]).
+prerequisite("PHIL230", ["PHIL100"]).
+prerequisite("PHIL231", ["PHIL100"]).
+prerequisite("PSC101", ["MATH118"]).
+prerequisite("PSC102", ["PSC101"]).
+prerequisite("PSC103", ["PSC102"]).
+prerequisite("PSY201", ["ENGL100"]).
+prerequisite("PSY202", ["ENGL100"]).
+prerequisite("STAT130", ["MATH118"]).
+prerequisite("STAT217", ["MATH118"]).
+prerequisite("CD207", ["PSY201"]).
+prerequisite("EDUC207", ["PSY201"]).
+prerequisite("EDUC427", ["ENGL391"]).
+prerequisite("EDUC428", ["ENGL391"]).
+
+major("Manufacturing Engineering").
+
+class("Manufacturing Engineering", "IME101").
+class("Manufacturing Engineering", "IME141").
+class("Manufacturing Engineering", "IME142").
+class("Manufacturing Engineering", "IME144").
+class("Manufacturing Engineering", "IME156").
+class("Manufacturing Engineering", "IME223").
+class("Manufacturing Engineering", "IME244").
+class("Manufacturing Engineering", "IME314").
+class("Manufacturing Engineering", "IME315").
+class("Manufacturing Engineering", "IME327").
+class("Manufacturing Engineering", "IME330").
+class("Manufacturing Engineering", "IME335").
+class("Manufacturing Engineering", "IME342").
+class("Manufacturing Engineering", "IME356").
+class("Manufacturing Engineering", "IME417").
+class("Manufacturing Engineering", "IME418").
+class("Manufacturing Engineering", "IME430").
+class("Manufacturing Engineering", "IME450").
+class("Manufacturing Engineering", "IME481").
+class("Manufacturing Engineering", "IME482").
+class("Manufacturing Engineering", "IME483").
+
+prerequisite("IME101", []).
+prerequisite("IME141", []).
+prerequisite("IME142", ["IME141"]).
+prerequisite("IME144", ["IME101"]).
+prerequisite("IME156", ["IME144"]).
+prerequisite("IME223", ["IME144"]).
+prerequisite("IME244", ["IME223"]).
+prerequisite("IME314", ["IME223"]).
+prerequisite("IME315", ["IME314"]).
+prerequisite("IME327", ["IME223"]).
+prerequisite("IME330", ["IME327"]).
+prerequisite("IME335", ["IME330"]).
+prerequisite("IME342", ["IME335"]).
+prerequisite("IME356", ["IME342"]).
+prerequisite("IME417", ["IME356"]).
+prerequisite("IME418", ["IME417"]).
+prerequisite("IME430", ["IME418"]).
+prerequisite("IME450", ["IME430"]).
+prerequisite("IME481", ["IME450"]).
+prerequisite("IME482", ["IME481"]).
+prerequisite("IME483", ["IME482"]).
+
+major("Marine Sciences").
+
+class("Marine Sciences", "BIO150").
+class("Marine Sciences", "BIO161").
+class("Marine Sciences", "BIO162").
+class("Marine Sciences", "BIO263").
+class("Marine Sciences", "BIO461").
+class("Marine Sciences", "BIO462").
+class("Marine Sciences", "CHEM302").
+class("Marine Sciences", "MSCI100").
+class("Marine Sciences", "MSCI300").
+class("Marine Sciences", "MSCI301").
+class("Marine Sciences", "MSCI403").
+class("Marine Sciences", "PSC201").
+
+prerequisite("BIO150", []).
+prerequisite("BIO161", ["BIO150"]).
+prerequisite("BIO162", ["BIO161"]).
+prerequisite("BIO263", ["BIO162"]).
+prerequisite("BIO461", ["BIO263"]).
+prerequisite("BIO462", ["BIO461"]).
+prerequisite("CHEM302", ["CHEM129"]).
+prerequisite("MSCI100", []).
+prerequisite("MSCI300", ["MSCI100"]).
+prerequisite("MSCI301", ["MSCI300"]).
+prerequisite("MSCI403", ["MSCI301"]).
+prerequisite("PSC201", ["CHEM128"]).
+
+major("Materials Engineering").
+
+class("Materials Engineering", "MATE110").
+class("Materials Engineering", "MATE120").
+class("Materials Engineering", "MATE210").
+class("Materials Engineering", "MATE215").
+class("Materials Engineering", "MATE225").
+class("Materials Engineering", "MATE232").
+class("Materials Engineering", "MATE235").
+class("Materials Engineering", "MATE245").
+class("Materials Engineering", "MATE280").
+class("Materials Engineering", "MATE300").
+class("Materials Engineering", "MATE310").
+class("Materials Engineering", "MATE325").
+class("Materials Engineering", "MATE340").
+class("Materials Engineering", "MATE350").
+class("Materials Engineering", "MATE360").
+class("Materials Engineering", "MATE370").
+class("Materials Engineering", "MATE480").
+class("Materials Engineering", "MATE482").
+class("Materials Engineering", "MATE483").
+class("Materials Engineering", "MATE484").
+
+prerequisite("MATE110", []).
+prerequisite("MATE120", ["MATE110"]).
+prerequisite("MATE210", ["MATE120"]).
+prerequisite("MATE215", ["MATE210"]).
+prerequisite("MATE225", ["MATE215"]).
+prerequisite("MATE232", ["MATE225"]).
+prerequisite("MATE235", ["MATE232"]).
+prerequisite("MATE245", ["MATE235"]).
+prerequisite("MATE280", ["MATE245"]).
+prerequisite("MATE300", ["MATE280"]).
+prerequisite("MATE310", ["MATE300"]).
+prerequisite("MATE325", ["MATE310"]).
+prerequisite("MATE340", ["MATE325"]).
+prerequisite("MATE350", ["MATE340"]).
+prerequisite("MATE360", ["MATE350"]).
+prerequisite("MATE370", ["MATE360"]).
+prerequisite("MATE480", ["MATE370"]).
+prerequisite("MATE482", ["MATE480"]).
+prerequisite("MATE483", ["MATE482"]).
+prerequisite("MATE484", ["MATE483"]).
+
+major("Mathematics").
+
+class("Mathematics", "MATH141").
+class("Mathematics", "MATH142").
+class("Mathematics", "MATH143").
+class("Mathematics", "MATH202").
+class("Mathematics", "MATH206").
+class("Mathematics", "MATH241").
+class("Mathematics", "MATH242").
+class("Mathematics", "MATH248").
+class("Mathematics", "MATH306").
+class("Mathematics", "MATH334").
+class("Mathematics", "MATH412").
+class("Mathematics", "MATH459").
+class("Mathematics", "MATH460").
+class("Mathematics", "MATH461").
+class("Mathematics", "MATH462").
+class("Mathematics", "MATH481").
+class("Mathematics", "CSC101").
+class("Mathematics", "PHYS141").
+class("Mathematics", "PHYS142").
+class("Mathematics", "PHYS143").
+
+prerequisite("MATH142", ["MATH141"]).
+prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH202", []).
+prerequisite("MATH206", ["MATH143"]).
+prerequisite("MATH241", ["MATH143"]).
+prerequisite("MATH242", ["MATH241"]).
+prerequisite("MATH248", ["MATH143"]).
+prerequisite("MATH306", ["MATH206"]).
+prerequisite("MATH334", ["MATH143"]).
+prerequisite("MATH412", ["MATH248"]).
+prerequisite("MATH459", ["MATH412"]).
+prerequisite("MATH460", ["MATH412"]).
+prerequisite("MATH461", ["MATH412"]).
+prerequisite("MATH462", ["MATH461"]).
+prerequisite("MATH481", ["MATH306"]).
+prerequisite("CSC101", []).
+prerequisite("PHYS141", ["MATH141"]).
+prerequisite("PHYS142", ["PHYS141"]).
+prerequisite("PHYS143", ["PHYS142"]).
+
+major("Mechanical Engineering").
+
+class("Mechanical Engineering", "ME128").
+class("Mechanical Engineering", "ME129").
+class("Mechanical Engineering", "ME130").
+class("Mechanical Engineering", "ME163").
+class("Mechanical Engineering", "ME211").
+class("Mechanical Engineering", "ME212").
+class("Mechanical Engineering", "ME234").
+class("Mechanical Engineering", "ME236").
+class("Mechanical Engineering", "ME251").
+class("Mechanical Engineering", "ME302").
+class("Mechanical Engineering", "ME303").
+class("Mechanical Engineering", "ME318").
+class("Mechanical Engineering", "ME322").
+class("Mechanical Engineering", "ME328").
+class("Mechanical Engineering", "ME329").
+class("Mechanical Engineering", "ME341").
+class("Mechanical Engineering", "ME343").
+class("Mechanical Engineering", "ME347").
+class("Mechanical Engineering", "ME448").
+class("Mechanical Engineering", "CE204").
+class("Mechanical Engineering", "CE207").
+class("Mechanical Engineering", "CHEM124").
+class("Mechanical Engineering", "CHEM125").
+class("Mechanical Engineering", "CSC231").
+class("Mechanical Engineering", "CSC234").
+class("Mechanical Engineering", "EE201").
+class("Mechanical Engineering", "EE251").
+class("Mechanical Engineering", "EE321").
+class("Mechanical Engineering", "EE361").
+class("Mechanical Engineering", "IME142").
+class("Mechanical Engineering", "IME145").
+class("Mechanical Engineering", "IME146").
+class("Mechanical Engineering", "IME143").
+class("Mechanical Engineering", "MATE210").
+class("Mechanical Engineering", "MATE215").
+class("Mechanical Engineering", "MATH141").
+class("Mechanical Engineering", "MATH142").
+class("Mechanical Engineering", "MATH143").
+class("Mechanical Engineering", "MATH241").
+class("Mechanical Engineering", "MATH244").
+class("Mechanical Engineering", "MATH344").
+class("Mechanical Engineering", "PHYS141").
+class("Mechanical Engineering", "PHYS142").
+class("Mechanical Engineering", "PHYS143").
+class("Mechanical Engineering", "IME141").
+class("Mechanical Engineering", "ITP341").
+class("Mechanical Engineering", "ME161").
+
+prerequisite("ME128", []).
+prerequisite("ME129", ["ME128"]).
+prerequisite("ME130", ["ME129"]).
+prerequisite("ME163", []).
+prerequisite("ME211", ["MATH141"]).
+prerequisite("ME212", ["ME211"]).
+prerequisite("ME234", []).
+prerequisite("ME236", ["ME211"]).
+prerequisite("ME251", ["ME129"]).
+prerequisite("ME302", ["MATH241"]).
+prerequisite("ME303", ["ME302"]).
+prerequisite("ME318", ["ME211"]).
+prerequisite("ME322", ["ME211"]).
+prerequisite("ME328", ["CE207"]).
+prerequisite("ME329", ["ME328"]).
+prerequisite("ME341", ["ME211"]).
+prerequisite("ME343", ["ME341"]).
+prerequisite("ME347", ["ME341"]).
+prerequisite("ME448", ["ME343"]).
+prerequisite("CE204", ["MATH141"]).
+prerequisite("CE207", ["CE204"]).
+prerequisite("CHEM124", ["MATH141"]).
+prerequisite("CHEM125", ["CHEM124"]).
+prerequisite("CSC231", ["MATH141"]).
+prerequisite("CSC234", ["MATH141"]).
+prerequisite("EE201", ["PHYS141"]).
+prerequisite("EE251", ["EE201"]).
+prerequisite("EE321", ["EE201"]).
+prerequisite("EE361", ["EE321"]).
+prerequisite("IME142", ["MATH141"]).
+prerequisite("IME145", ["MATH141"]).
+prerequisite("IME146", ["IME145"]).
+prerequisite("IME143", ["MATH141"]).
+prerequisite("MATE210", ["CHEM124"]).
+prerequisite("MATE215", ["MATE210"]).
+prerequisite("MATH142", ["MATH141"]).
+prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH241", ["MATH143"]).
+prerequisite("MATH244", ["MATH241"]).
+prerequisite("MATH344", ["MATH244"]).
+prerequisite("PHYS141", ["MATH141"]).
+prerequisite("PHYS142", ["PHYS141"]).
+prerequisite("PHYS143", ["PHYS142"]).
+prerequisite("IME141", ["MATH141"]).
+prerequisite("ITP341", ["CHEM124"]).
+prerequisite("ME161", ["MATH141"]).
+
+major("Microbiology").
+
+class("Microbiology", "BIO150").
+class("Microbiology", "BIO161").
+class("Microbiology", "BIO263").
+class("Microbiology", "BIO351").
+class("Microbiology", "BIO452").
+class("Microbiology", "MCRO224").
+class("Microbiology", "MCRO225").
+class("Microbiology", "MCRO424").
+class("Microbiology", "BIO461").
+class("Microbiology", "BIO462").
+class("Microbiology", "BIO426").
+class("Microbiology", "BIO475").
+class("Microbiology", "MCRO402").
+class("Microbiology", "MCRO423").
+class("Microbiology", "MCRO436").
+class("Microbiology", "ASCI403").
+class("Microbiology", "BIO202").
+class("Microbiology", "BIO476").
+class("Microbiology", "BRAE448").
+class("Microbiology", "CHEM372").
+class("Microbiology", "CHEM474").
+class("Microbiology", "MCRO433").
+class("Microbiology", "DSCI402").
+class("Microbiology", "DSCI444").
+class("Microbiology", "FSN230").
+class("Microbiology", "FSN275").
+class("Microbiology", "FSN335").
+class("Microbiology", "FSN340").
+class("Microbiology", "FSN364").
+class("Microbiology", "FSN368").
+class("Microbiology", "FSN374").
+class("Microbiology", "MCRO301").
+class("Microbiology", "MCRO421").
+class("Microbiology", "ASCI321").
+class("Microbiology", "BIO406").
+class("Microbiology", "BIO407").
+class("Microbiology", "BIO408").
+class("Microbiology", "BIO409").
+class("Microbiology", "BIO410").
+class("Microbiology", "BIO428").
+class("Microbiology", "BIO429").
+class("Microbiology", "CHEM349").
+class("Microbiology", "CHEM377").
+class("Microbiology", "CHEM477").
+class("Microbiology", "KINE301").
+class("Microbiology", "MCRO320").
+class("Microbiology", "MCRO342").
+class("Microbiology", "BIO413").
+class("Microbiology", "BIO414").
+class("Microbiology", "SS422").
+class("Microbiology", "BIO441").
+class("Microbiology", "DATA301").
+class("Microbiology", "STAT313").
+class("Microbiology", "STAT419").
+class("Microbiology", "STAT421").
+class("Microbiology", "ASCI203").
+class("Microbiology", "ASCI440").
+class("Microbiology", "ASCI438").
+class("Microbiology", "BIO162").
+class("Microbiology", "BIO300").
+class("Microbiology", "BIO335").
+class("Microbiology", "BIO336").
+class("Microbiology", "BIO361").
+class("Microbiology", "BIO400").
+class("Microbiology", "BIO412").
+class("Microbiology", "BIO434").
+class("Microbiology", "BIO450").
+class("Microbiology", "BIO463").
+class("Microbiology", "BOT323").
+class("Microbiology", "CHEM218").
+class("Microbiology", "CHEM223").
+class("Microbiology", "CHEM331").
+class("Microbiology", "CHEM341").
+class("Microbiology", "CHEM418").
+class("Microbiology", "ENVE434").
+class("Microbiology", "MATH162").
+class("Microbiology", "MCRO100").
+class("Microbiology", "PLSC313").
+class("Microbiology", "PLSC441").
+class("Microbiology", "CHEM127").
+class("Microbiology", "CHEM128").
+class("Microbiology", "CHEM129").
+class("Microbiology", "CHEM216").
+class("Microbiology", "CHEM217").
+class("Microbiology", "CHEM220").
+class("Microbiology", "CHEM314").
+class("Microbiology", "CHEM369").
+class("Microbiology", "MATH161").
+class("Microbiology", "PHYS121").
+class("Microbiology", "PHYS122").
+class("Microbiology", "PHYS123").
+class("Microbiology", "STAT218").
+
+prerequisite("BIO150", []).
+prerequisite("BIO161", []).
+prerequisite("BIO263", ["BIO150"]).
+prerequisite("BIO351", ["BIO161"]).
+prerequisite("BIO452", ["BIO161"]).
+prerequisite("MCRO224", ["BIO161"]).
+prerequisite("MCRO225", ["MCRO224"]).
+prerequisite("MCRO424", ["MCRO225"]).
+prerequisite("BIO461", ["BIO351"]).
+prerequisite("BIO462", ["BIO461"]).
+prerequisite("BIO426", ["BIO351"]).
+prerequisite("BIO475", ["BIO351"]).
+prerequisite("MCRO402", ["MCRO224"]).
+prerequisite("MCRO423", ["MCRO225"]).
+prerequisite("MCRO436", ["MCRO224"]).
+prerequisite("ASCI403", ["MCRO224"]).
+prerequisite("BIO202", ["BIO161"]).
+prerequisite("BIO476", ["BIO351"]).
+prerequisite("BRAE448", ["MCRO224"]).
+prerequisite("CHEM372", ["CHEM216"]).
+prerequisite("CHEM474", ["CHEM372"]).
+prerequisite("MCRO433", ["MCRO225"]).
+prerequisite("DSCI402", ["MCRO224"]).
+prerequisite("DSCI444", ["MCRO225"]).
+prerequisite("FSN230", ["MCRO224"]).
+prerequisite("FSN275", ["MCRO224"]).
+prerequisite("FSN335", ["MCRO224"]).
+prerequisite("FSN340", ["MCRO224"]).
+prerequisite("FSN364", ["CHEM216"]).
+prerequisite("FSN368", ["FSN364"]).
+prerequisite("FSN374", ["MCRO224"]).
+prerequisite("MCRO301", ["MCRO224"]).
+prerequisite("MCRO421", ["MCRO225"]).
+prerequisite("ASCI321", ["MCRO224"]).
+prerequisite("BIO406", ["BIO351"]).
+prerequisite("BIO407", ["BIO351"]).
+prerequisite("BIO408", ["BIO351"]).
+prerequisite("BIO409", ["BIO351"]).
+prerequisite("BIO410", ["BIO351"]).
+prerequisite("BIO428", ["BIO351"]).
+prerequisite("BIO429", ["BIO351"]).
+prerequisite("CHEM349", ["CHEM216"]).
+prerequisite("CHEM377", ["CHEM216"]).
+prerequisite("CHEM477", ["CHEM216"]).
+prerequisite("KINE301", ["BIO161"]).
+prerequisite("MCRO320", ["MCRO224"]).
+prerequisite("MCRO342", ["MCRO225"]).
+prerequisite("BIO413", ["BIO351"]).
+prerequisite("BIO414", ["BIO351"]).
+prerequisite("SS422", ["MCRO224"]).
+prerequisite("BIO441", ["BIO351"]).
+prerequisite("DATA301", ["STAT218"]).
+prerequisite("STAT313", ["STAT218"]).
+prerequisite("STAT419", ["STAT218"]).
+prerequisite("STAT421", ["STAT218"]).
+prerequisite("ASCI203", ["MCRO224"]).
+prerequisite("ASCI440", ["MCRO225"]).
+prerequisite("ASCI438", ["BIO161"]).
+prerequisite("BIO162", ["BIO161"]).
+prerequisite("BIO300", ["BIO161"]).
+prerequisite("BIO335", ["BIO161"]).
+prerequisite("BIO336", ["BIO161"]).
+prerequisite("BIO361", ["BIO161"]).
+prerequisite("BIO400", ["BIO161"]).
+prerequisite("BIO412", ["BIO351"]).
+prerequisite("BIO434", ["BIO351"]).
+prerequisite("BIO450", ["BIO161"]).
+prerequisite("BIO463", ["BIO461"]).
+prerequisite("BOT323", ["BIO161"]).
+prerequisite("CHEM218", ["CHEM216"]).
+prerequisite("CHEM223", ["CHEM218"]).
+prerequisite("CHEM331", ["CHEM216"]).
+prerequisite("CHEM341", ["CHEM216"]).
+prerequisite("CHEM418", ["CHEM216"]).
+prerequisite("ENVE434", ["MCRO224"]).
+prerequisite("MATH162", ["MATH161"]).
+prerequisite("MCRO100", ["MCRO224"]).
+prerequisite("PLSC313", ["MCRO224"]).
+prerequisite("PLSC441", ["MCRO224"]).
+prerequisite("CHEM127", ["CHEM216"]).
+prerequisite("CHEM128", ["CHEM127"]).
+prerequisite("CHEM129", ["CHEM128"]).
+prerequisite("CHEM216", ["CHEM129"]).
+prerequisite("CHEM217", ["CHEM216"]).
+prerequisite("CHEM220", ["CHEM217"]).
+prerequisite("CHEM314", ["CHEM217"]).
+prerequisite("CHEM369", ["CHEM216"]).
+prerequisite("MATH161", ["CHEM127"]).
+
+major("Music").
+
+class("Music", "MU103").
+class("Music", "MU104").
+class("Music", "MU105").
+class("Music", "MU106").
+class("Music", "MU108").
+class("Music", "MU121").
+class("Music", "MU303").
+class("Music", "MU305").
+class("Music", "MU311").
+class("Music", "MU320").
+class("Music", "MU325").
+class("Music", "MU326").
+class("Music", "MU336").
+class("Music", "MU470").
+class("Music", "MU331").
+class("Music", "MU332").
+class("Music", "MU431").
+class("Music", "MU432").
+class("Music", "MU461").
+class("Music", "MU301").
+class("Music", "MU312").
+class("Music", "MU324").
+class("Music", "MU328").
+class("Music", "MU340").
+class("Music", "MU341").
+class("Music", "MU342").
+class("Music", "MU352").
+class("Music", "MU360").
+class("Music", "MU411").
+class("Music", "MU412").
+class("Music", "MU465").
+class("Music", "MU466").
+class("Music", "MU168").
+class("Music", "MU170").
+class("Music", "MU171").
+class("Music", "MU172").
+class("Music", "MU173").
+class("Music", "MU174").
+class("Music", "MU177").
+class("Music", "MU181").
+class("Music", "MU182").
+class("Music", "MU183").
+class("Music", "MU185").
+class("Music", "MU186").
+class("Music", "MU188").
+class("Music", "MU368").
+class("Music", "MU370").
+class("Music", "MU371").
+class("Music", "MU372").
+class("Music", "MU373").
+class("Music", "MU374").
+class("Music", "MU377").
+class("Music", "MU381").
+class("Music", "MU382").
+class("Music", "MU383").
+class("Music", "MU385").
+class("Music", "MU386").
+class("Music", "MU388").
+class("Music", "MU150").
+class("Music", "MU250").
+class("Music", "MU350").
+class("Music", "MU450").
+
+prerequisite("MU103", []).
+prerequisite("MU104", ["MU103"]).
+prerequisite("MU105", ["MU103"]).
+prerequisite("MU106", ["MU105"]).
+prerequisite("MU108", ["MU106"]).
+prerequisite("MU121", []).
+prerequisite("MU303", ["MU105"]).
+prerequisite("MU305", ["MU303"]).
+prerequisite("MU311", []).
+prerequisite("MU320", []).
+prerequisite("MU325", []).
+prerequisite("MU326", []).
+prerequisite("MU336", ["MU303"]).
+prerequisite("MU470", ["MU303"]).
+prerequisite("MU331", []).
+prerequisite("MU332", ["MU331"]).
+prerequisite("MU431", ["MU332"]).
+prerequisite("MU432", ["MU431"]).
+prerequisite("MU461", ["MU320"]).
+prerequisite("MU301", ["MU105"]).
+prerequisite("MU312", ["MU311"]).
+prerequisite("MU324", ["MU303"]).
+prerequisite("MU328", ["MU105"]).
+prerequisite("MU340", ["MU105"]).
+prerequisite("MU341", ["MU340"]).
+prerequisite("MU342", ["MU340"]).
+prerequisite("MU352", ["MU105"]).
+prerequisite("MU360", ["MU303"]).
+prerequisite("MU411", ["MU311"]).
+prerequisite("MU412", ["MU311"]).
+prerequisite("MU465", ["MU341"]).
+prerequisite("MU466", ["MU342"]).
+prerequisite("MU168", []).
+prerequisite("MU170", []).
+prerequisite("MU171", []).
+prerequisite("MU172", []).
+prerequisite("MU173", ["MU172"]).
+prerequisite("MU174", ["MU172"]).
+prerequisite("MU177", ["MU171"]).
+prerequisite("MU181", ["MU170"]).
+prerequisite("MU182", ["MU181"]).
+prerequisite("MU183", ["MU182"]).
+prerequisite("MU185", ["MU183"]).
+prerequisite("MU186", ["MU185"]).
+prerequisite("MU188", ["MU186"]).
+prerequisite("MU368", ["MU168"]).
+prerequisite("MU370", ["MU170"]).
+prerequisite("MU371", ["MU171"]).
+prerequisite("MU372", ["MU172"]).
+prerequisite("MU373", ["MU172"]).
+prerequisite("MU374", ["MU172"]).
+prerequisite("MU377", ["MU171"]).
+prerequisite("MU381", ["MU170"]).
+prerequisite("MU382", ["MU181"]).
+prerequisite("MU383", ["MU182"]).
+prerequisite("MU385", ["MU183"]).
+prerequisite("MU386", ["MU185"]).
+prerequisite("MU388", ["MU186"]).
+prerequisite("MU150", []).
+prerequisite("MU250", ["MU150"]).
+prerequisite("MU350", ["MU250"]).
+prerequisite("MU450", ["MU350"]).
+
+major("Nutrition").
+
+class("Nutrition", "FSN101").
+class("Nutrition", "FSN121").
+class("Nutrition", "FSN202").
+class("Nutrition", "FSN250").
+class("Nutrition", "FSN281").
+class("Nutrition", "FSN310").
+class("Nutrition", "FSN315").
+class("Nutrition", "FSN319").
+class("Nutrition", "FSN331").
+class("Nutrition", "FSN332").
+class("Nutrition", "FSN333").
+class("Nutrition", "FSN381").
+class("Nutrition", "FSN415").
+class("Nutrition", "FSN416").
+class("Nutrition", "FSN431").
+class("Nutrition", "FSN432").
+class("Nutrition", "FSN433").
+class("Nutrition", "FSN461").
+class("Nutrition", "FSN478").
+class("Nutrition", "FSN481").
+class("Nutrition", "FSN479").
+class("Nutrition", "BIO161").
+class("Nutrition", "BIO231").
+class("Nutrition", "BIO232").
+class("Nutrition", "CHEM127").
+class("Nutrition", "CHEM128").
+class("Nutrition", "CHEM312").
+class("Nutrition", "CHEM216").
+class("Nutrition", "CHEM314").
+class("Nutrition", "CHEM369").
+class("Nutrition", "MATH118").
+class("Nutrition", "MCRO221").
+class("Nutrition", "MCRO224").
+class("Nutrition", "STAT218").
+
+prerequisite("FSN101", []).
+prerequisite("FSN121", ["CHEM127"]).
+prerequisite("FSN202", ["BIO161"]).
+prerequisite("FSN250", ["FSN121"]).
+prerequisite("FSN281", ["FSN202"]).
+prerequisite("FSN310", ["FSN202"]).
+prerequisite("FSN315", ["FSN202"]).
+prerequisite("FSN319", ["FSN121", "FSN202"]).
+prerequisite("FSN331", ["CHEM128"]).
+prerequisite("FSN332", ["FSN331"]).
+prerequisite("FSN333", ["FSN331"]).
+prerequisite("FSN381", ["STAT218"]).
+prerequisite("FSN415", ["FSN331"]).
+prerequisite("FSN416", ["FSN202"]).
+prerequisite("FSN431", ["FSN332"]).
+prerequisite("FSN432", ["FSN431"]).
+prerequisite("FSN433", ["FSN432"]).
+prerequisite("FSN461", ["FSN381"]).
+prerequisite("FSN478", ["FSN381"]).
+prerequisite("FSN481", ["FSN478", "FSN479"]).
+prerequisite("FSN479", ["FSN381"]).
+prerequisite("BIO161", ["CHEM127"]).
+prerequisite("BIO231", ["BIO161"]).
+prerequisite("BIO232", ["BIO231"]).
+prerequisite("CHEM127", []).
+prerequisite("CHEM128", ["CHEM127"]).
+prerequisite("CHEM312", ["CHEM128"]).
+prerequisite("CHEM216", ["CHEM128"]).
+prerequisite("CHEM314", ["CHEM312"]).
+prerequisite("CHEM369", ["CHEM312"]).
+prerequisite("MATH118", []).
+prerequisite("MCRO221", ["BIO161"]).
+prerequisite("MCRO224", ["BIO161"]).
+prerequisite("STAT218", ["MATH118"]).
+
+major("Philosophy").
+
+class("Philosophy", "PHIL101").
+class("Philosophy", "PHIL126").
+class("Philosophy", "PHIL230").
+class("Philosophy", "PHIL231").
+class("Philosophy", "PHIL241").
+class("Philosophy", "PHIL300").
+class("Philosophy", "PHIL321").
+class("Philosophy", "PHIL331").
+class("Philosophy", "PHIL411").
+class("Philosophy", "PHIL412").
+class("Philosophy", "PHIL459").
+class("Philosophy", "PHIL460").
+class("Philosophy", "PHIL461").
+class("Philosophy", "PHIL309").
+class("Philosophy", "PHIL310").
+class("Philosophy", "PHIL312").
+class("Philosophy", "PHIL313").
+class("Philosophy", "PHIL314").
+class("Philosophy", "PHIL315").
+class("Philosophy", "PHIL317").
+class("Philosophy", "PHIL318").
+class("Philosophy", "PHIL319").
+
+prerequisite("PHIL101", []).
+prerequisite("PHIL126", ["PHIL101"]).
+prerequisite("PHIL230", ["PHIL101"]).
+prerequisite("PHIL231", ["PHIL101"]).
+prerequisite("PHIL241", ["PHIL126"]).
+prerequisite("PHIL300", ["PHIL230"]).
+prerequisite("PHIL321", ["PHIL230"]).
+prerequisite("PHIL331", ["PHIL230"]).
+prerequisite("PHIL411", ["PHIL300"]).
+prerequisite("PHIL412", ["PHIL300"]).
+prerequisite("PHIL459", ["PHIL411", "PHIL412"]).
+prerequisite("PHIL460", ["PHIL459"]).
+prerequisite("PHIL461", ["PHIL460"]).
+prerequisite("PHIL309", ["PHIL230"]).
+prerequisite("PHIL310", ["PHIL230"]).
+prerequisite("PHIL312", ["PHIL230"]).
+prerequisite("PHIL313", ["PHIL230"]).
+prerequisite("PHIL314", ["PHIL230"]).
+prerequisite("PHIL315", ["PHIL230"]).
+prerequisite("PHIL317", ["PHIL230"]).
+prerequisite("PHIL318", ["PHIL230"]).
+prerequisite("PHIL319", ["PHIL230"]).
+
+major("Physics").
+
+class("Physics", "PHYS141").
+class("Physics", "PHYS142").
+class("Physics", "PHYS143").
+class("Physics", "PHYS202").
+class("Physics", "PHYS206").
+class("Physics", "PHYS211").
+class("Physics", "PHYS212").
+class("Physics", "PHYS301").
+class("Physics", "PHYS305").
+class("Physics", "PHYS320").
+class("Physics", "PHYS321").
+class("Physics", "PHYS340").
+class("Physics", "PHYS341").
+class("Physics", "PHYS405").
+class("Physics", "PHYS408").
+class("Physics", "PHYS461").
+class("Physics", "PHYS462").
+class("Physics", "CHEM124").
+class("Physics", "CHEM125").
+class("Physics", "MATH141").
+class("Physics", "MATH142").
+class("Physics", "MATH143").
+class("Physics", "MATH206").
+class("Physics", "MATH241").
+class("Physics", "MATH242").
+
+prerequisite("PHYS142", ["PHYS141"]).
+prerequisite("PHYS143", ["PHYS142"]).
+prerequisite("PHYS202", ["PHYS143"]).
+prerequisite("PHYS206", ["PHYS143"]).
+prerequisite("PHYS211", ["PHYS143"]).
+prerequisite("PHYS212", ["PHYS211"]).
+prerequisite("PHYS301", ["PHYS211"]).
+prerequisite("PHYS305", ["PHYS212", "MATH242"]).
+prerequisite("PHYS320", ["PHYS143", "MATH242"]).
+prerequisite("PHYS321", ["PHYS320"]).
+prerequisite("PHYS340", ["PHYS212"]).
+prerequisite("PHYS341", ["PHYS340"]).
+prerequisite("PHYS405", ["PHYS321"]).
+prerequisite("PHYS408", ["PHYS305"]).
+prerequisite("PHYS461", ["PHYS321"]).
+prerequisite("PHYS462", ["PHYS461"]).
+prerequisite("CHEM125", ["CHEM124"]).
+prerequisite("MATH142", ["MATH141"]).
+prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH206", ["MATH143"]).
+prerequisite("MATH241", ["MATH143"]).
+prerequisite("MATH242", ["MATH241"]).
+
+major("Plant Sciences").
+
+class("Plant Sciences", "PLSC101").
+class("Plant Sciences", "UNIV100").
+class("Plant Sciences", "PLSC120").
+class("Plant Sciences", "PLSC124").
+class("Plant Sciences", "PLSC304").
+class("Plant Sciences", "PLSC313").
+class("Plant Sciences", "PLSC321").
+class("Plant Sciences", "PLSC323").
+class("Plant Sciences", "PLSC350").
+class("Plant Sciences", "PLSC351").
+class("Plant Sciences", "PLSC410").
+class("Plant Sciences", "PLSC461").
+class("Plant Sciences", "PLSC462").
+class("Plant Sciences", "BOT121").
+class("Plant Sciences", "SS120").
+class("Plant Sciences", "BRAE340").
+class("Plant Sciences", "CHEM127").
+class("Plant Sciences", "CHEM128").
+class("Plant Sciences", "MATH118").
+class("Plant Sciences", "SPAN101").
+class("Plant Sciences", "SPAN102").
+class("Plant Sciences", "SPAN103").
+class("Plant Sciences", "SPAN111").
+class("Plant Sciences", "SS221").
+class("Plant Sciences", "STAT218").
+
+prerequisite("PLSC101", []).
+prerequisite("UNIV100", []).
+prerequisite("PLSC120", []).
+prerequisite("PLSC124", []).
+prerequisite("PLSC304", ["PLSC120"]).
+prerequisite("PLSC313", ["PLSC120"]).
+prerequisite("PLSC321", ["PLSC120"]).
+prerequisite("PLSC323", ["PLSC120"]).
+prerequisite("PLSC350", ["PLSC120"]).
+prerequisite("PLSC351", ["PLSC120", "STAT218"]).
+prerequisite("PLSC410", ["PLSC120"]).
+prerequisite("PLSC461", []).
+prerequisite("PLSC462", ["PLSC461"]).
+prerequisite("BOT121", []).
+prerequisite("SS120", []).
+prerequisite("BRAE340", ["SS120"]).
+prerequisite("CHEM127", []).
+prerequisite("CHEM128", ["CHEM127"]).
+prerequisite("MATH118", []).
+prerequisite("SPAN101", []).
+prerequisite("SPAN102", ["SPAN101"]).
+prerequisite("SPAN103", ["SPAN102"]).
+prerequisite("SPAN111", []).
+prerequisite("SS221", ["SS120"]).
+prerequisite("STAT218", []).
+
+major("Political Science").
+
+class("Political Science", "POLS112").
+class("Political Science", "POLS180").
+class("Political Science", "POLS225").
+class("Political Science", "POLS229").
+class("Political Science", "POLS230").
+class("Political Science", "POLS359").
+class("Political Science", "POLS361").
+class("Political Science", "POLS461").
+class("Political Science", "POLS462").
+class("Political Science", "POLS308").
+class("Political Science", "POLS310").
+class("Political Science", "POLS343").
+class("Political Science", "POLS380").
+class("Political Science", "POLS417").
+class("Political Science", "POLS419").
+class("Political Science", "POLS445").
+class("Political Science", "POLS457").
+class("Political Science", "POLS459").
+class("Political Science", "ANT201").
+class("Political Science", "GEOG150").
+class("Political Science", "HIST110").
+class("Political Science", "HIST111").
+class("Political Science", "HIST222").
+class("Political Science", "HIST223").
+class("Political Science", "SOC110").
+class("Political Science", "STAT217").
+
+prerequisite("POLS112", []).
+prerequisite("POLS180", []).
+prerequisite("POLS225", []).
+prerequisite("POLS229", []).
+prerequisite("POLS230", []).
+prerequisite("POLS359", ["POLS180"]).
+prerequisite("POLS361", ["POLS359", "STAT217"]).
+prerequisite("POLS461", ["POLS359", "POLS361"]).
+prerequisite("POLS462", ["POLS461"]).
+prerequisite("POLS308", ["POLS180"]).
+prerequisite("POLS310", ["POLS180"]).
+prerequisite("POLS343", ["POLS180"]).
+prerequisite("POLS380", ["POLS225"]).
+prerequisite("POLS417", ["POLS230"]).
+prerequisite("POLS419", ["POLS229"]).
+prerequisite("POLS445", ["POLS180"]).
+prerequisite("POLS457", ["POLS180"]).
+prerequisite("POLS459", ["POLS180"]).
+prerequisite("ANT201", []).
+prerequisite("GEOG150", []).
+prerequisite("HIST110", []).
+prerequisite("HIST111", []).
+prerequisite("HIST222", []).
+prerequisite("HIST223", []).
+prerequisite("SOC110", []).
+prerequisite("STAT217", ["MATH118"]).
+
+major("Public Health").
+
+class("Public Health", "HLTH101").
+class("Public Health", "HLTH255").
+class("Public Health", "HLTH260").
+class("Public Health", "HLTH265").
+class("Public Health", "HLTH298").
+class("Public Health", "HLTH305").
+class("Public Health", "HLTH310").
+class("Public Health", "HLTH318").
+class("Public Health", "HLTH320").
+class("Public Health", "HLTH334").
+class("Public Health", "HLTH402").
+class("Public Health", "HLTH405").
+class("Public Health", "HLTH410").
+class("Public Health", "HLTH434").
+class("Public Health", "HLTH435").
+class("Public Health", "HLTH453").
+class("Public Health", "HLTH460").
+class("Public Health", "HLTH461").
+class("Public Health", "HLTH462").
+class("Public Health", "HLTH463").
+class("Public Health", "ANT201").
+class("Public Health", "ANT250").
+class("Public Health", "ANT360").
+class("Public Health", "ANT425").
+class("Public Health", "ISLA303").
+class("Public Health", "ISLA320").
+class("Public Health", "WGQS301").
+class("Public Health", "BIO123").
+class("Public Health", "BIO162").
+class("Public Health", "BIO302").
+class("Public Health", "BIO303").
+class("Public Health", "BIO305").
+class("Public Health", "CHEM128").
+class("Public Health", "CHEM129").
+class("Public Health", "CHEM216").
+class("Public Health", "CHEM217").
+class("Public Health", "CHEM218").
+class("Public Health", "CHEM312").
+class("Public Health", "CHEM314").
+class("Public Health", "MCRO225").
+class("Public Health", "MCRO320").
+class("Public Health", "MCRO342").
+class("Public Health", "MCRO421").
+class("Public Health", "PHYS121").
+class("Public Health", "PHYS122").
+class("Public Health", "COMS211").
+class("Public Health", "COMS213").
+class("Public Health", "COMS301").
+class("Public Health", "COMS313").
+class("Public Health", "COMS316").
+class("Public Health", "COMS418").
+class("Public Health", "JOUR219").
+class("Public Health", "JOUR312").
+class("Public Health", "JOUR412").
+class("Public Health", "CRP212").
+class("Public Health", "CRP214").
+class("Public Health", "CRP215").
+class("Public Health", "CRP325").
+class("Public Health", "CRP426").
+class("Public Health", "NR218").
+class("Public Health", "FSN310").
+class("Public Health", "FSN315").
+class("Public Health", "HLTH297").
+class("Public Health", "HLTH450").
+class("Public Health", "HLTH201").
+class("Public Health", "HLTH400").
+class("Public Health", "KINE303").
+class("Public Health", "KINE304").
+class("Public Health", "KINE349").
+class("Public Health", "KINE408").
+class("Public Health", "POLS310").
+class("Public Health", "POLS332").
+class("Public Health", "POLS351").
+class("Public Health", "POLS451").
+class("Public Health", "POLS459").
+class("Public Health", "RPTA450").
+class("Public Health", "PSY252").
+class("Public Health", "PSY256").
+class("Public Health", "PSY302").
+class("Public Health", "PSY310").
+class("Public Health", "PSY311").
+class("Public Health", "PSY318").
+class("Public Health", "PSY320").
+class("Public Health", "PSY330").
+class("Public Health", "PSY340").
+class("Public Health", "PSY344").
+class("Public Health", "PSY372").
+class("Public Health", "PSY405").
+class("Public Health", "SOC326").
+class("Public Health", "SPAN101").
+class("Public Health", "SPAN111").
+class("Public Health", "SPAN102").
+class("Public Health", "SPAN103").
+class("Public Health", "SPAN104").
+class("Public Health", "SPAN201").
+class("Public Health", "SPAN202").
+class("Public Health", "SPAN203").
+class("Public Health", "STAT323").
+class("Public Health", "STAT324").
+class("Public Health", "STAT330").
+class("Public Health", "STAT331").
+class("Public Health", "ANT201").
+class("Public Health", "SOC110").
+class("Public Health", "BIO161").
+class("Public Health", "BIO231").
+class("Public Health", "BIO232").
+class("Public Health", "CHEM127").
+class("Public Health", "FSN202").
+class("Public Health", "MCRO221").
+class("Public Health", "MCRO224").
+class("Public Health", "PSY201").
+class("Public Health", "PSY202").
+class("Public Health", "STAT218").
+class("Public Health", "STAT313").
+
+prerequisite("HLTH101", []).
+prerequisite("HLTH255", []).
+prerequisite("HLTH260", []).
+prerequisite("HLTH265", []).
+prerequisite("HLTH298", ["BIO161", "STAT218"]).
+prerequisite("HLTH305", ["HLTH265"]).
+prerequisite("HLTH310", ["HLTH265"]).
+prerequisite("HLTH318", ["HLTH298"]).
+prerequisite("HLTH320", ["HLTH265"]).
+prerequisite("HLTH334", ["HLTH265"]).
+prerequisite("HLTH402", ["HLTH318"]).
+prerequisite("HLTH405", ["HLTH334"]).
+prerequisite("HLTH410", ["HLTH265"]).
+prerequisite("HLTH434", ["HLTH334"]).
+prerequisite("HLTH435", ["HLTH434"]).
+prerequisite("HLTH453", ["HLTH334"]).
+prerequisite("HLTH460", ["HLTH402"]).
+prerequisite("HLTH461", ["HLTH402"]).
+prerequisite("HLTH462", ["HLTH402"]).
+prerequisite("HLTH463", ["HLTH402"]).
+prerequisite("ANT201", []).
+prerequisite("ANT250", []).
+prerequisite("ANT360", []).
+prerequisite("ANT425", []).
+prerequisite("ISLA303", []).
+prerequisite("ISLA320", []).
+prerequisite("WGQS301", []).
+prerequisite("BIO123", []).
+prerequisite("BIO162", []).
+prerequisite("BIO302", ["BIO161"]).
+prerequisite("BIO303", ["BIO161"]).
+prerequisite("BIO305", ["BIO161"]).
+prerequisite("CHEM128", ["CHEM127"]).
+prerequisite("CHEM129", ["CHEM128"]).
+prerequisite("CHEM216", ["CHEM129"]).
+prerequisite("CHEM217", ["CHEM216"]).
+prerequisite("CHEM218", ["CHEM217"]).
+prerequisite("CHEM312", ["CHEM216"]).
+prerequisite("CHEM314", ["CHEM312"]).
+prerequisite("MCRO225", ["MCRO221"]).
+prerequisite("MCRO320", ["MCRO224"]).
+prerequisite("MCRO342", ["MCRO224"]).
+prerequisite("MCRO421", ["MCRO224"]).
+prerequisite("PHYS121", []).
+prerequisite("PHYS122", ["PHYS121"]).
+prerequisite("COMS211", []).
+prerequisite("COMS213", ["COMS211"]).
+prerequisite("COMS301", ["COMS213"]).
+prerequisite("COMS313", ["COMS213"]).
+prerequisite("COMS316", ["COMS213"]).
+prerequisite("COMS418", ["COMS213"]).
+prerequisite("JOUR219", []).
+prerequisite("JOUR312", ["JOUR219"]).
+prerequisite("JOUR412", ["JOUR312"]).
+prerequisite("CRP212", []).
+prerequisite("CRP214", ["CRP212"]).
+prerequisite("CRP215", ["CRP212"]).
+prerequisite("CRP325", ["CRP212"]).
+prerequisite("CRP426", ["CRP214"]).
+prerequisite("NR218", []).
+prerequisite("FSN310", ["FSN202"]).
+prerequisite("FSN315", ["FSN202"]).
+prerequisite("HLTH297", ["HLTH265"]).
+prerequisite("HLTH450", ["HLTH265"]).
+prerequisite("HLTH201", ["HLTH101"]).
+prerequisite("HLTH400", ["HLTH101"]).
+prerequisite("KINE303", ["BIO231"]).
+prerequisite("KINE304", ["BIO231"]).
+prerequisite("KINE349", ["KINE303"]).
+prerequisite("KINE408", ["KINE303"]).
+prerequisite("POLS310", []).
+prerequisite("POLS332", []).
+prerequisite("POLS351", []).
+prerequisite("POLS451", ["POLS351"]).
+prerequisite("POLS459", ["POLS351"]).
+prerequisite("RPTA450", []).
+prerequisite("PSY252", ["PSY201"]).
+prerequisite("PSY256", ["PSY201"]).
+prerequisite("PSY302", ["PSY252"]).
+prerequisite("PSY310", ["PSY201"]).
+prerequisite("PSY311", ["PSY252"]).
+prerequisite("PSY318", ["PSY252"]).
+prerequisite("PSY320", ["PSY252"]).
+prerequisite("PSY330", ["PSY252"]).
+prerequisite("PSY340", ["PSY252"]).
+prerequisite("PSY344", ["PSY252"]).
+prerequisite("PSY372", ["PSY252"]).
+prerequisite("PSY405", ["PSY252"]).
+prerequisite("SOC326", ["SOC110"]).
+prerequisite("SPAN101", []).
+prerequisite("SPAN111", []).
+prerequisite("SPAN102", ["SPAN101"]).
+prerequisite("SPAN103", ["SPAN102"]).
+prerequisite("SPAN104", ["SPAN103"]).
+prerequisite("SPAN201", ["SPAN103"]).
+prerequisite("SPAN202", ["SPAN201"]).
+prerequisite("SPAN203", ["SPAN202"]).
+prerequisite("STAT323", ["STAT218"]).
+prerequisite("STAT324", ["STAT323"]).
+prerequisite("STAT330", ["STAT323"]).
+prerequisite("STAT331", ["STAT323"]).
+prerequisite("ANT201", []).
+prerequisite("SOC110", []).
+prerequisite("BIO161", []).
+prerequisite("BIO231", ["BIO161"]).
+prerequisite("BIO232", ["BIO231"]).
+prerequisite("CHEM127", []).
+prerequisite("FSN202", []).
+prerequisite("MCRO221", ["BIO161"]).
+prerequisite("MCRO224", ["BIO161"]).
+prerequisite("PSY201", []).
+prerequisite("PSY202", []).
+prerequisite("STAT218", ["MATH118"]).
+prerequisite("STAT313", ["STAT218"]).
+
+major("Psychology").
+
+class("Psychology", "PSY102").
+class("Psychology", "PSY201").
+class("Psychology", "PSY202").
+class("Psychology", "PSY252").
+class("Psychology", "PSYCD256").
+class("Psychology", "PSY323").
+class("Psychology", "PSY329").
+class("Psychology", "PSY333").
+class("Psychology", "PSY340").
+class("Psychology", "PSY372").
+class("Psychology", "PSY330").
+class("Psychology", "PSY357").
+class("Psychology", "PSY430").
+class("Psychology", "PSY440").
+class("Psychology", "PSY458").
+class("Psychology", "PSY480").
+class("Psychology", "PSY302").
+class("Psychology", "PSY305").
+class("Psychology", "PSY350").
+class("Psychology", "PSY352").
+class("Psychology", "PSY360").
+class("Psychology", "PSY465").
+class("Psychology", "PSY475").
+class("Psychology", "PSY318").
+class("Psychology", "PSY320").
+class("Psychology", "PSY325").
+class("Psychology", "PSY370").
+class("Psychology", "PSY375").
+class("Psychology", "PSY405").
+class("Psychology", "PSYCD460").
+class("Psychology", "PSY448").
+class("Psychology", "PSY449").
+class("Psychology", "PSY453").
+class("Psychology", "PSY454").
+class("Psychology", "PSY461").
+class("Psychology", "PSY462").
+class("Psychology", "ASCI112").
+class("Psychology", "BIO111").
+class("Psychology", "BIO123").
+class("Psychology", "BIO161").
+class("Psychology", "BIO302").
+class("Psychology", "PSY344").
+class("Psychology", "STAT217").
+class("Psychology", "CD424").
+class("Psychology", "ES320").
+class("Psychology", "ES321").
+class("Psychology", "ES322").
+class("Psychology", "ES323").
+class("Psychology", "ESWGQS350").
+class("Psychology", "ES380").
+class("Psychology", "ES381").
+class("Psychology", "PSY260").
+class("Psychology", "PSY304").
+class("Psychology", "PSYWGQS324").
+class("Psychology", "WGQS301").
+class("Psychology", "WGQS320").
+class("Psychology", "WGQS340").
+class("Psychology", "WGQSRELS370").
+
+prerequisite("PSY102", []).
+prerequisite("PSY201", []).
+prerequisite("PSY202", []).
+prerequisite("PSY252", ["PSY201"]).
+prerequisite("PSYCD256", ["PSY201"]).
+prerequisite("PSY323", ["PSY201", "PSY252"]).
+prerequisite("PSY329", ["STAT217"]).
+prerequisite("PSY333", ["PSY329"]).
+prerequisite("PSY340", ["PSY329"]).
+prerequisite("PSY372", ["PSY252"]).
+prerequisite("PSY330", ["PSY340"]).
+prerequisite("PSY357", ["PSY340"]).
+prerequisite("PSY430", ["PSY340"]).
+prerequisite("PSY440", ["PSY340"]).
+prerequisite("PSY458", ["PSY340"]).
+prerequisite("PSY480", ["PSY340"]).
+prerequisite("PSY302", ["PSY252"]).
+prerequisite("PSY305", ["PSY252"]).
+prerequisite("PSY350", ["PSY252"]).
+prerequisite("PSY352", ["PSY252"]).
+prerequisite("PSY360", ["PSY252"]).
+prerequisite("PSY465", ["PSY252"]).
+prerequisite("PSY475", ["PSY252"]).
+prerequisite("PSY318", ["PSY252"]).
+prerequisite("PSY320", ["PSY252"]).
+prerequisite("PSY325", ["PSY252"]).
+prerequisite("PSY370", ["PSY252"]).
+prerequisite("PSY375", ["PSY252"]).
+prerequisite("PSY405", ["PSY252"]).
+prerequisite("PSYCD460", ["PSY252"]).
+prerequisite("PSY448", ["PSY329"]).
+prerequisite("PSY449", ["PSY448"]).
+prerequisite("PSY453", ["PSY329"]).
+prerequisite("PSY454", ["PSY453"]).
+prerequisite("PSY461", ["PSY329"]).
+prerequisite("PSY462", ["PSY461"]).
+prerequisite("ASCI112", []).
+prerequisite("BIO111", []).
+prerequisite("BIO123", []).
+prerequisite("BIO161", []).
+prerequisite("BIO302", ["BIO111"]).
+prerequisite("PSY344", ["BIO111"]).
+prerequisite("STAT217", []).
+prerequisite("CD424", ["PSYCD256"]).
+prerequisite("ES320", []).
+prerequisite("ES321", []).
+prerequisite("ES322", []).
+prerequisite("ES323", []).
+prerequisite("ESWGQS350", ["PSY201"]).
+prerequisite("ES380", []).
+prerequisite("ES381", []).
+prerequisite("PSY260", ["PSY201"]).
+prerequisite("PSY304", ["PSY201"]).
+prerequisite("PSYWGQS324", ["PSY201"]).
+prerequisite("WGQS301", []).
+prerequisite("WGQS320", ["PSY201"]).
+prerequisite("WGQS340", ["PSY201"]).
+prerequisite("WGQSRELS370", ["PSY201"]).
+
+major("Recreation, Parks, and Tourism Administration").
+
+class("Recreation, Parks, and Tourism Administration", "RPTA101").
+class("Recreation, Parks, and Tourism Administration", "RPTA110").
+class("Recreation, Parks, and Tourism Administration", "RPTA121").
+class("Recreation, Parks, and Tourism Administration", "RPTA210").
+class("Recreation, Parks, and Tourism Administration", "RPTA255").
+class("Recreation, Parks, and Tourism Administration", "RPTA313").
+class("Recreation, Parks, and Tourism Administration", "RPTA413").
+class("Recreation, Parks, and Tourism Administration", "RPTA342").
+class("Recreation, Parks, and Tourism Administration", "RPTA360").
+class("Recreation, Parks, and Tourism Administration", "RPTA370").
+class("Recreation, Parks, and Tourism Administration", "RPTA405").
+class("Recreation, Parks, and Tourism Administration", "RPTA416").
+class("Recreation, Parks, and Tourism Administration", "RPTA424").
+class("Recreation, Parks, and Tourism Administration", "RPTA460").
+class("Recreation, Parks, and Tourism Administration", "RPTA463").
+class("Recreation, Parks, and Tourism Administration", "RPTA465").
+class("Recreation, Parks, and Tourism Administration", "BUS212").
+class("Recreation, Parks, and Tourism Administration", "AGB214").
+class("Recreation, Parks, and Tourism Administration", "BUS215").
+class("Recreation, Parks, and Tourism Administration", "AGB323").
+class("Recreation, Parks, and Tourism Administration", "BUS346").
+class("Recreation, Parks, and Tourism Administration", "ECON201").
+class("Recreation, Parks, and Tourism Administration", "ECON222").
+class("Recreation, Parks, and Tourism Administration", "ENGL310").
+class("Recreation, Parks, and Tourism Administration", "MATH118").
+class("Recreation, Parks, and Tourism Administration", "MATH119").
+class("Recreation, Parks, and Tourism Administration", "MATH221").
+class("Recreation, Parks, and Tourism Administration", "STAT217").
+class("Recreation, Parks, and Tourism Administration", "STAT251").
+
+prerequisite("RPTA101", []).
+prerequisite("RPTA110", []).
+prerequisite("RPTA121", []).
+prerequisite("RPTA210", ["RPTA101"]).
+prerequisite("RPTA255", ["RPTA101"]).
+prerequisite("RPTA313", ["RPTA101"]).
+prerequisite("RPTA413", ["RPTA101"]).
+prerequisite("RPTA342", ["RPTA210"]).
+prerequisite("RPTA360", ["STAT217"]).
+prerequisite("RPTA370", ["RPTA210"]).
+prerequisite("RPTA405", ["RPTA210"]).
+prerequisite("RPTA416", ["RPTA360"]).
+prerequisite("RPTA424", ["BUS215"]).
+prerequisite("RPTA460", ["RPTA210"]).
+prerequisite("RPTA463", ["RPTA210"]).
+prerequisite("RPTA465", ["RPTA463"]).
+prerequisite("BUS212", []).
+prerequisite("AGB214", []).
+prerequisite("BUS215", ["BUS212"]).
+prerequisite("AGB323", ["AGB214"]).
+prerequisite("BUS346", ["ECON201"]).
+prerequisite("ECON201", []).
+prerequisite("ECON222", ["ECON201"]).
+prerequisite("ENGL310", []).
+prerequisite("MATH118", []).
+prerequisite("MATH119", ["MATH118"]).
+prerequisite("MATH221", ["MATH119"]).
+prerequisite("STAT217", ["MATH118"]).
+prerequisite("STAT251", ["MATH118"]).
+
+major("Sociology").
+
+class("Sociology", "SOC110").
+class("Sociology", "SOC111").
+class("Sociology", "SOC216").
+class("Sociology", "SOC218").
+class("Sociology", "SOC222").
+class("Sociology", "SOC305").
+class("Sociology", "SOC327").
+class("Sociology", "SOC308").
+class("Sociology", "SOC435").
+class("Sociology", "SOC311").
+class("Sociology", "SOC323").
+class("Sociology", "SOC354").
+class("Sociology", "SOC355").
+class("Sociology", "SOC461").
+class("Sociology", "SOC462").
+class("Sociology", "SOC_Electives").
+class("Sociology", "STAT217").
+class("Sociology", "ANT201").
+class("Sociology", "GEOG150").
+
+prerequisite("SOC110", []).
+prerequisite("SOC111", []).
+prerequisite("SOC216", []).
+prerequisite("SOC218", ["SOC110"]).
+prerequisite("SOC222", ["SOC110", "SOC111"]).
+prerequisite("SOC305", ["SOC222"]).
+prerequisite("SOC327", ["SOC222"]).
+prerequisite("SOC308", ["SOC110", "SOC111"]).
+prerequisite("SOC435", ["SOC110", "SOC111"]).
+prerequisite("SOC311", ["SOC110", "SOC111"]).
+prerequisite("SOC323", ["SOC222"]).
+prerequisite("SOC354", ["SOC222"]).
+prerequisite("SOC355", ["SOC222", "STAT217"]).
+prerequisite("SOC461", ["SOC354", "SOC355"]).
+prerequisite("SOC462", ["SOC461"]).
+prerequisite("SOC_Electives", ["SOC110"]).
+prerequisite("STAT217", []).
+prerequisite("ANT201", []).
+prerequisite("GEOG150", []).
+
+major("Software Engineering").
+
+class("Software Engineering", "CSC101").
+class("Software Engineering", "CSC202").
+class("Software Engineering", "CSC123").
+class("Software Engineering", "CSC203").
+class("Software Engineering", "CSC225").
+class("Software Engineering", "CSC248").
+class("Software Engineering", "CSC300").
+class("Software Engineering", "CSC305").
+class("Software Engineering", "CSC308").
+class("Software Engineering", "CSC309").
+class("Software Engineering", "CSC349").
+class("Software Engineering", "CSC357").
+class("Software Engineering", "CSC365").
+class("Software Engineering", "CSC402").
+class("Software Engineering", "CSC405").
+class("Software Engineering", "CSC406").
+class("Software Engineering", "CSC430").
+class("Software Engineering", "CSC484").
+class("Software Engineering", "IME314").
+class("Software Engineering", "IME315").
+class("Software Engineering", "MATH141").
+class("Software Engineering", "MATH142").
+class("Software Engineering", "MATH143").
+class("Software Engineering", "MATH241").
+class("Software Engineering", "MATH244").
+class("Software Engineering", "PHIL230").
+class("Software Engineering", "PHIL231").
+class("Software Engineering", "PSY201").
+class("Software Engineering", "PSY202").
+class("Software Engineering", "PSY350").
+class("Software Engineering", "COMS217").
+class("Software Engineering", "STAT312").
+class("Software Engineering", "BIO111").
+class("Software Engineering", "BIO161").
+class("Software Engineering", "BIO213").
+class("Software Engineering", "BMED213").
+class("Software Engineering", "BOT121").
+class("Software Engineering", "MCRO221").
+class("Software Engineering", "MCRO224").
+class("Software Engineering", "MATH248").
+class("Software Engineering", "MATH334").
+class("Software Engineering", "MATH335").
+class("Software Engineering", "MATH451").
+class("Software Engineering", "CHEM124").
+class("Software Engineering", "CHEM125").
+class("Software Engineering", "CHEM126").
+class("Software Engineering", "PHYS141").
+class("Software Engineering", "PHYS142").
+class("Software Engineering", "PHYS143").
+
+prerequisite("CSC101", []).
+prerequisite("CSC202", ["CSC101"]).
+prerequisite("CSC123", ["CSC101"]).
+prerequisite("CSC203", ["CSC202"]).
+prerequisite("CSC225", ["CSC202"]).
+prerequisite("CSC248", ["CSC202"]).
+prerequisite("CSC300", ["CSC203"]).
+prerequisite("CSC305", ["CSC203"]).
+prerequisite("CSC308", ["CSC203"]).
+prerequisite("CSC309", ["CSC308"]).
+prerequisite("CSC349", ["CSC203", "CSC248"]).
+prerequisite("CSC357", ["CSC225"]).
+prerequisite("CSC365", ["CSC203"]).
+prerequisite("CSC402", ["CSC309"]).
+prerequisite("CSC405", ["CSC309"]).
+prerequisite("CSC406", ["CSC405"]).
+prerequisite("CSC430", ["CSC248"]).
+prerequisite("CSC484", ["CSC305"]).
+prerequisite("IME314", []).
+prerequisite("IME315", []).
+prerequisite("MATH142", ["MATH141"]).
+prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH241", ["MATH143"]).
+prerequisite("MATH244", ["MATH241"]).
+prerequisite("PHIL230", []).
+prerequisite("PHIL231", []).
+prerequisite("PSY201", []).
+prerequisite("PSY202", []).
+prerequisite("PSY350", []).
+prerequisite("COMS217", []).
+prerequisite("STAT312", ["STAT217"]).
+prerequisite("BIO111", []).
+prerequisite("BIO161", []).
+prerequisite("BIO213", ["BIO111"]).
+prerequisite("BMED213", ["BIO111"]).
+prerequisite("BOT121", []).
+prerequisite("MCRO221", ["BIO111"]).
+prerequisite("MCRO224", ["BIO111"]).
+prerequisite("MATH248", ["MATH143"]).
+prerequisite("MATH334", ["MATH248"]).
+prerequisite("MATH335", ["MATH248"]).
+prerequisite("MATH451", ["MATH248"]).
+prerequisite("CHEM125", ["CHEM124"]).
+prerequisite("CHEM126", ["CHEM125"]).
+prerequisite("PHYS142", ["PHYS141"]).
+prerequisite("PHYS143", ["PHYS142"]).
+
+major("Spanish").
+
+class("Spanish", "SPAN201").
+class("Spanish", "SPAN202").
+class("Spanish", "SPAN203").
+class("Spanish", "SPAN206").
+class("Spanish", "SPAN207").
+class("Spanish", "SPAN233").
+class("Spanish", "SPAN301").
+class("Spanish", "SPAN302").
+class("Spanish", "SPAN303").
+class("Spanish", "SPAN305").
+class("Spanish", "SPAN307").
+class("Spanish", "SPAN340").
+class("Spanish", "SPAN380").
+class("Spanish", "SPAN390").
+class("Spanish", "SPAN402").
+class("Spanish", "SPAN410").
+class("Spanish", "SPAN416").
+class("Spanish", "SPAN470").
+class("Spanish", "WLC360").
+class("Spanish", "WLC460").
+
+prerequisite("SPAN201", []).
+prerequisite("SPAN202", ["SPAN201"]).
+prerequisite("SPAN203", ["SPAN202"]).
+prerequisite("SPAN206", ["SPAN202"]).
+prerequisite("SPAN207", ["SPAN202"]).
+prerequisite("SPAN233", ["SPAN202"]).
+prerequisite("SPAN301", ["SPAN203"]).
+prerequisite("SPAN302", ["SPAN203"]).
+prerequisite("SPAN303", ["SPAN302"]).
+prerequisite("SPAN305", ["SPAN233"]).
+prerequisite("SPAN307", ["SPAN233"]).
+prerequisite("SPAN340", ["SPAN233"]).
+prerequisite("SPAN380", ["SPAN301"]).
+prerequisite("SPAN390", ["SPAN301"]).
+prerequisite("SPAN402", ["SPAN207"]).
+prerequisite("SPAN410", ["SPAN233"]).
+prerequisite("SPAN416", ["SPAN233"]).
+prerequisite("SPAN470", ["SPAN233"]).
+prerequisite("WLC360", ["SPAN233"]).
+prerequisite("WLC460", ["WLC360"]).
+
+major("Wine and Viticulture").
+
+class("Wine and Viticulture", "WVIT102").
+class("Wine and Viticulture", "WVIT202").
+class("Wine and Viticulture", "WVIT233").
+class("Wine and Viticulture", "WVIT331").
+class("Wine and Viticulture", "WVIT339").
+class("Wine and Viticulture", "WVIT343").
+class("Wine and Viticulture", "WVIT423").
+class("Wine and Viticulture", "WVIT442").
+class("Wine and Viticulture", "WVIT463").
+class("Wine and Viticulture", "AGB214").
+class("Wine and Viticulture", "BOT121").
+class("Wine and Viticulture", "BRAE340").
+class("Wine and Viticulture", "CHEM127").
+class("Wine and Viticulture", "ECON222").
+class("Wine and Viticulture", "MATH161").
+class("Wine and Viticulture", " MATH141").
+class("Wine and Viticulture", "MATH221").
+class("Wine and Viticulture", "SS120").
+class("Wine and Viticulture", "STAT218").
+class("Wine and Viticulture", "MATH118").
+
+prerequisite("WVIT102", []).
+prerequisite("WVIT202", ["CHEM127"]).
+prerequisite("WVIT233", ["BOT121", "CHEM127", "SS120"]).
+prerequisite("WVIT331", ["WVIT233"]).
+prerequisite("WVIT339", ["WVIT202", "WVIT233"]).
+prerequisite("WVIT343", ["ECON222"]).
+prerequisite("WVIT423", ["WVIT343"]).
+prerequisite("WVIT442", ["WVIT202", "STAT218"]).
+prerequisite("WVIT463", []).
+prerequisite("AGB214", []).
+prerequisite("BOT121", []).
+prerequisite("BRAE340", []).
+prerequisite("CHEM127", ["MATH118"]).
+prerequisite("ECON222", []).
+prerequisite("MATH161", ["MATH118"]).
+prerequisite("MATH141", ["MATH118"]).
+prerequisite("MATH221", ["MATH118"]).
+prerequisite("SS120", []).
+prerequisite("STAT218", ["MATH118"]).
+
+major("Statistics").
+
+class("Statistics", "STAT150").
+class("Statistics", "MATH141").
+class("Statistics", "MATH142").
+class("Statistics", "MATH143").
+class("Statistics", "MATH206").
+class("Statistics", "MATH241").
+class("Statistics", "STAT301").
+class("Statistics", "STAT302").
+class("Statistics", "STAT305").
+class("Statistics", "STAT323").
+class("Statistics", "STAT330").
+class("Statistics", "STAT331").
+class("Statistics", "STAT334").
+class("Statistics", "STAT365").
+class("Statistics", "STAT425").
+class("Statistics", "STAT426").
+class("Statistics", "STAT427").
+class("Statistics", "STAT466").
+class("Statistics", "STAT405").
+class("Statistics", "STAT414").
+class("Statistics", "STAT415").
+class("Statistics", "STAT416").
+class("Statistics", "STAT417").
+class("Statistics", "STAT418").
+class("Statistics", "STAT419").
+class("Statistics", "STAT421").
+class("Statistics", "STAT423").
+class("Statistics", "STAT434").
+class("Statistics", "STAT543").
+class("Statistics", "STAT545").
+class("Statistics", "STAT550").
+class("Statistics", "STAT551").
+class("Statistics", "CSC202").
+class("Statistics", "CSC203").
+class("Statistics", "CSC248").
+class("Statistics", "CSC349").
+class("Statistics", "CSC365").
+class("Statistics", "CSC369").
+class("Statistics", "DATA301").
+class("Statistics", "IME430").
+class("Statistics", "ITP303").
+class("Statistics", "MATH242").
+class("Statistics", "MATH306").
+class("Statistics", "MATH334").
+class("Statistics", "MATH335").
+class("Statistics", "MATH406").
+class("Statistics", "MATH412").
+class("Statistics", "MATH413").
+class("Statistics", "MATH414").
+class("Statistics", "MATH437").
+class("Statistics", "MATH451").
+class("Statistics", "STAT541").
+class("Statistics", "CSC101").
+class("Statistics", "MATH248").
+
+prerequisite("STAT150", []).
+prerequisite("MATH142", ["MATH141"]).
+prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH206", ["MATH143"]).
+prerequisite("MATH241", ["MATH143"]).
+prerequisite("STAT301", ["MATH142"]).
+prerequisite("STAT302", ["STAT301"]).
+prerequisite("STAT305", ["MATH241"]).
+prerequisite("STAT323", ["STAT302"]).
+prerequisite("STAT330", ["STAT301"]).
+prerequisite("STAT331", ["STAT301"]).
+prerequisite("STAT334", ["STAT302"]).
+prerequisite("STAT365", ["STAT301"]).
+prerequisite("STAT425", ["MATH241"]).
+prerequisite("STAT426", ["STAT425"]).
+prerequisite("STAT427", ["STAT426"]).
+prerequisite("STAT466", ["STAT426"]).
+prerequisite("STAT405", ["STAT305"]).
+prerequisite("STAT414", ["STAT302"]).
+prerequisite("STAT415", ["STAT302"]).
+prerequisite("STAT416", ["STAT302"]).
+prerequisite("STAT417", ["STAT302"]).
+prerequisite("STAT418", ["STAT302"]).
+prerequisite("STAT419", ["STAT302"]).
+prerequisite("STAT421", ["STAT302"]).
+prerequisite("STAT423", ["STAT323"]).
+prerequisite("STAT434", ["STAT302"]).
+prerequisite("STAT543", ["STAT323"]).
+prerequisite("STAT545", ["STAT305"]).
+prerequisite("STAT550", ["STAT302"]).
+prerequisite("STAT551", ["STAT302"]).
+prerequisite("CSC202", ["CSC101"]).
+prerequisite("CSC203", ["CSC202"]).
+prerequisite("CSC248", ["CSC101"]).
+prerequisite("CSC349", ["CSC248"]).
+prerequisite("CSC365", ["CSC203"]).
+prerequisite("CSC369", ["CSC203"]).
+prerequisite("DATA301", ["STAT301"]).
+prerequisite("IME430", ["STAT302"]).
+prerequisite("ITP303", ["STAT302"]).
+prerequisite("MATH242", ["MATH241"]).
+prerequisite("MATH306", ["MATH206"]).
+prerequisite("MATH334", ["MATH241"]).
+prerequisite("MATH335", ["MATH241"]).
+prerequisite("MATH406", ["MATH306"]).
+prerequisite("MATH412", ["MATH241"]).
+prerequisite("MATH413", ["MATH412"]).
+prerequisite("MATH414", ["MATH413"]).
+prerequisite("MATH437", ["MATH241"]).
+prerequisite("MATH451", ["MATH306"]).
+prerequisite("STAT541", ["STAT302"]).
+prerequisite("CSC101", []).
+prerequisite("MATH248", ["MATH143"]).
+
+major("Theatre Arts").
+
+class("Theatre Arts", "TH201").
+class("Theatre Arts", "TH220").
+class("Theatre Arts", "TH225").
+class("Theatre Arts", "TH227").
+class("Theatre Arts", "TH228").
+class("Theatre Arts", "TH230").
+class("Theatre Arts", "TH290").
+class("Theatre Arts", "TH295").
+class("Theatre Arts", "TH305").
+class("Theatre Arts", "TH325").
+class("Theatre Arts", "TH330").
+class("Theatre Arts", "TH345").
+class("Theatre Arts", "TH355").
+class("Theatre Arts", "TH350").
+class("Theatre Arts", "TH430").
+class("Theatre Arts", "TH432").
+class("Theatre Arts", "TH450").
+class("Theatre Arts", "TH461").
+class("Theatre Arts", "TH215").
+class("Theatre Arts", "TH235").
+class("Theatre Arts", "TH240").
+class("Theatre Arts", "TH245").
+class("Theatre Arts", "TH255").
+class("Theatre Arts", "TH256").
+class("Theatre Arts", "TH260").
+class("Theatre Arts", "TH265").
+class("Theatre Arts", "TH270").
+class("Theatre Arts", "TH275").
+class("Theatre Arts", "TH280").
+class("Theatre Arts", "TH285").
+class("Theatre Arts", "TH315").
+class("Theatre Arts", "TH370").
+class("Theatre Arts", "TH380").
+class("Theatre Arts", "TH390").
+class("Theatre Arts", "TH400").
+class("Theatre Arts", "TH425").
+class("Theatre Arts", "TH434").
+class("Theatre Arts", "TH470").
+class("Theatre Arts", "TH471").
+class("Theatre Arts", "TH480").
+class("Theatre Arts", "ENGL339").
+
+prerequisite("TH201", []).
+prerequisite("TH220", []).
+prerequisite("TH225", []).
+prerequisite("TH227", []).
+prerequisite("TH228", []).
+prerequisite("TH230", []).
+prerequisite("TH290", []).
+prerequisite("TH295", []).
+prerequisite("TH305", []).
+prerequisite("TH325", ["TH225"]).
+prerequisite("TH330", ["TH230"]).
+prerequisite("TH345", []).
+prerequisite("TH355", []).
+prerequisite("TH350", ["TH290"]).
+prerequisite("TH430", ["TH295"]).
+prerequisite("TH432", ["TH295"]).
+prerequisite("TH450", ["TH290", "TH220"]).
+prerequisite("TH461", ["TH450"]).
+prerequisite("TH215", []).
+prerequisite("TH235", ["TH220"]).
+prerequisite("TH240", ["TH220"]).
+prerequisite("TH245", []).
+prerequisite("TH255", []).
+prerequisite("TH256", ["TH295"]).
+prerequisite("TH260", ["TH220"]).
+prerequisite("TH265", ["TH230"]).
+prerequisite("TH270", ["TH225"]).
+prerequisite("TH275", []).
+prerequisite("TH280", ["TH220"]).
+prerequisite("TH285", []).
+prerequisite("TH315", ["TH220"]).
+prerequisite("TH370", ["TH225"]).
+prerequisite("TH380", ["TH220"]).
+prerequisite("TH390", ["TH227"]).
+prerequisite("TH400", []).
+prerequisite("TH425", ["TH235"]).
+prerequisite("TH434", ["TH295"]).
+prerequisite("TH470", ["TH295"]).
+prerequisite("TH471", ["TH295"]).
+prerequisite("TH480", ["TH285"]).
+prerequisite("ENGL339", []).
 
 % taken("CSC202").
 % taken("CSC321").
