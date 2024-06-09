@@ -14,40 +14,47 @@ type Course = {
 
 export const generatePrologKB = async (completedCourses: Course[], major: string) => {
   const kb = knowledgeBase;
-  // generate facts for KB about every course taken
-  const takenFacts = completedCourses
-    .filter((course) => course.completed)
-    .map((course) => `taken("${course.title}").`)
-    .join("\n");
-  // combine base KB with new facts
+
+  // Use a Set to store unique taken facts
+  const takenSet = new Set(
+    completedCourses
+      .filter((course) => course.completed)
+      .map((course) => `taken("${course.title}").`)
+  );
+
+  // Convert Set to a string
+  const takenFacts = Array.from(takenSet).join("\n");
+
+  // Combine base KB with new facts
   return `${kb}\n${takenFacts}`;
 };
 
 export const findAvailableClasses = async (completedCourses: Course[], major: string) => {
-  // returns updated KB with new facts
+  // Returns updated KB with new facts
   const kb = await generatePrologKB(completedCourses, major);
 
   const session = TauProlog.create(1000);
   const goal = `
-          class("${major}", X), testPrereqs(X).
-      `;
+    class("${major}", X), testPrereqs(X).
+  `;
 
-  let availableClasses: string[] = [];
+  let availableClassesSet = new Set();
 
   await session.promiseConsult(kb);
   await session.promiseQuery(goal);
   for await (let answer of session.promiseAnswers()) {
-    const ans_formatted = await session.format_answer(answer);
-    if (ans_formatted.includes("false")) {
+    const ansFormatted = await session.format_answer(answer);
+    if (ansFormatted.includes("false")) {
       continue;
     }
-    availableClasses.push(
-      ans_formatted.split("[")[1].split("]")[0].replaceAll(",", "")
+    // Add unique class to the set
+    availableClassesSet.add(
+      ansFormatted.split("[")[1].split("]")[0].replaceAll(",", "")
     );
   }
-  return availableClasses;
+  // Convert set to array
+  return Array.from(availableClassesSet);
 };
-
 
 export const findAllClasses = async (selectedMajor: string) => {
   const kb = knowledgeBase;
@@ -58,22 +65,25 @@ export const findAllClasses = async (selectedMajor: string) => {
     class("${selectedMajor}", X).
   `;
 
-  let classes = [];
+  let classesSet = new Set();
 
   await session.promiseConsult(kb);
   await session.promiseQuery(goal);
   for await (let answer of session.promiseAnswers()) {
-    const ans_formatted = await session.format_answer(answer);
-    if (ans_formatted.includes("false")) {
+    const ansFormatted = await session.format_answer(answer);
+    if (ansFormatted.includes("false")) {
       continue;
     }
-    classes.push(
-      ans_formatted.split("[")[1].split("]")[0].replaceAll(",", "")
+    // Add unique class to the set
+    classesSet.add(
+      ansFormatted.split("[")[1].split("]")[0].replaceAll(",", "")
     );
   }
 
-  return classes;
+  // Convert set to array
+  return Array.from(classesSet);
 };
+
 
 // export const findClasses = async (taken: Course[]) => {
 export const findClasses = async () => {
