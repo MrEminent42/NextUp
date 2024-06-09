@@ -57,7 +57,7 @@ export default function Card({ course, index }: CardProps) {
       </Draggable>
 
       {courseData && (
-        <Modal isOpen={isOpen} onClose={onClose}>
+        <Modal isOpen={isOpen} onClose={onClose} isCentered>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>{courseData.title}</ModalHeader>
