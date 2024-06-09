@@ -29,7 +29,7 @@ export const generatePrologKB = async (completedCourses: Course[], major: string
   return `${kb}\n${takenFacts}`;
 };
 
-export const findAvailableClasses = async (completedCourses: Course[], major: string) => {
+export const findAvailableClasses = async (completedCourses: Course[], major: string): Promise<string[]> => {
   // Returns updated KB with new facts
   const kb = await generatePrologKB(completedCourses, major);
 
@@ -38,7 +38,7 @@ export const findAvailableClasses = async (completedCourses: Course[], major: st
     class("${major}", X), testPrereqs(X).
   `;
 
-  let availableClassesSet = new Set();
+  let availableClassesSet = new Set<string>();
 
   await session.promiseConsult(kb);
   await session.promiseQuery(goal);
@@ -56,7 +56,7 @@ export const findAvailableClasses = async (completedCourses: Course[], major: st
   return Array.from(availableClassesSet);
 };
 
-export const findAllClasses = async (selectedMajor: string) => {
+export const findAllClasses = async (selectedMajor: string): Promise<string[]> => {
   const kb = knowledgeBase;
   const session = TauProlog.create(1000);
 
@@ -65,7 +65,7 @@ export const findAllClasses = async (selectedMajor: string) => {
     class("${selectedMajor}", X).
   `;
 
-  let classesSet = new Set();
+  let classesSet = new Set<string>();
 
   await session.promiseConsult(kb);
   await session.promiseQuery(goal);
@@ -83,7 +83,6 @@ export const findAllClasses = async (selectedMajor: string) => {
   // Convert set to array
   return Array.from(classesSet);
 };
-
 
 // export const findClasses = async (taken: Course[]) => {
 export const findClasses = async () => {

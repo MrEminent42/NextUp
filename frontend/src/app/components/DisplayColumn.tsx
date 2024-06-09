@@ -22,7 +22,7 @@ export default function DisplayColumn() {
 
   const fetchClasses = async (selectedMajor: string) => {
     try {
-      const classes = await findAllClasses(selectedMajor); // Adjust this to query based on major
+      const classes: string[] = await findAllClasses(selectedMajor); // Ensure type is string[]
       const courses = classes.map(
         (className: string, i: number) =>
           ({ id: i, title: className, completed: false } as Course)
@@ -56,7 +56,7 @@ export default function DisplayColumn() {
       const classes = await findAvailableClasses(completed, major);
       setEligibleCourses(
         classes.map(
-          (className, i) =>
+          (className: string, i: number) =>
             ({ id: i + 1, title: className, completed: false } as Course)
         )
       );

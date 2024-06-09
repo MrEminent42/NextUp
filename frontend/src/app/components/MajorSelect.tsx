@@ -101,11 +101,14 @@ export default function MajorSelect({ onChange }: MajorSelectProps) {
         }),
       }}
       components={{
-        SingleValue: ({ children, ...props }) => (
-          <chakraComponents.SingleValue {...props}>
-            <div title={children}>{children}</div>
-          </chakraComponents.SingleValue>
-        ),
+        SingleValue: ({ children, ...props }) => {
+          const title = typeof children === 'string' ? children : '';
+          return (
+            <chakraComponents.SingleValue {...props}>
+              <div title={title}>{children}</div>
+            </chakraComponents.SingleValue>
+          );
+        },
       }}
     />
   );
