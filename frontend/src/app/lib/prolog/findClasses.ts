@@ -12,7 +12,7 @@ type Course = {
   completed: boolean;
 };
 
-export const generatePrologKB = async (completedCourses: Course[]) => {
+export const generatePrologKB = async (completedCourses: Course[], major: string) => {
   const kb = knowledgeBase;
   // generate facts for KB about every course taken
   const takenFacts = completedCourses
@@ -23,13 +23,13 @@ export const generatePrologKB = async (completedCourses: Course[]) => {
   return `${kb}\n${takenFacts}`;
 };
 
-export const findAvailableClasses = async (completedCourses: Course[]) => {
-  //returns updated KB with new facts
-  const kb = await generatePrologKB(completedCourses);
+export const findAvailableClasses = async (completedCourses: Course[], major: string) => {
+  // returns updated KB with new facts
+  const kb = await generatePrologKB(completedCourses, major);
 
   const session = TauProlog.create(1000);
   const goal = `
-          class("Computer Science", X), testPrereqs(X).
+          class("${major}", X), testPrereqs(X).
       `;
 
   let availableClasses: string[] = [];
@@ -48,17 +48,17 @@ export const findAvailableClasses = async (completedCourses: Course[]) => {
   return availableClasses;
 };
 
-export const findAllClasses = async () => {
-  // load prolog kb from file kb.pl
-  const kb = knowledgeBase;
 
+export const findAllClasses = async (selectedMajor: string) => {
+  const kb = knowledgeBase;
   const session = TauProlog.create(1000);
 
   const goal = `
-        class("Computer Science", X).
-    `;
+    major("${selectedMajor}"),
+    class("${selectedMajor}", X).
+  `;
 
-  let classes: string[] = [];
+  let classes = [];
 
   await session.promiseConsult(kb);
   await session.promiseQuery(goal);
@@ -67,7 +67,9 @@ export const findAllClasses = async () => {
     if (ans_formatted.includes("false")) {
       continue;
     }
-    classes.push(ans_formatted.split("[")[1].split("]")[0].replaceAll(",", ""));
+    classes.push(
+      ans_formatted.split("[")[1].split("]")[0].replaceAll(",", "")
+    );
   }
 
   return classes;
