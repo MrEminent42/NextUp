@@ -9,6 +9,7 @@ import {
 import { Button, Center } from "@chakra-ui/react";
 import { Course } from "./Types";
 
+
 interface BoardProps {
   completed: Course[];
   setCompleted: React.Dispatch<React.SetStateAction<Course[]>>;
@@ -96,7 +97,7 @@ export default function Board({
       <DragDropContext onDragEnd={handleDragEnd}>
         <h1 className="text-2xl text-center font-bold">Progress Board</h1>
         <div className="flex justify-between items-center flex-row mx-2 mt-5">
-          <Column title={"TO DO"} courses={incomplete} id={"1"} />
+          <Column title={"TO DO"} courses={incomplete} id={"1"} loading={incomplete.length == 0} />
           <Column title={"DONE"} courses={completed} id={"2"} />
         </div>
       </DragDropContext>
