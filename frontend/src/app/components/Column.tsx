@@ -40,8 +40,6 @@ export default function Column({ title, courses, id }: ColumnProps) {
     return course.title.toLowerCase().includes(searchInput.toLowerCase());
   });
 
-
-  console.log(title, " tasks:", courses);
   return (
     <div
       style={{ msOverflowStyle: "none", scrollbarWidth: "none" }}

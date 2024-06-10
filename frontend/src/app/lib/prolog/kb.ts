@@ -1,4 +1,5 @@
-major("Computer Science").
+export const knowledgeBase = String.raw
+`major("Computer Science").
 
 class("Computer Science", "CSC101").
 class("Computer Science", "CSC202").
@@ -122,8 +123,8 @@ prerequisite("CSC468", ["CSC365"]).
 prerequisite("CSC469", ["CSC357"]).
 prerequisite("CSC471", ["CSC357"]).
 prerequisite("CSC473", ["CSC471"]).
-prerequisite("CSC474", ["CSC471"]). /* typo? Should be CSC 471 */
-prerequisite("CSC476", ["CSC471"]). /* typo? Should be CSC 471 */
+prerequisite("CSC474", ["CSC474"]).
+prerequisite("CSC476", ["CSC476"]).
 prerequisite("CSC480", ["CSC202"]).
 prerequisite("CSC481", ["CSC480"]).
 prerequisite("CSC482", ["CSC480"]).
@@ -143,27 +144,22 @@ prerequisite("CSC498", ["CSC497"]).
 
 disqualified("CSC307", ["CSC308", "CSC309"]).
 
-taken("CSC202").
-taken("CSC321").
-taken("CSC307").
+% taken("CSC202").
+% taken("CSC321").
+% taken("CSC307").
+% taken("CSC300").
 
 %Predicates
-%Base case: If there are no prerequisites for a course, then it is satisfied.
-prereqsSatisfied(X) :-
-    \+ prerequisite(X, _).
 
-%Recursive case: Check if all prerequisites of a course are taken.
-prereqsSatisfied(X) :-
-    prerequisite(X, Prereqs),
-    allPrereqsTaken(Prereqs).
+testPrereqs(Class) :-
+    prerequisite(Class, Prereqs),
+    preReqsTaken(Prereqs),
+    \+ taken(Class). % avoid returning classes that are already taken
 
-%Predicate to check if all prerequisites are taken.
-allPrereqsTaken([]). % Base case: No prerequisites left to check.
-allPrereqsTaken([P|Prereqs]) :-
-    is_list(P),
-    allPrereqsTaken(P);
-    taken(P),            % Check if the prerequisite is taken.
-    allPrereqsTaken(Prereqs). % Recur for the rest of the prerequisites.
+preReqsTaken([]).
+preReqsTaken([P|Prereqs]) :-
+    taken(P),
+    preReqsTaken(Prereqs).
 
 % Could put down every combination of prereqs for a class as multiple different objects, 
-% but seems inefficient if a prolog could do that with a predicate.
+% but seems inefficient if a prolog could do that with a predicate.`;

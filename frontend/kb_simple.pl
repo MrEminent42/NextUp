@@ -1,0 +1,2 @@
+taken(jon).
+taken(jack).
