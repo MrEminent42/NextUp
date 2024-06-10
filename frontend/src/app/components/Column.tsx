@@ -50,7 +50,7 @@ export default function Column({ title, courses, id, loading }: ColumnProps) {
       {/* Show loading skeleton if appropriate */}
 
       {loading && (
-        [1, 2, 3, 4, 5].map((i) => (<Skeleton height='120px' rounded='lg' m='2' opacity={(0.7 - 0.1 * i) * 100 + '%'} />))
+        [1, 2, 3, 4, 5].map((i) => (<Skeleton height='120px' key={i} rounded='lg' m='2' opacity={(0.7 - 0.1 * i) * 100 + '%'} />))
       )}
 
       <Droppable droppableId={id}>
