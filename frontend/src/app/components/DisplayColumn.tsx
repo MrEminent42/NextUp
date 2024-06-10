@@ -3,20 +3,18 @@ import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import Header from "../ui/header";
 import Board from "./Board";
 import EligibleBoard from "./EligibleBoard";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   findAllClasses,
 } from "../lib/prolog/findClasses";
+import { useAtom } from "jotai";
+import { completedCoursesAtom } from "../lib/atoms/completedCoursesAtom";
+import { Course } from "./Types";
 
-type Course = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
 
 export default function DisplayColumn() {
   const [eligibleCourses, setEligibleCourses] = useState<Course[]>([]);
-  const [completed, setCompleted] = useState<Course[]>([]);
+  const [completed, setCompleted] = useAtom(completedCoursesAtom);
   const [incomplete, setIncomplete] = useState<Course[]>([]);
 
   const [data, setData] = useState<Course[]>([]);
@@ -38,13 +36,22 @@ export default function DisplayColumn() {
     fetchClasses();
   }, []);
 
+  // when data (fetched courses from KB) changes,
+  // update "completed" and "incomplete" course lists
   useEffect(() => {
-    const completedCourses = data.filter((course) => course.completed);
     const incompleteCourses = data.filter((course) => !course.completed);
-
-    setCompleted(completedCourses);
-    setIncomplete(incompleteCourses);
+    // since completed courses are loaded from cache as well
+    // manually filter out courses that have been marked as completed from the cache
+    setIncomplete(incompleteCourses.filter((course) => !completed.some((c) => c.title === course.title)));
   }, [data]);
+
+  // when the "completed" course list changes,
+  // update the list of "incomplete" courses to ensure
+  // that the user can only select courses they haven't taken
+  useEffect(() => {
+    setIncomplete(incomplete.filter((course) => !completed.some((c) => c.title === course.title)));
+  }, [completed])
+
   return (
     <Box>
       <Header />

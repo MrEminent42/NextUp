@@ -1,7 +1,8 @@
 "use client"
-import {useState} from "react";
+import { useState } from "react";
 import Card from "./Card";
 import { Droppable } from "react-beautiful-dnd";
+import { Course } from "./Types";
 
 
 interface ColumnProps {
@@ -9,12 +10,6 @@ interface ColumnProps {
   courses: Course[];
   id: string;
 }
-
-type Course = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
 
 
 const SearchBar = ({ onChange, value }: { onChange: (e: React.ChangeEvent<HTMLInputElement>) => void, value: string }) => {
