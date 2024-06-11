@@ -4,13 +4,8 @@
 import TauProlog from "tau-prolog";
 const pl = require("tau-prolog");
 import { knowledgeBase } from "./kb";
+import { Course } from "@/app/components/Types";
 require("tau-prolog/modules/promises.js")(pl);
-
-type Course = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
 
 export const generatePrologKB = async (completedCourses: Course[]) => {
   const kb = knowledgeBase;

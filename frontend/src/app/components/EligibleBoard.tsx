@@ -2,17 +2,13 @@
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
 import { Button, Center } from "@chakra-ui/react";
+import { Course } from "./Types";
 
-type Course = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
 
 interface EligibleBoardProps {
   eligibleCourses: Course[];
 }
-interface Result extends DropResult {}
+interface Result extends DropResult { }
 export default function EligibleBoard({ eligibleCourses }: EligibleBoardProps) {
   const handleDragEnd = (result: Result) => {
     return;

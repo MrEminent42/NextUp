@@ -7,21 +7,18 @@ import {
   findAvailableClasses,
 } from "../lib/prolog/findClasses";
 import { Button, Center } from "@chakra-ui/react";
+import { Course } from "./Types";
 
-type Course = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
+
 interface BoardProps {
   completed: Course[];
   setCompleted: React.Dispatch<React.SetStateAction<Course[]>>;
   setEligibleCourses: React.Dispatch<React.SetStateAction<Course[]>>;
   incomplete: Course[];
-  setIncomplete:React.Dispatch<React.SetStateAction<Course[]>>;
+  setIncomplete: React.Dispatch<React.SetStateAction<Course[]>>;
 }
 
-interface Result extends DropResult {}
+interface Result extends DropResult { }
 export default function Board({
   completed,
   setCompleted,
@@ -31,7 +28,7 @@ export default function Board({
 }: BoardProps) {
 
   const handleSend = async () => {
-    if(completed.length <= 0) {
+    if (completed.length <= 0) {
       alert("Please add courses before submitting form");
       return;
     }
@@ -40,7 +37,7 @@ export default function Board({
         setEligibleCourses(
           classes.map(
             (className, i) =>
-              ({ id: i+1, title: className, completed: false } as Course)
+              ({ id: i + 1, title: className, completed: false } as Course)
           )
         );
       });
@@ -100,7 +97,7 @@ export default function Board({
       <DragDropContext onDragEnd={handleDragEnd}>
         <h1 className="text-2xl text-center font-bold">Progress Board</h1>
         <div className="flex justify-between items-center flex-row mx-2 mt-5">
-          <Column title={"TO DO"} courses={incomplete} id={"1"} />
+          <Column title={"TO DO"} courses={incomplete} id={"1"} loading={incomplete.length == 0} />
           <Column title={"DONE"} courses={completed} id={"2"} />
         </div>
       </DragDropContext>

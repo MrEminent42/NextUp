@@ -1,20 +1,17 @@
 "use client"
-import {useState} from "react";
+import { useState } from "react";
 import Card from "./Card";
 import { Droppable } from "react-beautiful-dnd";
+import { Course } from "./Types";
+import { Skeleton } from "@chakra-ui/react";
 
 
 interface ColumnProps {
   title: string;
   courses: Course[];
   id: string;
+  loading?: boolean;
 }
-
-type Course = {
-  id: number;
-  title: string;
-  completed: boolean;
-};
 
 
 const SearchBar = ({ onChange, value }: { onChange: (e: React.ChangeEvent<HTMLInputElement>) => void, value: string }) => {
@@ -29,7 +26,7 @@ const SearchBar = ({ onChange, value }: { onChange: (e: React.ChangeEvent<HTMLIn
   );
 };
 
-export default function Column({ title, courses, id }: ColumnProps) {
+export default function Column({ title, courses, id, loading }: ColumnProps) {
   const [searchInput, setSearchInput] = useState<string>("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -49,6 +46,13 @@ export default function Column({ title, courses, id }: ColumnProps) {
         {title}
       </h1>
       <SearchBar onChange={handleChange} value={searchInput} />
+
+      {/* Show loading skeleton if appropriate */}
+
+      {loading && (
+        [1, 2, 3, 4, 5].map((i) => (<Skeleton height='120px' key={i} rounded='lg' m='2' opacity={(0.7 - 0.1 * i) * 100 + '%'} />))
+      )}
+
       <Droppable droppableId={id}>
         {(provided, snapshot) => (
           <div
