@@ -991,7 +991,6 @@ prerequisite("CHEM124", ["MATH118"]).
 prerequisite("CM115", []).
 prerequisite("CM232", ["CM115"]).
 prerequisite("IME314", ["MATH141"]).
-prerequisite("CSC231", ["MATH141"]).
 prerequisite("EE201", ["PHYS141"]).
 prerequisite("GEOL201", ["CHEM124"]).
 prerequisite("MATH141", ["MATH118"]).
@@ -1467,7 +1466,6 @@ prerequisite("BIO232", ["BIO231"]).
 prerequisite("CE204", ["ME211"]).
 prerequisite("CHEM124", ["MATH141"]).
 prerequisite("CHEM125", ["CHEM124"]).
-prerequisite("CSC231", ["MATH141"]).
 prerequisite("EE201", ["PHYS141"]).
 prerequisite("ENGL147", []).
 prerequisite("MATE210", ["CHEM124"]).
@@ -1783,8 +1781,6 @@ prerequisite("MATH141", ["MATH118"]).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
 prerequisite("MATH241", ["MATH143"]).
-prerequisite("CSC232", ["MATH141"]).
-prerequisite("CSC234", ["MATH141"]).
 prerequisite("MATH244", ["MATH143"]).
 prerequisite("STAT218", ["MATH142"]).
 prerequisite("STAT312", ["MATH142"]).
@@ -2451,7 +2447,6 @@ prerequisite("CSC123", []).
 prerequisite("CPE133", []).
 prerequisite("EE133", []).
 prerequisite("CPE202", ["CPE101", "CPE123"]).
-prerequisite("CSC202", ["CSC101", "CSC123"]).
 prerequisite("CPE203", ["CPE202"]).
 prerequisite("CSC203", ["CSC202"]).
 prerequisite("CPE233", ["CPE133", "CPE202"]).
@@ -2468,10 +2463,6 @@ prerequisite("CPE453", ["CPE357"]).
 prerequisite("CSC453", ["CSC357"]).
 prerequisite("CPE461", ["CPE450"]).
 prerequisite("CPE462", ["CPE461"]).
-prerequisite("CSC497", ["CPE450"]).
-prerequisite("CSC498", ["CSC497"]).
-prerequisite("CPE464", ["CPE357"]).
-prerequisite("CSC248", ["MATH142"]).
 prerequisite("CPE327", ["MATH244"]).
 prerequisite("CPE367", ["CPE327"]).
 prerequisite("EE228", ["MATH244"]).
@@ -3977,9 +3968,7 @@ prerequisite("ME212", ["ME211"]).
 prerequisite("PSY350", ["PSY201"]).
 prerequisite("BIO213", ["Junior Standing"]).
 prerequisite("BMED213", ["BIO213"]).
-prerequisite("CSC232", ["CSC101"]).
 prerequisite("CPE101", ["Junior Standing"]).
-prerequisite("CSC101", ["Junior Standing"]).
 prerequisite("EE201", ["Junior Standing"]).
 prerequisite("EE251", ["EE201"]).
 prerequisite("ENGL147", ["Junior Standing"]).
@@ -4799,8 +4788,6 @@ prerequisite("CE204", ["MATH141"]).
 prerequisite("CE207", ["CE204"]).
 prerequisite("CHEM124", ["MATH141"]).
 prerequisite("CHEM125", ["CHEM124"]).
-prerequisite("CSC231", ["MATH141"]).
-prerequisite("CSC234", ["MATH141"]).
 prerequisite("EE201", ["PHYS141"]).
 prerequisite("EE251", ["EE201"]).
 prerequisite("EE321", ["EE201"]).
@@ -5924,24 +5911,6 @@ class("Software Engineering", "PHYS141").
 class("Software Engineering", "PHYS142").
 class("Software Engineering", "PHYS143").
 
-prerequisite("CSC101", []).
-prerequisite("CSC202", ["CSC101"]).
-prerequisite("CSC123", ["CSC101"]).
-prerequisite("CSC203", ["CSC202"]).
-prerequisite("CSC225", ["CSC202"]).
-prerequisite("CSC248", ["CSC202"]).
-prerequisite("CSC300", ["CSC203"]).
-prerequisite("CSC305", ["CSC203"]).
-prerequisite("CSC308", ["CSC203"]).
-prerequisite("CSC309", ["CSC308"]).
-prerequisite("CSC349", ["CSC203", "CSC248"]).
-prerequisite("CSC357", ["CSC225"]).
-prerequisite("CSC365", ["CSC203"]).
-prerequisite("CSC402", ["CSC309"]).
-prerequisite("CSC405", ["CSC309"]).
-prerequisite("CSC406", ["CSC405"]).
-prerequisite("CSC430", ["CSC248"]).
-prerequisite("CSC484", ["CSC305"]).
 prerequisite("IME314", []).
 prerequisite("IME315", []).
 prerequisite("MATH142", ["MATH141"]).
@@ -6146,12 +6115,6 @@ prerequisite("STAT543", ["STAT323"]).
 prerequisite("STAT545", ["STAT305"]).
 prerequisite("STAT550", ["STAT302"]).
 prerequisite("STAT551", ["STAT302"]).
-prerequisite("CSC202", ["CSC101"]).
-prerequisite("CSC203", ["CSC202"]).
-prerequisite("CSC248", ["CSC101"]).
-prerequisite("CSC349", ["CSC248"]).
-prerequisite("CSC365", ["CSC203"]).
-prerequisite("CSC369", ["CSC203"]).
 prerequisite("DATA301", ["STAT301"]).
 prerequisite("IME430", ["STAT302"]).
 prerequisite("ITP303", ["STAT302"]).
