@@ -75,7 +75,72 @@ class("Computer Science", "ES351").
 class("Computer Science", "WGQS350").
 class("Computer Science", "WGQS351").
 
-
+prerequisite("CSC101", []).
+prerequisite("CSC202", ["CSC101"]).
+prerequisite("CSC203", ["CSC202"]).
+prerequisite("CSC225", ["CSC202"]).
+prerequisite("CSC248", ["CSC202", "CSC203"]).
+prerequisite("CSC349", ["CSC248","CSC202","MATH142"]).
+prerequisite("CSC307", ["CSC248","CSC357"]).
+prerequisite("CSC308", ["CSC248"]).
+prerequisite("CSC309", ["CSC308","CSC357"]).
+prerequisite("CSC357",["CSC202","CSC203","CSC225"]).
+prerequisite("CSC365", ["CSC248"]).
+prerequisite("CSC366", ["CSC365"]).
+prerequisite("CSC369", ["CSC202", "CSC203", "STAT312"]).
+prerequisite("CSC371", ["CSC202"]).
+prerequisite("CSC377", ["CSC202"]).
+prerequisite("CSC378", ["CSC202"]).
+prerequisite("CSC321", ["CSC357"]).
+prerequisite("CSC323", ["CSC357"]).
+%prerequisite("CSC325", ["CSC300",]).
+%prerequisite("CSC325", ["CSC203"]).
+%prerequisite("CSC325", ["PHIL323"]).
+prerequisite("CSC325", ["CSC300"]).
+prerequisite("CSC325", ["CSC203"]).
+prerequisite("CSC325", ["PHIL323"]).
+prerequisite("CSC402", ["CSC307"]).
+prerequisite("CSC402", ["CSC309"]).
+prerequisite("CSC409", ["CSC307"]).
+prerequisite("CSC409", ["CSC309"]).
+prerequisite("CSC410", ["CSC349", "STAT312"]).
+prerequisite("CSC421", ["CSC321", "CSC300"]).
+prerequisite("CSC421", ["CSC321", "PHIL323"]).
+prerequisite("CSC422", ["CSC364"]).
+% prerequisite("CSC424", ["CSC321", "CSC307"]).
+% prerequisite("CSC424", ["CSC321", "CSC309"]).
+prerequisite("CSC424", ["CSC321", "CSC307"]).
+prerequisite("CSC424", ["CSC321", "CSC309"]).
+prerequisite("CSC430", ["CSC349"]).
+prerequisite("CSC431", ["CSC430"]).
+prerequisite("CSC436", ["CSC357"]).
+prerequisite("CSC437", ["CSC203"]).
+prerequisite("CSC445", ["CSC248"]).
+prerequisite("CSC448", ["CSC349"]).
+prerequisite("CSC453", ["CSC357", "CSC225"]).
+prerequisite("CSC454", ["CSC453"]).
+prerequisite("CSC466", ["CSC4349", "STAT312"]).
+prerequisite("CSC468", ["CSC365"]).
+prerequisite("CSC469", ["CSC357"]).
+prerequisite("CSC471", ["CSC357"]).
+prerequisite("CSC473", ["CSC471"]).
+prerequisite("CSC474", ["CSC474"]).
+prerequisite("CSC476", ["CSC476"]).
+prerequisite("CSC480", ["CSC202"]).
+prerequisite("CSC481", ["CSC480"]).
+prerequisite("CSC482", ["CSC480"]).
+prerequisite("CSC484", ["CSC307"]).
+prerequisite("CSC484", ["CSC308"]).
+prerequisite("CSC487", ["CSC349", "MATH206"]).
+prerequisite("CSC487", ["CSC349", "MATH244"]).
+prerequisite("CSC364", ["CSC203"]).
+prerequisite("CSC300", ["CSC357"]).
+prerequisite("CSC491", ["CSC307"]).
+prerequisite("CSC491", ["CSC309"]).
+prerequisite("CSC492", ["CSC491"]).
+prerequisite("CSC497", ["CSC307"]).
+prerequisite("CSC497", ["CSC309"]).
+prerequisite("CSC498", ["CSC497"]).
 
 disqualified("CSC307", ["CSC308", "CSC309"]).
 
