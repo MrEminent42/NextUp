@@ -129,7 +129,7 @@ def format_prerequisite_statements(row):
 
     # If prerequisites_list is empty, create an empty prerequisite statement
     if not prerequisites_list:
-        formatted_statements.append(f'prerequisite("{course_id}", [""]).')
+        formatted_statements.append(f'prerequisite("{course_id}", []).')
 
     for prereq_group in prerequisites_list:
         prereq_str = ', '.join(f'"{item}"' for item in prereq_group)
