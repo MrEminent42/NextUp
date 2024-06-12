@@ -123,14 +123,16 @@ def apply_parsing_and_filtering(prereq_str):
     return filtered
 
 def format_prerequisite_statements(row):
-    course_id = row['id']  # This retrieves the course ID from the DataFrame
-    prerequisites_list = row['parsed_prereq']  # This retrieves the parsed prerequisites
+    course_id = row['id']
+    prerequisites_list = row['parsed_prereq']
     formatted_statements = []
 
-    # Iterate through the list of prerequisites
+    # If prerequisites_list is empty, create an empty prerequisite statement
+    if not prerequisites_list:
+        formatted_statements.append(f'prerequisite("{course_id}", [""]).')
+
     for prereq_group in prerequisites_list:
-        # Format the prerequisite list into a string
-        prereq_str = ', '.join(f'"{item}"' for item in prereq_group)  # Format each item in quotes and separate by commas
+        prereq_str = ', '.join(f'"{item}"' for item in prereq_group)
         statement = f'prerequisite("{course_id}", [{prereq_str}]).'
         formatted_statements.append(statement)
 
