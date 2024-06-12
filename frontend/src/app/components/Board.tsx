@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 import Column from "./Column";
 import { Button, Center, Box, Flex, Text } from "@chakra-ui/react";
 import MajorSelect from "./MajorSelect"; // Adjust the path as necessary
+import { saveToLocalStorage, loadFromLocalStorage } from '../lib/atoms/localStorage';
 
 type Course = {
   id: number;
@@ -18,7 +18,8 @@ interface BoardProps {
   incomplete: Course[];
   setIncomplete: React.Dispatch<React.SetStateAction<Course[]>>;
   onSend: () => void;
-  setMajor: (major: string) => void; // Add setMajor prop
+  setMajor: (major: string) => void;
+  resetCourses: () => void;
 }
 
 interface Result extends DropResult {}
@@ -30,8 +31,30 @@ export default function Board({
   incomplete,
   setIncomplete,
   onSend,
-  setMajor, // Destructure setMajor prop
+  setMajor,
+  resetCourses,
 }: BoardProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    const savedCompletedCourses = loadFromLocalStorage('completedCourses');
+    const savedMajor = loadFromLocalStorage('selectedMajor');
+
+    if (savedCompletedCourses) {
+      setCompleted(savedCompletedCourses);
+    }
+
+    if (savedMajor) {
+      setMajor(savedMajor);
+    }
+  }, [setCompleted, setMajor]);
+
+  useEffect(() => {
+    if (isMounted) {
+      saveToLocalStorage('completedCourses', completed);
+    }
+  }, [completed, isMounted]);
 
   const handleDragEnd = (result: Result) => {
     const { destination, source, draggableId } = result;
@@ -59,6 +82,7 @@ export default function Board({
         break;
     }
   }
+
   function setNewState(destinationDroppableId: string, course: Course) {
     let updateCourse;
     switch (destinationDroppableId) {
@@ -72,6 +96,7 @@ export default function Board({
         break;
     }
   }
+
   function findItemById(id: number, array: Course[]) {
     return array.find((item) => item.id === id);
   }
@@ -80,12 +105,22 @@ export default function Board({
     return array.filter((item) => item.id !== id);
   }
 
+  const handleMajorChange = (selectedMajor: string) => {
+    setMajor(selectedMajor);
+    saveToLocalStorage('selectedMajor', selectedMajor);
+    resetCourses(); // Reset courses when major is changed
+  };
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <Box>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Flex justifyContent="center" alignItems="center" mb={4} position="relative">
           <Box bg="white" p={2} borderRadius="md" boxShadow="md" position="absolute" left="0">
-            <MajorSelect onChange={(value) => setMajor(value)} />
+            <MajorSelect onChange={handleMajorChange} />
           </Box>
           <Text className="text-2xl text-center font-bold">
             Progress Board
