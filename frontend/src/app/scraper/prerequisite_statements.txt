@@ -1,5 +1,8 @@
+prerequisite("AERO121", [""]).
+prerequisite("AERO200", [""]).
 prerequisite("AERO215", ["AERO121", "MATH143", "IME144"]).
 prerequisite("AERO220", ["AERO121"]).
+prerequisite("AERO270", [""]).
 prerequisite("AERO299", ["ME212", "AERO300", "AERO215"]).
 prerequisite("AERO300", ["AERO215", "MATH244", "ME211", "PHYS133"]).
 prerequisite("AERO300", ["PHYS143"]).
@@ -9,6 +12,7 @@ prerequisite("AERO303", ["AERO299", "AERO302"]).
 prerequisite("AERO303", ["AERO301", "AERO302"]).
 prerequisite("AERO306", ["AERO215"]).
 prerequisite("AERO307", ["AERO302", "AERO306"]).
+prerequisite("AERO310", [""]).
 prerequisite("AERO320", ["AERO300", "ME212"]).
 prerequisite("AERO321", ["AERO300", "EE201", "EE251"]).
 prerequisite("AERO331", ["AERO300", "CE207"]).
@@ -21,6 +25,7 @@ prerequisite("AERO355", ["AERO300"]).
 prerequisite("AERO356", ["AERO299", "AERO355"]).
 prerequisite("AERO356", ["AERO301", "AERO355"]).
 prerequisite("AERO360", ["PSY350"]).
+prerequisite("AERO400", [""]).
 prerequisite("AERO401", ["AERO303", "CHEM124"]).
 prerequisite("AERO402", ["AERO303"]).
 prerequisite("AERO405", ["AERO303"]).
@@ -46,20 +51,33 @@ prerequisite("AERO446", ["AERO355"]).
 prerequisite("AERO447", ["IME144"]).
 prerequisite("AERO448", ["AERO447"]).
 prerequisite("AERO449", ["AERO448"]).
+prerequisite("AERO450", [""]).
 prerequisite("AERO452", ["AERO351"]).
 prerequisite("AERO455", ["AERO443"]).
 prerequisite("AERO455", ["AERO447"]).
 prerequisite("AERO455", ["AERO351"]).
+prerequisite("AERO460", [""]).
 prerequisite("AERO465", ["AERO303", "AERO320", "AERO431"]).
+prerequisite("AERO470", [""]).
+prerequisite("AERO471", [""]).
+prerequisite("AERO493", [""]).
+prerequisite("AERO494", [""]).
+prerequisite("AERO495", [""]).
+prerequisite("AERO500", [""]).
 prerequisite("AERO513", ["AERO306"]).
 prerequisite("AERO513", ["AERO351"]).
+prerequisite("AERO515", [""]).
 prerequisite("AERO522", ["AERO302"]).
 prerequisite("AERO525", ["AERO303"]).
 prerequisite("AERO526", ["AERO299"]).
 prerequisite("AERO526", ["AERO301"]).
+prerequisite("AERO532", [""]).
 prerequisite("AERO533", ["AERO431"]).
+prerequisite("AERO534", [""]).
+prerequisite("AERO535", [""]).
 prerequisite("AERO540", ["AERO303", "AERO401"]).
 prerequisite("AERO541", ["AERO401"]).
+prerequisite("AERO548", [""]).
 prerequisite("AERO549", ["AERO450"]).
 prerequisite("AERO553", ["AERO320"]).
 prerequisite("AERO557", ["AERO351"]).
@@ -72,6 +90,19 @@ prerequisite("AERO565", ["AERO445"]).
 prerequisite("AERO566", ["AERO449"]).
 prerequisite("AERO568", ["AERO302", "AERO406"]).
 prerequisite("AERO569", ["AERO568"]).
+prerequisite("AERO570", [""]).
+prerequisite("AERO571", [""]).
+prerequisite("AERO593", [""]).
+prerequisite("AERO594", [""]).
+prerequisite("AERO595", [""]).
+prerequisite("AERO599", [""]).
+prerequisite("AGB101", [""]).
+prerequisite("AGB200", [""]).
+prerequisite("AGB202", [""]).
+prerequisite("AGB212", [""]).
+prerequisite("AGB214", [""]).
+prerequisite("AGB260", [""]).
+prerequisite("AGB270", [""]).
 prerequisite("AGB301", ["AGB212"]).
 prerequisite("AGB301", ["ECON221"]).
 prerequisite("AGB304", ["AGB212", "ECON201"]).
@@ -93,10 +124,12 @@ prerequisite("AGB327", ["STAT251", "AGB260"]).
 prerequisite("AGB328", ["STAT251", "AGB260"]).
 prerequisite("AGB335", ["AGB308", "AGB323"]).
 prerequisite("AGB335", ["AGB310", "AGB323"]).
+prerequisite("AGB339", [""]).
 prerequisite("AGB369", ["AGB212"]).
 prerequisite("AGB369", ["ECON201"]).
 prerequisite("AGB369", ["ECON221"]).
 prerequisite("AGB370", ["AGB312", "AGB313"]).
+prerequisite("AGB400", [""]).
 prerequisite("AGB404", ["AGB301"]).
 prerequisite("AGB405", ["AGB301", "AGB327"]).
 prerequisite("AGB406", ["AGB301", "AGB327"]).
@@ -108,42 +141,132 @@ prerequisite("AGB425", ["AGB323", "AGB327"]).
 prerequisite("AGB425", ["AGB323", "AGB328"]).
 prerequisite("AGB427", ["AGB327"]).
 prerequisite("AGB427", ["AGB328"]).
+prerequisite("AGB440", [""]).
 prerequisite("AGB445", ["AGB301"]).
 prerequisite("AGB450", ["AGB323", "AGB327"]).
 prerequisite("AGB450", ["AGB323", "AGB328"]).
 prerequisite("AGB452", ["AGB313"]).
+prerequisite("AGB462", [""]).
+prerequisite("AGB463", [""]).
+prerequisite("AGB470", [""]).
+prerequisite("AGC102", [""]).
+prerequisite("AGC200", [""]).
+prerequisite("AGC205", [""]).
+prerequisite("AGC207", [""]).
 prerequisite("AGC225", ["AGC207"]).
+prerequisite("AGC254", [""]).
+prerequisite("AGC270", [""]).
 prerequisite("AGC290", ["AGC205", "JOUR203"]).
 prerequisite("AGC290", ["JOUR205"]).
 prerequisite("AGC301", ["JOUR203", "JOUR205"]).
 prerequisite("AGC314", ["AGB314"]).
 prerequisite("AGC318", ["AGC314"]).
+prerequisite("AGC339", [""]).
+prerequisite("AGC400", [""]).
 prerequisite("AGC404", ["AGED404"]).
 prerequisite("AGC407", ["JOUR205", "AGC207"]).
+prerequisite("AGC412", [""]).
 prerequisite("AGC425", ["AGC225", "COMS395", "JOUR203", "JOUR205", "JOUR312"]).
+prerequisite("AGC426", [""]).
+prerequisite("AGC452", [""]).
 prerequisite("AGC454", ["AGC404"]).
+prerequisite("AGC460", [""]).
 prerequisite("AGC461", ["AGED460"]).
 prerequisite("AGC462", ["AGC461"]).
 prerequisite("AGC463", ["AG452", "AGC452"]).
 prerequisite("AGC463", ["PLSC329"]).
+prerequisite("AGC470", [""]).
+prerequisite("AGC471", [""]).
+prerequisite("AGC475", [""]).
 prerequisite("AGC490", ["AGC205", "AGC207", "AGC301", "JOUR312"]).
+prerequisite("AGC500", [""]).
+prerequisite("AGC570", [""]).
+prerequisite("AGC571", [""]).
+prerequisite("AGC580", [""]).
+prerequisite("AGED200", [""]).
+prerequisite("AGED220", [""]).
+prerequisite("AGED270", [""]).
+prerequisite("AGED303", [""]).
+prerequisite("AGED339", [""]).
+prerequisite("AGED350", [""]).
+prerequisite("AGED400", [""]).
 prerequisite("AGED410", ["AGED303"]).
 prerequisite("AGED424", ["AGED438"]).
+prerequisite("AGED440", [""]).
+prerequisite("AGED441", [""]).
 prerequisite("AGED461", ["AGED460"]).
 prerequisite("AGED462", ["AGED461"]).
+prerequisite("AGED470", [""]).
+prerequisite("AGED471", [""]).
+prerequisite("AGED500", [""]).
+prerequisite("AGED501", [""]).
+prerequisite("AGED513", [""]).
+prerequisite("AGED520", [""]).
+prerequisite("AGED522", [""]).
+prerequisite("AGED523", [""]).
 prerequisite("AGED524", ["EDUC412", "EDUC414", "EDUC418", "AGED303", "AGED350"]).
 prerequisite("AGED525", ["PLSC120"]).
 prerequisite("AGED525", ["PLSC230"]).
+prerequisite("AGED530", [""]).
+prerequisite("AGED536", [""]).
 prerequisite("AGED537", ["AGED438"]).
+prerequisite("AGED539", [""]).
 prerequisite("AGED540", ["AGED524"]).
+prerequisite("AGED570", [""]).
+prerequisite("AGED571", [""]).
+prerequisite("AGED572", [""]).
+prerequisite("AGED580", [""]).
+prerequisite("AGED581", [""]).
+prerequisite("AG200", [""]).
+prerequisite("AG210", [""]).
+prerequisite("AG212", [""]).
+prerequisite("AG243", [""]).
+prerequisite("AG315", [""]).
+prerequisite("AG330", [""]).
+prerequisite("AG339", [""]).
+prerequisite("AG350", [""]).
+prerequisite("AG360", [""]).
+prerequisite("AG400", [""]).
 prerequisite("AG410", ["AG210"]).
+prerequisite("AG412", [""]).
 prerequisite("AG413", ["AG412"]).
+prerequisite("AG452", [""]).
+prerequisite("AG485", [""]).
+prerequisite("AG495", [""]).
+prerequisite("AG500", [""]).
+prerequisite("AG539", [""]).
+prerequisite("AG581", [""]).
+prerequisite("AG585", [""]).
+prerequisite("AG595", [""]).
+prerequisite("AG598", [""]).
+prerequisite("AG599", [""]).
+prerequisite("ASCI101", [""]).
+prerequisite("ASCI112", [""]).
+prerequisite("ASCI200", [""]).
 prerequisite("ASCI203", ["BIO111"]).
 prerequisite("ASCI203", ["BIO161"]).
+prerequisite("ASCI211", [""]).
+prerequisite("ASCI212", [""]).
+prerequisite("ASCI214", [""]).
+prerequisite("ASCI215", [""]).
 prerequisite("ASCI220", ["BIO111", "CHEM127"]).
 prerequisite("ASCI220", ["BIO161", "CHEM127"]).
+prerequisite("ASCI221", [""]).
+prerequisite("ASCI222", [""]).
+prerequisite("ASCI223", [""]).
+prerequisite("ASCI224", [""]).
+prerequisite("ASCI225", [""]).
+prerequisite("ASCI226", [""]).
+prerequisite("ASCI227", [""]).
+prerequisite("ASCI228", [""]).
 prerequisite("ASCI229", ["BIO111"]).
 prerequisite("ASCI229", ["BIO161"]).
+prerequisite("ASCI232", [""]).
+prerequisite("ASCI239", [""]).
+prerequisite("ASCI260", [""]).
+prerequisite("ASCI265", [""]).
+prerequisite("ASCI270", [""]).
+prerequisite("ASCI290", [""]).
 prerequisite("ASCI302", ["BIO111", "STAT218"]).
 prerequisite("ASCI302", ["BIO161", "STAT218"]).
 prerequisite("ASCI304", ["ASCI302", "BIO302", "BIO303"]).
@@ -153,6 +276,7 @@ prerequisite("ASCI311", ["ASCI221"]).
 prerequisite("ASCI312", ["ASCI221"]).
 prerequisite("ASCI312", ["ASCI223"]).
 prerequisite("ASCI315", ["ASCI224"]).
+prerequisite("ASCI319", [""]).
 prerequisite("ASCI321", ["BIO111"]).
 prerequisite("ASCI321", ["BIO161"]).
 prerequisite("ASCI324", ["ASCI228"]).
@@ -161,6 +285,7 @@ prerequisite("ASCI326", ["ASCI112", "ASCI226"]).
 prerequisite("ASCI330", ["ASCI211"]).
 prerequisite("ASCI330", ["ASCI225"]).
 prerequisite("ASCI333", ["ASCI224"]).
+prerequisite("ASCI339", [""]).
 prerequisite("ASCI340", ["BIO111"]).
 prerequisite("ASCI340", ["BIO161"]).
 prerequisite("ASCI342", ["ASCI225"]).
@@ -174,12 +299,15 @@ prerequisite("ASCI355", ["ASCI220", "ASCI319", "ASCI320", "CHEM313", "CHEM314", 
 prerequisite("ASCI355", ["ASCI220", "CHEM371"]).
 prerequisite("ASCI355", ["ASCI319", "ASCI320", "CHEM313", "CHEM314", "CHEM369"]).
 prerequisite("ASCI355", ["CHEM371"]).
+prerequisite("ASCI360", [""]).
+prerequisite("ASCI363", [""]).
 prerequisite("ASCI366", ["CHEM111"]).
 prerequisite("ASCI366", ["CHEM127", "ASCI229"]).
 prerequisite("ASCI370", ["ASCI239"]).
 prerequisite("ASCI370", ["ASCI329"]).
 prerequisite("ASCI372", ["ASCI239"]).
 prerequisite("ASCI372", ["ASCI329"]).
+prerequisite("ASCI400", [""]).
 prerequisite("ASCI403", ["BIO161"]).
 prerequisite("ASCI405", ["ASCI229"]).
 prerequisite("ASCI405", ["BIO361"]).
@@ -201,19 +329,34 @@ prerequisite("ASCI438", ["ASCI229", "ASCI319", "ASCI320", "CHEM313", "CHEM314", 
 prerequisite("ASCI438", ["ASCI229", "CHEM371"]).
 prerequisite("ASCI440", ["ASCI229", "ASCI319", "ASCI320", "CHEM313", "CHEM314", "CHEM369"]).
 prerequisite("ASCI440", ["CHEM371"]).
+prerequisite("ASCI450", [""]).
 prerequisite("ASCI455", ["ASCI333", "ASCI351", "ASCI405", "ASCI406"]).
 prerequisite("ASCI460", ["ASCI239"]).
 prerequisite("ASCI460", ["ASCI329"]).
 prerequisite("ASCI465", ["ASCI239"]).
 prerequisite("ASCI465", ["ASCI329"]).
+prerequisite("ASCI470", [""]).
+prerequisite("ASCI471", [""]).
 prerequisite("ASCI477", ["ASCI363"]).
 prerequisite("ASCI478", ["ASCI363"]).
 prerequisite("ASCI479", ["ASCI363"]).
 prerequisite("ASCI484", ["ASCI211", "FSN204"]).
+prerequisite("ASCI490", [""]).
+prerequisite("ASCI500", [""]).
 prerequisite("ASCI520", ["ASCI319", "ASCI320", "CHEM313", "CHEM314", "CHEM369", "ASCI346", "ASCI350", "ASCI355"]).
 prerequisite("ASCI520", ["ASCI319", "ASCI320", "CHEM313", "CHEM314", "CHEM369", "DSCI301"]).
 prerequisite("ASCI520", ["CHEM371", "ASCI346", "ASCI350", "ASCI355"]).
 prerequisite("ASCI520", ["CHEM371", "DSCI301"]).
+prerequisite("ASCI570", [""]).
+prerequisite("ASCI571", [""]).
+prerequisite("ASCI581", [""]).
+prerequisite("ASCI583", [""]).
+prerequisite("ASCI593", [""]).
+prerequisite("ANT200", [""]).
+prerequisite("ANT201", [""]).
+prerequisite("ANT202", [""]).
+prerequisite("ANT250", [""]).
+prerequisite("ANT270", [""]).
 prerequisite("ANT309", ["ANT202"]).
 prerequisite("ANT310", ["ANT202"]).
 prerequisite("ANT310", ["ANT309"]).
@@ -222,17 +365,37 @@ prerequisite("ANT311", ["ANT310"]).
 prerequisite("ANT312", ["ANT201", "ANT202"]).
 prerequisite("ANT312", ["ANT309"]).
 prerequisite("ANT320", ["ANT202"]).
+prerequisite("ANT330", [""]).
+prerequisite("ANT344", [""]).
+prerequisite("ANT345", [""]).
+prerequisite("ANT360", [""]).
+prerequisite("ANT384", [""]).
+prerequisite("ANT393", [""]).
+prerequisite("ANT400", [""]).
 prerequisite("ANT401", ["ANT201", "ANT250", "BIO150", "BIO160"]).
 prerequisite("ANT401", ["BIO263"]).
+prerequisite("ANT402", [""]).
+prerequisite("ANT415", [""]).
+prerequisite("ANT425", [""]).
+prerequisite("ANT455", [""]).
+prerequisite("ANT460", [""]).
+prerequisite("ANT461", [""]).
+prerequisite("ANT462", [""]).
 prerequisite("ANT465", ["ANT384"]).
 prerequisite("ANT465", ["ANT464"]).
+prerequisite("ANT470", [""]).
+prerequisite("ANT471", [""]).
+prerequisite("ARCE106", [""]).
 prerequisite("ARCE211", ["PHYS141", "MATH142"]).
 prerequisite("ARCE212", ["ARCE211"]).
 prerequisite("ARCE223", ["ARCE212"]).
 prerequisite("ARCE223", ["ARCE224"]).
+prerequisite("ARCE224", [""]).
 prerequisite("ARCE226", ["ARCE212"]).
 prerequisite("ARCE227", ["ARCE212"]).
 prerequisite("ARCE257", ["CM115"]).
+prerequisite("ARCE260", [""]).
+prerequisite("ARCE270", [""]).
 prerequisite("ARCE302", ["ARCE223", "ARCE227"]).
 prerequisite("ARCE302", ["ARCE352"]).
 prerequisite("ARCE303", ["ARCE223"]).
@@ -249,9 +412,13 @@ prerequisite("ARCE353", ["ARCE352"]).
 prerequisite("ARCE353", ["ARCE306"]).
 prerequisite("ARCE354", ["MATH244", "ARCE353"]).
 prerequisite("ARCE354", ["ARCE412"]).
+prerequisite("ARCE360", [""]).
 prerequisite("ARCE371", ["ARCE223", "ARCE227"]).
 prerequisite("ARCE372", ["ARCE257", "ARCE302", "ARCE303", "ARCE352", "ARCE371"]).
+prerequisite("ARCE400", [""]).
+prerequisite("ARCE410", [""]).
 prerequisite("ARCE412", ["ME212"]).
+prerequisite("ARCE415", [""]).
 prerequisite("ARCE421", ["ARCE212"]).
 prerequisite("ARCE421", ["GEOL201"]).
 prerequisite("ARCE422", ["ARCE421"]).
@@ -259,27 +426,47 @@ prerequisite("ARCE444", ["ARCE371", "ARCE302"]).
 prerequisite("ARCE451", ["ARCE257", "ARCE304", "ARCE305", "ARCE371"]).
 prerequisite("ARCE452", ["ARCE257", "ARCE444", "ARCE372"]).
 prerequisite("ARCE452", ["ARCE451"]).
+prerequisite("ARCE453", [""]).
+prerequisite("ARCE460", [""]).
+prerequisite("ARCE470", [""]).
+prerequisite("ARCE471", [""]).
 prerequisite("ARCE473", ["ARCE372", "ARCE422", "ARCE444", "ARCE451"]).
+prerequisite("ARCE475", [""]).
+prerequisite("ARCE476", [""]).
 prerequisite("ARCE483", ["ARCE372", "ARCE412"]).
+prerequisite("ARCE485", [""]).
+prerequisite("ARCE495", [""]).
 prerequisite("ARCE501", ["ARCE306", "ARCE353"]).
 prerequisite("ARCE502", ["ARCE306", "ARCE353"]).
 prerequisite("ARCE503", ["ARCE502"]).
 prerequisite("ARCE504", ["MATH244", "ARCE306", "ARCE501"]).
 prerequisite("ARCE511", ["ARCE452", "ARCE503", "ARCE504"]).
+prerequisite("ARCE522", [""]).
 prerequisite("ARCE546", ["ARCE371"]).
 prerequisite("ARCE546", ["ARCE412"]).
 prerequisite("ARCE548", ["ARCE303", "ARCE304", "ARCE305", "ARCE412", "ARCE444"]).
+prerequisite("ARCE570", [""]).
+prerequisite("ARCE571", [""]).
 prerequisite("ARCE598", ["ARCE371", "ARCE372", "ARCE452", "ARCE483"]).
+prerequisite("ARCH101", [""]).
+prerequisite("ARCH131", [""]).
 prerequisite("ARCH132", ["ARCH131"]).
 prerequisite("ARCH133", ["ARCH132"]).
+prerequisite("ARCH201", [""]).
 prerequisite("ARCH207", ["ARCH242", "ARCH253"]).
+prerequisite("ARCH217", [""]).
+prerequisite("ARCH218", [""]).
+prerequisite("ARCH219", [""]).
 prerequisite("ARCH241", ["ARCH133", "ARCH251"]).
 prerequisite("ARCH242", ["ARCH241", "ARCH252"]).
 prerequisite("ARCH251", ["ARCH133", "ARCH241"]).
 prerequisite("ARCH252", ["ARCH251", "ARCH241", "ARCH242"]).
 prerequisite("ARCH253", ["ARCH252", "ARCH242", "ARCH207"]).
+prerequisite("ARCH270", [""]).
 prerequisite("ARCH307", ["ARCH341", "ARCH352"]).
 prerequisite("ARCH313", ["ARCH253"]).
+prerequisite("ARCH320", [""]).
+prerequisite("ARCH326", [""]).
 prerequisite("ARCH341", ["ARCH207", "ARCH253", "ARCH351"]).
 prerequisite("ARCH342", ["ARCH307", "ARCH353"]).
 prerequisite("ARCH351", ["ARCE212", "ARCH253", "ARCH207", "PHYS122"]).
@@ -288,44 +475,80 @@ prerequisite("ARCH351", ["PHYS142"]).
 prerequisite("ARCH351", ["ARCH341"]).
 prerequisite("ARCH352", ["ARCH351", "ARCH341", "ARCH307"]).
 prerequisite("ARCH353", ["ARCH352", "ARCH307", "ARCH342"]).
+prerequisite("ARCH363", [""]).
+prerequisite("ARCH400", [""]).
 prerequisite("ARCH420", ["ARCH217"]).
 prerequisite("ARCH443", ["ARCH342", "ARCH353"]).
+prerequisite("ARCH445", [""]).
 prerequisite("ARCH451", ["ARCE316", "ARCH353", "ARCH342"]).
 prerequisite("ARCH452", ["ARCE316", "ARCH353", "ARCH342"]).
 prerequisite("ARCH453", ["ARCE316", "ARCH353", "ARCH342"]).
 prerequisite("ARCH460", ["ARCH133"]).
+prerequisite("ARCH461", [""]).
 prerequisite("ARCH462", ["ARCH242"]).
+prerequisite("ARCH469", [""]).
+prerequisite("ARCH470", [""]).
+prerequisite("ARCH471", [""]).
+prerequisite("ARCH472", [""]).
 prerequisite("ARCH473", ["ARCH461"]).
+prerequisite("ARCH479", [""]).
+prerequisite("ARCH480", [""]).
 prerequisite("ARCH481", ["ARCH451", "ARCH452", "ARCH453"]).
+prerequisite("ARCH484", [""]).
+prerequisite("ARCH485", [""]).
 prerequisite("ARCH492", ["ARCH451", "ARCH452", "ARCH453", "ARCH481"]).
+prerequisite("ARCH532", [""]).
+prerequisite("ARCH551", [""]).
+prerequisite("ARCH561", [""]).
+prerequisite("ARCH570", [""]).
+prerequisite("ARCH598", [""]).
+prerequisite("ART101", [""]).
+prerequisite("ART102", [""]).
 prerequisite("ART104", ["ART102"]).
+prerequisite("ART111", [""]).
+prerequisite("ART112", [""]).
+prerequisite("ART122", [""]).
+prerequisite("ART145", [""]).
+prerequisite("ART148", [""]).
+prerequisite("ART182", [""]).
 prerequisite("ART183", ["ART182"]).
+prerequisite("ART200", [""]).
 prerequisite("ART201", ["ART101", "ART102"]).
 prerequisite("ART201", ["ART106"]).
 prerequisite("ART203", ["ART101", "ART102"]).
 prerequisite("ART203", ["ART101", "ART106"]).
 prerequisite("ART209", ["ART101"]).
+prerequisite("ART211", [""]).
+prerequisite("ART212", [""]).
+prerequisite("ART213", [""]).
+prerequisite("ART222", [""]).
+prerequisite("ART224", [""]).
 prerequisite("ART227", ["ART224"]).
 prerequisite("ART237", ["ART104", "ART183"]).
 prerequisite("ART238", ["ART104", "ART183"]).
 prerequisite("ART260", ["ART101", "ART104"]).
+prerequisite("ART270", [""]).
 prerequisite("ART288", ["ART237", "ART238"]).
 prerequisite("ART302", ["ART101"]).
 prerequisite("ART309", ["ART209"]).
 prerequisite("ART310", ["ART112", "ART211"]).
 prerequisite("ART310", ["ART212"]).
+prerequisite("ART311", [""]).
 prerequisite("ART313", ["ART112", "ART211", "ART212"]).
 prerequisite("ART313", ["ART213"]).
+prerequisite("ART314", [""]).
 prerequisite("ART315", ["ART112"]).
 prerequisite("ART315", ["ART211"]).
 prerequisite("ART315", ["ART212"]).
 prerequisite("ART315", ["ART213"]).
 prerequisite("ART317", ["ART111", "ART112", "ART211"]).
 prerequisite("ART317", ["ART212"]).
+prerequisite("ART318", [""]).
 prerequisite("ART324", ["ART122"]).
 prerequisite("ART324", ["ART224", "ART222"]).
 prerequisite("ART325", ["ART224"]).
 prerequisite("ART329", ["ART224"]).
+prerequisite("ART330", [""]).
 prerequisite("ART333", ["ART182"]).
 prerequisite("ART333", ["CSC123"]).
 prerequisite("ART334", ["ART101"]).
@@ -337,7 +560,10 @@ prerequisite("ART345", ["ART107", "ART145", "ART148"]).
 prerequisite("ART345", ["ART107", "ART245"]).
 prerequisite("ART348", ["ART148"]).
 prerequisite("ART350", ["ART384"]).
+prerequisite("ART353", [""]).
 prerequisite("ART366", ["ART148", "ART201", "ART260", "ART209"]).
+prerequisite("ART370", [""]).
+prerequisite("ART371", [""]).
 prerequisite("ART373", ["ART111"]).
 prerequisite("ART373", ["ART212"]).
 prerequisite("ART373", ["ART213"]).
@@ -350,6 +576,7 @@ prerequisite("ART383", ["ART122"]).
 prerequisite("ART383", ["ART224"]).
 prerequisite("ART384", ["ART182"]).
 prerequisite("ART388", ["ART288"]).
+prerequisite("ART400", [""]).
 prerequisite("ART402", ["ART302"]).
 prerequisite("ART409", ["ART201"]).
 prerequisite("ART409", ["ART309"]).
@@ -363,6 +590,8 @@ prerequisite("ART448", ["ART348"]).
 prerequisite("ART450", ["ART/CSC350"]).
 prerequisite("ART463", ["ART260"]).
 prerequisite("ART466", ["ART366"]).
+prerequisite("ART470", [""]).
+prerequisite("ART471", [""]).
 prerequisite("ART474", ["ART122"]).
 prerequisite("ART474", ["ART182", "ART384"]).
 prerequisite("ART483", ["ART383"]).
@@ -372,6 +601,12 @@ prerequisite("ART484", ["ART224"]).
 prerequisite("ART485", ["ART373", "ART383"]).
 prerequisite("ART488", ["ART388"]).
 prerequisite("ART489", ["ART488"]).
+prerequisite("ART494", [""]).
+prerequisite("ART495", [""]).
+prerequisite("ASTR101", [""]).
+prerequisite("ASTR102", [""]).
+prerequisite("ASTR200", [""]).
+prerequisite("ASTR270", [""]).
 prerequisite("ASTR301", ["PHYS132"]).
 prerequisite("ASTR301", ["PHYS142"]).
 prerequisite("ASTR301", ["PHYS122", "MATH141"]).
@@ -382,28 +617,48 @@ prerequisite("ASTR302", ["PHYS132", "MATH141"]).
 prerequisite("ASTR302", ["PHYS132", "MATH161"]).
 prerequisite("ASTR302", ["PHYS142", "MATH141"]).
 prerequisite("ASTR302", ["PHYS142", "MATH161"]).
+prerequisite("ASTR324", [""]).
 prerequisite("ASTR326", ["PHYS211"]).
+prerequisite("ASTR400", [""]).
+prerequisite("ASTR404", [""]).
 prerequisite("ASTR444", ["ASTR301"]).
 prerequisite("ASTR444", ["ASTR302"]).
+prerequisite("ASTR470", [""]).
+prerequisite("ASTR471", [""]).
+prerequisite("BIO111", [""]).
+prerequisite("BIO114", [""]).
+prerequisite("BIO123", [""]).
+prerequisite("BIO150", [""]).
+prerequisite("BIO161", [""]).
 prerequisite("BIO162", ["BIO161", "CHEM110"]).
 prerequisite("BIO162", ["CHEM111"]).
 prerequisite("BIO162", ["CHEM124"]).
 prerequisite("BIO162", ["CHEM127"]).
+prerequisite("BIO200", [""]).
+prerequisite("BIO202", [""]).
 prerequisite("BIO211", ["BIO111"]).
+prerequisite("BIO213", [""]).
+prerequisite("BIO222", [""]).
+prerequisite("BIO227", [""]).
 prerequisite("BIO231", ["BIO111"]).
 prerequisite("BIO231", ["BIO161"]).
 prerequisite("BIO232", ["BIO111"]).
 prerequisite("BIO232", ["BIO161"]).
+prerequisite("BIO253", [""]).
 prerequisite("BIO263", ["BIO150"]).
 prerequisite("BIO263", ["BIO160"]).
 prerequisite("BIO263", ["BIO161"]).
+prerequisite("BIO270", [""]).
 prerequisite("BIO300", ["STAT218"]).
 prerequisite("BIO301", ["BIO161"]).
 prerequisite("BIO301", ["MCRO221"]).
 prerequisite("BIO301", ["MCRO224"]).
+prerequisite("BIO302", [""]).
 prerequisite("BIO303", ["BIO111"]).
 prerequisite("BIO303", ["BIO161"]).
 prerequisite("BIO303", ["BOT121", "STAT218"]).
+prerequisite("BIO305", [""]).
+prerequisite("BIO308", [""]).
 prerequisite("BIO321", ["BIO162", "BIO263", "NR306"]).
 prerequisite("BIO321", ["ASCI239"]).
 prerequisite("BIO322", ["BIO162"]).
@@ -416,6 +671,8 @@ prerequisite("BIO324", ["BIO160", "BIO162"]).
 prerequisite("BIO327", ["BIO263"]).
 prerequisite("BIO327", ["NR306", "STAT217"]).
 prerequisite("BIO327", ["STAT218"]).
+prerequisite("BIO329", [""]).
+prerequisite("BIO330", [""]).
 prerequisite("BIO335", ["BIO150", "BIO160", "BIO211"]).
 prerequisite("BIO335", ["PLSC313", "BIO162"]).
 prerequisite("BIO336", ["BIO150"]).
@@ -453,6 +710,7 @@ prerequisite("BIO416", ["BIO150"]).
 prerequisite("BIO416", ["BIO160"]).
 prerequisite("BIO421", ["BOT121"]).
 prerequisite("BIO421", ["BIO162"]).
+prerequisite("BIO424", [""]).
 prerequisite("BIO425", ["EDUC469"]).
 prerequisite("BIO425", ["EDUC479"]).
 prerequisite("BIO426", ["BIO351"]).
@@ -500,31 +758,61 @@ prerequisite("BIO448", ["BIO114", "BIO162", "BIO211", "SS120"]).
 prerequisite("BIO448", ["BOT121", "BIO227", "BIO263", "NR305", "NR306"]).
 prerequisite("BIO448", ["BOT121", "SS321", "GEOL102"]).
 prerequisite("BIO448", ["BOT121", "SS120"]).
+prerequisite("BIO450", [""]).
 prerequisite("BIO452", ["BIO351", "CHEM216", "CHEM312"]).
 prerequisite("BIO452", ["BIO351", "CHEM316", "CHEM313", "CHEM314", "CHEM369"]).
 prerequisite("BIO452", ["BIO351", "CHEM371"]).
 prerequisite("BIO452", ["CHEM373", "CHEM216", "CHEM312"]).
 prerequisite("BIO452", ["CHEM373", "CHEM316", "CHEM313", "CHEM314", "CHEM369"]).
 prerequisite("BIO452", ["CHEM373", "CHEM371"]).
+prerequisite("BIO461", [""]).
+prerequisite("BIO462", [""]).
 prerequisite("BIO463", ["BIO461"]).
 prerequisite("BIO463", ["BIO462"]).
+prerequisite("BIO470", [""]).
+prerequisite("BIO471", [""]).
+prerequisite("BIO472", [""]).
 prerequisite("BIO475", ["BIO161"]).
 prerequisite("BIO475", ["BIO351"]).
 prerequisite("BIO475", ["CHEM373"]).
 prerequisite("BIO476", ["BIO/CHEM475"]).
+prerequisite("BIO485", [""]).
+prerequisite("BIO495", [""]).
+prerequisite("BIO500", [""]).
+prerequisite("BIO501", [""]).
+prerequisite("BIO502", [""]).
+prerequisite("BIO503", [""]).
+prerequisite("BIO509", [""]).
 prerequisite("BIO524", ["BIO501"]).
 prerequisite("BIO534", ["BIO452"]).
 prerequisite("BIO534", ["BIO501"]).
 prerequisite("BIO537", ["BIO442"]).
+prerequisite("BIO560", [""]).
+prerequisite("BIO561", [""]).
 prerequisite("BIO562", ["STAT218"]).
+prerequisite("BIO570", [""]).
+prerequisite("BIO571", [""]).
+prerequisite("BIO574", [""]).
+prerequisite("BIO575", [""]).
+prerequisite("BIO583", [""]).
+prerequisite("BIO585", [""]).
+prerequisite("BIO590", [""]).
+prerequisite("BIO591", [""]).
+prerequisite("BIO593", [""]).
+prerequisite("BIO595", [""]).
+prerequisite("BIO599", [""]).
+prerequisite("BMED101", [""]).
 prerequisite("BMED102", ["BMED101"]).
 prerequisite("BMED212", ["MATH143"]).
 prerequisite("BMED213", ["MATH142"]).
+prerequisite("BMED270", [""]).
+prerequisite("BMED300", [""]).
 prerequisite("BMED310", ["EE201", "CPE/CSC101", "CSC231", "CSC232"]).
 prerequisite("BMED310", ["EE201", "CSC234"]).
 prerequisite("BMED330", ["MATE210", "ME328", "STAT312", "BMED420", "BMED460"]).
 prerequisite("BMED355", ["EE201", "MATH344"]).
 prerequisite("BMED400", ["ME212"]).
+prerequisite("BMED401", [""]).
 prerequisite("BMED404", ["BMED410", "CE207"]).
 prerequisite("BMED404", ["CE208"]).
 prerequisite("BMED409", ["BMED410", "CE207"]).
@@ -540,14 +828,21 @@ prerequisite("BMED432", ["BMED212"]).
 prerequisite("BMED432", ["MATE210"]).
 prerequisite("BMED434", ["BMED212"]).
 prerequisite("BMED434", ["MATE210"]).
+prerequisite("BMED435", [""]).
 prerequisite("BMED436", ["BMED212"]).
 prerequisite("BMED436", ["MATE210"]).
 prerequisite("BMED440", ["BMED310", "EE201"]).
 prerequisite("BMED445", ["BMED440"]).
+prerequisite("BMED450", [""]).
 prerequisite("BMED455", ["BMED410"]).
 prerequisite("BMED456", ["BMED455"]).
+prerequisite("BMED459", [""]).
 prerequisite("BMED460", ["BIO231"]).
 prerequisite("BMED460", ["BIO232"]).
+prerequisite("BMED470", [""]).
+prerequisite("BMED471", [""]).
+prerequisite("BMED495", [""]).
+prerequisite("BMED500", [""]).
 prerequisite("BMED505", ["BMED440"]).
 prerequisite("BMED510", ["ASCI438", "BIO361"]).
 prerequisite("BMED510", ["BMED460"]).
@@ -555,6 +850,7 @@ prerequisite("BMED512", ["MATH143", "CHEM125", "PHYS131"]).
 prerequisite("BMED512", ["PHYS141", "BIO161"]).
 prerequisite("BMED515", ["PHYS132"]).
 prerequisite("BMED515", ["PHYS142", "MATH244"]).
+prerequisite("BMED520", [""]).
 prerequisite("BMED525", ["CE204", "BMED460"]).
 prerequisite("BMED525", ["CE208", "BMED460"]).
 prerequisite("BMED530", ["BIO161"]).
@@ -562,6 +858,7 @@ prerequisite("BMED530", ["BIO213", "BMED/BRAE213"]).
 prerequisite("BMED535", ["BMED425", "ME341"]).
 prerequisite("BMED541", ["BMED460"]).
 prerequisite("BMED542", ["BMED460"]).
+prerequisite("BMED550", [""]).
 prerequisite("BMED555", ["MATH244", "BMED440"]).
 prerequisite("BMED560", ["ASCI438", "BIO361"]).
 prerequisite("BMED560", ["BMED460"]).
@@ -569,9 +866,22 @@ prerequisite("BMED561", ["ASCI438", "BIO361", "STAT218"]).
 prerequisite("BMED561", ["ASCI438", "BIO361", "STAT312", "BMED560"]).
 prerequisite("BMED561", ["BMED460", "STAT218"]).
 prerequisite("BMED561", ["BMED460", "STAT312", "BMED560"]).
+prerequisite("BMED563", [""]).
+prerequisite("BMED570", [""]).
+prerequisite("BMED571", [""]).
+prerequisite("BMED583", [""]).
+prerequisite("BMED591", [""]).
 prerequisite("BMED592", ["BMED591"]).
+prerequisite("BMED593", [""]).
+prerequisite("BMED599", [""]).
+prerequisite("BRAE121", [""]).
+prerequisite("BRAE128", [""]).
+prerequisite("BRAE129", [""]).
+prerequisite("BRAE141", [""]).
 prerequisite("BRAE142", ["MATH116"]).
+prerequisite("BRAE150", [""]).
 prerequisite("BRAE152", ["BRAE133", "BRAE151"]).
+prerequisite("BRAE200", [""]).
 prerequisite("BRAE203", ["MATH118"]).
 prerequisite("BRAE213", ["MATH142"]).
 prerequisite("BRAE216", ["BRAE129"]).
@@ -584,9 +894,11 @@ prerequisite("BRAE234", ["BRAE152", "PHYS141"]).
 prerequisite("BRAE236", ["MATH141"]).
 prerequisite("BRAE237", ["MATH119"]).
 prerequisite("BRAE239", ["MATH119"]).
+prerequisite("BRAE240", [""]).
 prerequisite("BRAE244", ["PLSC133", "PLSC190", "PLSC260", "BRAE237"]).
 prerequisite("BRAE244", ["BRAE239"]).
 prerequisite("BRAE247", ["NR215"]).
+prerequisite("BRAE270", [""]).
 prerequisite("BRAE301", ["BRAE152", "PHYS121"]).
 prerequisite("BRAE301", ["BRAE152", "PHYS141"]).
 prerequisite("BRAE302", ["BRAE216"]).
@@ -596,19 +908,26 @@ prerequisite("BRAE312", ["PHYS132"]).
 prerequisite("BRAE312", ["PHYS142", "ME211"]).
 prerequisite("BRAE317", ["BRAE203"]).
 prerequisite("BRAE320", ["BRAE232"]).
+prerequisite("BRAE321", [""]).
 prerequisite("BRAE324", ["MATH119", "PHYS121"]).
 prerequisite("BRAE328", ["EE321"]).
 prerequisite("BRAE331", ["BRAE236"]).
 prerequisite("BRAE331", ["BRAE340"]).
 prerequisite("BRAE332", ["BRAE232"]).
 prerequisite("BRAE333", ["MATH118"]).
+prerequisite("BRAE335", [""]).
 prerequisite("BRAE337", ["MATH118"]).
+prerequisite("BRAE339", [""]).
+prerequisite("BRAE340", [""]).
 prerequisite("BRAE342", ["PHYS121"]).
 prerequisite("BRAE343", ["BRAE342"]).
 prerequisite("BRAE344", ["BRAE343"]).
 prerequisite("BRAE345", ["MATH118"]).
+prerequisite("BRAE348", [""]).
+prerequisite("BRAE349", [""]).
 prerequisite("BRAE355", ["BRAE237"]).
 prerequisite("BRAE355", ["BRAE239"]).
+prerequisite("BRAE400", [""]).
 prerequisite("BRAE403", ["MATH242"]).
 prerequisite("BRAE403", ["MATH244", "STAT312"]).
 prerequisite("BRAE405", ["BRAE236"]).
@@ -623,6 +942,7 @@ prerequisite("BRAE425", ["BRAE324"]).
 prerequisite("BRAE428", ["BRAE328"]).
 prerequisite("BRAE432", ["PHYS121", "BRAE342", "BRAE343"]).
 prerequisite("BRAE433", ["BRAE232", "CE204"]).
+prerequisite("BRAE434", [""]).
 prerequisite("BRAE435", ["BRAE312"]).
 prerequisite("BRAE435", ["BRAE340"]).
 prerequisite("BRAE436", ["BIO111", "BIO161", "BOT121", "BRAE213", "CHEM125"]).
@@ -635,15 +955,27 @@ prerequisite("BRAE440", ["BRAE340"]).
 prerequisite("BRAE447", ["BRAE239"]).
 prerequisite("BRAE448", ["MATH118"]).
 prerequisite("BRAE450", ["PHYS104"]).
+prerequisite("BRAE460", [""]).
 prerequisite("BRAE461", ["BRAE460"]).
 prerequisite("BRAE462", ["BRAE461"]).
 prerequisite("BRAE465", ["BRAE419", "BRAE460"]).
 prerequisite("BRAE465", ["BRAE422", "BRAE460"]).
+prerequisite("BRAE470", [""]).
+prerequisite("BRAE471", [""]).
+prerequisite("BRAE481", [""]).
+prerequisite("BRAE485", [""]).
+prerequisite("BRAE495", [""]).
+prerequisite("BRAE500", [""]).
 prerequisite("BRAE532", ["BRAE312"]).
 prerequisite("BRAE532", ["BRAE340"]).
 prerequisite("BRAE532", ["CE336"]).
 prerequisite("BRAE532", ["ME341"]).
 prerequisite("BRAE533", ["BRAE312", "BRAE340"]).
+prerequisite("BRAE570", [""]).
+prerequisite("BRAE571", [""]).
+prerequisite("BRAE599", [""]).
+prerequisite("BOT121", [""]).
+prerequisite("BOT311", [""]).
 prerequisite("BOT313", ["BIO114"]).
 prerequisite("BOT313", ["BIO162"]).
 prerequisite("BOT313", ["BOT121"]).
@@ -653,12 +985,26 @@ prerequisite("BOT326", ["BIO114", "BIO162", "BIO211"]).
 prerequisite("BOT326", ["BOT121", "BIO263", "STAT217"]).
 prerequisite("BOT326", ["STAT218"]).
 prerequisite("BOT433", ["BOT313"]).
+prerequisite("BUS100", [""]).
+prerequisite("BUS200", [""]).
+prerequisite("BUS204", [""]).
+prerequisite("BUS206", [""]).
+prerequisite("BUS207", [""]).
+prerequisite("BUS212", [""]).
+prerequisite("BUS214", [""]).
+prerequisite("BUS215", [""]).
+prerequisite("BUS220", [""]).
+prerequisite("BUS234", [""]).
+prerequisite("BUS270", [""]).
 prerequisite("BUS301", ["ECON222"]).
+prerequisite("BUS302", [""]).
 prerequisite("BUS303", ["ECON222"]).
 prerequisite("BUS304", ["ECON201"]).
 prerequisite("BUS304", ["ECON221"]).
 prerequisite("BUS304", ["ECON222"]).
 prerequisite("BUS306", ["BUS206"]).
+prerequisite("BUS310", [""]).
+prerequisite("BUS311", [""]).
 prerequisite("BUS313", ["BUS310"]).
 prerequisite("BUS319", ["BUS214"]).
 prerequisite("BUS319", ["AGB214"]).
@@ -670,19 +1016,28 @@ prerequisite("BUS330", ["BUS310", "BUS342"]).
 prerequisite("BUS342", ["BUS214", "STAT252"]).
 prerequisite("BUS342", ["BUS214"]).
 prerequisite("BUS342", ["STAT252"]).
+prerequisite("BUS346", [""]).
+prerequisite("BUS347", [""]).
 prerequisite("BUS348", ["BUS347"]).
+prerequisite("BUS382", [""]).
+prerequisite("BUS384", [""]).
+prerequisite("BUS387", [""]).
 prerequisite("BUS388", ["BUS384", "STAT252"]).
+prerequisite("BUS389", [""]).
 prerequisite("BUS391", ["ITP125"]).
 prerequisite("BUS392", ["BUS391"]).
+prerequisite("BUS393", [""]).
 prerequisite("BUS394", ["BUS391"]).
 prerequisite("BUS395", ["BUS391"]).
 prerequisite("BUS396", ["GRC361"]).
 prerequisite("BUS399", ["BUS391"]).
+prerequisite("BUS400", [""]).
 prerequisite("BUS401", ["BUS342", "BUS346", "BUS387", "BUS391", "ITP303", "ITP326", "ITP330", "ITP341"]).
 prerequisite("BUS401", ["ITP371", "BUS411"]).
 prerequisite("BUS404", ["BUS207", "ECON222"]).
 prerequisite("BUS406", ["BUS342", "BUS346", "BUS387"]).
 prerequisite("BUS408", ["BUS310"]).
+prerequisite("BUS409", [""]).
 prerequisite("BUS410", ["BUS207", "ECON222"]).
 prerequisite("BUS411", ["BUS215", "BUS404"]).
 prerequisite("BUS412", ["BUS215"]).
@@ -695,6 +1050,7 @@ prerequisite("BUS422", ["BUS321"]).
 prerequisite("BUS423", ["BUS396", "BUS418"]).
 prerequisite("BUS424", ["BUS321"]).
 prerequisite("BUS425", ["BUS322"]).
+prerequisite("BUS430", [""]).
 prerequisite("BUS431", ["BUS342"]).
 prerequisite("BUS433", ["BUS431"]).
 prerequisite("BUS433", ["BUS439"]).
@@ -719,15 +1075,22 @@ prerequisite("BUS453", ["BUS396"]).
 prerequisite("BUS453", ["BUS418"]).
 prerequisite("BUS454", ["BUS396", "BUS418"]).
 prerequisite("BUS455", ["BUS419", "BUS421", "BUS423", "BUS430", "BUS450", "BUS451", "BUS452", "BUS453"]).
+prerequisite("BUS458", [""]).
 prerequisite("BUS459", ["BUS453"]).
+prerequisite("BUS461", [""]).
+prerequisite("BUS462", [""]).
+prerequisite("BUS463", [""]).
+prerequisite("BUS464", [""]).
 prerequisite("BUS466", ["BUS348"]).
 prerequisite("BUS468", ["BUS392"]).
 prerequisite("BUS468", ["CSC101"]).
 prerequisite("BUS468", ["CSC232"]).
 prerequisite("BUS468", ["ECON395"]).
 prerequisite("BUS469", ["BUS342"]).
+prerequisite("BUS470", [""]).
 prerequisite("BUS471", ["BUS384", "STAT252"]).
 prerequisite("BUS474", ["BUS322"]).
+prerequisite("BUS476", [""]).
 prerequisite("BUS477", ["BUS382"]).
 prerequisite("BUS477", ["BUS387"]).
 prerequisite("BUS480", ["BUS384", "STAT252"]).
@@ -746,6 +1109,7 @@ prerequisite("BUS496", ["BUS392"]).
 prerequisite("BUS497", ["BUS393", "STAT252"]).
 prerequisite("BUS498", ["BUS392"]).
 prerequisite("BUS499", ["BUS391"]).
+prerequisite("CHEM101", [""]).
 prerequisite("CHEM110", ["MATH115"]).
 prerequisite("CHEM124", ["MATH118"]).
 prerequisite("CHEM124", ["MATH330"]).
@@ -757,6 +1121,8 @@ prerequisite("CHEM128", ["CHEM127"]).
 prerequisite("CHEM129", ["CHEM128"]).
 prerequisite("CHEM200", ["CHEM111", "CHEM124"]).
 prerequisite("CHEM200", ["CHEM127"]).
+prerequisite("CHEM201", [""]).
+prerequisite("CHEM202", [""]).
 prerequisite("CHEM203", ["CHEM126"]).
 prerequisite("CHEM212", ["CHEM111", "CHEM124"]).
 prerequisite("CHEM212", ["CHEM127"]).
@@ -766,14 +1132,19 @@ prerequisite("CHEM217", ["CHEM216"]).
 prerequisite("CHEM217", ["CHEM221"]).
 prerequisite("CHEM218", ["CHEM217"]).
 prerequisite("CHEM218", ["CHEM324"]).
+prerequisite("CHEM220", [""]).
 prerequisite("CHEM221", ["CHEM217"]).
+prerequisite("CHEM223", [""]).
 prerequisite("CHEM231", ["CHEM126"]).
 prerequisite("CHEM231", ["CHEM129"]).
+prerequisite("CHEM270", [""]).
 prerequisite("CHEM302", ["CHEM216"]).
 prerequisite("CHEM302", ["CHEM312"]).
 prerequisite("CHEM303", ["CHEM203", "CHEM218"]).
+prerequisite("CHEM308", [""]).
 prerequisite("CHEM312", ["CHEM125"]).
 prerequisite("CHEM312", ["CHEM128"]).
+prerequisite("CHEM314", [""]).
 prerequisite("CHEM324", ["CHEM218"]).
 prerequisite("CHEM331", ["CHEM126"]).
 prerequisite("CHEM331", ["CHEM129"]).
@@ -785,10 +1156,14 @@ prerequisite("CHEM341", ["CHEM129", "CHEM212"]).
 prerequisite("CHEM341", ["CHEM129", "CHEM312"]).
 prerequisite("CHEM341", ["CHEM129", "CHEM216"]).
 prerequisite("CHEM341", ["CHEM129", "CHEM316"]).
+prerequisite("CHEM349", [""]).
 prerequisite("CHEM351", ["CHEM126"]).
 prerequisite("CHEM351", ["CHEM129"]).
 prerequisite("CHEM352", ["CHEM351"]).
 prerequisite("CHEM353", ["CHEM352"]).
+prerequisite("CHEM356", [""]).
+prerequisite("CHEM357", [""]).
+prerequisite("CHEM369", [""]).
 prerequisite("CHEM372", ["CHEM369"]).
 prerequisite("CHEM372", ["CHEM371"]).
 prerequisite("CHEM373", ["CHEM369"]).
@@ -797,7 +1172,10 @@ prerequisite("CHEM377", ["CHEM313"]).
 prerequisite("CHEM377", ["CHEM314"]).
 prerequisite("CHEM377", ["CHEM369"]).
 prerequisite("CHEM377", ["CHEM371"]).
+prerequisite("CHEM400", [""]).
+prerequisite("CHEM401", [""]).
 prerequisite("CHEM403", ["CHEM303", "CHEM352"]).
+prerequisite("CHEM405", [""]).
 prerequisite("CHEM414", ["CHEM218"]).
 prerequisite("CHEM414", ["CHEM318"]).
 prerequisite("CHEM418", ["BIO161", "CHEM217"]).
@@ -815,6 +1193,7 @@ prerequisite("CHEM444", ["CHEM216"]).
 prerequisite("CHEM445", ["CHEM217", "CHEM444"]).
 prerequisite("CHEM446", ["CHEM125"]).
 prerequisite("CHEM446", ["CHEM128"]).
+prerequisite("CHEM447", [""]).
 prerequisite("CHEM448", ["CHEM447", "CHEM445"]).
 prerequisite("CHEM449", ["CHEM444"]).
 prerequisite("CHEM450", ["CHEM444"]).
@@ -827,9 +1206,14 @@ prerequisite("CHEM454", ["CHEM216"]).
 prerequisite("CHEM454", ["CHEM312"]).
 prerequisite("CHEM454", ["CHEM316"]).
 prerequisite("CHEM458", ["CHEM324"]).
+prerequisite("CHEM459", [""]).
+prerequisite("CHEM461", [""]).
+prerequisite("CHEM463", [""]).
 prerequisite("CHEM465", ["CHEM231"]).
+prerequisite("CHEM466", [""]).
 prerequisite("CHEM470", ["CHEM351", "CHEM217"]).
 prerequisite("CHEM470", ["CHEM317"]).
+prerequisite("CHEM471", [""]).
 prerequisite("CHEM474", ["CHEM369"]).
 prerequisite("CHEM474", ["CHEM371"]).
 prerequisite("CHEM475", ["BIO161"]).
@@ -839,19 +1223,33 @@ prerequisite("CHEM476", ["BIO/CHEM475"]).
 prerequisite("CHEM477", ["CHEM218"]).
 prerequisite("CHEM477", ["CHEM318"]).
 prerequisite("CHEM481", ["CHEM352", "CHEM231"]).
+prerequisite("CHEM484", [""]).
+prerequisite("CHEM485", [""]).
+prerequisite("CHEM495", [""]).
+prerequisite("CHEM500", [""]).
 prerequisite("CHEM544", ["CHEM212"]).
 prerequisite("CHEM544", ["CHEM216"]).
 prerequisite("CHEM545", ["CHEM544"]).
+prerequisite("CHEM547", [""]).
 prerequisite("CHEM548", ["CHEM547", "CHEM545"]).
 prerequisite("CHEM550", ["CHEM444"]).
 prerequisite("CHEM550", ["CHEM544"]).
+prerequisite("CHEM551", [""]).
+prerequisite("CHEM570", [""]).
+prerequisite("CHEM571", [""]).
+prerequisite("CHEM590", [""]).
 prerequisite("CHEM598", ["CHEM545", "CHEM547", "CHEM548", "CHEM550", "CHEM551"]).
 prerequisite("CHEM599", ["CHEM545", "CHEM547", "CHEM548", "CHEM550", "CHEM551"]).
+prerequisite("CD102", [""]).
+prerequisite("CD131", [""]).
+prerequisite("CD200", [""]).
+prerequisite("CD207", [""]).
 prerequisite("CD230", ["CD131", "CD/PSY256"]).
 prerequisite("CD254", ["PSY201"]).
 prerequisite("CD254", ["PSY202"]).
 prerequisite("CD256", ["PSY201"]).
 prerequisite("CD256", ["PSY202"]).
+prerequisite("CD270", [""]).
 prerequisite("CD302", ["CD102", "CD/PSY256"]).
 prerequisite("CD304", ["CD/PSY256"]).
 prerequisite("CD305", ["CD/PSY256"]).
@@ -865,6 +1263,7 @@ prerequisite("CD351", ["CD/PSY256"]).
 prerequisite("CD351", ["CD/EDUC207"]).
 prerequisite("CD356", ["PSY201"]).
 prerequisite("CD356", ["PSY202"]).
+prerequisite("CD400", [""]).
 prerequisite("CD411", ["CD329", "CD304"]).
 prerequisite("CD411", ["CD329", "CD306"]).
 prerequisite("CD417", ["CD304", "CD305"]).
@@ -884,13 +1283,18 @@ prerequisite("CD448", ["CD230", "CD329"]).
 prerequisite("CD449", ["CD333"]).
 prerequisite("CD449", ["CD448"]).
 prerequisite("CD450", ["CD304", "CD305", "CD306", "CD329"]).
+prerequisite("CD453", [""]).
 prerequisite("CD454", ["CD330"]).
 prerequisite("CD454", ["CD453"]).
 prerequisite("CD460", ["PSY201"]).
 prerequisite("CD460", ["PSY202"]).
+prerequisite("CD461", [""]).
 prerequisite("CD462", ["CD461"]).
+prerequisite("CD470", [""]).
+prerequisite("CHIN101", [""]).
 prerequisite("CHIN102", ["CHIN101", "CHIN141"]).
 prerequisite("CHIN103", ["CHIN102", "CHIN142"]).
+prerequisite("CHIN141", [""]).
 prerequisite("CHIN142", ["CHIN101", "CHIN141"]).
 prerequisite("CHIN143", ["CHIN102", "CHIN142"]).
 prerequisite("CHIN201", ["CHIN103", "CHIN143"]).
@@ -899,44 +1303,89 @@ prerequisite("CHIN203", ["CHIN202", "CHIN242"]).
 prerequisite("CHIN241", ["CHIN103", "CHIN143"]).
 prerequisite("CHIN242", ["CHIN201", "CHIN241"]).
 prerequisite("CHIN243", ["CHIN202", "CHIN242"]).
+prerequisite("CRP201", [""]).
 prerequisite("CRP202", ["CRP201"]).
 prerequisite("CRP203", ["CRP202", "CRP204"]).
 prerequisite("CRP204", ["CRP201", "CRP202"]).
+prerequisite("CRP211", [""]).
+prerequisite("CRP212", [""]).
+prerequisite("CRP213", [""]).
 prerequisite("CRP214", ["CRP212"]).
 prerequisite("CRP215", ["ES112"]).
+prerequisite("CRP216", [""]).
+prerequisite("CRP270", [""]).
+prerequisite("CRP303", [""]).
 prerequisite("CRP314", ["CRP212"]).
+prerequisite("CRP315", [""]).
+prerequisite("CRP325", [""]).
+prerequisite("CRP334", [""]).
 prerequisite("CRP336", ["CRP212"]).
 prerequisite("CRP341", ["CRP203"]).
 prerequisite("CRP342", ["CRP336"]).
+prerequisite("CRP351", [""]).
+prerequisite("CRP400", [""]).
 prerequisite("CRP401", ["CRP/NR351"]).
 prerequisite("CRP402", ["CRP341"]).
+prerequisite("CRP404", [""]).
+prerequisite("CRP408", [""]).
+prerequisite("CRP409", [""]).
 prerequisite("CRP410", ["CRP336", "CRP341"]).
 prerequisite("CRP411", ["CRP342", "CRP410"]).
 prerequisite("CRP412", ["CRP212"]).
 prerequisite("CRP420", ["CRP212"]).
+prerequisite("CRP426", [""]).
 prerequisite("CRP428", ["CRP334"]).
 prerequisite("CRP430", ["CRP212"]).
 prerequisite("CRP435", ["CRP212"]).
+prerequisite("CRP440", [""]).
+prerequisite("CRP442", [""]).
+prerequisite("CRP445", [""]).
+prerequisite("CRP446", [""]).
+prerequisite("CRP448", [""]).
 prerequisite("CRP452", ["CRP201", "CRP202"]).
+prerequisite("CRP455", [""]).
 prerequisite("CRP456", ["CRP212"]).
+prerequisite("CRP457", [""]).
+prerequisite("CRP458", [""]).
 prerequisite("CRP461", ["CRP341", "CRP342"]).
 prerequisite("CRP462", ["CRP410"]).
 prerequisite("CRP463", ["CRP410"]).
+prerequisite("CRP470", [""]).
+prerequisite("CRP471", [""]).
+prerequisite("CRP500", [""]).
+prerequisite("CRP501", [""]).
+prerequisite("CRP504", [""]).
+prerequisite("CRP509", [""]).
+prerequisite("CRP510", [""]).
+prerequisite("CRP512", [""]).
+prerequisite("CRP513", [""]).
+prerequisite("CRP516", [""]).
 prerequisite("CRP518", ["CRP501"]).
 prerequisite("CRP520", ["CRP501"]).
+prerequisite("CRP525", [""]).
 prerequisite("CRP530", ["CRP501"]).
+prerequisite("CRP535", [""]).
+prerequisite("CRP545", [""]).
 prerequisite("CRP552", ["CRP501", "CRP525"]).
 prerequisite("CRP553", ["CRP512"]).
 prerequisite("CRP554", ["CRP552"]).
 prerequisite("CRP556", ["CRP554"]).
+prerequisite("CRP570", [""]).
+prerequisite("CRP571", [""]).
 prerequisite("CRP596", ["CRP513"]).
 prerequisite("CRP599", ["CRP513"]).
+prerequisite("CE111", [""]).
+prerequisite("CE112", [""]).
+prerequisite("CE113", [""]).
+prerequisite("CE200", [""]).
 prerequisite("CE204", ["ME211"]).
 prerequisite("CE207", ["CE204"]).
 prerequisite("CE208", ["ME211"]).
+prerequisite("CE222", [""]).
 prerequisite("CE251", ["CE113"]).
 prerequisite("CE259", ["CE204"]).
 prerequisite("CE259", ["CE208", "CE208", "CE113"]).
+prerequisite("CE270", [""]).
 prerequisite("CE321", ["PHYS141"]).
 prerequisite("CE322", ["CE222", "CE321"]).
 prerequisite("CE336", ["ME341"]).
@@ -951,6 +1400,8 @@ prerequisite("CE371", ["ARCE106", "CE259"]).
 prerequisite("CE371", ["CM113"]).
 prerequisite("CE381", ["CE207"]).
 prerequisite("CE381", ["CE208"]).
+prerequisite("CE382", [""]).
+prerequisite("CE400", [""]).
 prerequisite("CE403", ["CE207"]).
 prerequisite("CE403", ["CE208"]).
 prerequisite("CE404", ["BMED410", "CE207"]).
@@ -980,13 +1431,23 @@ prerequisite("CE454", ["CE355", "CE356", "CE455"]).
 prerequisite("CE455", ["CE352"]).
 prerequisite("CE457", ["CE355", "CE356"]).
 prerequisite("CE459", ["CE355"]).
+prerequisite("CE465", [""]).
 prerequisite("CE466", ["CE321", "CE322", "CE336", "CE337", "CE355", "CE371", "CE381", "CE382", "CE465"]).
 prerequisite("CE467", ["CE466"]).
+prerequisite("CE470", [""]).
+prerequisite("CE471", [""]).
+prerequisite("CE474", [""]).
+prerequisite("CE475", [""]).
 prerequisite("CE481", ["CE381", "CE382"]).
 prerequisite("CE486", ["CE381", "CE382", "GEOL201"]).
 prerequisite("CE488", ["STAT312"]).
+prerequisite("CE493", [""]).
+prerequisite("CE494", [""]).
+prerequisite("CE495", [""]).
+prerequisite("CE500", [""]).
 prerequisite("CE501", ["CE406"]).
 prerequisite("CE504", ["CE/ME404", "CE511", "ME501"]).
+prerequisite("CE511", [""]).
 prerequisite("CE513", ["ME501"]).
 prerequisite("CE513", ["CE511"]).
 prerequisite("CE523", ["CE321"]).
@@ -1008,6 +1469,8 @@ prerequisite("CE555", ["CE259"]).
 prerequisite("CE556", ["CE355"]).
 prerequisite("CE557", ["CE407"]).
 prerequisite("CE559", ["CE355"]).
+prerequisite("CE570", [""]).
+prerequisite("CE571", [""]).
 prerequisite("CE572", ["CE465"]).
 prerequisite("CE581", ["CE481"]).
 prerequisite("CE583", ["CE481"]).
@@ -1017,25 +1480,78 @@ prerequisite("CE586", ["CE481"]).
 prerequisite("CE587", ["CE381"]).
 prerequisite("CE588", ["CE381", "CE382", "CE481"]).
 prerequisite("CE589", ["CE481"]).
+prerequisite("CE591", [""]).
 prerequisite("CE592", ["CE591"]).
+prerequisite("CE593", [""]).
+prerequisite("CE594", [""]).
+prerequisite("CE595", [""]).
+prerequisite("CE596", [""]).
+prerequisite("CE599", [""]).
+prerequisite("CLA100", [""]).
+prerequisite("COMS100", [""]).
+prerequisite("COMS101", [""]).
+prerequisite("COMS102", [""]).
+prerequisite("COMS126", [""]).
+prerequisite("COMS145", [""]).
+prerequisite("COMS201", [""]).
 prerequisite("COMS205", ["COMS100"]).
 prerequisite("COMS206", ["COMS100"]).
+prerequisite("COMS208", [""]).
+prerequisite("COMS211", [""]).
+prerequisite("COMS213", [""]).
+prerequisite("COMS215", [""]).
+prerequisite("COMS217", [""]).
+prerequisite("COMS226", [""]).
+prerequisite("COMS250", [""]).
+prerequisite("COMS270", [""]).
+prerequisite("COMS301", [""]).
+prerequisite("COMS308", [""]).
+prerequisite("COMS312", [""]).
+prerequisite("COMS313", [""]).
+prerequisite("COMS316", [""]).
+prerequisite("COMS317", [""]).
+prerequisite("COMS319", [""]).
+prerequisite("COMS320", [""]).
+prerequisite("COMS322", [""]).
 prerequisite("COMS330", ["COMS205"]).
+prerequisite("COMS331", [""]).
 prerequisite("COMS332", ["COMS205", "COMS330"]).
 prerequisite("COMS350", ["COMS250"]).
 prerequisite("COMS351", ["COMS250"]).
+prerequisite("COMS384", [""]).
 prerequisite("COMS385", ["COMS205", "COMS215"]).
+prerequisite("COMS386", [""]).
+prerequisite("COMS387", [""]).
+prerequisite("COMS390", [""]).
+prerequisite("COMS395", [""]).
+prerequisite("COMS400", [""]).
+prerequisite("COMS404", [""]).
 prerequisite("COMS413", ["COMS213"]).
 prerequisite("COMS413", ["COMS301"]).
+prerequisite("COMS418", [""]).
+prerequisite("COMS420", [""]).
+prerequisite("COMS421", [""]).
+prerequisite("COMS422", [""]).
 prerequisite("COMS428", ["COMS/PSY212"]).
 prerequisite("COMS430", ["COMS211"]).
 prerequisite("COMS430", ["COMS212"]).
+prerequisite("COMS435", [""]).
+prerequisite("COMS450", [""]).
+prerequisite("COMS458", [""]).
+prerequisite("COMS460", [""]).
 prerequisite("COMS461", ["COMS460"]).
+prerequisite("COMS470", [""]).
+prerequisite("COMS485", [""]).
+prerequisite("CPE100", [""]).
+prerequisite("CPE101", [""]).
+prerequisite("CPE123", [""]).
 prerequisite("CPE133", ["EE111", "EE151"]).
+prerequisite("CPE200", [""]).
 prerequisite("CPE202", ["CPE/CSC101"]).
 prerequisite("CPE203", ["CPE/CSC202"]).
 prerequisite("CPE225", ["CPE/CSC202"]).
 prerequisite("CPE233", ["CPE/EE133"]).
+prerequisite("CPE290", [""]).
 prerequisite("CPE315", ["CSC/CPE102", "CSC/CPE103", "CSC225", "CPE/EE229"]).
 prerequisite("CPE315", ["CSC/CPE102", "CSC/CPE103", "CPE/EE233"]).
 prerequisite("CPE315", ["CSC/CPE202", "CSC/CPE203", "CSC225", "CPE/EE229"]).
@@ -1054,6 +1570,7 @@ prerequisite("CPE345", ["MATH206", "CHEM353"]).
 prerequisite("CPE345", ["MATH206", "PHYS211"]).
 prerequisite("CPE345", ["MATH244", "CHEM353"]).
 prerequisite("CPE345", ["MATH244", "PHYS211"]).
+prerequisite("CPE350", [""]).
 prerequisite("CPE357", ["CSC/CPE102", "CSC/CPE103", "CSC225"]).
 prerequisite("CPE357", ["CSC/CPE102", "CSC/CPE103", "CPE/EE229"]).
 prerequisite("CPE357", ["CSC/CPE102", "CSC/CPE103", "CPE/EE233"]).
@@ -1067,6 +1584,7 @@ prerequisite("CPE367", ["EE242"]).
 prerequisite("CPE367", ["EE245", "CPE327"]).
 prerequisite("CPE368", ["BMED355"]).
 prerequisite("CPE368", ["EE228", "CPE/EE328"]).
+prerequisite("CPE400", [""]).
 prerequisite("CPE414", ["CPE/EE329"]).
 prerequisite("CPE414", ["CPE/CSC357"]).
 prerequisite("CPE414", ["ME305"]).
@@ -1112,11 +1630,17 @@ prerequisite("CPE464", ["STAT350"]).
 prerequisite("CPE465", ["CSC/CPE453", "CSC364"]).
 prerequisite("CPE465", ["CSC/CPE453", "CPE464"]).
 prerequisite("CPE469", ["CSC/CPE357"]).
+prerequisite("CPE470", [""]).
 prerequisite("CPE471", ["CPE/CSC357"]).
+prerequisite("CPE472", [""]).
 prerequisite("CPE476", ["CSC/CPE471"]).
+prerequisite("CPE479", [""]).
 prerequisite("CPE488", ["EE112"]).
 prerequisite("CPE488", ["EE113"]).
 prerequisite("CPE488", ["EE201", "MATE210"]).
+prerequisite("CPE493", [""]).
+prerequisite("CPE494", [""]).
+prerequisite("CPE495", [""]).
 prerequisite("CPE515", ["CPE315"]).
 prerequisite("CPE515", ["CPE333"]).
 prerequisite("CPE521", ["CPE316", "CPE315"]).
@@ -1137,8 +1661,11 @@ prerequisite("CPE569", ["CSC248", "CPE/CSC357"]).
 prerequisite("CPE569", ["CSC248"]).
 prerequisite("CPE569", ["CSC348", "CPE/CSC357"]).
 prerequisite("CPE569", ["CSC348"]).
+prerequisite("CSC101", [""]).
 prerequisite("CSC121", ["MATH115"]).
 prerequisite("CSC122", ["CSC121"]).
+prerequisite("CSC123", [""]).
+prerequisite("CSC200", [""]).
 prerequisite("CSC202", ["CPE/CSC101"]).
 prerequisite("CSC203", ["CPE/CSC202"]).
 prerequisite("CSC225", ["CPE/CSC202"]).
@@ -1146,17 +1673,23 @@ prerequisite("CSC231", ["MATH142"]).
 prerequisite("CSC232", ["MATH118"]).
 prerequisite("CSC234", ["MATH142"]).
 prerequisite("CSC248", ["CSC/CPE202", "CSC/CPE203"]).
+prerequisite("CSC290", [""]).
+prerequisite("CSC300", [""]).
+prerequisite("CSC304", [""]).
 prerequisite("CSC305", ["CSC/CPE203"]).
 prerequisite("CSC307", ["CSC248", "CPE/CSC357"]).
 prerequisite("CSC307", ["CSC348", "CPE/CSC357"]).
 prerequisite("CSC308", ["CSC248"]).
 prerequisite("CSC308", ["CSC348"]).
 prerequisite("CSC309", ["CSC308", "CSC/CPE357"]).
+prerequisite("CSC312", [""]).
 prerequisite("CSC313", ["CPE/CSC202"]).
 prerequisite("CSC313", ["CSC314"]).
 prerequisite("CSC314", ["CSC312"]).
+prerequisite("CSC320", [""]).
 prerequisite("CSC321", ["CPE/CSC357"]).
 prerequisite("CSC323", ["CPE/CSC357"]).
+prerequisite("CSC325", [""]).
 prerequisite("CSC344", ["CSC248", "CPE/CSC357"]).
 prerequisite("CSC344", ["CSC348", "CPE/CSC357"]).
 prerequisite("CSC349", ["CPE/CSC102", "CPE/CSC103"]).
@@ -1183,6 +1716,7 @@ prerequisite("CSC371", ["CSC/CPE102", "CSC/CPE103"]).
 prerequisite("CSC377", ["CPE/CSC202", "ART376"]).
 prerequisite("CSC378", ["CPE/CSC102", "CPE/CSC103"]).
 prerequisite("CSC378", ["CPE/CSC202"]).
+prerequisite("CSC400", [""]).
 prerequisite("CSC402", ["CSC307"]).
 prerequisite("CSC402", ["CSC309"]).
 prerequisite("CSC405", ["CSC305", "CSC402"]).
@@ -1233,15 +1767,20 @@ prerequisite("CSC486", ["CSC308"]).
 prerequisite("CSC487", ["CSC349", "MATH206"]).
 prerequisite("CSC487", ["MATH244", "CSC466"]).
 prerequisite("CSC487", ["CSC480"]).
+prerequisite("CSC490", [""]).
 prerequisite("CSC491", ["CSC307"]).
 prerequisite("CSC491", ["CSC309"]).
 prerequisite("CSC492", ["CSC491"]).
+prerequisite("CSC493", [""]).
+prerequisite("CSC496", [""]).
 prerequisite("CSC497", ["CSC307"]).
 prerequisite("CSC497", ["CSC309"]).
 prerequisite("CSC498", ["CSC497"]).
+prerequisite("CSC500", [""]).
 prerequisite("CSC508", ["CSC307"]).
 prerequisite("CSC508", ["CSC308"]).
 prerequisite("CSC509", ["CSC508"]).
+prerequisite("CSC513", [""]).
 prerequisite("CSC515", ["CPE315"]).
 prerequisite("CSC515", ["CPE333"]).
 prerequisite("CSC521", ["CPE/CSC321"]).
@@ -1261,14 +1800,23 @@ prerequisite("CSC569", ["CSC248", "CPE/CSC357"]).
 prerequisite("CSC569", ["CSC248"]).
 prerequisite("CSC569", ["CSC348", "CPE/CSC357"]).
 prerequisite("CSC569", ["CSC348"]).
+prerequisite("CSC570", [""]).
 prerequisite("CSC572", ["CSC/CPE471"]).
 prerequisite("CSC574", ["CPE/CSC471"]).
 prerequisite("CSC580", ["CSC480"]).
 prerequisite("CSC581", ["CSC480"]).
 prerequisite("CSC582", ["CSC482"]).
 prerequisite("CSC587", ["CSC487"]).
+prerequisite("CSC590", [""]).
+prerequisite("CSC593", [""]).
+prerequisite("CSC594", [""]).
+prerequisite("CSC595", [""]).
+prerequisite("CSC596", [""]).
 prerequisite("CSC597", ["CSC596"]).
 prerequisite("CSC599", ["CSC590"]).
+prerequisite("CM102", [""]).
+prerequisite("CM113", [""]).
+prerequisite("CM114", [""]).
 prerequisite("CM115", ["ARCE106"]).
 prerequisite("CM115", ["CM113"]).
 prerequisite("CM214", ["CM115", "PHYS132"]).
@@ -1285,14 +1833,24 @@ prerequisite("CM310", ["ARCE106"]).
 prerequisite("CM313", ["ARCE212", "CM214", "CM280", "CM334"]).
 prerequisite("CM314", ["CM239"]).
 prerequisite("CM314", ["BRAE239"]).
+prerequisite("CM317", [""]).
+prerequisite("CM318", [""]).
 prerequisite("CM334", ["CM115", "BUS207"]).
 prerequisite("CM335", ["BUS215", "CM232"]).
 prerequisite("CM371", ["ARCE106", "CE259"]).
 prerequisite("CM371", ["CM113"]).
+prerequisite("CM400", [""]).
 prerequisite("CM411", ["CM313"]).
 prerequisite("CM413", ["CM214"]).
 prerequisite("CM413", ["CM313"]).
 prerequisite("CM415", ["CM413", "CM480"]).
+prerequisite("CM420", [""]).
+prerequisite("CM421", [""]).
+prerequisite("CM422", [""]).
+prerequisite("CM423", [""]).
+prerequisite("CM424", [""]).
+prerequisite("CM425", [""]).
+prerequisite("CM426", [""]).
 prerequisite("CM436", ["ARCE315", "CM314"]).
 prerequisite("CM436", ["CE352", "CM314"]).
 prerequisite("CM437", ["CM314"]).
@@ -1303,19 +1861,38 @@ prerequisite("CM460", ["CM313"]).
 prerequisite("CM461", ["CM460"]).
 prerequisite("CM462", ["CM460"]).
 prerequisite("CM463", ["CM413", "CM443"]).
+prerequisite("CM470", [""]).
+prerequisite("CM471", [""]).
+prerequisite("CM475", [""]).
 prerequisite("CM480", ["CM313"]).
+prerequisite("CM485", [""]).
+prerequisite("CM495", [""]).
+prerequisite("CM510", [""]).
+prerequisite("CM521", [""]).
+prerequisite("CM522", [""]).
+prerequisite("CM523", [""]).
+prerequisite("CM524", [""]).
+prerequisite("CM525", [""]).
+prerequisite("CM570", [""]).
+prerequisite("CM571", [""]).
+prerequisite("DSCI102", [""]).
+prerequisite("DSCI200", [""]).
 prerequisite("DSCI202", ["DSCI230", "DSCI229"]).
 prerequisite("DSCI202", ["DSCI231"]).
+prerequisite("DSCI229", [""]).
+prerequisite("DSCI230", [""]).
 prerequisite("DSCI233", ["DSCI229"]).
 prerequisite("DSCI233", ["DSCI231"]).
 prerequisite("DSCI233", ["FSN125"]).
 prerequisite("DSCI233", ["FSN230"]).
 prerequisite("DSCI241", ["DSCI230"]).
+prerequisite("DSCI270", [""]).
 prerequisite("DSCI301", ["ASCI220"]).
 prerequisite("DSCI321", ["ASCI220"]).
 prerequisite("DSCI330", ["ASCI229"]).
 prerequisite("DSCI330", ["DSCI230"]).
 prerequisite("DSCI333", ["ASCI220", "DSCI230"]).
+prerequisite("DSCI400", [""]).
 prerequisite("DSCI401", ["CHEM312"]).
 prerequisite("DSCI402", ["DSCI444"]).
 prerequisite("DSCI402", ["MCRO421"]).
@@ -1329,35 +1906,84 @@ prerequisite("DSCI444", ["DSCI233", "MCRO221"]).
 prerequisite("DSCI444", ["DSCI233", "MCRO224", "STAT130"]).
 prerequisite("DSCI444", ["DSCI233", "STAT218"]).
 prerequisite("DSCI444", ["DSCI233"]).
+prerequisite("DSCI470", [""]).
+prerequisite("DSCI471", [""]).
+prerequisite("DSCI500", [""]).
 prerequisite("DSCI501", ["CHEM212"]).
 prerequisite("DSCI501", ["CHEM312"]).
 prerequisite("DSCI502", ["DSCI501"]).
+prerequisite("DSCI510", [""]).
 prerequisite("DSCI520", ["DSCI540"]).
 prerequisite("DSCI521", ["DSCI520"]).
 prerequisite("DSCI524", ["DSCI520"]).
 prerequisite("DSCI535", ["DSCI501"]).
+prerequisite("DSCI539", [""]).
 prerequisite("DSCI540", ["DSCI520", "MCRO221"]).
+prerequisite("DSCI541", [""]).
+prerequisite("DSCI560", [""]).
 prerequisite("DSCI565", ["DSCI520"]).
+prerequisite("DSCI570", [""]).
+prerequisite("DSCI571", [""]).
+prerequisite("DSCI581", [""]).
+prerequisite("DSCI582", [""]).
+prerequisite("DSCI585", [""]).
+prerequisite("DSCI599", [""]).
+prerequisite("DANC130", [""]).
+prerequisite("DANC131", [""]).
+prerequisite("DANC132", [""]).
+prerequisite("DANC133", [""]).
+prerequisite("DANC134", [""]).
+prerequisite("DANC135", [""]).
+prerequisite("DANC210", [""]).
+prerequisite("DANC221", [""]).
+prerequisite("DANC231", [""]).
+prerequisite("DANC232", [""]).
+prerequisite("DANC233", [""]).
 prerequisite("DANC234", ["DANC134"]).
+prerequisite("DANC270", [""]).
+prerequisite("DANC280", [""]).
+prerequisite("DANC321", [""]).
 prerequisite("DANC331", ["DANC231"]).
+prerequisite("DANC332", [""]).
+prerequisite("DANC340", [""]).
+prerequisite("DANC341", [""]).
+prerequisite("DANC345", [""]).
 prerequisite("DANC346", ["DANC332", "DANC331"]).
 prerequisite("DANC346", ["DANC345"]).
+prerequisite("DANC381", [""]).
+prerequisite("DANC400", [""]).
+prerequisite("DANC430", [""]).
+prerequisite("DANC470", [""]).
+prerequisite("DANC471", [""]).
 prerequisite("DATA100", ["MATH115", "MATH116", "MATH118"]).
 prerequisite("DATA301", ["CPE/CSC202", "IME326", "STAT302", "STAT312"]).
 prerequisite("DATA301", ["CPE/CSC202", "STAT313"]).
 prerequisite("DATA401", ["DATA301"]).
 prerequisite("DATA402", ["CSC466"]).
+prerequisite("DATA403", [""]).
 prerequisite("DATA441", ["BIO351"]).
 prerequisite("DATA441", ["CHEM373"]).
 prerequisite("DATA442", ["DATA441"]).
 prerequisite("DATA451", ["DATA401"]).
 prerequisite("DATA452", ["DATA451"]).
 prerequisite("DATA472", ["DATA301"]).
+prerequisite("ESE105", [""]).
 prerequisite("ESM90", ["ESM105"]).
+prerequisite("ESM105", [""]).
+prerequisite("ESM120", [""]).
+prerequisite("ERSC144", [""]).
 prerequisite("ERSC223", ["SS120", "CHEM124"]).
 prerequisite("ERSC223", ["SS120", "CHEM127"]).
+prerequisite("ERSC250", [""]).
+prerequisite("ERSC270", [""]).
 prerequisite("ERSC303", ["LA/NR218", "SS120"]).
 prerequisite("ERSC303", ["GEOG318", "SS120"]).
+prerequisite("ERSC325", [""]).
+prerequisite("ERSC333", [""]).
+prerequisite("ERSC335", [""]).
+prerequisite("ERSC339", [""]).
+prerequisite("ERSC400", [""]).
+prerequisite("ERSC414", [""]).
 prerequisite("ERSC415", ["ERSC/GEOG250"]).
 prerequisite("ERSC416", ["GEOL102", "GEOL415"]).
 prerequisite("ERSC416", ["GEOL201", "GEOL415"]).
@@ -1368,6 +1994,8 @@ prerequisite("ERSC442", ["ERSC144"]).
 prerequisite("ERSC442", ["GEOL201"]).
 prerequisite("ERSC443", ["CHEM125"]).
 prerequisite("ERSC443", ["CHEM128"]).
+prerequisite("ERSC470", [""]).
+prerequisite("ERSC471", [""]).
 prerequisite("ERSC476", ["ERSC363"]).
 prerequisite("ERSC476", ["NR306"]).
 prerequisite("ERSC476", ["NR326"]).
@@ -1377,6 +2005,17 @@ prerequisite("ERSC477", ["NR326"]).
 prerequisite("ERSC478", ["ERSC363"]).
 prerequisite("ERSC478", ["NR306"]).
 prerequisite("ERSC478", ["NR326"]).
+prerequisite("ERSC479", [""]).
+prerequisite("ERSC570", [""]).
+prerequisite("ERSC571", [""]).
+prerequisite("ECON200", [""]).
+prerequisite("ECON201", [""]).
+prerequisite("ECON202", [""]).
+prerequisite("ECON221", [""]).
+prerequisite("ECON222", [""]).
+prerequisite("ECON270", [""]).
+prerequisite("ECON303", [""]).
+prerequisite("ECON304", [""]).
 prerequisite("ECON311", ["ECON201", "MATH141"]).
 prerequisite("ECON311", ["ECON201", "MATH221"]).
 prerequisite("ECON311", ["ECON221", "MATH141"]).
@@ -1390,6 +2029,8 @@ prerequisite("ECON337", ["ECON221", "ECON222"]).
 prerequisite("ECON337", ["ECON201"]).
 prerequisite("ECON339", ["ECON221", "ECON222"]).
 prerequisite("ECON345", ["ECON201"]).
+prerequisite("ECON395", [""]).
+prerequisite("ECON400", [""]).
 prerequisite("ECON403", ["ECON312"]).
 prerequisite("ECON404", ["ECON312"]).
 prerequisite("ECON405", ["ECON313"]).
@@ -1410,17 +2051,91 @@ prerequisite("ECON460", ["ECON313"]).
 prerequisite("ECON461", ["ECON313"]).
 prerequisite("ECON462", ["ECON313"]).
 prerequisite("ECON464", ["ECON460", "ECON460"]).
+prerequisite("ECON470", [""]).
 prerequisite("ECON519", ["GSE518", "GSE524"]).
+prerequisite("EDUC125", [""]).
+prerequisite("EDUC207", [""]).
+prerequisite("EDUC270", [""]).
+prerequisite("EDUC300", [""]).
+prerequisite("EDUC400", [""]).
+prerequisite("EDUC402", [""]).
+prerequisite("EDUC403", [""]).
 prerequisite("EDUC405", ["SPAN202"]).
+prerequisite("EDUC410", [""]).
+prerequisite("EDUC412", [""]).
+prerequisite("EDUC414", [""]).
+prerequisite("EDUC416", [""]).
+prerequisite("EDUC417", [""]).
+prerequisite("EDUC418", [""]).
+prerequisite("EDUC419", [""]).
+prerequisite("EDUC423", [""]).
 prerequisite("EDUC427", ["ENGL391"]).
+prerequisite("EDUC428", [""]).
+prerequisite("EDUC429", [""]).
+prerequisite("EDUC431", [""]).
+prerequisite("EDUC433", [""]).
+prerequisite("EDUC435", [""]).
+prerequisite("EDUC436", [""]).
+prerequisite("EDUC438", [""]).
+prerequisite("EDUC439", [""]).
 prerequisite("EDUC440", ["EDUC429", "EDUC431", "EDUC435", "EDUC436", "EDUC438", "EDUC439"]).
+prerequisite("EDUC442", [""]).
+prerequisite("EDUC447", [""]).
 prerequisite("EDUC449", ["EDUC451"]).
+prerequisite("EDUC450", [""]).
+prerequisite("EDUC451", [""]).
+prerequisite("EDUC454", [""]).
 prerequisite("EDUC455", ["EDUC454"]).
 prerequisite("EDUC456", ["EDUC454", "EDUC455", "EDUC457"]).
 prerequisite("EDUC457", ["EDUC454", "EDUC455", "EDUC456"]).
+prerequisite("EDUC460", [""]).
+prerequisite("EDUC469", [""]).
+prerequisite("EDUC470", [""]).
+prerequisite("EDUC471", [""]).
+prerequisite("EDUC479", [""]).
+prerequisite("EDUC500", [""]).
+prerequisite("EDUC502", [""]).
+prerequisite("EDUC510", [""]).
+prerequisite("EDUC511", [""]).
+prerequisite("EDUC512", [""]).
+prerequisite("EDUC513", [""]).
+prerequisite("EDUC515", [""]).
+prerequisite("EDUC516", [""]).
+prerequisite("EDUC517", [""]).
+prerequisite("EDUC518", [""]).
+prerequisite("EDUC519", [""]).
+prerequisite("EDUC521", [""]).
+prerequisite("EDUC522", [""]).
+prerequisite("EDUC523", [""]).
+prerequisite("EDUC528", [""]).
+prerequisite("EDUC531", [""]).
+prerequisite("EDUC532", [""]).
+prerequisite("EDUC535", [""]).
+prerequisite("EDUC542", [""]).
+prerequisite("EDUC544", [""]).
+prerequisite("EDUC546", [""]).
+prerequisite("EDUC550", [""]).
+prerequisite("EDUC552", [""]).
+prerequisite("EDUC554", [""]).
+prerequisite("EDUC555", [""]).
+prerequisite("EDUC556", [""]).
+prerequisite("EDUC557", [""]).
+prerequisite("EDUC560", [""]).
 prerequisite("EDUC561", ["EDUC555", "EDUC560"]).
+prerequisite("EDUC562", [""]).
+prerequisite("EDUC564", [""]).
+prerequisite("EDUC565", [""]).
+prerequisite("EDUC566", [""]).
+prerequisite("EDUC568", [""]).
+prerequisite("EDUC570", [""]).
+prerequisite("EDUC573", [""]).
+prerequisite("EDUC586", [""]).
+prerequisite("EDUC587", [""]).
+prerequisite("EDUC588", [""]).
+prerequisite("EDUC589", [""]).
 prerequisite("EDUC590", ["EDUC589"]).
 prerequisite("EDUC598", ["EDUC589"]).
+prerequisite("EE111", [""]).
 prerequisite("EE112", ["MATH142"]).
 prerequisite("EE112", ["EE111"]).
 prerequisite("EE113", ["MATH142", "EE143", "EE111", "EE151"]).
@@ -1428,6 +2143,9 @@ prerequisite("EE115", ["MATH141", "CHEM124", "PHYS133"]).
 prerequisite("EE115", ["PHYS143", "EE145"]).
 prerequisite("EE133", ["EE111", "EE151"]).
 prerequisite("EE143", ["MATH142", "EE113", "EE111", "EE151"]).
+prerequisite("EE145", [""]).
+prerequisite("EE151", [""]).
+prerequisite("EE200", [""]).
 prerequisite("EE201", ["MATH244", "PHYS133"]).
 prerequisite("EE201", ["PHYS143"]).
 prerequisite("EE211", ["EE112"]).
@@ -1442,9 +2160,13 @@ prerequisite("EE241", ["EE112"]).
 prerequisite("EE241", ["EE113"]).
 prerequisite("EE242", ["MATH244", "EE241"]).
 prerequisite("EE242", ["EE212"]).
+prerequisite("EE245", [""]).
+prerequisite("EE251", [""]).
 prerequisite("EE255", ["EE212", "EE242"]).
 prerequisite("EE261", ["CPE/CSC101", "EE151"]).
 prerequisite("EE262", ["CPE/CSC101", "EE151"]).
+prerequisite("EE270", [""]).
+prerequisite("EE271", [""]).
 prerequisite("EE295", ["EE212", "EE242"]).
 prerequisite("EE302", ["EE215"]).
 prerequisite("EE302", ["EE228", "EE342", "EE368"]).
@@ -1460,6 +2182,7 @@ prerequisite("EE314", ["CPE/EE327", "STAT350", "EE315"]).
 prerequisite("EE315", ["CPE133", "EE215"]).
 prerequisite("EE321", ["EE201"]).
 prerequisite("EE321", ["BRAE216"]).
+prerequisite("EE322", [""]).
 prerequisite("EE327", ["EE212", "MATH244", "CPE367"]).
 prerequisite("EE327", ["EE215", "MATH244", "CPE367"]).
 prerequisite("EE328", ["BMED355"]).
@@ -1480,6 +2203,8 @@ prerequisite("EE367", ["EE242"]).
 prerequisite("EE367", ["EE245", "CPE327"]).
 prerequisite("EE368", ["BMED355"]).
 prerequisite("EE368", ["EE228", "CPE/EE328"]).
+prerequisite("EE375", [""]).
+prerequisite("EE400", [""]).
 prerequisite("EE402", ["EE335"]).
 prerequisite("EE403", ["EE306", "EE346"]).
 prerequisite("EE405", ["EE308", "EE348", "EE335", "EE445"]).
@@ -1518,6 +2243,7 @@ prerequisite("EE428", ["ME305"]).
 prerequisite("EE431", ["EE307", "EE347", "EE308", "EE348"]).
 prerequisite("EE432", ["EE302", "EE342"]).
 prerequisite("EE433", ["EE255", "EE295"]).
+prerequisite("EE434", [""]).
 prerequisite("EE435", ["EE255", "EE295", "EE302", "EE342"]).
 prerequisite("EE439", ["CPE/EE329"]).
 prerequisite("EE439", ["CPE316"]).
@@ -1540,6 +2266,7 @@ prerequisite("EE450", ["PHYS104"]).
 prerequisite("EE452", ["EE314", "EE409", "EE449", "EE412"]).
 prerequisite("EE455", ["EE409", "EE449", "EE425"]).
 prerequisite("EE456", ["EE314"]).
+prerequisite("EE458", [""]).
 prerequisite("EE459", ["CSC101"]).
 prerequisite("EE459", ["CSC231"]).
 prerequisite("EE460", ["EE314", "EE335", "EE409", "EE449"]).
@@ -1547,12 +2274,21 @@ prerequisite("EE461", ["EE409", "EE449", "EE460"]).
 prerequisite("EE462", ["EE461"]).
 prerequisite("EE463", ["EE409", "EE449", "EE460"]).
 prerequisite("EE464", ["EE463"]).
+prerequisite("EE470", [""]).
+prerequisite("EE471", [""]).
+prerequisite("EE472", [""]).
+prerequisite("EE473", [""]).
 prerequisite("EE475", ["CPE327", "CPE367"]).
 prerequisite("EE480", ["EE335", "EE314", "EE440"]).
+prerequisite("EE493", [""]).
+prerequisite("EE494", [""]).
 prerequisite("EE495", ["EE494", "EE495"]).
+prerequisite("EE500", [""]).
+prerequisite("EE502", [""]).
 prerequisite("EE504", ["EE314", "EE328"]).
 prerequisite("EE504", ["EE314", "CPE327"]).
 prerequisite("EE504", ["EE314"]).
+prerequisite("EE509", [""]).
 prerequisite("EE511", ["EE255"]).
 prerequisite("EE513", ["EE302"]).
 prerequisite("EE514", ["EE513"]).
@@ -1562,6 +2298,7 @@ prerequisite("EE516", ["STAT312"]).
 prerequisite("EE516", ["STAT350"]).
 prerequisite("EE518", ["EE406"]).
 prerequisite("EE519", ["EE406"]).
+prerequisite("EE520", [""]).
 prerequisite("EE521", ["CPE316", "CPE315"]).
 prerequisite("EE521", ["CPE316", "CPE333"]).
 prerequisite("EE521", ["CPE316"]).
@@ -1588,24 +2325,124 @@ prerequisite("EE534", ["EE335"]).
 prerequisite("EE534", ["EE403", "EE443"]).
 prerequisite("EE541", ["EE402"]).
 prerequisite("EE542", ["CPE/EE442"]).
+prerequisite("EE544", [""]).
+prerequisite("EE563", [""]).
+prerequisite("EE570", [""]).
+prerequisite("EE571", [""]).
+prerequisite("EE594", [""]).
+prerequisite("EE595", [""]).
+prerequisite("EE599", [""]).
+prerequisite("ENGR101", [""]).
+prerequisite("ENGR110", [""]).
+prerequisite("ENGR234", [""]).
+prerequisite("ENGR270", [""]).
 prerequisite("ENGR301", ["ENGR101"]).
+prerequisite("ENGR310", [""]).
+prerequisite("ENGR322", [""]).
 prerequisite("ENGR334", ["BMED212", "ENGR234", "IME144"]).
 prerequisite("ENGR334", ["ME234"]).
+prerequisite("ENGR350", [""]).
 prerequisite("ENGR400", ["ME212"]).
+prerequisite("ENGR440", [""]).
+prerequisite("ENGR459", [""]).
 prerequisite("ENGR460", ["ENGR459"]).
 prerequisite("ENGR461", ["ENGR460"]).
 prerequisite("ENGR462", ["ME212"]).
+prerequisite("ENGR463", [""]).
 prerequisite("ENGR464", ["ENGR463"]).
 prerequisite("ENGR465", ["ENGR464"]).
+prerequisite("ENGR470", [""]).
+prerequisite("ENGR471", [""]).
+prerequisite("ENGR493", [""]).
+prerequisite("ENGR494", [""]).
+prerequisite("ENGR495", [""]).
+prerequisite("ENGR500", [""]).
+prerequisite("ENGR570", [""]).
+prerequisite("ENGR571", [""]).
 prerequisite("ENGR581", ["CHEM312", "MCRO221"]).
+prerequisite("ENGR593", [""]).
+prerequisite("ENGR594", [""]).
+prerequisite("ENGR595", [""]).
+prerequisite("ENGR596", [""]).
+prerequisite("ENGR599", [""]).
+prerequisite("ENGL131", [""]).
 prerequisite("ENGL132", ["ENGL131", "ENGL135"]).
+prerequisite("ENGL133", [""]).
+prerequisite("ENGL134", [""]).
+prerequisite("ENGL135", [""]).
+prerequisite("ENGL145", [""]).
+prerequisite("ENGL147", [""]).
+prerequisite("ENGL150", [""]).
+prerequisite("ENGL202", [""]).
+prerequisite("ENGL203", [""]).
 prerequisite("ENGL204", ["ENGL203"]).
 prerequisite("ENGL205", ["ENGL204"]).
+prerequisite("ENGL220", [""]).
+prerequisite("ENGL221", [""]).
+prerequisite("ENGL230", [""]).
+prerequisite("ENGL231", [""]).
+prerequisite("ENGL241", [""]).
+prerequisite("ENGL242", [""]).
+prerequisite("ENGL251", [""]).
+prerequisite("ENGL252", [""]).
+prerequisite("ENGL253", [""]).
+prerequisite("ENGL255", [""]).
+prerequisite("ENGL270", [""]).
+prerequisite("ENGL272", [""]).
+prerequisite("ENGL290", [""]).
 prerequisite("ENGL303", ["ENGL205"]).
 prerequisite("ENGL304", ["ENGL303"]).
 prerequisite("ENGL305", ["ENGL304"]).
 prerequisite("ENGL306", ["ENGL305"]).
+prerequisite("ENGL310", [""]).
+prerequisite("ENGL311", [""]).
+prerequisite("ENGL312", [""]).
+prerequisite("ENGL315", [""]).
+prerequisite("ENGL316", [""]).
+prerequisite("ENGL317", [""]).
+prerequisite("ENGL319", [""]).
+prerequisite("ENGL330", [""]).
+prerequisite("ENGL331", [""]).
+prerequisite("ENGL332", [""]).
+prerequisite("ENGL333", [""]).
+prerequisite("ENGL334", [""]).
+prerequisite("ENGL335", [""]).
+prerequisite("ENGL339", [""]).
+prerequisite("ENGL340", [""]).
+prerequisite("ENGL341", [""]).
+prerequisite("ENGL342", [""]).
+prerequisite("ENGL343", [""]).
+prerequisite("ENGL345", [""]).
+prerequisite("ENGL346", [""]).
+prerequisite("ENGL347", [""]).
+prerequisite("ENGL348", [""]).
+prerequisite("ENGL349", [""]).
+prerequisite("ENGL350", [""]).
+prerequisite("ENGL351", [""]).
+prerequisite("ENGL352", [""]).
+prerequisite("ENGL354", [""]).
+prerequisite("ENGL361", [""]).
+prerequisite("ENGL368", [""]).
+prerequisite("ENGL370", [""]).
+prerequisite("ENGL371", [""]).
+prerequisite("ENGL372", [""]).
+prerequisite("ENGL373", [""]).
+prerequisite("ENGL374", [""]).
+prerequisite("ENGL380", [""]).
+prerequisite("ENGL381", [""]).
+prerequisite("ENGL382", [""]).
+prerequisite("ENGL386", [""]).
+prerequisite("ENGL387", [""]).
+prerequisite("ENGL388", [""]).
+prerequisite("ENGL390", [""]).
+prerequisite("ENGL391", [""]).
+prerequisite("ENGL395", [""]).
+prerequisite("ENGL400", [""]).
+prerequisite("ENGL408", [""]).
+prerequisite("ENGL411", [""]).
 prerequisite("ENGL412", ["ENGL411"]).
+prerequisite("ENGL421", [""]).
+prerequisite("ENGL424", [""]).
 prerequisite("ENGL425", ["EDUC469"]).
 prerequisite("ENGL425", ["EDUC479"]).
 prerequisite("ENGL433", ["ENGL203", "ENGL204", "ENGL205", "ENGL303", "ENGL304"]).
@@ -1613,6 +2450,9 @@ prerequisite("ENGL433", ["ENGL305", "ENGL204"]).
 prerequisite("ENGL439", ["ENGL203", "ENGL204", "ENGL205", "ENGL303", "ENGL304", "ENGL305", "ENGL306"]).
 prerequisite("ENGL449", ["ENGL203", "ENGL204", "ENGL205", "ENGL303", "ENGL304", "ENGL305", "ENGL306"]).
 prerequisite("ENGL459", ["ENGL203", "ENGL204", "ENGL205", "ENGL303", "ENGL304", "ENGL305", "ENGL306"]).
+prerequisite("ENGL461", [""]).
+prerequisite("ENGL467", [""]).
+prerequisite("ENGL470", [""]).
 prerequisite("ENGL487", ["ENGL387"]).
 prerequisite("ENGL488", ["ENGL388"]).
 prerequisite("ENGL495", ["ENGL290"]).
@@ -1620,24 +2460,43 @@ prerequisite("ENGL495", ["ENGL390"]).
 prerequisite("ENGL497", ["ENGL290", "ENGL390", "ENGL391", "ENGL395", "ENGL495"]).
 prerequisite("ENGL498", ["ENGL497"]).
 prerequisite("ENGL499", ["ENGL498"]).
+prerequisite("ENGL501", [""]).
+prerequisite("ENGL502", [""]).
+prerequisite("ENGL503", [""]).
+prerequisite("ENGL505", [""]).
 prerequisite("ENGL506", ["ENGL505"]).
 prerequisite("ENGL506", ["ENGL134"]).
 prerequisite("ENGL510", ["ENGL501"]).
 prerequisite("ENGL511", ["ENGL501"]).
 prerequisite("ENGL512", ["ENGL501"]).
 prerequisite("ENGL513", ["ENGL501"]).
+prerequisite("ENGL515", [""]).
+prerequisite("ENGL518", [""]).
 prerequisite("ENGL519", ["ENGL505"]).
+prerequisite("ENGL570", [""]).
+prerequisite("ENGL590", [""]).
+prerequisite("ENGL598", [""]).
+prerequisite("EDES101", [""]).
+prerequisite("EDES123", [""]).
+prerequisite("EDES350", [""]).
+prerequisite("EDES406", [""]).
 prerequisite("EDES408", ["EDES406"]).
 prerequisite("EDES410", ["EDES408"]).
+prerequisite("ENVE111", [""]).
 prerequisite("ENVE264", ["MATH241", "PHYS132"]).
 prerequisite("ENVE264", ["PHYS142", "ME211"]).
+prerequisite("ENVE270", [""]).
+prerequisite("ENVE304", [""]).
 prerequisite("ENVE309", ["MATH241", "PHYS132"]).
 prerequisite("ENVE309", ["PHYS142"]).
+prerequisite("ENVE323", [""]).
+prerequisite("ENVE324", [""]).
 prerequisite("ENVE325", ["CHEM125"]).
 prerequisite("ENVE325", ["CHEM128"]).
 prerequisite("ENVE331", ["CHEM125"]).
 prerequisite("ENVE331", ["CHEM128", "MATH242"]).
 prerequisite("ENVE331", ["MATH244"]).
+prerequisite("ENVE400", [""]).
 prerequisite("ENVE405", ["ENVE434", "ENVE438"]).
 prerequisite("ENVE407", ["ENVE331"]).
 prerequisite("ENVE411", ["CE251"]).
@@ -1659,59 +2518,144 @@ prerequisite("ENVE450", ["ENVE331"]).
 prerequisite("ENVE455", ["ENVE331"]).
 prerequisite("ENVE466", ["ENVE438", "CE336", "CE465"]).
 prerequisite("ENVE467", ["ENVE466"]).
+prerequisite("ENVE470", [""]).
+prerequisite("ENVE471", [""]).
 prerequisite("ENVE480", ["ENVE304"]).
 prerequisite("ENVE480", ["ME302"]).
 prerequisite("ENVE490", ["ENVE331", "CHEM125", "ENVE421"]).
 prerequisite("ENVE490", ["MATE370", "CHEM125", "ENVE421"]).
+prerequisite("ENVE495", [""]).
+prerequisite("ENVE500", [""]).
 prerequisite("ENVE525", ["ENVE264"]).
 prerequisite("ENVE525", ["ME341"]).
+prerequisite("ENVE535", [""]).
+prerequisite("ENVE536", [""]).
 prerequisite("ENVE537", ["ENVE438"]).
 prerequisite("ENVE540", ["ENVE421"]).
 prerequisite("ENVE540", ["ENVE438"]).
+prerequisite("ENVE542", [""]).
+prerequisite("ENVE570", [""]).
+prerequisite("ENVE571", [""]).
 prerequisite("ENVE581", ["CHEM312", "MCRO221"]).
+prerequisite("ENVE599", [""]).
+prerequisite("ESCI500", [""]).
+prerequisite("ESCI501", [""]).
+prerequisite("ESCI502", [""]).
+prerequisite("ESCI539", [""]).
+prerequisite("ESCI550", [""]).
+prerequisite("ESCI575", [""]).
+prerequisite("ESCI581", [""]).
 prerequisite("ESCI590", ["ESCI501"]).
+prerequisite("ESCI596", [""]).
+prerequisite("ESCI599", [""]).
+prerequisite("ES112", [""]).
+prerequisite("ES114", [""]).
+prerequisite("ES134", [""]).
+prerequisite("ES145", [""]).
+prerequisite("ES200", [""]).
 prerequisite("ES215", ["ES112"]).
+prerequisite("ES252", [""]).
+prerequisite("ES253", [""]).
+prerequisite("ES254", [""]).
+prerequisite("ES255", [""]).
+prerequisite("ES256", [""]).
+prerequisite("ES270", [""]).
+prerequisite("ES300", [""]).
+prerequisite("ES301", [""]).
+prerequisite("ES302", [""]).
+prerequisite("ES303", [""]).
+prerequisite("ES304", [""]).
+prerequisite("ES308", [""]).
+prerequisite("ES310", [""]).
+prerequisite("ES311", [""]).
+prerequisite("ES312", [""]).
+prerequisite("ES320", [""]).
+prerequisite("ES321", [""]).
+prerequisite("ES322", [""]).
+prerequisite("ES323", [""]).
+prerequisite("ES324", [""]).
 prerequisite("ES325", ["ES112"]).
 prerequisite("ES325", ["ES212"]).
+prerequisite("ES326", [""]).
+prerequisite("ES330", [""]).
+prerequisite("ES335", [""]).
+prerequisite("ES340", [""]).
+prerequisite("ES345", [""]).
+prerequisite("ES350", [""]).
+prerequisite("ES351", [""]).
+prerequisite("ES360", [""]).
+prerequisite("ES380", [""]).
+prerequisite("ES381", [""]).
+prerequisite("ES382", [""]).
+prerequisite("ES390", [""]).
+prerequisite("ES400", [""]).
 prerequisite("ES406", ["ES253", "NR141"]).
 prerequisite("ES406", ["ES253", "NR142"]).
 prerequisite("ES410", ["ES390"]).
 prerequisite("ES450", ["ES390"]).
 prerequisite("ES461", ["ES390"]).
+prerequisite("ES470", [""]).
+prerequisite("FPE500", [""]).
+prerequisite("FPE501", [""]).
 prerequisite("FPE502", ["FPE501"]).
 prerequisite("FPE503", ["FPE502"]).
 prerequisite("FPE504", ["FPE502", "FPE503"]).
+prerequisite("FPE521", [""]).
+prerequisite("FPE522", [""]).
+prerequisite("FPE523", [""]).
+prerequisite("FPE524", [""]).
+prerequisite("FPE551", [""]).
 prerequisite("FPE552", ["FPE502", "FPE504"]).
 prerequisite("FPE554", ["FPE504"]).
 prerequisite("FPE555", ["LA/NR318", "NR340"]).
+prerequisite("FPE570", [""]).
+prerequisite("FPE593", [""]).
 prerequisite("FPE596", ["FPE504"]).
+prerequisite("FPE599", [""]).
+prerequisite("FSN101", [""]).
+prerequisite("FSN102", [""]).
+prerequisite("FSN121", [""]).
+prerequisite("FSN125", [""]).
+prerequisite("FSN200", [""]).
 prerequisite("FSN201", ["FSN125"]).
 prerequisite("FSN201", ["FSN230"]).
 prerequisite("FSN201", ["FSN121"]).
+prerequisite("FSN202", [""]).
 prerequisite("FSN204", ["FSN125"]).
 prerequisite("FSN204", ["FSN230"]).
+prerequisite("FSN230", [""]).
 prerequisite("FSN244", ["FSN125"]).
 prerequisite("FSN244", ["FSN230"]).
+prerequisite("FSN250", [""]).
+prerequisite("FSN275", [""]).
+prerequisite("FSN281", [""]).
+prerequisite("FSN290", [""]).
 prerequisite("FSN304", ["CHEM127", "FSN121"]).
+prerequisite("FSN305", [""]).
 prerequisite("FSN310", ["FSN202"]).
 prerequisite("FSN311", ["FSN125", "STAT314"]).
 prerequisite("FSN311", ["FSN230", "STAT314"]).
 prerequisite("FSN315", ["FSN202"]).
+prerequisite("FSN319", [""]).
 prerequisite("FSN321", ["FSN121", "FSN202"]).
 prerequisite("FSN321", ["FSN210"]).
 prerequisite("FSN323", ["FSN121", "FSN321"]).
 prerequisite("FSN328", ["BIO161"]).
 prerequisite("FSN329", ["FSN328"]).
 prerequisite("FSN330", ["FSN204"]).
+prerequisite("FSN331", [""]).
 prerequisite("FSN332", ["FSN331"]).
 prerequisite("FSN333", ["FSN328"]).
 prerequisite("FSN333", ["FSN331", "FSN332"]).
 prerequisite("FSN334", ["FSN204"]).
+prerequisite("FSN335", [""]).
+prerequisite("FSN340", [""]).
 prerequisite("FSN342", ["CHEM313"]).
 prerequisite("FSN342", ["CHEM314", "MCRO221"]).
 prerequisite("FSN343", ["FSN121"]).
 prerequisite("FSN344", ["FSN321", "FSN343"]).
 prerequisite("FSN346", ["FSN342"]).
+prerequisite("FSN354", [""]).
 prerequisite("FSN364", ["FSN125"]).
 prerequisite("FSN364", ["FSN230", "CHEM313"]).
 prerequisite("FSN364", ["CHEM314"]).
@@ -1723,8 +2667,10 @@ prerequisite("FSN374", ["WVIT102"]).
 prerequisite("FSN375", ["FSN370"]).
 prerequisite("FSN381", ["FSN281", "STAT218", "FSN329"]).
 prerequisite("FSN381", ["FSN332"]).
+prerequisite("FSN400", [""]).
 prerequisite("FSN405", ["FSN328"]).
 prerequisite("FSN405", ["FSN331"]).
+prerequisite("FSN407", [""]).
 prerequisite("FSN408", ["FSN311"]).
 prerequisite("FSN410", ["FSN210"]).
 prerequisite("FSN415", ["FSN328"]).
@@ -1738,20 +2684,29 @@ prerequisite("FSN430", ["FSN429"]).
 prerequisite("FSN431", ["BIO231", "FSN329"]).
 prerequisite("FSN432", ["BIO232"]).
 prerequisite("FSN433", ["FSN432"]).
+prerequisite("FSN440", [""]).
 prerequisite("FSN444", ["FSN204", "FSN330"]).
 prerequisite("FSN457", ["FSN364"]).
 prerequisite("FSN458", ["FSN364"]).
 prerequisite("FSN459", ["FSN330", "FSN335", "FSN364", "FSN370"]).
 prerequisite("FSN459", ["FSN375"]).
+prerequisite("FSN461", [""]).
 prerequisite("FSN463", ["FSN329"]).
 prerequisite("FSN463", ["FSN332"]).
+prerequisite("FSN469", [""]).
+prerequisite("FSN470", [""]).
+prerequisite("FSN471", [""]).
 prerequisite("FSN474", ["FSN444"]).
 prerequisite("FSN478", ["FSN381"]).
 prerequisite("FSN479", ["FSN381"]).
 prerequisite("FSN481", ["FSN478"]).
 prerequisite("FSN481", ["FSN479"]).
+prerequisite("FSN485", [""]).
 prerequisite("FSN490", ["FSN375"]).
 prerequisite("FSN491", ["FSN375"]).
+prerequisite("FSN495", [""]).
+prerequisite("FSN500", [""]).
+prerequisite("FSN505", [""]).
 prerequisite("FSN508", ["FSN408"]).
 prerequisite("FSN516", ["FSN416"]).
 prerequisite("FSN528", ["FSN328"]).
@@ -1761,62 +2716,168 @@ prerequisite("FSN529", ["FSN332", "FSN333"]).
 prerequisite("FSN530", ["FSN329"]).
 prerequisite("FSN530", ["FSN332", "FSN333"]).
 prerequisite("FSN531", ["FSN331"]).
+prerequisite("FSN541", [""]).
+prerequisite("FSN550", [""]).
+prerequisite("FSN551", [""]).
+prerequisite("FSN552", [""]).
+prerequisite("FSN553", [""]).
+prerequisite("FSN554", [""]).
+prerequisite("FSN556", [""]).
 prerequisite("FSN564", ["FSN364"]).
+prerequisite("FSN570", [""]).
+prerequisite("FSN571", [""]).
 prerequisite("FSN574", ["FSN335"]).
 prerequisite("FSN575", ["FSN375", "MCRO421"]).
 prerequisite("FSN575", ["MCRO421"]).
+prerequisite("FSN581", [""]).
+prerequisite("FSN582", [""]).
 prerequisite("FSN598", ["STAT511"]).
+prerequisite("FSN599", [""]).
+prerequisite("FR101", [""]).
 prerequisite("FR102", ["FR101"]).
 prerequisite("FR103", ["FR102"]).
 prerequisite("FR201", ["FR103"]).
 prerequisite("FR202", ["FR201"]).
 prerequisite("FR203", ["FR202"]).
+prerequisite("FR230", [""]).
 prerequisite("FR233", ["FR203"]).
+prerequisite("FR270", [""]).
 prerequisite("FR301", ["FR203"]).
 prerequisite("FR302", ["FR203"]).
+prerequisite("FR305", [""]).
+prerequisite("FR350", [""]).
+prerequisite("FR470", [""]).
+prerequisite("GEOG150", [""]).
+prerequisite("GEOG200", [""]).
+prerequisite("GEOG218", [""]).
+prerequisite("GEOG250", [""]).
+prerequisite("GEOG270", [""]).
+prerequisite("GEOG308", [""]).
+prerequisite("GEOG325", [""]).
 prerequisite("GEOG328", ["GEOG218"]).
 prerequisite("GEOG328", ["NR218"]).
+prerequisite("GEOG333", [""]).
+prerequisite("GEOG340", [""]).
+prerequisite("GEOG350", [""]).
+prerequisite("GEOG370", [""]).
+prerequisite("GEOG380", [""]).
+prerequisite("GEOG384", [""]).
+prerequisite("GEOG400", [""]).
 prerequisite("GEOG408", ["GEOG308"]).
+prerequisite("GEOG414", [""]).
 prerequisite("GEOG415", ["ERSC/GEOG250"]).
 prerequisite("GEOG435", ["ERSC/GEOG250"]).
 prerequisite("GEOG441", ["GEOG218"]).
 prerequisite("GEOG441", ["LA/NR218", "BRAE345"]).
 prerequisite("GEOG441", ["GEOG328"]).
+prerequisite("GEOG455", [""]).
+prerequisite("GEOG461", [""]).
+prerequisite("GEOG462", [""]).
 prerequisite("GEOG465", ["GEOG464"]).
+prerequisite("GEOG470", [""]).
+prerequisite("GEOL102", [""]).
+prerequisite("GEOL200", [""]).
 prerequisite("GEOL201", ["MATH119"]).
+prerequisite("GEOL203", [""]).
+prerequisite("GEOL206", [""]).
+prerequisite("GEOL241", [""]).
+prerequisite("GEOL270", [""]).
 prerequisite("GEOL301", ["MATH142"]).
 prerequisite("GEOL303", ["GEOL301", "STAT217", "STAT218", "STAT301", "STAT312"]).
 prerequisite("GEOL303", ["STAT321"]).
+prerequisite("GEOL305", [""]).
 prerequisite("GEOL309", ["GEOL102", "ERSC223"]).
 prerequisite("GEOL309", ["GEOL201", "ERSC223"]).
 prerequisite("GEOL311", ["GEOL309"]).
 prerequisite("GEOL330", ["GEOL102"]).
 prerequisite("GEOL330", ["GEOL201", "GEOL241"]).
+prerequisite("GEOL400", [""]).
+prerequisite("GEOL404", [""]).
 prerequisite("GEOL415", ["GEOL241", "ERSC223"]).
 prerequisite("GEOL416", ["GEOL102", "GEOL415"]).
 prerequisite("GEOL416", ["GEOL201", "GEOL415"]).
 prerequisite("GEOL417", ["ERSC/GEOL401"]).
 prerequisite("GEOL417", ["ERSC/GEOL416"]).
 prerequisite("GEOL420", ["GEOL201", "PHYS141"]).
+prerequisite("GEOL470", [""]).
+prerequisite("GEOL471", [""]).
+prerequisite("GER101", [""]).
 prerequisite("GER102", ["GER101"]).
 prerequisite("GER103", ["GER102"]).
 prerequisite("GER201", ["GER103"]).
 prerequisite("GER202", ["GER201"]).
 prerequisite("GER203", ["GER202"]).
 prerequisite("GER233", ["GER202"]).
+prerequisite("GER270", [""]).
 prerequisite("GER301", ["GER202"]).
 prerequisite("GER302", ["GER202"]).
+prerequisite("GER305", [""]).
+prerequisite("GER350", [""]).
+prerequisite("GER470", [""]).
+prerequisite("GS597", [""]).
+prerequisite("GSA501", [""]).
+prerequisite("GSA536", [""]).
+prerequisite("GSA537", [""]).
+prerequisite("GSA538", [""]).
+prerequisite("GSA539", [""]).
+prerequisite("GSA540", [""]).
+prerequisite("GSA541", [""]).
 prerequisite("GSA543", ["GSA541"]).
+prerequisite("GSA544", [""]).
+prerequisite("GSA545", [""]).
+prerequisite("GSA546", [""]).
+prerequisite("GSA548", [""]).
+prerequisite("GSA549", [""]).
+prerequisite("GSA550", [""]).
+prerequisite("GSA551", [""]).
+prerequisite("GSA552", [""]).
+prerequisite("GSA553", [""]).
+prerequisite("GSA554", [""]).
+prerequisite("GSA555", [""]).
+prerequisite("GSA556", [""]).
+prerequisite("GSA570", [""]).
+prerequisite("GSB500", [""]).
+prerequisite("GSB501", [""]).
+prerequisite("GSB503", [""]).
+prerequisite("GSB510", [""]).
+prerequisite("GSB511", [""]).
+prerequisite("GSB512", [""]).
+prerequisite("GSB513", [""]).
+prerequisite("GSB514", [""]).
+prerequisite("GSB516", [""]).
 prerequisite("GSB517", ["GSE519"]).
+prerequisite("GSB518", [""]).
+prerequisite("GSB520", [""]).
 prerequisite("GSB521", ["GSB520"]).
+prerequisite("GSB522", [""]).
+prerequisite("GSB523", [""]).
+prerequisite("GSB524", [""]).
+prerequisite("GSB525", [""]).
+prerequisite("GSB529", [""]).
+prerequisite("GSB530", [""]).
+prerequisite("GSB531", [""]).
+prerequisite("GSB533", [""]).
+prerequisite("GSB534", [""]).
 prerequisite("GSB536", ["GSB520"]).
+prerequisite("GSB539", [""]).
+prerequisite("GSB544", [""]).
 prerequisite("GSB545", ["GSB544"]).
 prerequisite("GSB550", ["GSE520"]).
 prerequisite("GSB551", ["GSE519"]).
 prerequisite("GSB551", ["GSE520"]).
+prerequisite("GSB555", [""]).
+prerequisite("GSB556", [""]).
+prerequisite("GSB562", [""]).
+prerequisite("GSB563", [""]).
 prerequisite("GSB564", ["GSB531"]).
+prerequisite("GSB569", [""]).
+prerequisite("GSB570", [""]).
+prerequisite("GSB575", [""]).
+prerequisite("GSB583", [""]).
 prerequisite("GSB590", ["GSB511", "GSB523", "GSB531"]).
+prerequisite("GSB595", [""]).
 prerequisite("GSB597", ["GSB523"]).
+prerequisite("GSE500", [""]).
 prerequisite("GSE510", ["MATH206", "MATH244", "MATH408"]).
 prerequisite("GSE510", ["MATH410"]).
 prerequisite("GSE511", ["GSE510"]).
@@ -1829,6 +2890,7 @@ prerequisite("GSE519", ["GSE518", "GSB544"]).
 prerequisite("GSE519", ["GSE524"]).
 prerequisite("GSE520", ["GSE518", "ECON339"]).
 prerequisite("GSE522", ["GSE520"]).
+prerequisite("GSE524", [""]).
 prerequisite("GSE526", ["GSE520", "GSE524"]).
 prerequisite("GSE532", ["GSE511"]).
 prerequisite("GSE534", ["GSE511"]).
@@ -1839,22 +2901,36 @@ prerequisite("GSE542", ["GSE526"]).
 prerequisite("GSE544", ["GSE520", "GSE524", "GSE526"]).
 prerequisite("GSE546", ["GSE511"]).
 prerequisite("GSE552", ["GSE526"]).
+prerequisite("GSE570", [""]).
+prerequisite("GSE580", [""]).
+prerequisite("GSE599", [""]).
+prerequisite("GSP530", [""]).
 prerequisite("GSP532", ["GSP530"]).
 prerequisite("GSP533", ["GSP530"]).
 prerequisite("GSP535", ["GSP530"]).
 prerequisite("GSP536", ["GSP530"]).
+prerequisite("GSP537", [""]).
 prerequisite("GSP538", ["GSP530"]).
 prerequisite("GSP539", ["GSP530"]).
 prerequisite("GSP540", ["GSP530"]).
 prerequisite("GSP541", ["GSP530"]).
+prerequisite("GSP591", [""]).
+prerequisite("GRC101", [""]).
+prerequisite("GRC102", [""]).
+prerequisite("GRC200", [""]).
+prerequisite("GRC201", [""]).
 prerequisite("GRC203", ["GRC101"]).
 prerequisite("GRC204", ["GRC101"]).
+prerequisite("GRC211", [""]).
+prerequisite("GRC212", [""]).
 prerequisite("GRC220", ["GRC101"]).
 prerequisite("GRC224", ["GRC211"]).
+prerequisite("GRC270", [""]).
 prerequisite("GRC301", ["GRC203"]).
 prerequisite("GRC301", ["GRC376"]).
 prerequisite("GRC301", ["GRC377"]).
 prerequisite("GRC316", ["GRC203"]).
+prerequisite("GRC318", [""]).
 prerequisite("GRC320", ["GRC328", "STAT217"]).
 prerequisite("GRC322", ["GRC318"]).
 prerequisite("GRC328", ["GRC211"]).
@@ -1870,6 +2946,8 @@ prerequisite("GRC357", ["GRC301"]).
 prerequisite("GRC361", ["GRC101", "GRC204"]).
 prerequisite("GRC372", ["GRC102"]).
 prerequisite("GRC372", ["GRC172"]).
+prerequisite("GRC376", [""]).
+prerequisite("GRC400", [""]).
 prerequisite("GRC402", ["GRC318"]).
 prerequisite("GRC404", ["GRC328"]).
 prerequisite("GRC411", ["GRC403"]).
@@ -1879,18 +2957,46 @@ prerequisite("GRC421", ["GRC320"]).
 prerequisite("GRC422", ["GRC403"]).
 prerequisite("GRC422", ["GRC404"]).
 prerequisite("GRC429", ["GRC338"]).
+prerequisite("GRC433", [""]).
 prerequisite("GRC437", ["GRC337"]).
+prerequisite("GRC439", [""]).
+prerequisite("GRC440", [""]).
 prerequisite("GRC451", ["GRC203"]).
 prerequisite("GRC452", ["GRC203"]).
 prerequisite("GRC453", ["GRC203"]).
+prerequisite("GRC461", [""]).
+prerequisite("GRC462", [""]).
+prerequisite("GRC463", [""]).
 prerequisite("GRC470", ["GRC101", "GRC201"]).
+prerequisite("GRC471", [""]).
+prerequisite("GRC485", [""]).
+prerequisite("GRC495", [""]).
+prerequisite("GRC500", [""]).
+prerequisite("GRC501", [""]).
+prerequisite("GRC502", [""]).
+prerequisite("GRC510", [""]).
+prerequisite("GRC512", [""]).
+prerequisite("GRC514", [""]).
 prerequisite("GRC520", ["GRC501"]).
 prerequisite("GRC530", ["GRC502"]).
+prerequisite("GRC551", [""]).
+prerequisite("GRC552", [""]).
+prerequisite("GRC553", [""]).
+prerequisite("GRC560", [""]).
+prerequisite("GRC595", [""]).
 prerequisite("GRC596", ["GRC560"]).
+prerequisite("HLTH101", [""]).
+prerequisite("HLTH201", [""]).
+prerequisite("HLTH250", [""]).
+prerequisite("HLTH255", [""]).
+prerequisite("HLTH260", [""]).
 prerequisite("HLTH265", ["HLTH/KINE250", "HLTH/KINE255"]).
 prerequisite("HLTH265", ["HLTH/KINE260", "HLTH101"]).
 prerequisite("HLTH280", ["HLTH/KINE250", "HLTH/KINE255"]).
 prerequisite("HLTH280", ["HLTH/KINE260", "KINE319", "STAT218"]).
+prerequisite("HLTH281", [""]).
+prerequisite("HLTH290", [""]).
+prerequisite("HLTH297", [""]).
 prerequisite("HLTH298", ["HLTH/KINE265", "STAT217"]).
 prerequisite("HLTH298", ["HLTH/KINE265", "STAT218", "MCRO221"]).
 prerequisite("HLTH298", ["HLTH/KINE265", "MCRO224"]).
@@ -1899,15 +3005,21 @@ prerequisite("HLTH305", ["BIO231", "HLTH/KINE443", "BIO232"]).
 prerequisite("HLTH310", ["BIO231"]).
 prerequisite("HLTH318", ["HLTH/KINE298", "PSY201"]).
 prerequisite("HLTH318", ["PSY202", "STAT313"]).
+prerequisite("HLTH320", [""]).
 prerequisite("HLTH334", ["HLTH/KINE298", "HLTH299", "PSY201"]).
 prerequisite("HLTH334", ["HLTH/KINE298", "HLTH299", "PSY202"]).
 prerequisite("HLTH334", ["HLTH318", "PSY201"]).
 prerequisite("HLTH334", ["HLTH318", "PSY202"]).
+prerequisite("HLTH337", [""]).
+prerequisite("HLTH400", [""]).
 prerequisite("HLTH402", ["HLTH299"]).
 prerequisite("HLTH402", ["HLTH318"]).
 prerequisite("HLTH405", ["BIO231"]).
+prerequisite("HLTH410", [""]).
 prerequisite("HLTH434", ["HLTH/KINE265"]).
 prerequisite("HLTH435", ["HLTH/KINE320", "HLTH/KINE434"]).
+prerequisite("HLTH440", [""]).
+prerequisite("HLTH443", [""]).
 prerequisite("HLTH450", ["HLTH/KINE250"]).
 prerequisite("HLTH453", ["FSN210", "HLTH/KINE298", "KINE304"]).
 prerequisite("HLTH453", ["FSN210", "FSN310", "HLTH405", "KINE266", "HLTH334"]).
@@ -1915,8 +3027,54 @@ prerequisite("HLTH453", ["FSN210", "FSN415"]).
 prerequisite("HLTH453", ["KINE451", "HLTH/KINE298", "KINE304"]).
 prerequisite("HLTH453", ["KINE451", "FSN310", "HLTH405", "KINE266", "HLTH334"]).
 prerequisite("HLTH453", ["KINE451", "FSN415"]).
+prerequisite("HLTH460", [""]).
+prerequisite("HLTH461", [""]).
+prerequisite("HLTH462", [""]).
+prerequisite("HLTH463", [""]).
+prerequisite("HLTH470", [""]).
+prerequisite("HLTH471", [""]).
+prerequisite("HIST100", [""]).
+prerequisite("HIST110", [""]).
+prerequisite("HIST111", [""]).
+prerequisite("HIST200", [""]).
+prerequisite("HIST201", [""]).
+prerequisite("HIST202", [""]).
+prerequisite("HIST206", [""]).
+prerequisite("HIST208", [""]).
+prerequisite("HIST210", [""]).
+prerequisite("HIST213", [""]).
+prerequisite("HIST216", [""]).
+prerequisite("HIST221", [""]).
+prerequisite("HIST222", [""]).
+prerequisite("HIST223", [""]).
+prerequisite("HIST225", [""]).
+prerequisite("HIST270", [""]).
 prerequisite("HIST303", ["HIST100"]).
 prerequisite("HIST304", ["HIST303"]).
+prerequisite("HIST306", [""]).
+prerequisite("HIST307", [""]).
+prerequisite("HIST308", [""]).
+prerequisite("HIST309", [""]).
+prerequisite("HIST310", [""]).
+prerequisite("HIST311", [""]).
+prerequisite("HIST313", [""]).
+prerequisite("HIST316", [""]).
+prerequisite("HIST317", [""]).
+prerequisite("HIST318", [""]).
+prerequisite("HIST319", [""]).
+prerequisite("HIST320", [""]).
+prerequisite("HIST321", [""]).
+prerequisite("HIST322", [""]).
+prerequisite("HIST326", [""]).
+prerequisite("HIST334", [""]).
+prerequisite("HIST335", [""]).
+prerequisite("HIST336", [""]).
+prerequisite("HIST337", [""]).
+prerequisite("HIST338", [""]).
+prerequisite("HIST341", [""]).
+prerequisite("HIST350", [""]).
+prerequisite("HIST355", [""]).
+prerequisite("HIST400", [""]).
 prerequisite("HIST401", ["HIST303"]).
 prerequisite("HIST405", ["HIST303"]).
 prerequisite("HIST406", ["HIST303"]).
@@ -1933,6 +3091,7 @@ prerequisite("HIST422", ["HIST303"]).
 prerequisite("HIST422", ["HIST316"]).
 prerequisite("HIST422", ["WLC310"]).
 prerequisite("HIST423", ["HIST303"]).
+prerequisite("HIST424", [""]).
 prerequisite("HIST425", ["HIST424", "EDUC469"]).
 prerequisite("HIST425", ["EDUC479"]).
 prerequisite("HIST426", ["HIST303"]).
@@ -1961,34 +3120,126 @@ prerequisite("HIST467", ["HIST303"]).
 prerequisite("HIST470", ["HIST303"]).
 prerequisite("HIST475", ["HIST303"]).
 prerequisite("HIST477", ["HIST303"]).
+prerequisite("HIST485", [""]).
+prerequisite("HIST495", [""]).
+prerequisite("HIST500", [""]).
+prerequisite("HIST504", [""]).
+prerequisite("HIST505", [""]).
+prerequisite("HIST506", [""]).
+prerequisite("HIST507", [""]).
+prerequisite("HIST508", [""]).
+prerequisite("HIST509", [""]).
+prerequisite("HIST510", [""]).
+prerequisite("HIST511", [""]).
 prerequisite("HIST512", ["HIST504"]).
+prerequisite("HIST570", [""]).
+prerequisite("HIST599", [""]).
+prerequisite("HNRC199", [""]).
+prerequisite("HNRC200", [""]).
+prerequisite("HNRC399", [""]).
+prerequisite("HNRC400", [""]).
+prerequisite("HNRS100", [""]).
+prerequisite("HNRS101", [""]).
+prerequisite("HNRS102", [""]).
+prerequisite("HNRS112", [""]).
+prerequisite("HNRS120", [""]).
 prerequisite("HNRS132", ["PHYS141", "MATH142"]).
 prerequisite("HNRS132", ["PHYS141", "MATH182"]).
 prerequisite("HNRS134", ["MATH141"]).
 prerequisite("HNRS134", ["MATH142"]).
 prerequisite("HNRS134", ["MATH182"]).
+prerequisite("HNRS141", [""]).
 prerequisite("HNRS142", ["MATH141"]).
 prerequisite("HNRS143", ["MATH142"]).
+prerequisite("HNRS145", [""]).
+prerequisite("HNRS147", [""]).
+prerequisite("HNRS161", [""]).
 prerequisite("HNRS162", ["HNRS161"]).
 prerequisite("HNRS163", ["HNRS162"]).
+prerequisite("HNRS164", [""]).
+prerequisite("HNRS200", [""]).
+prerequisite("HNRS201", [""]).
+prerequisite("HNRS202", [""]).
+prerequisite("HNRS203", [""]).
+prerequisite("HNRS204", [""]).
+prerequisite("HNRS210", [""]).
 prerequisite("HNRS211", ["MATH241", "PHYS131"]).
 prerequisite("HNRS211", ["PHYS141"]).
+prerequisite("HNRS213", [""]).
 prerequisite("HNRS214", ["MATH241"]).
+prerequisite("HNRS216", [""]).
+prerequisite("HNRS223", [""]).
+prerequisite("HNRS230", [""]).
+prerequisite("HNRS231", [""]).
+prerequisite("HNRS232", [""]).
 prerequisite("HNRS241", ["MATH143"]).
+prerequisite("HNRS242", [""]).
 prerequisite("HNRS244", ["MATH122"]).
 prerequisite("HNRS244", ["MATH143"]).
+prerequisite("HNRS251", [""]).
+prerequisite("HNRS261", [""]).
 prerequisite("HNRS262", ["HNRS261"]).
 prerequisite("HNRS263", ["HNRS262"]).
 prerequisite("HNRS265", ["HNRS162"]).
+prerequisite("HNRS270", [""]).
+prerequisite("HNRS299", [""]).
+prerequisite("HNRS302", [""]).
+prerequisite("HNRS303", [""]).
+prerequisite("HNRS304", [""]).
+prerequisite("HNRS308", [""]).
+prerequisite("HNRS310", [""]).
+prerequisite("HNRS312", [""]).
+prerequisite("HNRS317", [""]).
+prerequisite("HNRS320", [""]).
+prerequisite("HNRS321", [""]).
+prerequisite("HNRS323", [""]).
+prerequisite("HNRS325", [""]).
+prerequisite("HNRS332", [""]).
+prerequisite("HNRS333", [""]).
+prerequisite("HNRS334", [""]).
+prerequisite("HNRS335", [""]).
+prerequisite("HNRS336", [""]).
+prerequisite("HNRS338", [""]).
+prerequisite("HNRS340", [""]).
+prerequisite("HNRS341", [""]).
+prerequisite("HNRS342", [""]).
+prerequisite("HNRS343", [""]).
+prerequisite("HNRS345", [""]).
+prerequisite("HNRS347", [""]).
+prerequisite("HNRS350", [""]).
 prerequisite("HNRS351", ["COMS250"]).
+prerequisite("HNRS352", [""]).
+prerequisite("HNRS353", [""]).
+prerequisite("HNRS361", [""]).
+prerequisite("HNRS380", [""]).
+prerequisite("HNRS391", [""]).
+prerequisite("HNRS392", [""]).
+prerequisite("HNRS400", [""]).
+prerequisite("HNRS411", [""]).
 prerequisite("HNRS412", ["ENGL411"]).
 prerequisite("HNRS450", ["PHYS104"]).
+prerequisite("HNRS461", [""]).
+prerequisite("HNRS470", [""]).
+prerequisite("HNRS471", [""]).
+prerequisite("HNRS492", [""]).
+prerequisite("HNRS499", [""]).
+prerequisite("IME101", [""]).
+prerequisite("IME141", [""]).
+prerequisite("IME142", [""]).
+prerequisite("IME143", [""]).
+prerequisite("IME144", [""]).
+prerequisite("IME145", [""]).
 prerequisite("IME146", ["IME145", "ME130"]).
+prerequisite("IME156", [""]).
+prerequisite("IME200", [""]).
 prerequisite("IME212", ["CSC232"]).
 prerequisite("IME223", ["MATH141", "IME101"]).
 prerequisite("IME239", ["IME223"]).
+prerequisite("IME240", [""]).
 prerequisite("IME244", ["IME144", "MATE210", "MATE215", "IME141", "IME142"]).
+prerequisite("IME270", [""]).
 prerequisite("IME301", ["MATH244"]).
+prerequisite("IME303", [""]).
 prerequisite("IME305", ["IME301", "STAT312"]).
 prerequisite("IME305", ["IME301", "STAT321"]).
 prerequisite("IME312", ["CSC232"]).
@@ -1996,6 +3247,7 @@ prerequisite("IME314", ["MATH241"]).
 prerequisite("IME315", ["MATH142"]).
 prerequisite("IME319", ["PSY201"]).
 prerequisite("IME319", ["PSY202"]).
+prerequisite("IME320", [""]).
 prerequisite("IME326", ["STAT321"]).
 prerequisite("IME327", ["STAT321"]).
 prerequisite("IME330", ["IME141"]).
@@ -2007,6 +3259,9 @@ prerequisite("IME336", ["IME335", "ME212", "MATH244"]).
 prerequisite("IME342", ["IME223", "MATH241", "STAT321"]).
 prerequisite("IME356", ["EE321"]).
 prerequisite("IME372", ["IME212", "IME312", "IME326", "MATH244"]).
+prerequisite("IME400", [""]).
+prerequisite("IME401", [""]).
+prerequisite("IME403", [""]).
 prerequisite("IME408", ["CSC232"]).
 prerequisite("IME409", ["IME239", "IME314", "IME305"]).
 prerequisite("IME409", ["IME315", "IME305"]).
@@ -2034,6 +3289,8 @@ prerequisite("IME432", ["IME144", "MATE210", "IME330"]).
 prerequisite("IME432", ["ME251", "MATE210", "IME330"]).
 prerequisite("IME435", ["IME326", "IME327", "IME503"]).
 prerequisite("IME435", ["STAT312"]).
+prerequisite("IME441", [""]).
+prerequisite("IME442", [""]).
 prerequisite("IME443", ["IME144"]).
 prerequisite("IME450", ["MATH244", "IME330", "IME335"]).
 prerequisite("IME451", ["EE201"]).
@@ -2051,16 +3308,25 @@ prerequisite("IME458", ["EE113"]).
 prerequisite("IME458", ["EE201", "MATE210"]).
 prerequisite("IME460", ["IME223"]).
 prerequisite("IME460", ["ITP303"]).
+prerequisite("IME470", [""]).
+prerequisite("IME471", [""]).
 prerequisite("IME481", ["IME326"]).
 prerequisite("IME481", ["IME327"]).
 prerequisite("IME482", ["IME481", "IME417"]).
 prerequisite("IME483", ["IME482"]).
+prerequisite("IME495", [""]).
+prerequisite("IME500", [""]).
+prerequisite("IME503", [""]).
+prerequisite("IME507", [""]).
+prerequisite("IME510", [""]).
 prerequisite("IME511", ["IME510"]).
 prerequisite("IME520", ["IME410"]).
 prerequisite("IME527", ["IME326"]).
 prerequisite("IME527", ["IME327"]).
 prerequisite("IME527", ["IME503"]).
 prerequisite("IME527", ["STAT312"]).
+prerequisite("IME535", [""]).
+prerequisite("IME541", [""]).
 prerequisite("IME542", ["IME326"]).
 prerequisite("IME542", ["IME327"]).
 prerequisite("IME542", ["IME503"]).
@@ -2068,6 +3334,7 @@ prerequisite("IME542", ["STAT312"]).
 prerequisite("IME543", ["IME326"]).
 prerequisite("IME543", ["IME327"]).
 prerequisite("IME543", ["IME503"]).
+prerequisite("IME544", [""]).
 prerequisite("IME545", ["IME420"]).
 prerequisite("IME546", ["IME301"]).
 prerequisite("IME546", ["DATA301"]).
@@ -2078,22 +3345,39 @@ prerequisite("IME549", ["IME212"]).
 prerequisite("IME549", ["DATA301", "IME301"]).
 prerequisite("IME549", ["DATA301", "IME305"]).
 prerequisite("IME549", ["DATA301"]).
+prerequisite("IME556", [""]).
 prerequisite("IME565", ["IME372"]).
 prerequisite("IME565", ["DATA301"]).
+prerequisite("IME570", [""]).
+prerequisite("IME571", [""]).
+prerequisite("IME577", [""]).
+prerequisite("IME580", [""]).
+prerequisite("IME596", [""]).
+prerequisite("IME599", [""]).
+prerequisite("ITP100", [""]).
+prerequisite("ITP125", [""]).
+prerequisite("ITP150", [""]).
+prerequisite("ITP203", [""]).
 prerequisite("ITP211", ["ITP150"]).
+prerequisite("ITP233", [""]).
+prerequisite("ITP234", [""]).
 prerequisite("ITP260", ["CHEM111"]).
 prerequisite("ITP260", ["CHEM124"]).
 prerequisite("ITP260", ["CHEM127"]).
+prerequisite("ITP270", [""]).
 prerequisite("ITP275", ["ITP150", "ITP211"]).
 prerequisite("ITP302", ["BUS346"]).
 prerequisite("ITP303", ["STAT217", "STAT218", "STAT251"]).
 prerequisite("ITP326", ["ITP233"]).
 prerequisite("ITP326", ["BUS310"]).
+prerequisite("ITP330", [""]).
+prerequisite("ITP341", [""]).
 prerequisite("ITP371", ["MATH141"]).
 prerequisite("ITP371", ["MATH221", "STAT217"]).
 prerequisite("ITP371", ["STAT218"]).
 prerequisite("ITP371", ["STAT251"]).
 prerequisite("ITP390", ["ITP260"]).
+prerequisite("ITP400", [""]).
 prerequisite("ITP403", ["ITP303"]).
 prerequisite("ITP404", ["ITP303"]).
 prerequisite("ITP406", ["BUS346"]).
@@ -2107,49 +3391,89 @@ prerequisite("ITP413", ["ITP341", "ITP408"]).
 prerequisite("ITP414", ["ITP408", "ITP411"]).
 prerequisite("ITP415", ["ITP303", "ITP326", "ITP330", "ITP371"]).
 prerequisite("ITP415", ["ITP341", "ITP371"]).
+prerequisite("ITP419", [""]).
 prerequisite("ITP428", ["BUS342", "BUS346"]).
 prerequisite("ITP428", ["ITP326"]).
 prerequisite("ITP430", ["ITP330"]).
+prerequisite("ITP461", [""]).
+prerequisite("ITP462", [""]).
+prerequisite("ITP464", [""]).
 prerequisite("ITP467", ["ITP211", "ITP233", "ITP260", "ITP326", "BUS346"]).
 prerequisite("ITP468", ["BUS392"]).
 prerequisite("ITP468", ["CSC101"]).
 prerequisite("ITP468", ["CSC232"]).
 prerequisite("ITP468", ["ECON395"]).
+prerequisite("ITP470", [""]).
+prerequisite("ITP471", [""]).
 prerequisite("ITP475", ["ITP330"]).
 prerequisite("ITP485", ["ITP341", "ITP408", "ITP475"]).
+prerequisite("ITP500", [""]).
+prerequisite("ITP570", [""]).
+prerequisite("ITP571", [""]).
+prerequisite("ITP599", [""]).
+prerequisite("ISLA123", [""]).
 prerequisite("ISLA201", ["COMS218", "ES112", "HIST206", "HIST216", "ISLA123", "JOUR219", "JOUR228", "RELS201", "WGQS201"]).
 prerequisite("ISLA201", ["WGQS210"]).
 prerequisite("ISLA240", ["TH210"]).
 prerequisite("ISLA255", ["ISLA201"]).
+prerequisite("ISLA303", [""]).
+prerequisite("ISLA305", [""]).
+prerequisite("ISLA316", [""]).
+prerequisite("ISLA319", [""]).
+prerequisite("ISLA320", [""]).
+prerequisite("ISLA330", [""]).
+prerequisite("ISLA335", [""]).
 prerequisite("ISLA340", ["ISLA240"]).
 prerequisite("ISLA341", ["ISLA340"]).
+prerequisite("ISLA350", [""]).
 prerequisite("ISLA355", ["ISLA201", "STAT130", "STAT217", "STAT218"]).
 prerequisite("ISLA355", ["STAT251"]).
+prerequisite("ISLA393", [""]).
+prerequisite("ISLA395", [""]).
+prerequisite("ISLA400", [""]).
+prerequisite("ISLA411", [""]).
 prerequisite("ISLA440", ["ISLA201", "ISLA355"]).
+prerequisite("ISLA450", [""]).
 prerequisite("ISLA456", ["ISLA123"]).
 prerequisite("ISLA461", ["ISLA355"]).
 prerequisite("ISLA465", ["ISLA201"]).
+prerequisite("ISLA470", [""]).
+prerequisite("ITAL101", [""]).
 prerequisite("ITAL102", ["ITAL101", "ITAL141"]).
 prerequisite("ITAL103", ["ITAL102", "ITAL142"]).
+prerequisite("ITAL141", [""]).
 prerequisite("ITAL142", ["ITAL101", "ITAL141"]).
 prerequisite("ITAL143", ["ITAL102", "ITAL142"]).
 prerequisite("ITAL201", ["ITAL103", "ITAL143"]).
 prerequisite("ITAL202", ["ITAL201", "ITAL241"]).
 prerequisite("ITAL241", ["ITAL103", "ITAL143"]).
+prerequisite("JPNS101", [""]).
 prerequisite("JPNS102", ["JPNS101"]).
 prerequisite("JPNS103", ["JPNS102"]).
 prerequisite("JPNS201", ["JPNS103"]).
 prerequisite("JPNS202", ["JPNS201"]).
+prerequisite("JOUR102", [""]).
+prerequisite("JOUR201", [""]).
+prerequisite("JOUR203", [""]).
+prerequisite("JOUR219", [""]).
+prerequisite("JOUR220", [""]).
+prerequisite("JOUR228", [""]).
+prerequisite("JOUR270", [""]).
 prerequisite("JOUR285", ["JOUR203"]).
 prerequisite("JOUR302", ["JOUR203"]).
 prerequisite("JOUR303", ["JOUR203"]).
 prerequisite("JOUR304", ["JOUR203"]).
+prerequisite("JOUR312", [""]).
 prerequisite("JOUR320", ["JOUR220"]).
+prerequisite("JOUR331", [""]).
+prerequisite("JOUR333", [""]).
 prerequisite("JOUR334", ["JOUR203"]).
 prerequisite("JOUR338", ["JOUR285"]).
 prerequisite("JOUR338", ["JOUR303"]).
 prerequisite("JOUR342", ["JOUR312"]).
+prerequisite("JOUR345", [""]).
 prerequisite("JOUR346", ["JOUR203", "JOUR285"]).
+prerequisite("JOUR347", [""]).
 prerequisite("JOUR348", ["JOUR203", "JOUR333"]).
 prerequisite("JOUR350", ["JOUR285", "STAT130", "STAT217", "STAT218"]).
 prerequisite("JOUR350", ["JOUR285", "STAT251"]).
@@ -2161,38 +3485,88 @@ prerequisite("JOUR378", ["JOUR346"]).
 prerequisite("JOUR385", ["BUS310"]).
 prerequisite("JOUR385", ["COMS/JOUR218"]).
 prerequisite("JOUR385", ["JOUR228"]).
+prerequisite("JOUR387", [""]).
 prerequisite("JOUR390", ["JOUR203"]).
+prerequisite("JOUR400", [""]).
 prerequisite("JOUR401", ["JOUR203"]).
 prerequisite("JOUR402", ["JOUR203"]).
 prerequisite("JOUR403", ["JOUR303"]).
 prerequisite("JOUR403", ["JOUR346"]).
 prerequisite("JOUR407", ["JOUR203"]).
 prerequisite("JOUR410", ["JOUR285"]).
+prerequisite("JOUR412", [""]).
 prerequisite("JOUR413", ["JOUR312", "JOUR342"]).
 prerequisite("JOUR415", ["JOUR413"]).
+prerequisite("JOUR418", [""]).
 prerequisite("JOUR444", ["JOUR352", "JOUR353"]).
 prerequisite("JOUR444", ["JOUR413"]).
+prerequisite("JOUR455", [""]).
+prerequisite("JOUR460", [""]).
+prerequisite("JOUR462", [""]).
+prerequisite("JOUR470", [""]).
+prerequisite("JOUR471", [""]).
+prerequisite("KINE100", [""]).
+prerequisite("KINE108", [""]).
+prerequisite("KINE109", [""]).
+prerequisite("KINE110", [""]).
 prerequisite("KINE112", ["KINE109"]).
+prerequisite("KINE121", [""]).
 prerequisite("KINE122", ["KINE121"]).
+prerequisite("KINE125", [""]).
+prerequisite("KINE128", [""]).
+prerequisite("KINE129", [""]).
+prerequisite("KINE130", [""]).
+prerequisite("KINE131", [""]).
+prerequisite("KINE132", [""]).
+prerequisite("KINE134", [""]).
+prerequisite("KINE137", [""]).
+prerequisite("KINE138", [""]).
+prerequisite("KINE139", [""]).
+prerequisite("KINE140", [""]).
+prerequisite("KINE141", [""]).
+prerequisite("KINE143", [""]).
+prerequisite("KINE144", [""]).
+prerequisite("KINE145", [""]).
+prerequisite("KINE147", [""]).
+prerequisite("KINE148", [""]).
+prerequisite("KINE151", [""]).
+prerequisite("KINE152", [""]).
+prerequisite("KINE154", [""]).
+prerequisite("KINE176", [""]).
+prerequisite("KINE180", [""]).
+prerequisite("KINE181", [""]).
+prerequisite("KINE201", [""]).
+prerequisite("KINE240", [""]).
 prerequisite("KINE266", ["PSY201"]).
 prerequisite("KINE266", ["PSY202"]).
 prerequisite("KINE278", ["PHIL230"]).
 prerequisite("KINE278", ["PHIL231"]).
 prerequisite("KINE280", ["HLTH/KINE250", "HLTH/KINE255"]).
 prerequisite("KINE280", ["HLTH/KINE260", "KINE319", "STAT218"]).
+prerequisite("KINE281", [""]).
+prerequisite("KINE290", [""]).
 prerequisite("KINE301", ["PHYS121", "BIO231"]).
 prerequisite("KINE301", ["PHYS121", "BIO409"]).
 prerequisite("KINE303", ["BIO231", "BIO232"]).
 prerequisite("KINE303", ["BIO231", "BIO361", "CHEM128"]).
 prerequisite("KINE304", ["KINE303"]).
+prerequisite("KINE307", [""]).
+prerequisite("KINE308", [""]).
+prerequisite("KINE310", [""]).
 prerequisite("KINE312", ["STAT217"]).
 prerequisite("KINE312", ["STAT218"]).
 prerequisite("KINE319", ["STAT217"]).
 prerequisite("KINE319", ["STAT218"]).
+prerequisite("KINE323", [""]).
+prerequisite("KINE324", [""]).
 prerequisite("KINE330", ["KINE301"]).
+prerequisite("KINE337", [""]).
 prerequisite("KINE349", ["KINE303", "KINE301"]).
 prerequisite("KINE366", ["PSY201", "PSY202"]).
 prerequisite("KINE366", ["KINE266"]).
+prerequisite("KINE382", [""]).
+prerequisite("KINE400", [""]).
+prerequisite("KINE401", [""]).
 prerequisite("KINE403", ["KINE301"]).
 prerequisite("KINE406", ["BIO231", "BIO232"]).
 prerequisite("KINE408", ["KINE250", "KINE255", "KINE304"]).
@@ -2202,6 +3576,7 @@ prerequisite("KINE409", ["CE208"]).
 prerequisite("KINE412", ["CRP214", "HLTH298"]).
 prerequisite("KINE412", ["KINE319", "KINE303"]).
 prerequisite("KINE438", ["KINE307"]).
+prerequisite("KINE440", [""]).
 prerequisite("KINE445", ["KINE303"]).
 prerequisite("KINE446", ["KINE445"]).
 prerequisite("KINE449", ["KINE304"]).
@@ -2215,56 +3590,130 @@ prerequisite("KINE461", ["HLTH402"]).
 prerequisite("KINE461", ["KINE319"]).
 prerequisite("KINE462", ["HLTH402"]).
 prerequisite("KINE462", ["KINE319"]).
+prerequisite("KINE463", [""]).
+prerequisite("KINE470", [""]).
+prerequisite("KINE471", [""]).
+prerequisite("KINE485", [""]).
+prerequisite("KINE495", [""]).
 prerequisite("KINE500", ["KINE517"]).
+prerequisite("KINE501", [""]).
+prerequisite("KINE503", [""]).
 prerequisite("KINE504", ["KINE303"]).
+prerequisite("KINE505", [""]).
 prerequisite("KINE510", ["KINE503"]).
 prerequisite("KINE510", ["KINE504"]).
+prerequisite("KINE511", [""]).
 prerequisite("KINE517", ["KINE501", "STAT512"]).
 prerequisite("KINE517", ["STAT513"]).
 prerequisite("KINE518", ["KINE517"]).
 prerequisite("KINE522", ["KINE403"]).
 prerequisite("KINE525", ["KINE402"]).
+prerequisite("KINE526", [""]).
 prerequisite("KINE530", ["KINE303"]).
 prerequisite("KINE536", ["KINE445"]).
+prerequisite("KINE537", [""]).
+prerequisite("KINE539", [""]).
+prerequisite("KINE570", [""]).
+prerequisite("KINE581", [""]).
+prerequisite("KINE585", [""]).
 prerequisite("KINE599", ["KINE517", "KINE518"]).
+prerequisite("LA101", [""]).
+prerequisite("LA170", [""]).
+prerequisite("LA171", [""]).
+prerequisite("LA202", [""]).
 prerequisite("LA203", ["LA202", "LA241"]).
 prerequisite("LA203", ["LA243"]).
 prerequisite("LA204", ["LA203", "LA241", "LA242"]).
+prerequisite("LA211", [""]).
+prerequisite("LA212", [""]).
+prerequisite("LA218", [""]).
+prerequisite("LA220", [""]).
 prerequisite("LA221", ["BIO114"]).
 prerequisite("LA221", ["BOT121"]).
 prerequisite("LA241", ["LA243", "LA203", "MATH118"]).
 prerequisite("LA241", ["LA243", "LA203", "MATH119"]).
 prerequisite("LA242", ["LA203", "LA241", "LA204"]).
+prerequisite("LA243", [""]).
+prerequisite("LA270", [""]).
+prerequisite("LA317", [""]).
 prerequisite("LA320", ["LA211", "LA212"]).
 prerequisite("LA330", ["LA212"]).
 prerequisite("LA349", ["PLSC233"]).
 prerequisite("LA350", ["LA242"]).
 prerequisite("LA370", ["LA204"]).
+prerequisite("LA371", [""]).
+prerequisite("LA400", [""]).
 prerequisite("LA401", ["LA402", "LA405"]).
+prerequisite("LA402", [""]).
+prerequisite("LA403", [""]).
+prerequisite("LA404", [""]).
+prerequisite("LA405", [""]).
+prerequisite("LA406", [""]).
+prerequisite("LA431", [""]).
 prerequisite("LA432", ["LA220"]).
 prerequisite("LA433", ["LA211"]).
+prerequisite("LA434", [""]).
+prerequisite("LA435", [""]).
+prerequisite("LA436", [""]).
+prerequisite("LA437", [""]).
 prerequisite("LA438", ["LA220"]).
 prerequisite("LA439", ["AEPS381"]).
 prerequisite("LA439", ["LA221"]).
 prerequisite("LA461", ["LA401", "LA402", "LA406"]).
+prerequisite("LA470", [""]).
+prerequisite("LA471", [""]).
+prerequisite("LA482", [""]).
+prerequisite("LA483", [""]).
+prerequisite("LA485", [""]).
+prerequisite("LA495", [""]).
 prerequisite("LA520", ["LA330", "LA404"]).
 prerequisite("LA521", ["LA403", "LA432"]).
 prerequisite("LA531", ["CRP512"]).
 prerequisite("LA538", ["CRP457", "CRP512", "LA438"]).
+prerequisite("LA585", [""]).
+prerequisite("LA595", [""]).
+prerequisite("LAES200", [""]).
+prerequisite("LAES270", [""]).
 prerequisite("LAES301", ["MATH241"]).
 prerequisite("LAES302", ["LAES301"]).
+prerequisite("LAES400", [""]).
+prerequisite("LAES411", [""]).
+prerequisite("LAES430", [""]).
 prerequisite("LAES461", ["LAES302"]).
 prerequisite("LAES462", ["LAES461"]).
+prerequisite("LAES470", [""]).
+prerequisite("LAES471", [""]).
+prerequisite("LAES485", [""]).
+prerequisite("LAES495", [""]).
+prerequisite("LS201", [""]).
+prerequisite("LS211", [""]).
+prerequisite("LS214", [""]).
+prerequisite("LS230", [""]).
+prerequisite("LS250", [""]).
+prerequisite("LS255", [""]).
+prerequisite("LS290", [""]).
 prerequisite("LS301", ["LS201"]).
+prerequisite("LS305", [""]).
+prerequisite("LS310", [""]).
+prerequisite("LS350", [""]).
 prerequisite("LS370", ["LS211"]).
 prerequisite("LS370", ["LS310"]).
+prerequisite("LS380", [""]).
+prerequisite("LS400", [""]).
+prerequisite("LS411", [""]).
 prerequisite("LS412", ["LS211"]).
 prerequisite("LS413", ["PSC103"]).
+prerequisite("LS461", [""]).
+prerequisite("LS462", [""]).
+prerequisite("LS470", [""]).
+prerequisite("MSCI100", [""]).
+prerequisite("MSCI111", [""]).
 prerequisite("MSCI300", ["BIO150"]).
 prerequisite("MSCI300", ["BIO160", "BIO162", "BIO263", "STAT218"]).
 prerequisite("MSCI301", ["BIO150"]).
 prerequisite("MSCI301", ["BIO160"]).
 prerequisite("MSCI324", ["BIO162"]).
+prerequisite("MSCI330", [""]).
 prerequisite("MSCI401", ["MSCI300"]).
 prerequisite("MSCI401", ["MSCI301"]).
 prerequisite("MSCI401", ["PSC201"]).
@@ -2287,8 +3736,11 @@ prerequisite("MSCI437", ["BIO162"]).
 prerequisite("MSCI438", ["BIO150"]).
 prerequisite("MSCI438", ["BIO160", "BIO162", "BIO263"]).
 prerequisite("MSCI439", ["BIO162", "MSCI300", "BIO322"]).
+prerequisite("MSCI440", [""]).
+prerequisite("MATE110", [""]).
 prerequisite("MATE120", ["MATE110"]).
 prerequisite("MATE130", ["MATE120"]).
+prerequisite("MATE200", [""]).
 prerequisite("MATE210", ["CHEM111"]).
 prerequisite("MATE210", ["CHEM124"]).
 prerequisite("MATE210", ["CHEM127", "MATE215"]).
@@ -2298,6 +3750,7 @@ prerequisite("MATE225", ["MATE215", "MATE232"]).
 prerequisite("MATE232", ["MATE210"]).
 prerequisite("MATE235", ["MATE225"]).
 prerequisite("MATE245", ["MATE210", "MATE235"]).
+prerequisite("MATE270", [""]).
 prerequisite("MATE280", ["CHEM125", "PHYS133"]).
 prerequisite("MATE280", ["PHYS143", "MATH143", "MATE210", "MATE215"]).
 prerequisite("MATE300", ["MATE210"]).
@@ -2310,11 +3763,14 @@ prerequisite("MATE327", ["PHYS143"]).
 prerequisite("MATE340", ["MATE210", "PHYS133"]).
 prerequisite("MATE340", ["PHYS143"]).
 prerequisite("MATE350", ["MATE210", "CE204"]).
+prerequisite("MATE359", [""]).
 prerequisite("MATE360", ["MATE235"]).
 prerequisite("MATE370", ["MATE280"]).
 prerequisite("MATE370", ["MATE380"]).
 prerequisite("MATE380", ["CHEM125", "PHYS133"]).
 prerequisite("MATE380", ["PHYS143", "MATH143", "MATE210", "MATE215"]).
+prerequisite("MATE390", [""]).
+prerequisite("MATE400", [""]).
 prerequisite("MATE401", ["MATE210", "MATE215"]).
 prerequisite("MATE402", ["MATE210", "MATE401"]).
 prerequisite("MATE403", ["CSC231", "ME211", "MATE280"]).
@@ -2328,6 +3784,7 @@ prerequisite("MATE425", ["CHEM125"]).
 prerequisite("MATE425", ["CHEM128", "MATE210", "MATE215"]).
 prerequisite("MATE430", ["BMED212"]).
 prerequisite("MATE430", ["MATE210"]).
+prerequisite("MATE435", [""]).
 prerequisite("MATE440", ["MATE210"]).
 prerequisite("MATE445", ["MATE210", "MATE440"]).
 prerequisite("MATE446", ["CHEM125"]).
@@ -2339,22 +3796,55 @@ prerequisite("MATE458", ["EE113"]).
 prerequisite("MATE458", ["EE201", "MATE210"]).
 prerequisite("MATE460", ["MATE350"]).
 prerequisite("MATE465", ["MATE360"]).
+prerequisite("MATE470", [""]).
+prerequisite("MATE471", [""]).
 prerequisite("MATE480", ["MATE350"]).
+prerequisite("MATE482", [""]).
 prerequisite("MATE483", ["MATE482"]).
 prerequisite("MATE484", ["MATE483"]).
 prerequisite("MATE485", ["MATE210"]).
 prerequisite("MATE490", ["MATE210"]).
+prerequisite("MATE495", [""]).
+prerequisite("MATE500", [""]).
 prerequisite("MATE530", ["BIO161"]).
 prerequisite("MATE530", ["BIO213", "BMED/BRAE213"]).
+prerequisite("MATE550", [""]).
+prerequisite("MATE570", [""]).
+prerequisite("MATE571", [""]).
+prerequisite("MATE599", [""]).
+prerequisite("MATH92", [""]).
+prerequisite("MATH94", [""]).
 prerequisite("MATH95", ["MATH115"]).
+prerequisite("MATH96", [""]).
+prerequisite("MATH98", [""]).
+prerequisite("MATH112", [""]).
+prerequisite("MATH115", [""]).
+prerequisite("MATH116", [""]).
 prerequisite("MATH117", ["MATH115"]).
+prerequisite("MATH118", [""]).
+prerequisite("MATH119", [""]).
+prerequisite("MATH126", [""]).
+prerequisite("MATH127", [""]).
+prerequisite("MATH128", [""]).
+prerequisite("MATH129", [""]).
+prerequisite("MATH141", [""]).
 prerequisite("MATH142", ["MATH141"]).
 prerequisite("MATH143", ["MATH142"]).
+prerequisite("MATH151", [""]).
+prerequisite("MATH152", [""]).
+prerequisite("MATH153", [""]).
+prerequisite("MATH161", [""]).
 prerequisite("MATH162", ["MATH161"]).
+prerequisite("MATH171", [""]).
+prerequisite("MATH172", [""]).
 prerequisite("MATH182", ["MATH141"]).
+prerequisite("MATH192", [""]).
 prerequisite("MATH202", ["MATH143"]).
 prerequisite("MATH206", ["MATH122"]).
 prerequisite("MATH206", ["MATH143"]).
+prerequisite("MATH221", [""]).
+prerequisite("MATH227", [""]).
+prerequisite("MATH231", [""]).
 prerequisite("MATH241", ["MATH143"]).
 prerequisite("MATH242", ["MATH206", "MATH123"]).
 prerequisite("MATH242", ["MATH206", "MATH241"]).
@@ -2362,22 +3852,34 @@ prerequisite("MATH244", ["MATH122"]).
 prerequisite("MATH244", ["MATH143"]).
 prerequisite("MATH248", ["MATH123"]).
 prerequisite("MATH248", ["MATH143"]).
+prerequisite("MATH251", [""]).
 prerequisite("MATH253", ["MATH123", "MATH206"]).
 prerequisite("MATH253", ["MATH241", "MATH206"]).
+prerequisite("MATH254", [""]).
+prerequisite("MATH258", [""]).
+prerequisite("MATH270", [""]).
 prerequisite("MATH300", ["MATH248"]).
+prerequisite("MATH304", [""]).
 prerequisite("MATH306", ["MATH206", "MATH123"]).
 prerequisite("MATH306", ["MATH206", "MATH143", "MATH248"]).
 prerequisite("MATH306", ["MATH206"]).
 prerequisite("MATH306", ["MATH244", "MATH123"]).
 prerequisite("MATH306", ["MATH244", "MATH143", "MATH248"]).
 prerequisite("MATH306", ["MATH244"]).
+prerequisite("MATH316", [""]).
 prerequisite("MATH328", ["MATH227"]).
 prerequisite("MATH329", ["MATH328"]).
 prerequisite("MATH330", ["MATH329"]).
+prerequisite("MATH334", [""]).
 prerequisite("MATH335", ["MATH248"]).
 prerequisite("MATH341", ["MATH248"]).
+prerequisite("MATH344", [""]).
 prerequisite("MATH350", ["MATH206"]).
 prerequisite("MATH350", ["MATH244", "MATH241"]).
+prerequisite("MATH351", [""]).
+prerequisite("MATH370", [""]).
+prerequisite("MATH371", [""]).
+prerequisite("MATH400", [""]).
 prerequisite("MATH404", ["MATH304"]).
 prerequisite("MATH406", ["MATH306"]).
 prerequisite("MATH410", ["MATH242"]).
@@ -2393,7 +3895,9 @@ prerequisite("MATH416", ["MATH244", "MATH123"]).
 prerequisite("MATH416", ["MATH244", "MATH241"]).
 prerequisite("MATH418", ["MATH344", "MATH304"]).
 prerequisite("MATH419", ["MATH248"]).
+prerequisite("MATH422", [""]).
 prerequisite("MATH423", ["MATH442", "MATH481"]).
+prerequisite("MATH424", [""]).
 prerequisite("MATH425", ["EDUC469"]).
 prerequisite("MATH425", ["EDUC479"]).
 prerequisite("MATH435", ["MATH248"]).
@@ -2417,7 +3921,9 @@ prerequisite("MATH459", ["MATH412"]).
 prerequisite("MATH459", ["MATH481"]).
 prerequisite("MATH460", ["CSC/CPE101"]).
 prerequisite("MATH460", ["MATH350"]).
+prerequisite("MATH461", [""]).
 prerequisite("MATH462", ["MATH461"]).
+prerequisite("MATH470", [""]).
 prerequisite("MATH474", ["MATH248", "MATH404", "MATH440"]).
 prerequisite("MATH475", ["MATH306"]).
 prerequisite("MATH476", ["MATH306"]).
@@ -2425,6 +3931,10 @@ prerequisite("MATH481", ["MATH306"]).
 prerequisite("MATH481", ["MATH341"]).
 prerequisite("MATH482", ["MATH481"]).
 prerequisite("MATH483", ["MATH482"]).
+prerequisite("MATH485", [""]).
+prerequisite("MATH491", [""]).
+prerequisite("MATH495", [""]).
+prerequisite("MATH500", [""]).
 prerequisite("MATH501", ["MATH344"]).
 prerequisite("MATH501", ["AERO300"]).
 prerequisite("MATH502", ["AERO300"]).
@@ -2443,6 +3953,7 @@ prerequisite("MATH502", ["CSC232", "AERO300"]).
 prerequisite("MATH502", ["CSC232", "EE228"]).
 prerequisite("MATH502", ["CSC232", "MATH344"]).
 prerequisite("MATH502", ["CSC232", "PHYS321"]).
+prerequisite("MATH505", [""]).
 prerequisite("MATH520", ["MATH408"]).
 prerequisite("MATH520", ["MATH410"]).
 prerequisite("MATH521", ["MATH520"]).
@@ -2455,21 +3966,38 @@ prerequisite("MATH540", ["MATH412"]).
 prerequisite("MATH540", ["MATH481"]).
 prerequisite("MATH541", ["MATH440"]).
 prerequisite("MATH541", ["MATH540"]).
+prerequisite("MATH548", [""]).
+prerequisite("MATH550", [""]).
 prerequisite("MATH560", ["MATH482"]).
+prerequisite("MATH561", [""]).
+prerequisite("MATH570", [""]).
+prerequisite("MATH580", [""]).
+prerequisite("MATH599", [""]).
+prerequisite("ME128", [""]).
 prerequisite("ME129", ["ME128"]).
 prerequisite("ME130", ["ME129"]).
+prerequisite("ME161", [""]).
+prerequisite("ME163", [""]).
 prerequisite("ME211", ["MATH241", "PHYS131"]).
 prerequisite("ME211", ["PHYS141"]).
 prerequisite("ME212", ["MATH241"]).
+prerequisite("ME228", [""]).
+prerequisite("ME229", [""]).
+prerequisite("ME234", [""]).
 prerequisite("ME236", ["CHEM125", "ENGL149", "PHYS132"]).
 prerequisite("ME236", ["PHYS142"]).
 prerequisite("ME251", ["ME130"]).
 prerequisite("ME251", ["ME228", "IME143"]).
 prerequisite("ME251", ["IME146"]).
+prerequisite("ME263", [""]).
+prerequisite("ME264", [""]).
+prerequisite("ME270", [""]).
+prerequisite("ME271", [""]).
 prerequisite("ME302", ["ME212", "PHYS132"]).
 prerequisite("ME302", ["PHYS142"]).
 prerequisite("ME303", ["ME302"]).
 prerequisite("ME305", ["EE201", "EE251"]).
+prerequisite("ME313", [""]).
 prerequisite("ME318", ["ME212", "MATH344", "EE201"]).
 prerequisite("ME322", ["CPE/CSC101"]).
 prerequisite("ME322", ["CSC231"]).
@@ -2483,6 +4011,9 @@ prerequisite("ME341", ["MATH244"]).
 prerequisite("ME343", ["CPE/CSC101", "CSC231", "ME236", "ME302", "ME341"]).
 prerequisite("ME343", ["CSC234", "ME236", "ME302", "ME341"]).
 prerequisite("ME347", ["ME236", "ME341", "ME302"]).
+prerequisite("ME359", [""]).
+prerequisite("ME361", [""]).
+prerequisite("ME400", [""]).
 prerequisite("ME401", ["CE207"]).
 prerequisite("ME401", ["CE208"]).
 prerequisite("ME402", ["ME328"]).
@@ -2509,6 +4040,7 @@ prerequisite("ME430", ["ME429"]).
 prerequisite("ME434", ["ME302"]).
 prerequisite("ME435", ["ME329", "ME347"]).
 prerequisite("ME436", ["ME329", "ME347"]).
+prerequisite("ME437", [""]).
 prerequisite("ME438", ["ME302"]).
 prerequisite("ME439", ["ME437"]).
 prerequisite("ME439", ["ME438"]).
@@ -2532,10 +4064,19 @@ prerequisite("ME458", ["ME303", "ME343"]).
 prerequisite("ME458", ["ME303", "ME350"]).
 prerequisite("ME459", ["ME456"]).
 prerequisite("ME460", ["ME459"]).
+prerequisite("ME470", [""]).
+prerequisite("ME471", [""]).
 prerequisite("ME488", ["ME329", "ME347", "ME302"]).
+prerequisite("ME493", [""]).
+prerequisite("ME494", [""]).
+prerequisite("ME495", [""]).
+prerequisite("ME500", [""]).
+prerequisite("ME501", [""]).
 prerequisite("ME503", ["ME501"]).
 prerequisite("ME503", ["CE511"]).
 prerequisite("ME504", ["CE/ME404", "CE511", "ME501"]).
+prerequisite("ME506", [""]).
+prerequisite("ME507", [""]).
 prerequisite("ME517", ["ME318"]).
 prerequisite("ME518", ["ME318"]).
 prerequisite("ME540", ["ME347", "MATH344"]).
@@ -2544,9 +4085,14 @@ prerequisite("ME542", ["MATH244"]).
 prerequisite("ME552", ["MATH344"]).
 prerequisite("ME553", ["MATH344"]).
 prerequisite("ME554", ["ME347"]).
+prerequisite("ME563", [""]).
+prerequisite("ME570", [""]).
+prerequisite("ME571", [""]).
 prerequisite("ME579", ["ME418"]).
 prerequisite("ME579", ["ME419"]).
 prerequisite("ME579", ["ME422"]).
+prerequisite("ME599", [""]).
+prerequisite("MCRO100", [""]).
 prerequisite("MCRO221", ["CHEM110"]).
 prerequisite("MCRO221", ["CHEM124"]).
 prerequisite("MCRO221", ["CHEM127"]).
@@ -2563,6 +4109,7 @@ prerequisite("MCRO402", ["CHEM373"]).
 prerequisite("MCRO402", ["BIO452"]).
 prerequisite("MCRO421", ["MCRO221"]).
 prerequisite("MCRO421", ["MCRO224", "CHEM212"]).
+prerequisite("MCRO423", [""]).
 prerequisite("MCRO424", ["MCRO225", "CHEM313"]).
 prerequisite("MCRO424", ["CHEM314"]).
 prerequisite("MCRO424", ["CHEM369"]).
@@ -2579,6 +4126,20 @@ prerequisite("MCRO433", ["MCRO224", "CHEM316"]).
 prerequisite("MCRO433", ["MCRO224"]).
 prerequisite("MCRO436", ["BIO150"]).
 prerequisite("MCRO436", ["BIO160"]).
+prerequisite("MSL101", [""]).
+prerequisite("MSL102", [""]).
+prerequisite("MSL103", [""]).
+prerequisite("MSL110", [""]).
+prerequisite("MSL111", [""]).
+prerequisite("MSL112", [""]).
+prerequisite("MSL201", [""]).
+prerequisite("MSL202", [""]).
+prerequisite("MSL203", [""]).
+prerequisite("MSL212", [""]).
+prerequisite("MSL229", [""]).
+prerequisite("MSL240", [""]).
+prerequisite("MSL270", [""]).
+prerequisite("MSL275", [""]).
 prerequisite("MSL301", ["MSL101", "MSL102", "MSL103", "MSL201", "MSL202", "MSL203"]).
 prerequisite("MSL301", ["MSL212"]).
 prerequisite("MSL302", ["MSL301"]).
@@ -2588,6 +4149,7 @@ prerequisite("MSL310", ["MSL212"]).
 prerequisite("MSL312", ["MSL112", "MSL203"]).
 prerequisite("MSL312", ["MSL212"]).
 prerequisite("MSL314", ["MSL301", "MSL302", "MSL303"]).
+prerequisite("MSL400", [""]).
 prerequisite("MSL401", ["MSL301", "MSL302", "MSL303"]).
 prerequisite("MSL402", ["MSL401"]).
 prerequisite("MSL403", ["MSL401", "MSL402"]).
@@ -2595,6 +4157,8 @@ prerequisite("MSL410", ["MSL303"]).
 prerequisite("MSL410", ["MSL310", "MSL314"]).
 prerequisite("MSL412", ["MSL303"]).
 prerequisite("MSL412", ["MSL312", "MSL314"]).
+prerequisite("MSL470", [""]).
+prerequisite("MU101", [""]).
 prerequisite("MU103", ["MU101"]).
 prerequisite("MU104", ["MU101"]).
 prerequisite("MU105", ["MU103"]).
@@ -2602,29 +4166,59 @@ prerequisite("MU106", ["MU104"]).
 prerequisite("MU106", ["MU103"]).
 prerequisite("MU108", ["MU106"]).
 prerequisite("MU114", ["MU101"]).
+prerequisite("MU120", [""]).
 prerequisite("MU121", ["MU104"]).
+prerequisite("MU150", [""]).
+prerequisite("MU151", [""]).
 prerequisite("MU152", ["MU151"]).
+prerequisite("MU154", [""]).
+prerequisite("MU155", [""]).
+prerequisite("MU161", [""]).
 prerequisite("MU162", ["MU161"]).
 prerequisite("MU163", ["MU162"]).
+prerequisite("MU168", [""]).
+prerequisite("MU170", [""]).
+prerequisite("MU171", [""]).
+prerequisite("MU172", [""]).
+prerequisite("MU173", [""]).
+prerequisite("MU174", [""]).
+prerequisite("MU176", [""]).
+prerequisite("MU177", [""]).
+prerequisite("MU178", [""]).
+prerequisite("MU181", [""]).
+prerequisite("MU182", [""]).
+prerequisite("MU183", [""]).
+prerequisite("MU185", [""]).
+prerequisite("MU186", [""]).
+prerequisite("MU188", [""]).
 prerequisite("MU189", ["MU150", "MU250", "MU350"]).
 prerequisite("MU189", ["MU450"]).
+prerequisite("MU200", [""]).
 prerequisite("MU210", ["MU108"]).
 prerequisite("MU210", ["MU105"]).
 prerequisite("MU211", ["MU210"]).
 prerequisite("MU212", ["MU211"]).
+prerequisite("MU221", [""]).
+prerequisite("MU227", [""]).
+prerequisite("MU228", [""]).
 prerequisite("MU250", ["MU150"]).
 prerequisite("MU253", ["MU153"]).
+prerequisite("MU259", [""]).
 prerequisite("MU261", ["MU163"]).
 prerequisite("MU262", ["MU261"]).
 prerequisite("MU263", ["MU262"]).
+prerequisite("MU265", [""]).
+prerequisite("MU270", [""]).
 prerequisite("MU301", ["MU105"]).
 prerequisite("MU303", ["MU105"]).
 prerequisite("MU305", ["MU303"]).
 prerequisite("MU311", ["MU101", "MU120"]).
 prerequisite("MU312", ["MU311"]).
 prerequisite("MU320", ["MU105"]).
+prerequisite("MU324", [""]).
 prerequisite("MU325", ["MU105", "MU120"]).
 prerequisite("MU326", ["MU121"]).
+prerequisite("MU328", [""]).
 prerequisite("MU331", ["MU320"]).
 prerequisite("MU331", ["MU120"]).
 prerequisite("MU332", ["MU320"]).
@@ -2633,14 +4227,29 @@ prerequisite("MU336", ["MU105"]).
 prerequisite("MU340", ["MU105"]).
 prerequisite("MU341", ["MU340"]).
 prerequisite("MU342", ["MU340"]).
+prerequisite("MU350", [""]).
 prerequisite("MU351", ["MU105"]).
 prerequisite("MU352", ["MU105"]).
 prerequisite("MU360", ["MU101"]).
+prerequisite("MU361", [""]).
 prerequisite("MU368", ["MU168"]).
+prerequisite("MU370", [""]).
+prerequisite("MU371", [""]).
+prerequisite("MU372", [""]).
+prerequisite("MU373", [""]).
+prerequisite("MU374", [""]).
+prerequisite("MU376", [""]).
+prerequisite("MU377", [""]).
 prerequisite("MU378", ["MU178"]).
+prerequisite("MU381", [""]).
+prerequisite("MU382", [""]).
+prerequisite("MU383", [""]).
+prerequisite("MU385", [""]).
+prerequisite("MU386", [""]).
 prerequisite("MU388", ["MU188"]).
 prerequisite("MU389", ["MU150", "MU250", "MU350"]).
 prerequisite("MU389", ["MU450"]).
+prerequisite("MU400", [""]).
 prerequisite("MU411", ["MU312"]).
 prerequisite("MU412", ["MU312"]).
 prerequisite("MU431", ["MU303", "MU320"]).
@@ -2650,6 +4259,8 @@ prerequisite("MU432", ["MU303"]).
 prerequisite("MU432", ["MU303", "MU331", "MU332"]).
 prerequisite("MU432", ["MU303", "MU431"]).
 prerequisite("MU432", ["MU303", "MU305"]).
+prerequisite("MU450", [""]).
+prerequisite("MU461", [""]).
 prerequisite("MU465", ["MU341"]).
 prerequisite("MU466", ["MU101", "MU172"]).
 prerequisite("MU466", ["MU101", "MU173"]).
@@ -2658,34 +4269,68 @@ prerequisite("MU466", ["MU103", "MU172"]).
 prerequisite("MU466", ["MU103", "MU173"]).
 prerequisite("MU466", ["MU103", "MU174"]).
 prerequisite("MU470", ["MU331", "MU332", "MU431", "MU432"]).
+prerequisite("NR140", [""]).
+prerequisite("NR141", [""]).
+prerequisite("NR142", [""]).
+prerequisite("NR200", [""]).
+prerequisite("NR203", [""]).
+prerequisite("NR204", [""]).
+prerequisite("NR208", [""]).
+prerequisite("NR215", [""]).
+prerequisite("NR218", [""]).
 prerequisite("NR247", ["NR215"]).
+prerequisite("NR260", [""]).
+prerequisite("NR270", [""]).
+prerequisite("NR290", [""]).
+prerequisite("NR304", [""]).
+prerequisite("NR305", [""]).
+prerequisite("NR306", [""]).
+prerequisite("NR307", [""]).
+prerequisite("NR308", [""]).
+prerequisite("NR310", [""]).
+prerequisite("NR312", [""]).
 prerequisite("NR314", ["BIO263", "NR304", "NR305"]).
 prerequisite("NR314", ["NR306"]).
 prerequisite("NR315", ["BRAE237"]).
 prerequisite("NR315", ["BRAE239"]).
+prerequisite("NR316", [""]).
+prerequisite("NR317", [""]).
 prerequisite("NR320", ["NR/LA218", "SS120", "NR304", "NR305"]).
 prerequisite("NR320", ["NR306"]).
+prerequisite("NR321", [""]).
+prerequisite("NR323", [""]).
+prerequisite("NR324", [""]).
 prerequisite("NR326", ["MATH161"]).
 prerequisite("NR326", ["MATH221"]).
 prerequisite("NR326", ["ECON201", "AGB212"]).
+prerequisite("NR328", [""]).
 prerequisite("NR335", ["NR141"]).
 prerequisite("NR335", ["NR142", "PSY201"]).
 prerequisite("NR335", ["PSY202"]).
+prerequisite("NR339", [""]).
 prerequisite("NR340", ["NR204"]).
 prerequisite("NR341", ["NR204"]).
+prerequisite("NR349", [""]).
 prerequisite("NR350", ["NR208"]).
+prerequisite("NR351", [""]).
 prerequisite("NR355", ["BRAE237"]).
 prerequisite("NR355", ["BRAE239"]).
+prerequisite("NR360", [""]).
+prerequisite("NR363", [""]).
 prerequisite("NR365", ["NR208", "NR315", "NR260", "NR304", "NR305"]).
 prerequisite("NR365", ["NR208", "NR315", "NR260", "NR306"]).
+prerequisite("NR400", [""]).
 prerequisite("NR401", ["CRP/NR351"]).
 prerequisite("NR402", ["BIO162", "BIO222", "BIO227", "NR304"]).
 prerequisite("NR402", ["BIO162", "BIO222", "BIO227", "NR306"]).
 prerequisite("NR402", ["NR208", "NR304"]).
 prerequisite("NR402", ["NR208", "NR306"]).
+prerequisite("NR404", [""]).
 prerequisite("NR406", ["ES253", "NR141"]).
 prerequisite("NR406", ["ES253", "NR142"]).
+prerequisite("NR408", [""]).
 prerequisite("NR412", ["NR326"]).
+prerequisite("NR413", [""]).
 prerequisite("NR414", ["NR326", "NR365"]).
 prerequisite("NR416", ["BIO263", "NR304", "NR305", "NR306"]).
 prerequisite("NR416", ["SS221"]).
@@ -2694,7 +4339,9 @@ prerequisite("NR418", ["GEOG318"]).
 prerequisite("NR420", ["NR320"]).
 prerequisite("NR421", ["BOT121"]).
 prerequisite("NR421", ["BIO162"]).
+prerequisite("NR422", [""]).
 prerequisite("NR425", ["NR363", "NR416"]).
+prerequisite("NR434", [""]).
 prerequisite("NR435", ["NR326", "NR335"]).
 prerequisite("NR445", ["BIO263", "NR304", "NR305", "NR306"]).
 prerequisite("NR445", ["SS321", "MATH161"]).
@@ -2702,6 +4349,9 @@ prerequisite("NR455", ["NR340"]).
 prerequisite("NR464", ["NR304", "NR305", "NR306", "SS321"]).
 prerequisite("NR464", ["SS422"]).
 prerequisite("NR465", ["NR326", "NR416"]).
+prerequisite("NR470", [""]).
+prerequisite("NR471", [""]).
+prerequisite("NR472", [""]).
 prerequisite("NR474", ["NR475"]).
 prerequisite("NR475", ["NR474"]).
 prerequisite("NR476", ["ERSC363"]).
@@ -2713,13 +4363,89 @@ prerequisite("NR477", ["NR326"]).
 prerequisite("NR478", ["ERSC363"]).
 prerequisite("NR478", ["NR306"]).
 prerequisite("NR478", ["NR326"]).
+prerequisite("NR479", [""]).
+prerequisite("NR532", [""]).
+prerequisite("NR534", [""]).
+prerequisite("NR539", [""]).
+prerequisite("NR570", [""]).
+prerequisite("NR571", [""]).
 prerequisite("NR575", ["NR420"]).
+prerequisite("PHIL101", [""]).
+prerequisite("PHIL126", [""]).
+prerequisite("PHIL230", [""]).
+prerequisite("PHIL231", [""]).
+prerequisite("PHIL241", [""]).
+prerequisite("PHIL270", [""]).
 prerequisite("PHIL300", ["PHIL230"]).
 prerequisite("PHIL300", ["PHIL231"]).
+prerequisite("PHIL301", [""]).
+prerequisite("PHIL309", [""]).
+prerequisite("PHIL310", [""]).
+prerequisite("PHIL312", [""]).
+prerequisite("PHIL313", [""]).
+prerequisite("PHIL314", [""]).
+prerequisite("PHIL315", [""]).
+prerequisite("PHIL317", [""]).
+prerequisite("PHIL318", [""]).
+prerequisite("PHIL319", [""]).
+prerequisite("PHIL321", [""]).
+prerequisite("PHIL322", [""]).
+prerequisite("PHIL323", [""]).
+prerequisite("PHIL327", [""]).
+prerequisite("PHIL328", [""]).
+prerequisite("PHIL331", [""]).
+prerequisite("PHIL332", [""]).
+prerequisite("PHIL333", [""]).
+prerequisite("PHIL334", [""]).
+prerequisite("PHIL335", [""]).
+prerequisite("PHIL336", [""]).
+prerequisite("PHIL337", [""]).
+prerequisite("PHIL339", [""]).
+prerequisite("PHIL340", [""]).
+prerequisite("PHIL341", [""]).
+prerequisite("PHIL342", [""]).
+prerequisite("PHIL343", [""]).
+prerequisite("PHIL350", [""]).
+prerequisite("PHIL351", [""]).
+prerequisite("PHIL361", [""]).
+prerequisite("PHIL362", [""]).
+prerequisite("PHIL369", [""]).
 prerequisite("PHIL385", ["PHIL231", "PHIL323", "PHIL327", "PHIL328", "PHIL331", "PHIL332", "PHIL333", "PHIL334", "PHIL335", "PHIL336", "PHIL337", "PHIL339", "PHIL340", "PHIL341"]).
 prerequisite("PHIL385", ["PHIL439"]).
+prerequisite("PHIL400", [""]).
+prerequisite("PHIL411", [""]).
+prerequisite("PHIL412", [""]).
+prerequisite("PHIL421", [""]).
+prerequisite("PHIL422", [""]).
+prerequisite("PHIL423", [""]).
+prerequisite("PHIL429", [""]).
+prerequisite("PHIL439", [""]).
+prerequisite("PHIL449", [""]).
+prerequisite("PHIL459", [""]).
 prerequisite("PHIL460", ["PHIL241"]).
 prerequisite("PHIL461", ["PHIL460"]).
+prerequisite("PHIL470", [""]).
+prerequisite("PEM182", [""]).
+prerequisite("PEM183", [""]).
+prerequisite("PEM184", [""]).
+prerequisite("PEM185", [""]).
+prerequisite("PEM189", [""]).
+prerequisite("PEM191", [""]).
+prerequisite("PEM192", [""]).
+prerequisite("PEM193", [""]).
+prerequisite("PEM195", [""]).
+prerequisite("PEM196", [""]).
+prerequisite("PEW183", [""]).
+prerequisite("PEW184", [""]).
+prerequisite("PEW189", [""]).
+prerequisite("PEW190", [""]).
+prerequisite("PEW191", [""]).
+prerequisite("PEW192", [""]).
+prerequisite("PEW193", [""]).
+prerequisite("PEW194", [""]).
+prerequisite("PEW195", [""]).
+prerequisite("PEW196", [""]).
+prerequisite("PSC101", [""]).
 prerequisite("PSC102", ["PHYS121"]).
 prerequisite("PSC102", ["PHYS131"]).
 prerequisite("PSC102", ["PHYS141"]).
@@ -2728,8 +4454,20 @@ prerequisite("PSC103", ["PSC101"]).
 prerequisite("PSC103", ["PHYS121"]).
 prerequisite("PSC103", ["PHYS131"]).
 prerequisite("PSC103", ["PHYS141", "PSC102"]).
+prerequisite("PSC201", [""]).
+prerequisite("PSC307", [""]).
+prerequisite("PSC320", [""]).
+prerequisite("PSC391", [""]).
+prerequisite("PSC392", [""]).
+prerequisite("PSC424", [""]).
 prerequisite("PSC425", ["EDUC469"]).
 prerequisite("PSC425", ["EDUC479"]).
+prerequisite("PSC491", [""]).
+prerequisite("PSC492", [""]).
+prerequisite("PHYS100", [""]).
+prerequisite("PHYS104", [""]).
+prerequisite("PHYS111", [""]).
+prerequisite("PHYS121", [""]).
 prerequisite("PHYS122", ["PHYS121"]).
 prerequisite("PHYS122", ["PHYS141"]).
 prerequisite("PHYS123", ["PHYS118", "PHYS121", "PHYS131"]).
@@ -2741,6 +4479,7 @@ prerequisite("PHYS141", ["MATH182"]).
 prerequisite("PHYS142", ["PHYS141", "MATH142"]).
 prerequisite("PHYS142", ["PHYS141", "MATH182"]).
 prerequisite("PHYS143", ["MATH142", "PHYS141", "MATH241"]).
+prerequisite("PHYS200", [""]).
 prerequisite("PHYS202", ["PHYS133", "MATH241"]).
 prerequisite("PHYS202", ["PHYS133", "MATH244"]).
 prerequisite("PHYS202", ["PHYS143", "MATH241"]).
@@ -2754,7 +4493,9 @@ prerequisite("PHYS220", ["PHYS132"]).
 prerequisite("PHYS220", ["PHYS133"]).
 prerequisite("PHYS220", ["PHYS142"]).
 prerequisite("PHYS220", ["PHYS143"]).
+prerequisite("PHYS270", [""]).
 prerequisite("PHYS301", ["PHYS211"]).
+prerequisite("PHYS305", [""]).
 prerequisite("PHYS306", ["PHYS305"]).
 prerequisite("PHYS310", ["PHYS132"]).
 prerequisite("PHYS310", ["PHYS142"]).
@@ -2782,8 +4523,10 @@ prerequisite("PHYS345", ["MATH206", "PHYS211"]).
 prerequisite("PHYS345", ["MATH244", "CHEM353"]).
 prerequisite("PHYS345", ["MATH244", "PHYS211"]).
 prerequisite("PHYS357", ["PHYS206"]).
+prerequisite("PHYS400", [""]).
 prerequisite("PHYS401", ["PHYS301"]).
 prerequisite("PHYS403", ["PHYS212", "PHYS405"]).
+prerequisite("PHYS404", [""]).
 prerequisite("PHYS405", ["PHYS212"]).
 prerequisite("PHYS406", ["PHYS405"]).
 prerequisite("PHYS408", ["PHYS133", "MATH304"]).
@@ -2813,28 +4556,54 @@ prerequisite("PHYS428", ["PHYS122", "PHYS132", "MATH244"]).
 prerequisite("PHYS428", ["PHYS142", "PHYS123", "PHYS133"]).
 prerequisite("PHYS428", ["PHYS142", "PHYS143", "MATH241", "MATH242"]).
 prerequisite("PHYS428", ["PHYS142", "MATH244"]).
+prerequisite("PHYS461", [""]).
+prerequisite("PHYS462", [""]).
+prerequisite("PHYS470", [""]).
+prerequisite("PHYS471", [""]).
+prerequisite("PHYS485", [""]).
+prerequisite("PHYS495", [""]).
+prerequisite("PLSC101", [""]).
+prerequisite("PLSC110", [""]).
+prerequisite("PLSC120", [""]).
 prerequisite("PLSC123", ["PLSC120"]).
 prerequisite("PLSC124", ["PLSC120", "BOT121"]).
 prerequisite("PLSC126", ["PLSC120"]).
+prerequisite("PLSC127", [""]).
 prerequisite("PLSC132", ["PLSC120"]).
 prerequisite("PLSC133", ["PLSC132"]).
+prerequisite("PLSC150", [""]).
+prerequisite("PLSC175", [""]).
 prerequisite("PLSC190", ["PLSC120"]).
+prerequisite("PLSC200", [""]).
+prerequisite("PLSC203", [""]).
+prerequisite("PLSC205", [""]).
+prerequisite("PLSC212", [""]).
+prerequisite("PLSC215", [""]).
 prerequisite("PLSC225", ["PLSC215"]).
+prerequisite("PLSC230", [""]).
 prerequisite("PLSC232", ["PLSC120"]).
 prerequisite("PLSC232", ["BOT121"]).
+prerequisite("PLSC233", [""]).
+prerequisite("PLSC234", [""]).
 prerequisite("PLSC240", ["PLSC120"]).
 prerequisite("PLSC244", ["PLSC133", "PLSC190", "PLSC260", "BRAE237"]).
 prerequisite("PLSC244", ["BRAE239"]).
+prerequisite("PLSC245", [""]).
+prerequisite("PLSC270", [""]).
 prerequisite("PLSC304", ["PLSC120", "STAT218", "PLSC132", "PLSC190", "PLSC230", "PLSC245", "PLSC250"]).
 prerequisite("PLSC304", ["PLSC232", "WVIT233"]).
+prerequisite("PLSC312", [""]).
 prerequisite("PLSC313", ["PLSC120", "CHEM110"]).
 prerequisite("PLSC313", ["PLSC120", "CHEM127"]).
 prerequisite("PLSC313", ["BOT121", "CHEM110"]).
 prerequisite("PLSC313", ["BOT121", "CHEM127"]).
+prerequisite("PLSC315", [""]).
 prerequisite("PLSC321", ["PLSC120"]).
 prerequisite("PLSC321", ["BOT121"]).
 prerequisite("PLSC323", ["BIO162"]).
 prerequisite("PLSC323", ["BOT121"]).
+prerequisite("PLSC327", [""]).
+prerequisite("PLSC329", [""]).
 prerequisite("PLSC331", ["PLSC232"]).
 prerequisite("PLSC331", ["WVIT233"]).
 prerequisite("PLSC332", ["PLSC126", "PLSC127"]).
@@ -2844,6 +4613,7 @@ prerequisite("PLSC336", ["PLSC232", "PLSC/WVIT331"]).
 prerequisite("PLSC336", ["WVIT233", "PLSC/WVIT331"]).
 prerequisite("PLSC337", ["PLSC232", "PLSC/WVIT331"]).
 prerequisite("PLSC337", ["WVIT233", "PLSC/WVIT331"]).
+prerequisite("PLSC339", [""]).
 prerequisite("PLSC340", ["PLSC245"]).
 prerequisite("PLSC341", ["PLSC120"]).
 prerequisite("PLSC342", ["PLSC245"]).
@@ -2860,6 +4630,7 @@ prerequisite("PLSC355", ["PLSC250"]).
 prerequisite("PLSC360", ["PLSC132"]).
 prerequisite("PLSC381", ["BIO114"]).
 prerequisite("PLSC381", ["BOT121"]).
+prerequisite("PLSC400", [""]).
 prerequisite("PLSC406", ["PLSC321"]).
 prerequisite("PLSC410", ["PLSC120"]).
 prerequisite("PLSC410", ["BIO263"]).
@@ -2867,6 +4638,7 @@ prerequisite("PLSC414", ["PLSC232"]).
 prerequisite("PLSC414", ["WVIT233"]).
 prerequisite("PLSC420", ["PLSC120"]).
 prerequisite("PLSC420", ["BOT121"]).
+prerequisite("PLSC421", [""]).
 prerequisite("PLSC424", ["PLSC124"]).
 prerequisite("PLSC425", ["PLSC123", "PLSC233", "PLSC234"]).
 prerequisite("PLSC425", ["NR208"]).
@@ -2874,9 +4646,34 @@ prerequisite("PLSC427", ["PLSC120", "PLSC313", "PLSC321", "BOT/PLSC323"]).
 prerequisite("PLSC428", ["BOT/PLSC323", "STAT218"]).
 prerequisite("PLSC431", ["PLSC313"]).
 prerequisite("PLSC432", ["PLSC343"]).
+prerequisite("PLSC437", [""]).
 prerequisite("PLSC441", ["PLSC313"]).
 prerequisite("PLSC445", ["PLSC120"]).
 prerequisite("PLSC450", ["PLSC120", "BOT121"]).
+prerequisite("PLSC461", [""]).
+prerequisite("PLSC462", [""]).
+prerequisite("PLSC470", [""]).
+prerequisite("PLSC471", [""]).
+prerequisite("PLSC500", [""]).
+prerequisite("PLSC539", [""]).
+prerequisite("PLSC570", [""]).
+prerequisite("PLSC571", [""]).
+prerequisite("PLSC575", [""]).
+prerequisite("PLSC581", [""]).
+prerequisite("PLSC596", [""]).
+prerequisite("PLSC597", [""]).
+prerequisite("PLSC598", [""]).
+prerequisite("PLSC599", [""]).
+prerequisite("POLS111", [""]).
+prerequisite("POLS112", [""]).
+prerequisite("POLS180", [""]).
+prerequisite("POLS225", [""]).
+prerequisite("POLS229", [""]).
+prerequisite("POLS230", [""]).
+prerequisite("POLS245", [""]).
+prerequisite("POLS270", [""]).
+prerequisite("POLS285", [""]).
+prerequisite("POLS295", [""]).
 prerequisite("POLS308", ["POLS225"]).
 prerequisite("POLS308", ["POLS229"]).
 prerequisite("POLS310", ["POLS112"]).
@@ -2887,12 +4684,17 @@ prerequisite("POLS319", ["POLS112"]).
 prerequisite("POLS321", ["POLS229"]).
 prerequisite("POLS324", ["POLS225"]).
 prerequisite("POLS324", ["POLS229"]).
+prerequisite("POLS325", [""]).
 prerequisite("POLS328", ["POLS225"]).
 prerequisite("POLS328", ["POLS229"]).
 prerequisite("POLS329", ["POLS230"]).
 prerequisite("POLS330", ["POLS230"]).
 prerequisite("POLS331", ["POLS230"]).
+prerequisite("POLS332", [""]).
 prerequisite("POLS334", ["POLS112"]).
+prerequisite("POLS337", [""]).
+prerequisite("POLS338", [""]).
+prerequisite("POLS339", [""]).
 prerequisite("POLS340", ["POLS112"]).
 prerequisite("POLS341", ["POLS112"]).
 prerequisite("POLS342", ["POLS245", "POLS112"]).
@@ -2900,10 +4702,13 @@ prerequisite("POLS342", ["POLS341"]).
 prerequisite("POLS343", ["POLS112"]).
 prerequisite("POLS344", ["POLS112"]).
 prerequisite("POLS347", ["POLS112"]).
+prerequisite("POLS348", [""]).
+prerequisite("POLS349", [""]).
 prerequisite("POLS351", ["POLS112"]).
 prerequisite("POLS359", ["STAT217"]).
 prerequisite("POLS361", ["POLS359"]).
 prerequisite("POLS375", ["POLS112"]).
+prerequisite("POLS380", [""]).
 prerequisite("POLS381", ["POLS225"]).
 prerequisite("POLS381", ["POLS229"]).
 prerequisite("POLS382", ["POLS225"]).
@@ -2913,7 +4718,10 @@ prerequisite("POLS383", ["POLS229"]).
 prerequisite("POLS384", ["POLS225"]).
 prerequisite("POLS384", ["POLS229"]).
 prerequisite("POLS385", ["POLS285"]).
+prerequisite("POLS386", [""]).
 prerequisite("POLS387", ["POLS359", "POLS361"]).
+prerequisite("POLS395", [""]).
+prerequisite("POLS400", [""]).
 prerequisite("POLS417", ["POLS112"]).
 prerequisite("POLS419", ["POLS112"]).
 prerequisite("POLS420", ["POLS225"]).
@@ -2930,6 +4738,7 @@ prerequisite("POLS435", ["POLS112"]).
 prerequisite("POLS440", ["POLS112", "POLS375"]).
 prerequisite("POLS445", ["POLS112"]).
 prerequisite("POLS451", ["POLS112"]).
+prerequisite("POLS452", [""]).
 prerequisite("POLS455", ["POLS112"]).
 prerequisite("POLS457", ["POLS112"]).
 prerequisite("POLS459", ["POLS112"]).
@@ -2937,38 +4746,61 @@ prerequisite("POLS461", ["POLS359", "POLS361"]).
 prerequisite("POLS462", ["POLS359", "POLS361"]).
 prerequisite("POLS470", ["POLS112"]).
 prerequisite("POLS471", ["POLS112"]).
+prerequisite("POLS500", [""]).
+prerequisite("POLS510", [""]).
+prerequisite("POLS515", [""]).
+prerequisite("POLS518", [""]).
+prerequisite("POLS540", [""]).
+prerequisite("POLS550", [""]).
+prerequisite("POLS560", [""]).
 prerequisite("POLS568", ["POLS515"]).
+prerequisite("POLS570", [""]).
+prerequisite("POLS586", [""]).
 prerequisite("POLS590", ["POLS560"]).
 prerequisite("POLS595", ["POLS590"]).
+prerequisite("PSY102", [""]).
 prerequisite("PSY200", ["PSY201"]).
 prerequisite("PSY200", ["PSY202"]).
+prerequisite("PSY201", [""]).
+prerequisite("PSY202", [""]).
+prerequisite("PSY251", [""]).
 prerequisite("PSY252", ["PSY201"]).
 prerequisite("PSY252", ["PSY202"]).
 prerequisite("PSY254", ["PSY201"]).
 prerequisite("PSY254", ["PSY202"]).
 prerequisite("PSY256", ["PSY201"]).
 prerequisite("PSY256", ["PSY202"]).
+prerequisite("PSY260", [""]).
+prerequisite("PSY270", [""]).
 prerequisite("PSY301", ["PSY201"]).
 prerequisite("PSY301", ["PSY202"]).
 prerequisite("PSY302", ["PSY201"]).
 prerequisite("PSY302", ["PSY202"]).
+prerequisite("PSY304", [""]).
 prerequisite("PSY305", ["PSY201"]).
 prerequisite("PSY305", ["PSY202"]).
 prerequisite("PSY306", ["CD/PSY256"]).
 prerequisite("PSY306", ["CD/EDUC207"]).
 prerequisite("PSY310", ["PSY201"]).
 prerequisite("PSY310", ["PSY202"]).
+prerequisite("PSY311", [""]).
+prerequisite("PSY318", [""]).
 prerequisite("PSY320", ["PSY201"]).
 prerequisite("PSY320", ["PSY202"]).
+prerequisite("PSY323", [""]).
 prerequisite("PSY324", ["PSY201"]).
 prerequisite("PSY324", ["PSY202"]).
 prerequisite("PSY325", ["PSY201"]).
 prerequisite("PSY325", ["PSY202"]).
 prerequisite("PSY329", ["PSY201", "STAT217"]).
 prerequisite("PSY329", ["PSY202", "STAT217"]).
+prerequisite("PSY330", [""]).
 prerequisite("PSY333", ["PSY329", "STAT217"]).
+prerequisite("PSY340", [""]).
+prerequisite("PSY344", [""]).
 prerequisite("PSY350", ["PSY201"]).
 prerequisite("PSY350", ["PSY202"]).
+prerequisite("PSY352", [""]).
 prerequisite("PSY356", ["PSY201"]).
 prerequisite("PSY356", ["PSY202"]).
 prerequisite("PSY357", ["PSY201"]).
@@ -2982,6 +4814,7 @@ prerequisite("PSY375", ["PSY201"]).
 prerequisite("PSY375", ["PSY202"]).
 prerequisite("PSY400", ["PSY201"]).
 prerequisite("PSY400", ["PSY202"]).
+prerequisite("PSY401", [""]).
 prerequisite("PSY405", ["PSY201"]).
 prerequisite("PSY405", ["PSY202"]).
 prerequisite("PSY410", ["PSY333"]).
@@ -3003,6 +4836,7 @@ prerequisite("PSY431", ["PSY421", "PSY329"]).
 prerequisite("PSY432", ["PSY333"]).
 prerequisite("PSY440", ["PSY201", "PSY202"]).
 prerequisite("PSY440", ["PSY340"]).
+prerequisite("PSY448", [""]).
 prerequisite("PSY449", ["PSY329", "PSY333"]).
 prerequisite("PSY450", ["PSY254"]).
 prerequisite("PSY453", ["PSY323"]).
@@ -3010,34 +4844,71 @@ prerequisite("PSY454", ["PSY323"]).
 prerequisite("PSY458", ["PSY333"]).
 prerequisite("PSY460", ["PSY201"]).
 prerequisite("PSY460", ["PSY202"]).
+prerequisite("PSY461", [""]).
 prerequisite("PSY462", ["PSY461"]).
 prerequisite("PSY465", ["PSY201"]).
 prerequisite("PSY465", ["PSY202"]).
+prerequisite("PSY470", [""]).
 prerequisite("PSY475", ["PSY252"]).
 prerequisite("PSY475", ["PSY254"]).
 prerequisite("PSY475", ["PSY256"]).
 prerequisite("PSY480", ["PSY340"]).
+prerequisite("PSY485", [""]).
+prerequisite("PSY495", [""]).
+prerequisite("PSY500", [""]).
+prerequisite("PSY504", [""]).
+prerequisite("PSY520", [""]).
+prerequisite("PSY535", [""]).
 prerequisite("PSY555", ["PSY560"]).
 prerequisite("PSY556", ["PSY555", "PSY560"]).
+prerequisite("PSY560", [""]).
 prerequisite("PSY564", ["PSY520"]).
 prerequisite("PSY565", ["PSY560"]).
 prerequisite("PSY566", ["PSY560"]).
 prerequisite("PSY568", ["PSY555", "PSY560", "PSY565"]).
 prerequisite("PSY569", ["PSY520"]).
+prerequisite("PSY570", [""]).
 prerequisite("PSY571", ["PSY520"]).
 prerequisite("PSY572", ["PSY535"]).
+prerequisite("PSY574", [""]).
 prerequisite("PSY575", ["PSY520"]).
 prerequisite("PSY576", ["PSY569", "PSY564"]).
+prerequisite("PSY577", [""]).
+prerequisite("PSY585", [""]).
+prerequisite("PSY588", [""]).
 prerequisite("PSY599", ["PSY585"]).
+prerequisite("RPTA101", [""]).
+prerequisite("RPTA110", [""]).
+prerequisite("RPTA112", [""]).
+prerequisite("RPTA114", [""]).
+prerequisite("RPTA121", [""]).
+prerequisite("RPTA160", [""]).
+prerequisite("RPTA201", [""]).
+prerequisite("RPTA203", [""]).
+prerequisite("RPTA210", [""]).
+prerequisite("RPTA216", [""]).
+prerequisite("RPTA221", [""]).
+prerequisite("RPTA255", [""]).
+prerequisite("RPTA260", [""]).
+prerequisite("RPTA270", [""]).
+prerequisite("RPTA275", [""]).
 prerequisite("RPTA302", ["RPTA210"]).
 prerequisite("RPTA313", ["RPTA210"]).
 prerequisite("RPTA314", ["RPTA114", "RPTA210"]).
+prerequisite("RPTA317", [""]).
+prerequisite("RPTA318", [""]).
+prerequisite("RPTA320", [""]).
 prerequisite("RPTA321", ["RPTA210"]).
+prerequisite("RPTA323", [""]).
 prerequisite("RPTA325", ["RPTA205", "RPTA255"]).
 prerequisite("RPTA325", ["RPTA257"]).
+prerequisite("RPTA328", [""]).
 prerequisite("RPTA330", ["RPTA210"]).
 prerequisite("RPTA342", ["RPTA210"]).
+prerequisite("RPTA350", [""]).
 prerequisite("RPTA360", ["RPTA210"]).
+prerequisite("RPTA370", [""]).
+prerequisite("RPTA393", [""]).
 prerequisite("RPTA400", ["RPTA210"]).
 prerequisite("RPTA405", ["RPTA205", "RPTA255"]).
 prerequisite("RPTA405", ["RPTA257"]).
@@ -3047,14 +4918,70 @@ prerequisite("RPTA416", ["RPTA360"]).
 prerequisite("RPTA420", ["RPTA320"]).
 prerequisite("RPTA424", ["AGB323"]).
 prerequisite("RPTA424", ["BUS215"]).
+prerequisite("RPTA450", [""]).
 prerequisite("RPTA460", ["ENGL310"]).
 prerequisite("RPTA461", ["RPTA460"]).
 prerequisite("RPTA463", ["RPTA465"]).
+prerequisite("RPTA465", [""]).
+prerequisite("RPTA470", [""]).
+prerequisite("RPTA471", [""]).
+prerequisite("RPTA472", [""]).
+prerequisite("RPTA500", [""]).
+prerequisite("RPTA502", [""]).
+prerequisite("RPTA527", [""]).
+prerequisite("RPTA539", [""]).
+prerequisite("RPTA570", [""]).
+prerequisite("RPTA571", [""]).
+prerequisite("RPTA581", [""]).
+prerequisite("RPTA599", [""]).
+prerequisite("RELS201", [""]).
+prerequisite("RELS205", [""]).
+prerequisite("RELS270", [""]).
+prerequisite("RELS301", [""]).
+prerequisite("RELS302", [""]).
+prerequisite("RELS304", [""]).
+prerequisite("RELS306", [""]).
+prerequisite("RELS307", [""]).
+prerequisite("RELS310", [""]).
+prerequisite("RELS311", [""]).
+prerequisite("RELS344", [""]).
+prerequisite("RELS370", [""]).
+prerequisite("RELS372", [""]).
+prerequisite("RELS374", [""]).
+prerequisite("RELS378", [""]).
+prerequisite("RELS380", [""]).
+prerequisite("RELS390", [""]).
+prerequisite("RELS400", [""]).
+prerequisite("RELS470", [""]).
+prerequisite("RELS490", [""]).
+prerequisite("SCM101", [""]).
+prerequisite("SCM150", [""]).
+prerequisite("SCM220", [""]).
 prerequisite("SCM230", ["BIO150", "BIO160", "BIO161", "CHEM124", "CHEM127", "MATH141", "PHYS131"]).
 prerequisite("SCM230", ["PHYS141"]).
 prerequisite("SCM240", ["STAT217", "STAT218", "STAT251", "STAT301"]).
 prerequisite("SCM240", ["STAT312"]).
+prerequisite("SCM270", [""]).
+prerequisite("SCM300", [""]).
+prerequisite("SCM301", [""]).
+prerequisite("SCM302", [""]).
+prerequisite("SCM316", [""]).
+prerequisite("SCM330", [""]).
+prerequisite("SCM340", [""]).
+prerequisite("SCM350", [""]).
+prerequisite("SCM360", [""]).
+prerequisite("SCM363", [""]).
+prerequisite("SCM368", [""]).
+prerequisite("SCM470", [""]).
+prerequisite("SCM471", [""]).
+prerequisite("SOC101", [""]).
+prerequisite("SOC110", [""]).
+prerequisite("SOC111", [""]).
+prerequisite("SOC200", [""]).
+prerequisite("SOC216", [""]).
+prerequisite("SOC218", [""]).
 prerequisite("SOC222", ["SOC110"]).
+prerequisite("SOC270", [""]).
 prerequisite("SOC301", ["SOC110"]).
 prerequisite("SOC302", ["SOC110"]).
 prerequisite("SOC305", ["SOC110"]).
@@ -3063,28 +4990,52 @@ prerequisite("SOC306", ["SOC111"]).
 prerequisite("SOC308", ["SOC110"]).
 prerequisite("SOC308", ["GEOG150"]).
 prerequisite("SOC309", ["SOC110"]).
+prerequisite("SOC310", [""]).
+prerequisite("SOC311", [""]).
+prerequisite("SOC315", [""]).
+prerequisite("SOC321", [""]).
+prerequisite("SOC323", [""]).
+prerequisite("SOC326", [""]).
+prerequisite("SOC327", [""]).
+prerequisite("SOC343", [""]).
+prerequisite("SOC354", [""]).
 prerequisite("SOC355", ["STAT217"]).
+prerequisite("SOC377", [""]).
+prerequisite("SOC395", [""]).
+prerequisite("SOC400", [""]).
 prerequisite("SOC402", ["SOC311"]).
 prerequisite("SOC402", ["WGQS201"]).
+prerequisite("SOC406", [""]).
+prerequisite("SOC412", [""]).
 prerequisite("SOC414", ["SOC110"]).
 prerequisite("SOC414", ["SOC111"]).
 prerequisite("SOC420", ["SOC413"]).
 prerequisite("SOC420", ["SOC414"]).
+prerequisite("SOC423", [""]).
 prerequisite("SOC431", ["SOC110"]).
 prerequisite("SOC431", ["ANT201", "SOC354"]).
 prerequisite("SOC435", ["ANT201", "ES112", "ES/WGQS350", "HLTH255", "HLTH260", "ISLA123", "SOC110", "SOC111"]).
 prerequisite("SOC435", ["WGQS210"]).
+prerequisite("SOC440", [""]).
 prerequisite("SOC444", ["SOC402"]).
 prerequisite("SOC444", ["SOC412"]).
+prerequisite("SOC461", [""]).
+prerequisite("SOC462", [""]).
 prerequisite("SOC464", ["SOC110"]).
+prerequisite("SOC470", [""]).
+prerequisite("SS120", [""]).
+prerequisite("SS130", [""]).
 prerequisite("SS221", ["SS120"]).
 prerequisite("SS221", ["SS121"]).
+prerequisite("SS270", [""]).
 prerequisite("SS321", ["SS120"]).
 prerequisite("SS321", ["SS121"]).
 prerequisite("SS322", ["BOT121", "PLSC120", "CHEM124"]).
 prerequisite("SS322", ["BOT121", "PLSC120", "CHEM127"]).
 prerequisite("SS322", ["SS120", "CHEM124"]).
 prerequisite("SS322", ["SS120", "CHEM127"]).
+prerequisite("SS339", [""]).
+prerequisite("SS400", [""]).
 prerequisite("SS402", ["CHEM111", "CHEM125"]).
 prerequisite("SS402", ["CHEM128"]).
 prerequisite("SS421", ["BOT121"]).
@@ -3102,10 +5053,20 @@ prerequisite("SS440", ["SS120", "SS321"]).
 prerequisite("SS440", ["SS121", "SS321"]).
 prerequisite("SS444", ["SS321"]).
 prerequisite("SS463", ["SS461"]).
+prerequisite("SS470", [""]).
+prerequisite("SS471", [""]).
+prerequisite("SS500", [""]).
 prerequisite("SS522", ["SS221"]).
+prerequisite("SS570", [""]).
+prerequisite("SS571", [""]).
 prerequisite("SS582", ["NR/LA318"]).
+prerequisite("SS599", [""]).
+prerequisite("SPAN101", [""]).
 prerequisite("SPAN102", ["SPAN101", "SPAN111", "SPAN141"]).
 prerequisite("SPAN103", ["SPAN102", "SPAN142"]).
+prerequisite("SPAN104", [""]).
+prerequisite("SPAN111", [""]).
+prerequisite("SPAN141", [""]).
 prerequisite("SPAN142", ["SPAN101", "SPAN111", "SPAN141"]).
 prerequisite("SPAN143", ["SPAN102", "SPAN142"]).
 prerequisite("SPAN201", ["SPAN103", "SPAN143"]).
@@ -3117,23 +5078,45 @@ prerequisite("SPAN233", ["SPAN203", "SPAN206", "SPAN243"]).
 prerequisite("SPAN241", ["SPAN103", "SPAN143"]).
 prerequisite("SPAN242", ["SPAN201", "SPAN241"]).
 prerequisite("SPAN243", ["SPAN202", "SPAN242"]).
+prerequisite("SPAN270", [""]).
 prerequisite("SPAN301", ["SPAN203", "SPAN206", "SPAN243"]).
 prerequisite("SPAN302", ["SPAN203", "SPAN206", "SPAN243"]).
 prerequisite("SPAN303", ["SPAN207"]).
 prerequisite("SPAN303", ["SPAN233"]).
 prerequisite("SPAN303", ["SPAN301"]).
 prerequisite("SPAN303", ["SPAN302"]).
+prerequisite("SPAN305", [""]).
+prerequisite("SPAN307", [""]).
+prerequisite("SPAN340", [""]).
+prerequisite("SPAN350", [""]).
+prerequisite("SPAN351", [""]).
 prerequisite("SPAN380", ["SPAN203", "SPAN206"]).
 prerequisite("SPAN390", ["SPAN301"]).
 prerequisite("SPAN402", ["SPAN207"]).
 prerequisite("SPAN410", ["SPAN233"]).
 prerequisite("SPAN416", ["SPAN233"]).
+prerequisite("SPAN470", [""]).
+prerequisite("SPED420", [""]).
+prerequisite("SPED545", [""]).
+prerequisite("SPED547", [""]).
+prerequisite("SPED587", [""]).
+prerequisite("SPED588", [""]).
+prerequisite("STAT130", [""]).
+prerequisite("STAT150", [""]).
+prerequisite("STAT200", [""]).
+prerequisite("STAT217", [""]).
+prerequisite("STAT218", [""]).
 prerequisite("STAT251", ["MATH118"]).
 prerequisite("STAT252", ["STAT251"]).
+prerequisite("STAT270", [""]).
+prerequisite("STAT301", [""]).
 prerequisite("STAT302", ["STAT301"]).
 prerequisite("STAT305", ["BUS392", "CPE/CSC101", "CSC232", "CPE/CSC235", "ECON395", "MATH142"]).
 prerequisite("STAT305", ["STAT331", "MATH142"]).
+prerequisite("STAT312", [""]).
+prerequisite("STAT313", [""]).
 prerequisite("STAT314", ["STAT218"]).
+prerequisite("STAT321", [""]).
 prerequisite("STAT323", ["IME326"]).
 prerequisite("STAT323", ["STAT252"]).
 prerequisite("STAT323", ["STAT302"]).
@@ -3157,6 +5140,9 @@ prerequisite("STAT334", ["STAT252", "STAT302", "STAT312", "STAT313", "MATH206"])
 prerequisite("STAT334", ["STAT252", "STAT302", "STAT312", "STAT313", "MATH244"]).
 prerequisite("STAT334", ["IME326", "MATH206"]).
 prerequisite("STAT334", ["IME326", "MATH244"]).
+prerequisite("STAT350", [""]).
+prerequisite("STAT365", [""]).
+prerequisite("STAT400", [""]).
 prerequisite("STAT405", ["CPE/CSC101"]).
 prerequisite("STAT405", ["CSC232"]).
 prerequisite("STAT405", ["CPE/CSC235"]).
@@ -3203,8 +5189,15 @@ prerequisite("STAT434", ["STAT524", "STAT331"]).
 prerequisite("STAT434", ["STAT531"]).
 prerequisite("STAT440", ["STAT330"]).
 prerequisite("STAT441", ["STAT440"]).
+prerequisite("STAT461", [""]).
+prerequisite("STAT462", [""]).
 prerequisite("STAT465", ["STAT323"]).
 prerequisite("STAT466", ["STAT323"]).
+prerequisite("STAT470", [""]).
+prerequisite("STAT485", [""]).
+prerequisite("STAT495", [""]).
+prerequisite("STAT500", [""]).
+prerequisite("STAT511", [""]).
 prerequisite("STAT513", ["STAT217", "STAT218", "STAT252", "STAT312", "STAT511", "STAT512"]).
 prerequisite("STAT513", ["STAT542"]).
 prerequisite("STAT523", ["IME326", "STAT252", "STAT302", "STAT312", "STAT313", "STAT513"]).
@@ -3215,6 +5208,7 @@ prerequisite("STAT530", ["STAT511"]).
 prerequisite("STAT530", ["STAT512"]).
 prerequisite("STAT530", ["STAT513"]).
 prerequisite("STAT530", ["STAT542"]).
+prerequisite("STAT531", [""]).
 prerequisite("STAT541", ["STAT331"]).
 prerequisite("STAT541", ["STAT531"]).
 prerequisite("STAT542", ["MATH142"]).
@@ -3228,35 +5222,76 @@ prerequisite("STAT550", ["STAT334", "STAT427"]).
 prerequisite("STAT551", ["STAT305"]).
 prerequisite("STAT551", ["STAT350"]).
 prerequisite("STAT566", ["STAT466"]).
+prerequisite("STAT570", [""]).
+prerequisite("STAT590", [""]).
+prerequisite("STAT599", [""]).
+prerequisite("TH201", [""]).
+prerequisite("TH210", [""]).
 prerequisite("TH215", ["TH220"]).
 prerequisite("TH220", ["TH201"]).
 prerequisite("TH220", ["TH210"]).
+prerequisite("TH225", [""]).
+prerequisite("TH227", [""]).
+prerequisite("TH228", [""]).
+prerequisite("TH230", [""]).
 prerequisite("TH235", ["TH220"]).
+prerequisite("TH240", [""]).
+prerequisite("TH245", [""]).
 prerequisite("TH255", ["TH230"]).
 prerequisite("TH256", ["TH230"]).
 prerequisite("TH260", ["TH220"]).
 prerequisite("TH265", ["TH230"]).
+prerequisite("TH270", [""]).
+prerequisite("TH275", [""]).
+prerequisite("TH280", [""]).
 prerequisite("TH285", ["TH101"]).
 prerequisite("TH290", ["TH201"]).
 prerequisite("TH290", ["TH210"]).
 prerequisite("TH295", ["TH210"]).
 prerequisite("TH295", ["TH201"]).
+prerequisite("TH305", [""]).
 prerequisite("TH315", ["TH220"]).
 prerequisite("TH325", ["TH225"]).
 prerequisite("TH330", ["TH230"]).
+prerequisite("TH345", [""]).
+prerequisite("TH350", [""]).
 prerequisite("TH355", ["TH225"]).
 prerequisite("TH355", ["TH230"]).
 prerequisite("TH370", ["TH201"]).
 prerequisite("TH370", ["TH210"]).
 prerequisite("TH380", ["TH201"]).
+prerequisite("TH390", [""]).
+prerequisite("TH400", [""]).
+prerequisite("TH425", [""]).
 prerequisite("TH430", ["TH290", "TH295"]).
 prerequisite("TH432", ["TH290", "TH295"]).
 prerequisite("TH434", ["TH290", "TH295"]).
 prerequisite("TH450", ["TH290"]).
+prerequisite("TH461", [""]).
+prerequisite("TH470", [""]).
+prerequisite("TH471", [""]).
+prerequisite("TH480", [""]).
+prerequisite("UNIV100", [""]).
+prerequisite("UNIV111", [""]).
+prerequisite("UNIV125", [""]).
+prerequisite("UNIV321", [""]).
+prerequisite("UNIV330", [""]).
+prerequisite("UNIV350", [""]).
+prerequisite("UNIV391", [""]).
+prerequisite("UNIV392", [""]).
+prerequisite("UNIV401", [""]).
+prerequisite("UNIV421", [""]).
+prerequisite("UNIV470", [""]).
+prerequisite("UNIV491", [""]).
+prerequisite("UNIV492", [""]).
+prerequisite("WVIT101", [""]).
+prerequisite("WVIT102", [""]).
 prerequisite("WVIT202", ["CHEM111"]).
 prerequisite("WVIT202", ["CHEM127"]).
 prerequisite("WVIT233", ["PLSC120"]).
 prerequisite("WVIT233", ["BOT121"]).
+prerequisite("WVIT270", [""]).
+prerequisite("WVIT300", [""]).
 prerequisite("WVIT301", ["MCRO224"]).
 prerequisite("WVIT302", ["WVIT202"]).
 prerequisite("WVIT331", ["PLSC232"]).
@@ -3278,6 +5313,7 @@ prerequisite("WVIT345", ["STAT217", "WVIT343"]).
 prerequisite("WVIT345", ["STAT218", "WVIT343"]).
 prerequisite("WVIT346", ["AGB260", "WVIT343"]).
 prerequisite("WVIT365", ["WVIT202", "CHEM312"]).
+prerequisite("WVIT400", [""]).
 prerequisite("WVIT404", ["WVIT202"]).
 prerequisite("WVIT405", ["WVIT404"]).
 prerequisite("WVIT406", ["WVIT405"]).
@@ -3292,26 +5328,68 @@ prerequisite("WVIT450", ["AGB214", "BUS301"]).
 prerequisite("WVIT450", ["AGB214", "WVIT343"]).
 prerequisite("WVIT450", ["BUS214", "BUS301"]).
 prerequisite("WVIT450", ["BUS214", "WVIT343"]).
+prerequisite("WVIT460", [""]).
+prerequisite("WVIT463", [""]).
 prerequisite("WVIT464", ["STAT218"]).
+prerequisite("WVIT465", [""]).
+prerequisite("WVIT470", [""]).
+prerequisite("WVIT471", [""]).
 prerequisite("WVIT477", ["WVIT301"]).
+prerequisite("WGQS145", [""]).
+prerequisite("WGQS201", [""]).
+prerequisite("WGQS210", [""]).
+prerequisite("WGQS270", [""]).
+prerequisite("WGQS301", [""]).
+prerequisite("WGQS302", [""]).
+prerequisite("WGQS305", [""]).
+prerequisite("WGQS311", [""]).
+prerequisite("WGQS320", [""]).
 prerequisite("WGQS324", ["PSY201"]).
 prerequisite("WGQS324", ["PSY202"]).
+prerequisite("WGQS325", [""]).
+prerequisite("WGQS330", [""]).
+prerequisite("WGQS335", [""]).
+prerequisite("WGQS336", [""]).
+prerequisite("WGQS340", [""]).
+prerequisite("WGQS345", [""]).
+prerequisite("WGQS350", [""]).
+prerequisite("WGQS351", [""]).
+prerequisite("WGQS370", [""]).
 prerequisite("WGQS375", ["ART112", "ART212", "ART213"]).
 prerequisite("WGQS375", ["WGQS201"]).
 prerequisite("WGQS400", ["WGQS201"]).
+prerequisite("WGQS401", [""]).
 prerequisite("WGQS417", ["POLS112"]).
 prerequisite("WGQS421", ["HIST303"]).
+prerequisite("WGQS423", [""]).
 prerequisite("WGQS434", ["HIST303"]).
 prerequisite("WGQS435", ["HIST303"]).
 prerequisite("WGQS450", ["WGQS201"]).
+prerequisite("WGQS455", [""]).
 prerequisite("WGQS457", ["POLS112"]).
 prerequisite("WGQS458", ["HIST303"]).
 prerequisite("WGQS467", ["WGQS201"]).
+prerequisite("WGQS470", [""]).
+prerequisite("WLC101", [""]).
 prerequisite("WLC102", ["WLC101"]).
 prerequisite("WLC103", ["WLC102"]).
+prerequisite("WLC200", [""]).
 prerequisite("WLC201", ["WLC103"]).
 prerequisite("WLC202", ["WLC201"]).
+prerequisite("WLC270", [""]).
+prerequisite("WLC290", [""]).
+prerequisite("WLC307", [""]).
+prerequisite("WLC310", [""]).
+prerequisite("WLC312", [""]).
+prerequisite("WLC315", [""]).
 prerequisite("WLC318", ["WLC310"]).
+prerequisite("WLC350", [""]).
+prerequisite("WLC360", [""]).
+prerequisite("WLC370", [""]).
+prerequisite("WLC400", [""]).
+prerequisite("WLC424", [""]).
 prerequisite("WLC425", ["EDUC469"]).
 prerequisite("WLC425", ["EDUC479"]).
+prerequisite("WLC451", [""]).
 prerequisite("WLC460", ["WLC360"]).
+prerequisite("WLC470", [""]).
