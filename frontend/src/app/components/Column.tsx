@@ -1,14 +1,6 @@
-"use client"
-import {useState} from "react";
-import Card from "./Card";
+import React, { useState } from 'react';
 import { Droppable } from "react-beautiful-dnd";
-
-
-interface ColumnProps {
-  title: string;
-  courses: Course[];
-  id: string;
-}
+import Card from "./Card";
 
 type Course = {
   id: number;
@@ -16,6 +8,11 @@ type Course = {
   completed: boolean;
 };
 
+interface ColumnProps {
+  title: string;
+  courses: Course[];
+  id: string;
+}
 
 const SearchBar = ({ onChange, value }: { onChange: (e: React.ChangeEvent<HTMLInputElement>) => void, value: string }) => {
   return (
@@ -40,8 +37,6 @@ export default function Column({ title, courses, id }: ColumnProps) {
     return course.title.toLowerCase().includes(searchInput.toLowerCase());
   });
 
-
-  console.log(title, " tasks:", courses);
   return (
     <div
       style={{ msOverflowStyle: "none", scrollbarWidth: "none" }}

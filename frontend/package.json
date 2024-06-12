@@ -15,13 +15,16 @@
     "@emotion/styled": "^11.11.5",
     "@types/react-beautiful-dnd": "^13.1.8",
     "axios": "^1.6.8",
+    "chakra-react-select": "^4.7.6",
     "cheerio": "^1.0.0-rc.12",
     "framer-motion": "^11.1.7",
     "jotai": "^2.8.0",
     "next": "14.2.3",
     "react": "^18",
     "react-beautiful-dnd": "^13.1.1",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "readline-sync": "^1.4.10",
+    "tau-prolog": "^0.3.4"
   },
   "devDependencies": {
     "@types/node": "^20",
