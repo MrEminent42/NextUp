@@ -62,8 +62,8 @@ The frontend folder does contain all files for the UI as well as the knowledge b
 │   │       ├── page.tsx                The ROOT HTML/React webpage that is loaded when a user visits the website (more code starts in DisplayColumn.tsx)
 │   │       ├── providers.tsx           Wraps the entire website in a ChakraUI Provider (helpful for ChakraUI, where we get basic UI components from)
 │   │       ├── scraper                 Web-scraping 
-│   │       │   ├── prereq_generator.py     uses data from coursesData.json to convert into a list of prerequiste facts into prerequisite_statements.txt, this is what ends up in the knowledgebase (kb.ts)
-│   │       │   └── scraper.py              opens course catalog, scrape prerequisites, unit amount etc. into coursesData.json
+│   │       │   ├── prereq_generator.py     uses data from the data frame created by the scraper to convert prerequisite column from dataframe into prerequisite_statements.txt, this is what ends up in the knowledgebase (kb.ts)
+│   │       │   └── scraper.py              opens course catalog, scrape prerequisites, unit amount etc. into coursesData.json, which is used to trigger pop up modal to display course infos
 │   │       └── ui                      Some more UI compoennts
 │   │           ├── header.tsx
 │   │           └── profile.tsx
