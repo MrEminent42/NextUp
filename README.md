@@ -14,11 +14,13 @@ You can run it locally (instructions above) or visit the deployed version here (
 ## dependencies
 Thanks to the folks who published & maintained the packages that made this project possible:
 * [Jotai](https://jotai.org/) by Daishi Kato - atomic state management
-* [Cheerio](https://cheerio.js.org/) by The Cheerio contributors - web crawler library
+* [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) by Leonard Richardson - HTML and XML parsing library for Python
 * [Chakra UI](https://v2.chakra-ui.com/) by Segun Adebayo - nice UI framework
 * [NextJS](nextjs.org) by Vercel - a modern React framework
 * [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) by Atlassian - drag & drop package for React
 * [Tau Prolog](http://tau-prolog.org/) by José Antonio Riaza Valverde - prolog interpreter in JavaScript
+* [Pandas](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) by the Pandas Development Team - data analysis and manipulation library for Python
+* [Requests](https://requests.readthedocs.io/en/latest/) by Kenneth Reitz - HTTP library for Python
 
 ## File Structure
 The frontend folder does contain all files for the UI as well as the knowledge base.
