@@ -9,7 +9,7 @@ NextUp is a curriculum planner for Cal Poly, built for Dr. Rodrigo Canaan's CSC 
 4. run the project locally with: `npm run dev`
 
 ## using NextUp
-You can run it locally (instructions above) or visit the deployed version here (this branch v1, without experimental web crawler, is deployed at:) https://nextup-v1.vercel.app. 
+You can run it locally (instructions above) or visit the deployed version here (this branch v1, without experimental web crawler, is deployed at:) https://next-up-main.vercel.app. 
 
 ## dependencies
 Thanks to the folks who published & maintained the packages that made this project possible:
