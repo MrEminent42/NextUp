@@ -38,9 +38,7 @@ The frontend folder does contain all files for the UI as well as the knowledge b
 │   ├── package-lock.json       |
 │   ├── postcss.config.mjs      ↑ end
 │   ├── public                  Public files for website
-│   │   ├── coursesData.json        web-scraped data/descriptions/etc. of all courses
-│   │   ├── next.svg
-│   │   └── vercel.svg
+│   │   └── coursesData.json        web-scraped data/descriptions/etc. of all courses
 │   ├── src                     Our Next.JS code
 │   │   └── app                     THE BULK OF OUR CODE - THIS IS WHAT CONTAINS THE WEBSITE FILES
 │   │       ├── components              UI components for the website
