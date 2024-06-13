@@ -30,48 +30,47 @@ The frontend folder does contain all files for the UI as well as the knowledge b
 
 ## Understanding the codebase & file structure
 ```
-├── frontend                    contains code for our website
-│   ├── next.config.mjs         Node/React/NextJS config files
-│   ├── next-env.d.ts           
-│   ├── package.json            
-│   ├── package-lock.json       
-│   ├── postcss.config.mjs      
+.
+├── frontend                contains code for our website
+│   ├── next.config.mjs         ↓ Node/React/NextJS config files 
+│   ├── next-env.d.ts           |
+│   ├── package.json            |
+│   ├── package-lock.json       |
+│   ├── postcss.config.mjs      ↑ end
 │   ├── public                  Public files for website
+│   │   ├── coursesData.json        web-scraped data/descriptions/etc. of all courses
 │   │   ├── next.svg
 │   │   └── vercel.svg
-│   ├── README.md
 │   ├── src                     Our Next.JS code
-│   │   └── app                 THE BULK OF OUR CODE - THIS IS WHAT CONTAINS THE WEBSITE
-│   │       ├── components      UI components for the website
+│   │   └── app                     THE BULK OF OUR CODE - THIS IS WHAT CONTAINS THE WEBSITE FILES
+│   │       ├── components              UI components for the website
 │   │       │   ├── Board.tsx               Todo/Completed board
-│   │       │   ├── Card.tsx                Card for displaying a class 
-│   │       │   ├── Column.tsx              
-│   │       │   ├── DisplayColumn.tsx       THE MAIN CONTENTS OF OUR WEBSITE BEGINS HERE HERE
+│   │       │   ├── Card.tsx                Card/tile for displaying a class 
+│   │       │   ├── Column.tsx              One column inside a board
+│   │       │   ├── DisplayColumn.tsx       THE MAIN CONTENTS OF OUR WEBSITE BEGINS HERE 
 │   │       │   ├── EligibleBoard.tsx       Eligible classes board
-│   │       │   └── MajorSelect.tsx               
-Major select dropdown
-│   │       ├── favicon.ico
-│   │       ├── fonts.ts
-│   │       ├── globals.css
-│   │       ├── layout.tsx
-│   │       ├── lib                         API/Library functions helpful elsewhere
-│   │       │   ├── atoms                       Files for atomic state management and local storage management
-│   │       │   │   ├── localStorage.ts     
-│   │       │   │   └── usernameAtom.ts
-Files containing save state logic, using localStorage hashmap object (Jotai for usernameAtom)
-│   │       │   └── prolog                      Files related to prolog
-│   │       │       ├── findClasses.ts              easy API methods for interfacing with prolog
-│   │       │       ├── kb.ts                       **OUR PROLOG KNOWLEDGEBASE**
-|   |       |       └── prerequisite_statements.txt 
-String listing out different prerequisite predicate combinations
-│   │       ├── page.tsx
-│   │       ├── providers.tsx   Provier for Chakra UI (necessary for ChakraUI component library)
-│   │       ├── scrape.js       Web scraper
-│   │       └── ui              Some more UI compoennts 
+│   │       │   └── MajorSelect.tsx         Major selection dropdown
+│   │       ├── favicon.ico             ↓ Some more NextJS/generic website stuff
+│   │       ├── fonts.ts                |
+│   │       ├── globals.css             |
+│   │       ├── layout.tsx              ↑ end
+│   │       ├── lib                     API/Library functions helpful in the UI files 
+│   │       │   ├── atoms                   Files for atomic state management and local storage management
+│   │       │   │   ├── localStorage.ts         Utility for saving completed classes data to the local browser (saves to localStorage to persist across refreshes)
+│   │       │   │   └── usernameAtom.ts         Atomic state (via Jotai) for the username (also saves to localStorage)
+│   │       │   └── prolog
+│   │       │       ├── findClasses.ts  
+│   │       │       ├── kb.ts
+│   │       ├── page.tsx                The ROOT HTML/React webpage that is loaded when a user visits the website (more code starts in DisplayColumn.tsx)
+│   │       ├── providers.tsx           Wraps the entire website in a ChakraUI Provider (helpful for ChakraUI, where we get basic UI components from)
+│   │       ├── scraper                 Web-scraping 
+│   │       │   ├── prereq_generator.py     TODO HAN - short description
+│   │       │   └── scraper.py              TODO HAN - short description
+│   │       └── ui                      Some more UI compoennts
 │   │           ├── header.tsx
 │   │           └── profile.tsx
-│   ├── tailwind.config.ts      Node/React/NextJS config files
-│   ├── theme.ts                Node/React/NextJS config files
-│   └── tsconfig.json           Node/React/NextJS config files
-├── README.md                   The readme :)
+│   ├── tailwind.config.ts          ↓ Node/React/NextJS config files
+│   ├── theme.ts                    | 
+│   └── tsconfig.json               ↑ end
+└── README.md               The readme :)
 ```
