@@ -71,11 +71,13 @@ const majors = [
 
 type MajorSelectProps = {
   onChange: (major: string) => void;
+  currentlySelectedMajor: string;
 };
 
-export default function MajorSelect({ onChange }: MajorSelectProps) {
+export default function MajorSelect({ currentlySelectedMajor, onChange }: MajorSelectProps) {
   return (
     <Select
+      value={majors.find((major) => major.value === currentlySelectedMajor) || null}
       options={majors}
       placeholder="Select Major"
       onChange={(selectedOption) => onChange(selectedOption?.value || '')}

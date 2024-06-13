@@ -18,11 +18,12 @@ interface BoardProps {
   incomplete: Course[];
   setIncomplete: React.Dispatch<React.SetStateAction<Course[]>>;
   onSend: () => void;
+  selectedMajor: string;
   setMajor: (major: string) => void;
   resetCourses: () => void;
 }
 
-interface Result extends DropResult {}
+interface Result extends DropResult { }
 
 export default function Board({
   completed,
@@ -31,6 +32,7 @@ export default function Board({
   incomplete,
   setIncomplete,
   onSend,
+  selectedMajor,
   setMajor,
   resetCourses,
 }: BoardProps) {
@@ -120,7 +122,7 @@ export default function Board({
       <DragDropContext onDragEnd={handleDragEnd}>
         <Flex justifyContent="center" alignItems="center" mb={4} position="relative">
           <Box bg="white" p={2} borderRadius="md" boxShadow="md" position="absolute" left="0">
-            <MajorSelect onChange={handleMajorChange} />
+            <MajorSelect currentlySelectedMajor={selectedMajor} onChange={handleMajorChange} />
           </Box>
           <Text className="text-2xl text-center font-bold">
             Progress Board
