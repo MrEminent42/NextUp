@@ -29,7 +29,7 @@ export default function DisplayColumn() {
     const savedCompletedCourses = loadFromLocalStorage('completedCourses');
 
     if (savedMajor) {
-      setMajor(savedMajor);
+      setMajor(savedMajor.replaceAll("\"", ""));
     }
 
     if (savedCompletedCourses) {
@@ -116,6 +116,7 @@ export default function DisplayColumn() {
             setIncomplete={setIncomplete}
             incomplete={incomplete}
             onSend={handleSend}
+            selectedMajor={major}
             setMajor={setMajor}
             resetCourses={resetCourses}
           />
